@@ -11,6 +11,6 @@ pre-commit:
       glob: "*.{py, ipynb}"
       stage_fixed: true
 
-    - name: oxfmt
-      run: bunx oxfmt --no-error-on-unmatched-pattern {staged_files}
+    - name: fmt
+      run: bunx prettier --write {staged_files}
       stage_fixed: true
