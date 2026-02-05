@@ -1,0 +1,16 @@
+pre-commit:
+  parallel: true
+  jobs:
+    - name: ruff check
+      run: uvx ruff check --fix {staged_files}
+      glob: "*.{py, ipynb}"
+      stage_fixed: true
+
+    - name: ruff format
+      run: uvx ruff format {staged_files}
+      glob: "*.{py, ipynb}"
+      stage_fixed: true
+
+    - name: oxfmt
+      run: bunx oxfmt --no-error-on-unmatched-pattern {staged_files}
+      stage_fixed: true
