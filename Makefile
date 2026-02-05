@@ -8,3 +8,9 @@ test:
 
 check lint:
 	uv run ruff check --fix . && uv run ruff format .
+
+notebook:
+	jupyter lab \
+		--port 8888 \
+		--IdentityProvider.token "MY_TOKEN" \
+		--ip 0.0.0.0
