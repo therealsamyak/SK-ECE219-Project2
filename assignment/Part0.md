@@ -1,8 +1,10 @@
 # Large-Scale Data Mining: Models and Algorithms ECE 219 Winter 2026
+
 Prof. Vwani Roychowdhury
 UCLA, Department of ECE
 
 ## Project 2: Clustering & Unsupervised Learning and Intro to Multi-modal models
+
 Due February 20, 2026 by 11:59 pm
 
 ## Introduction
@@ -63,97 +65,3 @@ In project 1, we studied SVD/PCA and NMF as linear dimensionality reduction tech
 **Autoencoders:** An autoencoder¹ is a special type of neural network that is trained to copy its input to its output. For example, given an image of a handwritten digit, an autoencoder first encodes the image into a lower dimensional latent representation, then decodes the latent representation back to an image. An autoencoder learns to compress the data while minimizing the reconstruction error. Further details can be found in chapter 14 of [4].
 
 ¹ also known as "auto-associative networks" in older jargon
-
-## Part 1 - Steam Reviews: Product Analytics with Representations and Clustering
-
-Imagine you are a product engineer (or data scientist) on a game platform team. Your job is to help the company answer questions like:
-
-- Are players actually enjoying this game? How does sentiment compare across games?
-- What are players complaining about most? (crashes? balance? monetization? controls?)
-- What makes a game feel like a particular genre? Can we infer genre from what players say?
-- For a new or held-out game, can we profile it quickly? (positivity ratio, likely genre, top issues, top praises)
-
-We will the following toolkit to solve these tasks:
-
-- text representations (sparse vs dense),
-- dimensionality reduction (to make patterns easier to discover),
-- clustering (to discover themes without manual labeling),
-- and evaluation using known signals (ratings, thumbs up/down) when available.
-
-In this first part of the project, You will build a system that can:
-
-1. discover clusters in the review lengths (Task 1),
-2. infer game genres from positive player feedback (Task 2),
-3. and generate a concise product report for a held-out game (Task 3).
-
-### Dataset
-
-You are provided with a curated subset of Steam reviews (Download here):
-
-- **Main dataset (CSV):** reviews from the top 200 games ranked by total reviews (positive+negative) in the metadata. For each game, we keep:
-  – 100 English Recommended reviews, and
-  – 100 English Not Recommended reviews,
-  selected by highest helpfulness (upvotes). This ensures the reviews are typically informative rather than one-word memes.
-
-- **Held-out dataset (CSV):** A secret game's reviews are provided separately and will be used only in Task 3.
-
-Each review row includes:
-
-- **user:** User Name
-- **playtime:** Number of hours this User plays this game.
-- **post date:** When is the review posted.
-- **helpfulness:** Number of upvotes this review received.
-- **review text:** The review itself.
-- **recommend:** Whether the user recommended the game or not. True or False
-- **early access review:** Whether this review is for a game during early access stage, either empty or early access.
-- **appid:** Unique id of the game.
-- **game name:** Game name.
-- **release date:** Release date of the game.
-- **genres:** Genres of the game, either single a string separated by comma.
-
-**Important note on genres:** Games often have multiple genres. In this project, genres should be treated as multi-label metadata.
-
-### Methods and Modules
-
-Your system will be built from modular choices:
-
-- **Representations:** TF-IDF, MiniLM embeddings (sentence-transformers/all-MiniLM-L6-v2).
-- **Dimensionality Reduction:** None, SVD, UMAP, Autoencoder.
-- **Clustering:** K-Means, Agglomerative, HDBSCAN.
-
-**Default setting policy:** To keep the project lightweight and focus on interpretation, you only need to run one default hyperparameter choice per method (unless a question explicitly requests a sweep).
-
-| Module Alternatives | Default Hyperparameters |
-|---------------------|-------------------------|
-| **Dimensionality Reduction** | |
-| None | N/A |
-| SVD | r = 50 |
-| UMAP | n_components = 50 |
-| Autoencoder | latent_dim = 50 |
-| **Clustering** | |
-| K-Means | k = 2 (Task 1), k = 5 (Task 3 themes) |
-| Agglomerative | n_clusters = 2 (Task 1), n_clusters = 5 (Task 3 themes) |
-| HDBSCAN | min_cluster_size = 2/5 (can experiment here a bit if noise dominates) |
-
-**Compute note (Colab):** Dense embeddings + UMAP/Autoencoder can be memory intensive.
-
-**Note on TF-IDF:** For TF-IDF, due to its large and sparse representations, running certain methods can be really slow. Thus, you can skip the None, UMAP and Autoencoder for it.
-
-**Note on HDBSCAN:** You cannot specify the designed number of cluster you want for HDBSCAN, instead, you will specify the minimum cluster size for each cluster it finds. For tasks that we want a specific number of cluster, consider finding the largest two clusters, getting it's centroids, and assign the rest points to them)
-
-**Note on UMAP:** UMAP might not work efficiently on high-dimensional data. Consider first using SVD to reduce raw data to a dimension of 200, then use UMAP.
-
-**Note on Agglomerative:** If Agglomerative method runs really slow, consider using the following setups:
-```python
-conn = kneighbors_graph(
-    Z,
-    n_neighbors=k,
-    mode="connectivity",
-    include_self=False
-)
-model = AgglomerativeClustering(
-    n_clusters=2,
-    linkage="ward",
-    connectivity=conn
-)
-```
