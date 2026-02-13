@@ -1,0 +1,25 @@
+{
+  "plot_path": "outputs/task1_4_pca_visualizations.png",
+  "best_pipelines": {
+    "tfidf": {
+      "dim_reduction": "svd",
+      "clustering": "kmeans",
+      "v_measure": 0.05071012413808581,
+      "ari": 0.005708453889781343
+    },
+    "minilm": {
+      "dim_reduction": "svd",
+      "clustering": "agglomerative",
+      "v_measure": 0.6478339757510361,
+      "ari": 0.7424071932554444
+    }
+  },
+  "tfidf_pca": {
+    "explained_variance_ratio": [0.023888125696186403, 0.016346689961232425],
+    "total_variance_explained": 0.04023481565741883
+  },
+  "minilm_pca": {
+    "explained_variance_ratio": [0.0870513841509819, 0.031287189573049545],
+    "total_variance_explained": 0.11833856999874115
+  }
+}

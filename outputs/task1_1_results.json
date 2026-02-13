@@ -1,0 +1,16 @@
+{
+  "tfidf": {
+    "matrix_shape": [20497, 25085],
+    "vocabulary_size": 25085
+  },
+  "minilm": {
+    "matrix_shape": [20497, 384],
+    "embedding_dim": 384,
+    "normalized": true
+  },
+  "dataset": {
+    "size": 20497,
+    "num_short": 10463,
+    "num_long": 10034
+  }
+}
