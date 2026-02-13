@@ -13,5 +13,5 @@ pre-commit:
 
     - name: fmt
       run: bunx prettier --write {staged_files}
-      glob: "*.{json, md}"
+      glob: "*.{json, md, yml}"
       stage_fixed: true
