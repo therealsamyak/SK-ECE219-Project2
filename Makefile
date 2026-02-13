@@ -3,6 +3,9 @@
 i install:
 	uv sync && uv run lefthook install
 
+rebuild:
+	rm -rf .venv .pytest_cache .cache __pycache__ && uv sync && uv run lefthook install
+
 test:
 	uv run pytest
 
