@@ -2,15 +2,16 @@ pre-commit:
   parallel: true
   jobs:
     - name: ruff check
-      run: uvx ruff check --fix {staged_files}
+      run: uv tool run ruff check --fix {staged_files}
       glob: "*.{py, ipynb}"
       stage_fixed: true
 
     - name: ruff format
-      run: uvx ruff format {staged_files}
+      run: uv tool run ruff format {staged_files}
       glob: "*.{py, ipynb}"
       stage_fixed: true
 
     - name: fmt
       run: bunx prettier --write {staged_files}
+      glob: "*.{json, md}"
       stage_fixed: true

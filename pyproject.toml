@@ -22,7 +22,7 @@ dependencies = [
 ]
 
 [tool.ruff]
-exclude = ["helpers"]
+exclude = ["helpers", "Makefile"]
 
 [dependency-groups]
 dev = ["lefthook>=2.0.15", "pytest>=9.0.2", "ruff>=0.14.14"]
