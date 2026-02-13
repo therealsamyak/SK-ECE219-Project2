@@ -1,0 +1,57 @@
+{
+  "Q15_dimensions": {
+    "original_pixels": [224, 224, 3],
+    "feature_dim": 4096,
+    "num_images": 3670
+  },
+  "Q16_sparsity": {
+    "is_dense": true
+  },
+  "Q17_tsne": {
+    "plot_path": "outputs/part2_tsne.png",
+    "n_components": 2,
+    "perplexity": 30
+  },
+  "Q18_clustering": {
+    "best_ari": 0.5634554443039855,
+    "best_method": "umap",
+    "best_clustering_method": "hdbscan",
+    "best_hdbscan_params": {
+      "min_cluster_size": 50,
+      "min_samples": 10
+    },
+    "results_by_dim_reduction": {
+      "none": {
+        "best_ari": 0.2184499487113686,
+        "best_clustering": "agglomerative"
+      },
+      "svd": {
+        "best_ari": 0.19466133319184695,
+        "best_clustering": "kmeans"
+      },
+      "umap": {
+        "best_ari": 0.5634554443039855,
+        "best_clustering": "hdbscan"
+      },
+      "autoencoder": {
+        "best_ari": 0.20878417036385877,
+        "best_clustering": "agglomerative"
+      }
+    }
+  },
+  "Q19_mlp": {
+    "original_accuracy": 0.916893720626831,
+    "best_reduced_accuracy": 0.9087193608283997,
+    "best_method": "svd",
+    "accuracy_drop_percent": 0.8174359798431396,
+    "does_performance_suffer": true,
+    "is_drop_significant": false,
+    "all_reduced_accuracies": {
+      "svd": 0.9087193608283997,
+      "umap": 0.8106266856193542,
+      "autoencoder": 0.8828337788581848
+    },
+    "best_clustering_dim": "umap",
+    "best_clustering_ari": 0.5634554443039855
+  }
+}

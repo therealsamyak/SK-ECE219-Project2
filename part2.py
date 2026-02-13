@@ -235,15 +235,16 @@ def extract_flower_features():
     else:
         logger.info("Extracting features from dataset")
 
-        flowers_dir = Path("flower_photos")
+        flowers_dir = Path("datasets/flower_photos")
         if not flowers_dir.exists():
             logger.info("Downloading tf_flowers dataset...")
             url = "http://download.tensorflow.org/example_images/flower_photos.tgz"
-            with open("flower_photos.tgz", "wb") as file:
+            Path("datasets").mkdir(exist_ok=True)
+            with open("datasets/flower_photos.tgz", "wb") as file:
                 file.write(requests.get(url).content)
-            with tarfile.open("flower_photos.tgz") as file:
-                file.extractall("./")
-            Path("flower_photos.tgz").unlink()
+            with tarfile.open("datasets/flower_photos.tgz") as file:
+                file.extractall("datasets/")
+            Path("datasets/flower_photos.tgz").unlink()
 
         device = get_device()
         logger.info(f"Using device: {device}")
@@ -776,10 +777,36 @@ def create_summary_output():
     with open(mlp_file, "r") as f:
         mlp_data = json.load(f)
 
-    # Build summary JSON
+    # Build summary JSON - numbers only, no text explanations
     summary = {
-        "Q13_transfer_learning": "Transfer learning uses pre-trained VGG16 trained on ImageNet. The early layers learn general visual features (edges, textures), while later layers capture more abstract patterns. We extract features from fc[0] layer.",
-        "Q14_feature_extraction": "Images are resized to 224x224, normalized, passed through VGG16 convolutional layers, average pooled, flattened, and passed through the first fully-connected layer to produce 4096-dim vectors.",
+        "Q13_transfer_learning": {
+            "model": "VGG16",
+            "pretrained_dataset": "ImageNet",
+            "pretrained_classes": 1000,
+            "target_dataset": "tf_flowers",
+            "target_classes": 5,
+            "extraction_layer": "fc[0] (first fully-connected)",
+            "why_effective": [
+                "early_layers_learn_general_features",
+                "edges_textures_colors_transfer_across_domains",
+                "later_layers_capture_abstract_patterns",
+            ],
+        },
+        "Q14_feature_extraction_pipeline": {
+            "steps": [
+                "load_pretrained_vgg16",
+                "resize_image_to_224x224",
+                "normalize_with_imagenet_mean_std",
+                "pass_through_convolutional_features",
+                "apply_average_pooling_7x7",
+                "flatten_to_1d",
+                "extract_from_fc0_layer",
+            ],
+            "input_shape": [224, 224, 3],
+            "output_dim": 4096,
+            "normalization_mean": [0.485, 0.456, 0.406],
+            "normalization_std": [0.229, 0.224, 0.225],
+        },
         "Q15_dimensions": {
             "original_pixels": features_data["original_pixels"],
             "feature_dim": features_data["feature_dim"],
@@ -787,21 +814,47 @@ def create_summary_output():
         },
         "Q16_sparsity": {
             "is_dense": features_data["is_dense"],
-            "explanation": "VGG16 features are dense because all 4096 dimensions are active and contain meaningful information extracted from the image. Unlike sparse representations (like bag-of-words where most entries are zero), VGG16 features have non-zero values across all dimensions.",
         },
         "Q17_tsne": {
-            "observation": "t-SNE visualization shows some flower classes form well-separated clusters, while others exhibit overlap. This suggests that VGG16 features capture meaningful visual differences between certain flower types, but some species share similar visual characteristics.",
-            "cluster_separation": "Visual inspection indicates partial separation - some classes are clearly distinguishable (forming distinct clusters), while others show significant overlap in the feature space.",
+            "plot_path": "outputs/part2_tsne.png",
+            "n_components": 2,
+            "perplexity": 30,
         },
         "Q18_clustering": {
             "best_ari": clustering_data["best_overall"]["best_ari"],
             "best_method": clustering_data["best_overall"]["dim_reduction"],
-            "results_table": clustering_data["pipelines"],
+            "best_clustering_method": clustering_data["best_overall"]["config"].get(
+                "clustering", None
+            ),
+            "best_hdbscan_params": clustering_data["best_overall"]["config"].get(
+                "hdbscan_params", None
+            ),
+            "results_by_dim_reduction": {
+                dim: {
+                    "best_ari": data["best_ari"],
+                    "best_clustering": data["config"]["clustering"],
+                }
+                for dim, data in clustering_data["best_per_dim_reduction"].items()
+            },
         },
         "Q19_mlp": {
             "original_accuracy": mlp_data["summary"]["original_accuracy"],
             "best_reduced_accuracy": mlp_data["summary"]["best_reduced_accuracy"],
             "best_method": mlp_data["summary"]["best_reduced_method"],
+            "accuracy_drop_percent": (
+                mlp_data["summary"]["original_accuracy"]
+                - mlp_data["summary"]["best_reduced_accuracy"]
+            )
+            * 100,
+            "does_performance_suffer": mlp_data["summary"]["accuracy_improvement"] < 0,
+            "is_drop_significant": abs(mlp_data["summary"]["accuracy_improvement"])
+            > 0.05,
+            "all_reduced_accuracies": {
+                method: data["test_accuracy"]
+                for method, data in mlp_data["reduced_features"].items()
+            },
+            "best_clustering_dim": clustering_data["best_overall"]["dim_reduction"],
+            "best_clustering_ari": clustering_data["best_overall"]["best_ari"],
         },
     }
 
