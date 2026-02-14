@@ -300,11 +300,11 @@
       "n_components": 50,
       "n_clusters": 5,
       "metrics": {
-        "homogeneity": 0.28116519030834247,
-        "completeness": 0.31164037222124175,
-        "v_measure": 0.29561944118557515,
-        "ari": 0.18074384341321764,
-        "ami": 0.29460658382210114
+        "homogeneity": 0.28441522391012153,
+        "completeness": 0.31830235226201753,
+        "v_measure": 0.300406154951301,
+        "ari": 0.1891474516073347,
+        "ami": 0.2993953133994864
       }
     },
     {
@@ -313,11 +313,11 @@
       "n_components": 50,
       "n_clusters": 5,
       "metrics": {
-        "homogeneity": 0.3098326168394184,
-        "completeness": 0.3408817869214632,
-        "v_measure": 0.32461643837711895,
-        "ari": 0.20878417036385877,
-        "ami": 0.32364838551267533
+        "homogeneity": 0.3150056267708543,
+        "completeness": 0.34396768767017327,
+        "v_measure": 0.32885021189476693,
+        "ari": 0.23364842970484592,
+        "ami": 0.3278921546538426
       }
     },
     {
@@ -328,14 +328,14 @@
         "min_cluster_size": 5,
         "min_samples": 3
       },
-      "n_clusters": 4,
-      "noise_count": 1020,
+      "n_clusters": 2,
+      "noise_count": 818,
       "metrics": {
-        "homogeneity": 0.008865689553877858,
-        "completeness": 0.2560631487004264,
-        "v_measure": 0.017138008814180573,
-        "ari": 0.0017247281661974692,
-        "ami": 0.013857405639247929
+        "homogeneity": 0.0027171919995736403,
+        "completeness": 0.2501246657731464,
+        "v_measure": 0.005375982811720603,
+        "ari": 0.00047845651331674305,
+        "ami": 0.004322057787510653
       }
     },
     {
@@ -346,14 +346,14 @@
         "min_cluster_size": 10,
         "min_samples": 3
       },
-      "n_clusters": 2,
-      "noise_count": 2613,
+      "n_clusters": 3,
+      "noise_count": 2694,
       "metrics": {
-        "homogeneity": 0.0230671858567786,
-        "completeness": 0.4019082620702017,
-        "v_measure": 0.043630250282793555,
-        "ari": 0.011479194888753775,
-        "ami": 0.04110059893023584
+        "homogeneity": 0.035817175282064455,
+        "completeness": 0.36004326100806067,
+        "v_measure": 0.0651529246494365,
+        "ari": 0.01571334795660227,
+        "ami": 0.059828431493715827
       }
     },
     {
@@ -448,18 +448,18 @@
       }
     },
     "autoencoder": {
-      "best_ari": 0.20878417036385877,
+      "best_ari": 0.23364842970484592,
       "config": {
         "dim_reduction": "autoencoder",
         "clustering": "agglomerative",
         "n_components": 50,
         "n_clusters": 5,
         "metrics": {
-          "homogeneity": 0.3098326168394184,
-          "completeness": 0.3408817869214632,
-          "v_measure": 0.32461643837711895,
-          "ari": 0.20878417036385877,
-          "ami": 0.32364838551267533
+          "homogeneity": 0.3150056267708543,
+          "completeness": 0.34396768767017327,
+          "v_measure": 0.32885021189476693,
+          "ari": 0.23364842970484592,
+          "ami": 0.3278921546538426
         }
       }
     }

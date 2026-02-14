@@ -362,6 +362,47 @@ def apply_dimensionality_reduction(X, method, n_components=50, random_state=42):
             X = svd_preprocess.fit_transform(X)
         umap_model = umap.UMAP(n_components=n_components, random_state=random_state)
         return umap_model.fit_transform(X)
+    elif method == "autoencoder":
+        if hasattr(X, "toarray"):
+            X = X.toarray()
+        X = np.array(X, dtype=np.float32)
+        input_dim = X.shape[1]
+
+        class Autoencoder(torch.nn.Module):
+            def __init__(self, input_dim, latent_dim):
+                super().__init__()
+                self.encoder = torch.nn.Linear(input_dim, latent_dim)
+                self.decoder = torch.nn.Linear(latent_dim, input_dim)
+
+            def forward(self, x):
+                encoded = self.encoder(x)
+                decoded = self.decoder(encoded)
+                return decoded
+
+            def encode(self, x):
+                return self.encoder(x)
+
+        model = Autoencoder(input_dim, n_components)
+        optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
+        criterion = torch.nn.MSELoss()
+
+        X_tensor = torch.tensor(X)
+        dataset = torch.utils.data.TensorDataset(X_tensor)
+        loader = torch.utils.data.DataLoader(dataset, batch_size=32, shuffle=True)
+
+        model.train()
+        for epoch in range(50):
+            for (batch,) in loader:
+                optimizer.zero_grad()
+                output = model(batch)
+                loss = criterion(output, batch)
+                loss.backward()
+                optimizer.step()
+
+        model.eval()
+        with torch.no_grad():
+            encoded = model.encode(X_tensor).numpy()
+        return encoded
     else:
         raise ValueError(f"Unknown dimensionality reduction method: {method}")
 
