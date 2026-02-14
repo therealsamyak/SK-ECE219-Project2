@@ -5,6 +5,7 @@ from pathlib import Path
 import json
 from collections import Counter
 import torch
+from transformers import AutoModelForCausalLM, AutoTokenizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sentence_transformers import SentenceTransformer
 from joblib import Memory
@@ -20,6 +21,7 @@ from sklearn.metrics import (
 from sklearn.neighbors import kneighbors_graph
 import umap
 import matplotlib.pyplot as plt
+from scipy.stats import entropy
 
 
 def setup_logging():
@@ -111,6 +113,97 @@ def get_device():
         return "mps"
     else:
         return "cpu"
+
+
+def setup_qwen_model():
+    """
+    Load Qwen3-4B-Instruct model for LLM-based cluster labeling.
+
+    Returns:
+        tuple: (model, tokenizer) or (None, None) if loading fails
+    """
+    logger = logging.getLogger(__name__)
+    model_name = "Qwen/Qwen3-4B-Instruct-2507"
+
+    try:
+        device = get_device()
+        logger.info(f"Loading Qwen model on {device}...")
+
+        tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
+        model = AutoModelForCausalLM.from_pretrained(
+            model_name,
+            torch_dtype=torch.float16 if device in ["cuda", "mps"] else torch.float32,
+            device_map="auto",
+            trust_remote_code=True,
+        )
+        model.eval()
+        logger.info("Qwen model loaded successfully")
+        return model, tokenizer
+    except Exception as e:
+        logger.warning(f"Failed to load Qwen model: {e}")
+        logger.warning("LLM labeling will be skipped")
+        return None, None
+
+
+def generate_llm_cluster_label(top_terms, exemplars, review_type, model, tokenizer):
+    """
+    Generate a cluster label using the Qwen LLM.
+
+    Args:
+        top_terms: List of dicts with 'term' and 'score' keys
+        exemplars: List of dicts with 'review' key
+        review_type: 'positive' or 'negative'
+        model: The loaded Qwen model
+        tokenizer: The loaded Qwen tokenizer
+
+    Returns:
+        str: Generated label or None if generation fails
+    """
+    logger = logging.getLogger(__name__)
+
+    if model is None or tokenizer is None:
+        return None
+
+    # Format top terms
+    terms_str = ", ".join([t["term"] for t in top_terms[:5]])
+
+    # Format exemplars (truncate to avoid long prompts)
+    exemplar_texts = []
+    for ex in exemplars[:2]:
+        text = ex.get("review", "")[:200]
+        exemplar_texts.append(f'"{text}..."')
+    exemplars_str = "\n".join(exemplar_texts)
+
+    prompt = f"""I have a cluster of {review_type} reviews from a video game.
+Top terms: {terms_str}
+Example reviews:
+{exemplars_str}
+
+Generate a short 3-6 word label describing this cluster's theme.
+Label:"""
+
+    try:
+        # Use Qwen's chat template format
+        prompt_with_tokens = (
+            f"<|im_start|>user\n{prompt.strip()}<|im_end|>\n<|im_start|>assistant\n"
+        )
+        inputs = tokenizer(prompt_with_tokens, return_tensors="pt").to(model.device)
+
+        with torch.no_grad():
+            outputs = model.generate(
+                **inputs, do_sample=False, num_beams=1, max_new_tokens=20
+            )
+
+        # Decode only newly generated tokens
+        generated_ids = outputs[0][inputs.input_ids.shape[1] :]
+        response = tokenizer.decode(generated_ids, skip_special_tokens=True)
+        label = response.strip()
+
+        logger.info(f"Generated LLM label for {review_type} cluster: {label}")
+        return label
+    except Exception as e:
+        logger.warning(f"Failed to generate LLM label: {e}")
+        return None
 
 
 def run_task1_1():
@@ -261,30 +354,37 @@ def apply_dimensionality_reduction(X, method, n_components=50, random_state=42):
         svd = TruncatedSVD(n_components=n_components, random_state=random_state)
         return svd.fit_transform(X)
     elif method == "umap":
-        umap_model = umap.UMAP(n_components=n_components, random_state=random_state)
         if hasattr(X, "toarray"):
             X = X.toarray()
+        X = np.array(X)
+        if X.shape[1] > 200:
+            svd_preprocess = TruncatedSVD(n_components=200, random_state=random_state)
+            X = svd_preprocess.fit_transform(X)
+        umap_model = umap.UMAP(n_components=n_components, random_state=random_state)
         return umap_model.fit_transform(X)
     else:
         raise ValueError(f"Unknown dimensionality reduction method: {method}")
 
 
-def run_clustering_pipeline(X, method, n_clusters=2, random_state=42):
+def run_clustering_pipeline(
+    X, method, n_clusters=2, random_state=42, hdbscan_min_size=2
+):
     """
-    Run a clustering algorithm on the data.
+    Run a clustering algorithm on data.
 
     Args:
         X: Input data (dense array)
         method: Clustering method - "kmeans", "agglomerative", or "hdbscan"
         n_clusters: Number of clusters (ignored for HDBSCAN)
         random_state: Random seed for reproducibility
+        hdbscan_min_size: Minimum cluster size for HDBSCAN (default: 2)
 
     Returns:
-        Cluster labels (numpy array)
+        Tuple of (cluster_labels, model) where cluster_labels is numpy array and model is the fitted clustering model
     """
     if method == "kmeans":
         model = KMeans(n_clusters=n_clusters, random_state=random_state, n_init=10)
-        return model.fit_predict(X)
+        return model.fit_predict(X), model
     elif method == "agglomerative":
         # Use kneighbors_graph for efficiency with linkage="ward"
         k = min(50, X.shape[0] // 10) if X.shape[0] > 100 else 10
@@ -294,11 +394,11 @@ def run_clustering_pipeline(X, method, n_clusters=2, random_state=42):
         model = AgglomerativeClustering(
             n_clusters=n_clusters, linkage="ward", connectivity=conn
         )
-        return model.fit_predict(X)
+        return model.fit_predict(X), model
     elif method == "hdbscan":
         # Use min_cluster_size=2 initially, can adjust if noise dominates
-        model = HDBSCAN(min_cluster_size=2, min_samples=5)
-        return model.fit_predict(X)
+        model = HDBSCAN(min_cluster_size=hdbscan_min_size, min_samples=5)
+        return model.fit_predict(X), model
     else:
         raise ValueError(f"Unknown clustering method: {method}")
 
@@ -402,6 +502,8 @@ def run_task1_2(data=None):
         {"dim_reduction": "umap", "clustering": "kmeans"},
         {"dim_reduction": "umap", "clustering": "agglomerative"},
         {"dim_reduction": "none", "clustering": "hdbscan"},
+        {"dim_reduction": "svd", "clustering": "hdbscan"},
+        {"dim_reduction": "umap", "clustering": "hdbscan"},
     ]
 
     results = {
@@ -426,7 +528,7 @@ def run_task1_2(data=None):
         logger.info(f"  Reduced shape: {X_reduced.shape}")
 
         logger.info(f"  Running {cluster_method.upper()} clustering...")
-        cluster_labels = run_clustering_pipeline(
+        cluster_labels, _ = run_clustering_pipeline(
             X_reduced, cluster_method, n_clusters=2
         )
 
@@ -470,7 +572,7 @@ def run_task1_2(data=None):
 
         n_clusters = 2 if cluster_method != "hdbscan" else None
         logger.info(f"  Running {cluster_method.upper()} clustering...")
-        cluster_labels = run_clustering_pipeline(
+        cluster_labels, _ = run_clustering_pipeline(
             X_reduced, cluster_method, n_clusters=n_clusters
         )
 
@@ -747,7 +849,7 @@ def plot_pca_visualizations(use_clustering_results_if_available=True):
     tfidf_reduced = apply_dimensionality_reduction(
         tfidf_matrix, tfidf_dim_red, n_components=50
     )
-    tfidf_cluster_labels = run_clustering_pipeline(
+    tfidf_cluster_labels, _ = run_clustering_pipeline(
         tfidf_reduced, tfidf_cluster_method, n_clusters=2
     )
     unique_tfidf, counts_tfidf = np.unique(tfidf_cluster_labels, return_counts=True)
@@ -759,7 +861,7 @@ def plot_pca_visualizations(use_clustering_results_if_available=True):
     minilm_reduced = apply_dimensionality_reduction(
         minilm_embeddings, minilm_dim_red, n_components=50
     )
-    minilm_cluster_labels = run_clustering_pipeline(
+    minilm_cluster_labels, _ = run_clustering_pipeline(
         minilm_reduced, minilm_cluster_method, n_clusters=2
     )
     unique_minilm, counts_minilm = np.unique(minilm_cluster_labels, return_counts=True)
@@ -1097,6 +1199,34 @@ def compute_genre_purity(game_df, labels, cluster_id):
     return games_with_common / len(all_genres)
 
 
+def compute_genre_entropy(game_df, labels, cluster_id):
+    """Compute genre entropy using Shannon entropy formula (natural log)."""
+    cluster_games = game_df[labels == cluster_id]
+    if len(cluster_games) == 0:
+        return 0.0
+
+    all_genres = []
+    for genres_str in cluster_games["genres"]:
+        if pd.notna(genres_str):
+            all_genres.append(set([g.strip() for g in str(genres_str).split(",")]))
+
+    if not all_genres:
+        return 0.0
+
+    genre_counter = Counter()
+    for genre_set in all_genres:
+        genre_counter.update(genre_set)
+
+    if not genre_counter:
+        return 0.0
+
+    genre_counts = list(genre_counter.values())
+    total = sum(genre_counts)
+    probabilities = [count / total for count in genre_counts]
+
+    return entropy(probabilities)
+
+
 def run_task2_2(game_data=None):
     """
     Task 2.2: Cluster games with default pipelines.
@@ -1127,6 +1257,13 @@ def run_task2_2(game_data=None):
         {"rep": "minilm", "dim": "none", "cluster": "hdbscan"},
         {"rep": "tfidf", "dim": "svd", "cluster": "kmeans"},
         {"rep": "tfidf", "dim": "svd", "cluster": "agglomerative"},
+        {"rep": "minilm", "dim": "autoencoder", "cluster": "kmeans"},
+        {"rep": "minilm", "dim": "autoencoder", "cluster": "agglomerative"},
+        {"rep": "tfidf", "dim": "autoencoder", "cluster": "kmeans"},
+        {"rep": "tfidf", "dim": "autoencoder", "cluster": "agglomerative"},
+        {"rep": "minilm", "dim": "svd", "cluster": "hdbscan"},
+        {"rep": "minilm", "dim": "umap", "cluster": "hdbscan"},
+        {"rep": "minilm", "dim": "autoencoder", "cluster": "hdbscan"},
     ]
 
     results = []
@@ -1146,8 +1283,12 @@ def run_task2_2(game_data=None):
             X_reduced = X if isinstance(X, np.ndarray) else X.toarray()
 
         n_clusters = 5 if pipeline["cluster"] != "hdbscan" else None
+        hdbscan_min_size = 5 if pipeline["cluster"] == "hdbscan" else 2
         labels, model = run_clustering_pipeline(
-            X_reduced, pipeline["cluster"], n_clusters=n_clusters
+            X_reduced,
+            pipeline["cluster"],
+            n_clusters=n_clusters,
+            hdbscan_min_size=hdbscan_min_size,
         )
 
         unique_labels = np.unique(labels)
@@ -1160,12 +1301,14 @@ def run_task2_2(game_data=None):
                 continue
             top_genres, _ = get_top_genres_for_cluster(game_df, labels, label)
             purity = compute_genre_purity(game_df, labels, label)
+            entropy_value = compute_genre_entropy(game_df, labels, label)
             cluster_details.append(
                 {
                     "cluster_id": int(label),
                     "size": int((labels == label).sum()),
                     "top_genres": top_genres,
                     "purity": float(purity),
+                    "entropy": float(entropy_value),
                 }
             )
 
@@ -1381,6 +1524,16 @@ def run_task3_2():
         )
 
     results = {}
+    llm_examples = []
+
+    qwen_model, qwen_tokenizer = setup_qwen_model()
+    llm_prompt_template = """I have a cluster of {review_type} reviews from a video game.
+Top terms: {top_terms}
+Example reviews:
+{exemplars}
+
+Generate a short 3-6 word label describing this cluster's theme.
+Label:"""
 
     for review_type, df in [("positive", positive_df), ("negative", negative_df)]:
         logger.info(f"\nProcessing {review_type.upper()} reviews")
@@ -1417,14 +1570,39 @@ def run_task3_2():
                 reviews, embeddings, labels, cluster_id, n_exemplars=2
             )
 
-            cluster_analysis.append(
-                {
-                    "cluster_id": cluster_id,
-                    "size": len(cluster_reviews),
-                    "top_terms": top_terms,
-                    "exemplars": exemplars,
-                }
+            llm_label = generate_llm_cluster_label(
+                top_terms, exemplars, review_type, qwen_model, qwen_tokenizer
             )
+
+            if llm_label and len(llm_examples) < 6:
+                terms_str = ", ".join([t["term"] for t in top_terms[:5]])
+                exemplar_texts = [ex.get("review", "")[:200] for ex in exemplars[:2]]
+                llm_examples.append(
+                    {
+                        "review_type": review_type,
+                        "cluster_id": cluster_id,
+                        "prompt": llm_prompt_template.format(
+                            review_type=review_type,
+                            top_terms=terms_str,
+                            exemplars="\n".join([f'"{e}..."' for e in exemplar_texts]),
+                        ),
+                        "response": llm_label,
+                    }
+                )
+
+            cluster_info = {
+                "cluster_id": cluster_id,
+                "size": len(cluster_reviews),
+                "top_terms": top_terms,
+                "exemplars": exemplars,
+            }
+            if llm_label:
+                cluster_info["llm_label"] = llm_label
+                cluster_info["short_label"] = llm_label
+            else:
+                short_label = " ".join([t["term"] for t in top_terms[:3]])
+                cluster_info["short_label"] = short_label
+            cluster_analysis.append(cluster_info)
 
         results[review_type] = {
             "n_reviews": len(reviews),
@@ -1434,6 +1612,9 @@ def run_task3_2():
             "hdb_labels": hdb_labels.tolist(),
             "hdbscan_noise": noise_count,
         }
+
+    results["llm_prompt_template"] = llm_prompt_template
+    results["llm_examples"] = llm_examples
 
     with open(output_dir / "task3_2_results.json", "w") as f:
         json.dump(results, f, indent=2, default=str)
