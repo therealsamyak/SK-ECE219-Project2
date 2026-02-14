@@ -56,7 +56,9 @@
             "review": "MONKE APPROVES\u2592\u2592\u2592\u2592\u2592\u2584\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2584\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2584\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2584\u2592\u2592\u2592\u2592\u2592\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2592\u2592\u2592\u2590\u2588\u2588\u2588\u2580\u2580\u2580\u2580\u2580\u2588\u2588\u2580\u2580\u2580\u2580\u2580\u2588\u2588\u2588\u258c\u2592\u2592\u2588\u2588\u2588\u2592\u2592\u258c\u25a0\u2590\u2592\u2592\u2592\u2592\u258c\u25a0\u2590\u2592\u2592\u2588\u2588\u2588\u2592\u2592\u2590\u2588\u2588\u2584\u2592\u2580\u2580\u2580\u2592\u2592\u2592\u2592\u2580\u2580\u2580\u2592\u2584\u2588\u2588\u258c\u2592\u2592\u2592\u2580\u2588\u2588\u2588\u2588\u2592\u2584\u2584\u2592\u2592\u2584\u2584\u2592\u2588\u2588\u2588\u2588\u2580\u2592\u2592\u2592\u2592\u2590\u2588\u2588\u2588\u2592\u2592\u2592\u2580\u2592\u2592\u2580\u2592\u2592\u2592\u2588\u2588\u2588\u258c\u2592\u2592\u2592\u2592\u2588\u2588\u2588\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2588\u2588\u2588\u2592\u2592\u2592\u2592\u2592\u2588\u2588\u2592\u2592\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2592\u2592\u2588\u2588\u2592\u2592\u2592\u2592\u2592\u2592\u2590\u2588\u2588\u2584\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2584\u2588\u2588\u258c\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2580\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2580\u2592\u2592\u2592\u2592",
             "distance": 0.6073099970817566
           }
-        ]
+        ],
+        "llm_label": "Monke Embrace & Approval",
+        "short_label": "Monke Embrace & Approval"
       },
       {
         "cluster_id": 1,
@@ -112,7 +114,9 @@
             "review": "Black Myth Wukong is an absolute masterclass of a game. All the hype, all the praise, all the positive buzz surrounding this game...they're absolutely deserved and this is hands down, one of THE best games of this generation, not just this year. The combat, fluidity of animations, the level and boss design, the intricate level and environmental design, all the different characters and enemies, they're all very unique, varied and superbly crafted. When you take control of the Monkey King (Sun Wuk...",
             "distance": 0.5505281686782837
           }
-        ]
+        ],
+        "llm_label": "Hype and Praise for Black Myth: Wukong",
+        "short_label": "Hype and Praise for Black Myth: Wukong"
       },
       {
         "cluster_id": 2,
@@ -168,7 +172,9 @@
             "review": "---{ Graphics }---\u2611 You forget what reality is\u2610 Beautiful\u2610 Good\u2610 Decent\u2610 Bad\u2610 Don\u2018t look too long at it\u2610 MS-DOS---{ Gameplay }---\u2611 Very good\u2610 Good\u2610 It's just gameplay\u2610 Mehh\u2610 Watch paint dry instead\u2610 Just don't---{ Audio }---\u2611 Eargasm\u2610 Very good\u2610 Good\u2610 Not too bad\u2610 Bad\u2610 I'm now deaf---{ Audience }---\u2610 Kids\u2611 Teens\u2611 Adults\u2610 Grandma---{ PC Requirements }---\u2610 Check if you can run paint\u2610 Potato\u2610 Decent\u2611 Fast\u2610 Rich boi\u2610 Ask NASA if they have a spare computer---{ Game Size }---\u2610 Floppy Disk\u2610 Old Fashion...",
             "distance": 0.1670578122138977
           }
-        ]
+        ],
+        "llm_label": "Grind and repetitive gameplay",
+        "short_label": "Grind and repetitive gameplay"
       },
       {
         "cluster_id": 3,
@@ -224,7 +230,9 @@
             "review": "\u201cWisdom lies in the balance of wit and humility.\u201d ~ Sun Wukong.I've been waiting for the game ever since it's 1st reveal and i was hooked instantly, My boyfriend gifted me this game as my birthday present... I couldn't be happier.About the game : Inshort the game is cinema. The developers put soul into this game which many games now days lack, the soundtracks, visual setting, bosses everything is so good so far.It surely has some performance issues like it crashes sometimes but it is very rare a...",
             "distance": 0.6196524500846863
           }
-        ]
+        ],
+        "llm_label": "Positive gameplay experience",
+        "short_label": "Positive gameplay experience"
       },
       {
         "cluster_id": 4,
@@ -280,7 +288,9 @@
             "review": "Haxy\u0439 \"Sweet Baby Inc\"",
             "distance": 0.8304116129875183
           }
-        ]
+        ],
+        "llm_label": "Sweet Baby Game Reference",
+        "short_label": "Sweet Baby Game Reference"
       }
     ],
     "kmeans_labels": [
@@ -297,12 +307,12 @@
     ],
     "hdb_labels": [
       0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, -1, 1, 1, 0, 0, 0, 1, 0, 0,
-      0, -1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, -1,
-      0, 0, 0, 0, 0, 1, -1, 1, 0, 0, -1, 0, -1, 0, 0, 0, -1, 0, -1, 0, -1, -1,
-      -1, -1, 0, 0, 0, -1, 0, 0, 1, 0, 0, 0, 1, -1, 1, 0, 0, 0, 0, -1, 0, -1, 0,
-      0, 0, 1, 0, 0, 0, 0
+      0, -1, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, 0, 0, 0, 0, 0, 0, -1, 0, 1, 0, 0,
+      -1, 0, 0, 0, 0, 0, 1, -1, 1, 0, 0, -1, 0, -1, 0, 0, 0, -1, 0, -1, 0, -1,
+      -1, -1, -1, 0, 0, 0, -1, -1, 0, 1, 0, 0, 0, 1, -1, 1, 0, 0, 0, 0, -1, 0,
+      -1, 0, 0, -1, 1, 0, 0, 0, 0
     ],
-    "hdbscan_noise": 17
+    "hdbscan_noise": 21
   },
   "negative": {
     "n_reviews": 100,
@@ -361,7 +371,9 @@
             "review": "Unlike most people who reviewed this game after 30 minutes and declared it GOTY, i actually played the game.TLDR: Fun at the start, get repetitive really fast and overstays its welcome, with a bunch of glitches and graphical errors.Graphics and performance: Beautiful, but also really buggy, crashed multiple times, and when moving my character had a constant silhouette of artifacts which were really distracting. At least it had very little frame drops most of the time on a XTX7900 and an AMD 7800...",
             "distance": 0.5979099869728088
           }
-        ]
+        ],
+        "llm_label": "Difficult and repetitive gameplay",
+        "short_label": "Difficult and repetitive gameplay"
       },
       {
         "cluster_id": 1,
@@ -417,7 +429,9 @@
             "review": "maybe i am missing the point but i found this game boring i am sorry but i don't see what all the hype is about its just a button bashing repetitive  hack and slash not for me sorry but i refunded it ,don't want the hate but its nothing like elden ring  its boring",
             "distance": 0.7884731292724609
           }
-        ]
+        ],
+        "llm_label": "Boring, repetitive, misogynistic criticism",
+        "short_label": "Boring, repetitive, misogynistic criticism"
       },
       {
         "cluster_id": 2,
@@ -473,7 +487,9 @@
             "review": "Not really sure what these purchased reviews are all about. Game runs terribly.1440p, Cinematic, 4090, 32GB Ram, 13900kConstant stutters.",
             "distance": 0.6267608404159546
           }
-        ]
+        ],
+        "llm_label": "Performance Issues",
+        "short_label": "Performance Issues"
       },
       {
         "cluster_id": 3,
@@ -529,7 +545,9 @@
             "review": "Gameplay is boring. Cutscenes and graphics are very nice, story seems interesting, but it's not enough to carry the game for me. I could accept having invisible walls and very linear level design if the combat had more \"meat\" to it, but it just doesn't. I'd also probably be a little more accepting of its shortcomings if it didn't have a $60 price tag.This feels like a cinematic AAA game made by an indie studio. Fortunately, it's already successful enough for the devs to go on to make more games....",
             "distance": 0.6302059888839722
           }
-        ]
+        ],
+        "llm_label": "Boring gameplay, lifeless world",
+        "short_label": "Boring gameplay, lifeless world"
       },
       {
         "cluster_id": 4,
@@ -585,7 +603,9 @@
             "review": "I simply do not understand how this game is overwhelmingly positive.  It feels, in many places, extremely amateurish in fact.Level design is objectively terrible.  Huge open maps that feel procedurally generated they're so bland.  The game is positively littered with invisible walls which makes exploring a tedious mess.  Running down a path only to find that THIS one ends in an invisible wall while THAT one allows you to continue walking is shockingly awful.Levels are massive open spaces with a ...",
             "distance": 0.6176754832267761
           }
-        ]
+        ],
+        "llm_label": "Monotonous, Amateurish Gameplay",
+        "short_label": "Monotonous, Amateurish Gameplay"
       }
     ],
     "kmeans_labels": [
@@ -601,12 +621,51 @@
       0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 4, 0, 0, 4, 0, 4, 4, 4, 0, 0, 4
     ],
     "hdb_labels": [
-      1, 2, 1, 2, -1, -1, -1, -1, -1, 1, -1, -1, 1, 1, -1, -1, 1, -1, 1, 0, 1,
-      1, -1, -1, -1, -1, -1, -1, -1, -1, 1, -1, -1, 1, 2, 1, -1, -1, 1, -1, 1,
-      1, 1, -1, 2, -1, 1, 1, 2, -1, -1, 1, 1, -1, -1, -1, -1, -1, -1, 2, 1, -1,
-      -1, -1, -1, -1, 1, -1, -1, 0, 0, 1, 1, 1, 1, -1, 1, 1, -1, -1, -1, 1, -1,
-      -1, 1, 1, 1, 1, -1, 0, -1, 1, 0, 1, 0, 0, -1, -1, -1, -1
+      0, 1, 0, 1, -1, -1, -1, -1, -1, 0, -1, -1, 0, -1, -1, -1, 0, -1, 0, -1, 0,
+      0, -1, -1, -1, -1, -1, -1, -1, -1, 0, -1, -1, 0, 1, 0, -1, -1, -1, -1, 0,
+      0, -1, -1, 1, -1, -1, 0, 1, -1, -1, -1, 0, -1, -1, -1, -1, -1, -1, 1, -1,
+      -1, -1, -1, -1, -1, 0, -1, -1, -1, -1, 0, 0, 0, 0, -1, -1, -1, -1, -1, -1,
+      -1, -1, -1, 0, 0, -1, 0, -1, -1, -1, -1, -1, 0, -1, -1, -1, -1, -1, -1
     ],
-    "hdbscan_noise": 52
-  }
+    "hdbscan_noise": 70
+  },
+  "llm_prompt_template": "I have a cluster of {review_type} reviews from a video game.\nTop terms: {top_terms}\nExample reviews:\n{exemplars}\n\nGenerate a short 3-6 word label describing this cluster's theme.\nLabel:",
+  "llm_examples": [
+    {
+      "review_type": "positive",
+      "cluster_id": 0,
+      "prompt": "I have a cluster of positive reviews from a video game.\nTop terms: monke, reject, monke approves, approves, embrace monke\nExample reviews:\n\"REJECT MODERNITYRETURN TO MONKE...\"\n\"MONKE APPROVES\u2592\u2592\u2592\u2592\u2592\u2584\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2584\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2584\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2584\u2592\u2592\u2592\u2592\u2592\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2592\u2592\u2592\u2590\u2588\u2588\u2588\u2580\u2580\u2580\u2580\u2580\u2588\u2588\u2580\u2580\u2580\u2580\u2580\u2588\u2588\u2588\u258c\u2592\u2592\u2588\u2588\u2588\u2592\u2592\u258c\u25a0\u2590\u2592\u2592\u2592\u2592\u258c\u25a0\u2590\u2592\u2592\u2588\u2588\u2588\u2592\u2592\u2590\u2588\u2588\u2584\u2592\u2580\u2580\u2580\u2592\u2592\u2592\u2592\u2580\u2580\u2580\u2592\u2584\u2588\u2588\u258c\u2592\u2592\u2592\u2580\u2588\u2588\u2588\u2588\u2592\u2584\u2584\u2592\u2592\u2584\u2584\u2592\u2588\u2588\u2588\u2588\u2580\u2592\u2592\u2592\u2592\u2590\u2588\u2588\u2588\u2592\u2592\u2592\u2580\u2592\u2592\u2580\u2592\u2592\u2592\u2588\u2588\u2588\u258c\u2592\u2592\u2592\u2592\u2588\u2588\u2588\u2592\u2592\u2592\u2592\u2592...\"\n\nGenerate a short 3-6 word label describing this cluster's theme.\nLabel:",
+      "response": "Monke Embrace & Approval"
+    },
+    {
+      "review_type": "positive",
+      "cluster_id": 1,
+      "prompt": "I have a cluster of positive reviews from a video game.\nTop terms: game, 10, wukong, chinese, like\nExample reviews:\n\"Black Myth: Wukong was released under a lot of anticipation after gameplay showcases had been shown over the past few years, leading people to even question if the game would really come out like that...\"\n\"Black Myth Wukong is an absolute masterclass of a game. All the hype, all the praise, all the positive buzz surrounding this game...they're absolutely deserved and this is hands down, one of THE best ...\"\n\nGenerate a short 3-6 word label describing this cluster's theme.\nLabel:",
+      "response": "Hype and Praise for Black Myth: Wukong"
+    },
+    {
+      "review_type": "positive",
+      "cluster_id": 2,
+      "prompt": "I have a cluster of positive reviews from a video game.\nTop terms: good, grind, just, bad, 10\nExample reviews:\n\"---{ Graphics }---\u2611 You forget what reality is\u2610 Beautiful\u2610 Good\u2610 Decent\u2610 Bad\u2610 Don\u2018t look too long at it\u2610 MS-DOS---{ Gameplay }---\u2611 Very good\u2610 Good\u2610 It's just gameplay\u2610 Mehh\u2610 Watch paint dry instead\u2610 J...\"\n\"---{ Graphics }---\u2611 You forget what reality is\u2610 Beautiful\u2610 Good\u2610 Decent\u2610 Bad\u2610 Don\u2018t look too long at it\u2610 MS-DOS---{ Gameplay }---\u2611 Very good\u2610 Good\u2610 It's just gameplay\u2610 Mehh\u2610 Watch paint dry instead\u2610 J...\"\n\nGenerate a short 3-6 word label describing this cluster's theme.\nLabel:",
+      "response": "Grind and repetitive gameplay"
+    },
+    {
+      "review_type": "positive",
+      "cluster_id": 3,
+      "prompt": "I have a cluster of positive reviews from a video game.\nTop terms: game, like, games, just, good\nExample reviews:\n\"This game has the big awesome set pieces and aesthetic from the old school God of War games, the core gameplay of a Soul-like (albeit a tad more forgiving), really sick and fast paced Sekiro / Bloodbo...\"\n\"\u201cWisdom lies in the balance of wit and humility.\u201d ~ Sun Wukong.I've been waiting for the game ever since it's 1st reveal and i was hooked instantly, My boyfriend gifted me this game as my birthday pre...\"\n\nGenerate a short 3-6 word label describing this cluster's theme.\nLabel:",
+      "response": "Positive gameplay experience"
+    },
+    {
+      "review_type": "positive",
+      "cluster_id": 4,
+      "prompt": "I have a cluster of positive reviews from a video game.\nTop terms: ign, sweet, sweet baby, baby, add\nExample reviews:\n\"\u203bThis game does not include Sweet Baby...\"\n\"Haxy\u0439 \"Sweet Baby Inc\"...\"\n\nGenerate a short 3-6 word label describing this cluster's theme.\nLabel:",
+      "response": "Sweet Baby Game Reference"
+    },
+    {
+      "review_type": "negative",
+      "cluster_id": 0,
+      "prompt": "I have a cluster of negative reviews from a video game.\nTop terms: game, boss, just, like, bosses\nExample reviews:\n\"Lots of Misleading reviews on here. The game is beyond difficult, not suitable for anyone less than a hardcore gamer. It is not open map and not explorable. Instead, you go through a linear style path...\"\n\"Unlike most people who reviewed this game after 30 minutes and declared it GOTY, i actually played the game.TLDR: Fun at the start, get repetitive really fast and overstays its welcome, with a bunch o...\"\n\nGenerate a short 3-6 word label describing this cluster's theme.\nLabel:",
+      "response": "Difficult and repetitive gameplay"
+    }
+  ]
 }
