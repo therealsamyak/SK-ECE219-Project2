@@ -1,0 +1,156 @@
+{
+  "selected_pokemon": [
+    "Cosmog",
+    "Ledyba",
+    "Zubat",
+    "Wynaut",
+    "Spoink",
+    "Makuhita",
+    "Quagsire",
+    "Meganium",
+    "Thievul",
+    "Espurr"
+  ],
+  "per_pokemon": [
+    {
+      "name": "Cosmog",
+      "actual_type1": "Psychic",
+      "actual_type2": "",
+      "top5_predictions": [
+        ["Psychic", 0.298],
+        ["Dark", 0.2018],
+        ["Fairy", 0.0775],
+        ["Normal", 0.069],
+        ["Poison", 0.0634]
+      ],
+      "top1_correct": true,
+      "top5_correct": true
+    },
+    {
+      "name": "Ledyba",
+      "actual_type1": "Bug",
+      "actual_type2": "Flying",
+      "top5_predictions": [
+        ["Bug", 0.3112],
+        ["Normal", 0.1951],
+        ["Steel", 0.113],
+        ["Fighting", 0.0804],
+        ["Dark", 0.0463]
+      ],
+      "top1_correct": true,
+      "top5_correct": true
+    },
+    {
+      "name": "Zubat",
+      "actual_type1": "Poison",
+      "actual_type2": "Flying",
+      "top5_predictions": [
+        ["Dark", 0.4154],
+        ["Flying", 0.1206],
+        ["Normal", 0.1076],
+        ["Fighting", 0.0727],
+        ["Fairy", 0.0571]
+      ],
+      "top1_correct": false,
+      "top5_correct": false
+    },
+    {
+      "name": "Wynaut",
+      "actual_type1": "Psychic",
+      "actual_type2": "",
+      "top5_predictions": [
+        ["Ice", 0.17],
+        ["Normal", 0.1569],
+        ["Psychic", 0.1424],
+        ["Water", 0.0794],
+        ["Ghost", 0.0657]
+      ],
+      "top1_correct": false,
+      "top5_correct": true
+    },
+    {
+      "name": "Spoink",
+      "actual_type1": "Psychic",
+      "actual_type2": "",
+      "top5_predictions": [
+        ["Normal", 0.1955],
+        ["Dark", 0.1364],
+        ["Psychic", 0.1033],
+        ["Poison", 0.0894],
+        ["Fighting", 0.0828]
+      ],
+      "top1_correct": false,
+      "top5_correct": true
+    },
+    {
+      "name": "Makuhita",
+      "actual_type1": "Fighting",
+      "actual_type2": "",
+      "top5_predictions": [
+        ["Fighting", 0.5041],
+        ["Dark", 0.1351],
+        ["Normal", 0.0885],
+        ["Psychic", 0.0652],
+        ["Electric", 0.0453]
+      ],
+      "top1_correct": true,
+      "top5_correct": true
+    },
+    {
+      "name": "Quagsire",
+      "actual_type1": "Water",
+      "actual_type2": "Ground",
+      "top5_predictions": [
+        ["Normal", 0.3342],
+        ["Water", 0.1244],
+        ["Psychic", 0.1138],
+        ["Ground", 0.0839],
+        ["Ice", 0.0755]
+      ],
+      "top1_correct": false,
+      "top5_correct": true
+    },
+    {
+      "name": "Meganium",
+      "actual_type1": "Grass",
+      "actual_type2": "",
+      "top5_predictions": [
+        ["Dragon", 0.3352],
+        ["Normal", 0.1118],
+        ["Grass", 0.1023],
+        ["Psychic", 0.0973],
+        ["Poison", 0.0776]
+      ],
+      "top1_correct": false,
+      "top5_correct": true
+    },
+    {
+      "name": "Thievul",
+      "actual_type1": "Dark",
+      "actual_type2": "",
+      "top5_predictions": [
+        ["Fire", 0.3742],
+        ["Dark", 0.3618],
+        ["Normal", 0.0686],
+        ["Fighting", 0.0616],
+        ["Poison", 0.0372]
+      ],
+      "top1_correct": false,
+      "top5_correct": true
+    },
+    {
+      "name": "Espurr",
+      "actual_type1": "Psychic",
+      "actual_type2": "",
+      "top5_predictions": [
+        ["Ghost", 0.2919],
+        ["Dark", 0.2674],
+        ["Psychic", 0.0907],
+        ["Normal", 0.0898],
+        ["Fairy", 0.0663]
+      ],
+      "top1_correct": false,
+      "top5_correct": true
+    }
+  ]
+}
