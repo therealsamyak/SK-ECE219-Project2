@@ -65,7 +65,7 @@ In order to inspect the high-dimensional features, t-SNE is a popular off-the-sh
 
 #### Answer
 
-Visualization file: `outputs/part2_tsne.png`
+Visualization file: [t-SNE plot](outputs/part2_tsne.png)
 
 t-SNE settings: 2 components, perplexity=30, 3,670 points projected to 2D
 
