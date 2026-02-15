@@ -96,7 +96,7 @@ Best ARI by dimensionality reduction method:
 | None (4096-dim) | Agglomerative | 0.2184 | n_clusters=5 |
 | SVD (50-dim) | K-Means | 0.1947 | n_clusters=5 |
 | UMAP (50-dim) | HDBSCAN | 0.5635 | min_cluster_size=50, min_samples=10 |
-| Autoencoder (50-dim) | Agglomerative | 0.2088 | n_clusters=5 |
+| Autoencoder (50-dim) | Agglomerative | 0.2336 | n_clusters=5 |
 
 HDBSCAN parameter grid (on UMAP-reduced features):
 
@@ -127,17 +127,17 @@ MLP test accuracy:
 | Feature Type | Dimension | Test Accuracy |
 |--------------|-----------|---------------|
 | Original VGG16 | 4,096 | 91.69% |
-| SVD (50-dim) | 50 | 90.87% |
-| UMAP (50-dim) | 50 | 81.06% |
-| Autoencoder (50-dim) | 50 | 88.28% |
+| SVD (50-dim) | 50 | 90.74% |
+| UMAP (50-dim) | 50 | 83.79% |
+| Autoencoder (50-dim) | 50 | 88.42% |
 
 Does performance suffer with reduced dimensions?
 
-Yes—all three reduced methods drop below the original 91.69%. SVD holds up best at 90.87%, autoencoder comes in at 88.28%, and UMAP falls to 81.06%.
+Yes, all three reduced methods drop below the original 91.69%. SVD holds up best at 90.74%, autoencoder comes in at 88.42%, and UMAP falls to 83.79%.
 
 Is the drop significant?
 
-For SVD, not really. We dropped from 4096 to 50 dimensions (a 98.8% reduction) and only lost 0.82 percentage points. That's surprisingly robust. The UMAP drop of 10.6 points is more notable—compressing that aggressively while preserving local neighborhoods seems to sacrifice classification performance.
+For SVD, not really. We dropped from 4096 to 50 dimensions (a 98.8% reduction) and only lost 0.95 percentage points. That's surprisingly robust. The UMAP drop of 7.9 points is more notable—compressing that aggressively while preserving local neighborhoods seems to sacrifice classification performance.
 
 Does this align with the clustering results?
 
@@ -145,8 +145,8 @@ Here's where it gets interesting:
 
 | Method | Clustering ARI | Classification Accuracy |
 |--------|----------------|------------------------|
-| SVD | 0.1947 (3rd place) | 90.87% (1st for reduced) |
-| UMAP | 0.5635 (1st place) | 81.06% (3rd for reduced) |
+| SVD | 0.1947 (3rd place) | 90.74% (1st for reduced) |
+| UMAP | 0.5635 (1st place) | 83.79% (3rd for reduced) |
 
 UMAP crushed clustering but struggled with classification. SVD did the opposite—mediocre clustering, excellent classification.
 
