@@ -10,7 +10,7 @@ Try to construct various text queries regarding types of Pokemon to find the rel
 
 **Query Template:** `"a photo of a {type} type Pokemon"`
 
-This template proved most effective because it follows natural language patterns that CLIP was trained on during its internet-scale pretraining. The phrase "a photo of" matches common image captioning formats, and "type Pokemon" provides clear semantic context.
+This worked best because CLIP was trained on internet-scale image-text pairs, and "a photo of" is how people typically caption images. The phrase "type Pokemon" gives clear context for what we're looking for.
 
 **Top 5 Retrieved Pokemon per Type:**
 
@@ -22,15 +22,15 @@ This template proved most effective because it follows natural language patterns
 | Dark | Umbreon, Darkrai, Pincurchin, Gastly, Salandit |
 | Dragon | Dragonite, Rhydon, Druddigon, Nidorino, Kingdra |
 
-**Visualizations:** `outputs/part3_q20_bug.png`, `outputs/part3_q20_fire.png`, `outputs/part3_q20_grass.png`, `outputs/part3_q20_dark.png`, `outputs/part3_q20_dragon.png`
+**Visualizations:** [Bug](outputs/part3_q20_bug.png), [Fire](outputs/part3_q20_fire.png), [Grass](outputs/part3_q20_grass.png), [Dark](outputs/part3_q20_dark.png), [Dragon](outputs/part3_q20_dragon.png)
 
-**Assessment of Query Effectiveness:**
+**How well the queries worked:**
 
-- **Bug, Fire, Grass:** These types show strong visual coherence. Fire-type Pokemon often have warm colors (red, orange, yellow) and flame-like features. Grass-types share green coloration and plant-like features. Bug-types have insectoid body structures that CLIP easily recognizes.
+Bug, Fire, and Grass types retrieved pretty coherent results. Fire Pokemon tend to have warm colors (red, orange, yellow) and flame-like features. Grass types are mostly green with plant-like body parts. Bug types have insectoid body structures that CLIP picks up on easily.
 
-- **Dark and Dragon:** These types show more variability. Dark-type visual identity is less consistent—it encompasses shadowy creatures (Umbreon, Darkrai) but also Pokemon that simply don't fit other categories. Dragon-types are visually diverse, ranging from serpentine (Kingdra) to dinosaur-like (Dragonite). The retrieval of Rhydon (Ground/Rock) and Nidorino (Poison) for Dragon queries suggests CLIP associates dragon-like features (horns, bulky bodies) beyond the official type classification.
+Dark and Dragon were trickier. Dark-type visual identity isn't very consistent—it includes shadowy creatures like Umbreon and Darkrai, but also Pokemon that just don't fit other categories. Dragon types are visually all over the place, from serpentine (Kingdra) to dinosaur-like (Dragonite). The fact that Rhydon (Ground/Rock) and Nidorino (Poison) showed up for Dragon queries suggests CLIP associates "dragon-like features" (horns, bulky bodies) with the Dragon type concept, regardless of the official type classification.
 
-The key difference is that Bug, Fire, and Grass have strong visual-semantic correlations that match common natural language descriptions, while Dark and Dragon are more abstract game mechanics concepts with weaker visual signatures.
+The main difference: Bug, Fire, and Grass have strong visual-semantic patterns that match common language descriptions. Dark and Dragon are more abstract game mechanics with weaker visual signatures.
 
 ---
 
@@ -44,30 +44,30 @@ Randomly select 10 Pokemon images from the dataset and use CLIP to find the most
 
 **Selected Pokemon:** Cosmog, Ledyba, Zubat, Wynaut, Spoink, Makuhita, Quagsire, Meganium, Thievul, Espurr
 
-**Visualization:** `outputs/part3_q21_predictions.png`
+**Visualization:** [predictions](outputs/part3_q21_predictions.png)
 
 **Detailed Predictions:**
 
 | Pokemon | Actual Type | Top-1 Prediction | Top-5 Predictions (with scores) | Top-1 Correct? | Top-5 Correct? |
 |---------|-------------|------------------|--------------------------------|----------------|----------------|
-| Cosmog | Psychic | Psychic (29.8%) | Psychic, Dark, Fairy, Normal, Poison | ✓ | ✓ |
-| Ledyba | Bug/Flying | Bug (31.1%) | Bug, Normal, Steel, Fighting, Dark | ✓ | ✓ |
-| Zubat | Poison/Flying | Dark (41.5%) | Dark, Flying, Normal, Fighting, Fairy | ✗ | ✗ |
-| Wynaut | Psychic | Ice (17.0%) | Ice, Normal, Psychic, Water, Ghost | ✗ | ✓ |
-| Spoink | Psychic | Normal (19.6%) | Normal, Dark, Psychic, Poison, Fighting | ✗ | ✓ |
-| Makuhita | Fighting | Fighting (50.4%) | Fighting, Dark, Normal, Psychic, Electric | ✓ | ✓ |
-| Quagsire | Water/Ground | Normal (33.4%) | Normal, Water, Psychic, Ground, Ice | ✗ | ✓ |
-| Meganium | Grass | Dragon (33.5%) | Dragon, Normal, Grass, Psychic, Poison | ✗ | ✓ |
-| Thievul | Dark | Dark (38.9%) | Dark, Normal, Psychic, Ghost, Fairy | ✓ | ✓ |
-| Espurr | Psychic | Psychic (29.7%) | Psychic, Normal, Ghost, Dark, Fairy | ✓ | ✓ |
+| Cosmog | Psychic | Psychic (29.8%) | Psychic, Dark, Fairy, Normal, Poison | Yes | Yes |
+| Ledyba | Bug/Flying | Bug (31.1%) | Bug, Normal, Steel, Fighting, Dark | Yes | Yes |
+| Zubat | Poison/Flying | Dark (41.5%) | Dark, Flying, Normal, Fighting, Fairy | No | No |
+| Wynaut | Psychic | Ice (17.0%) | Ice, Normal, Psychic, Water, Ghost | No | Yes |
+| Spoink | Psychic | Normal (19.6%) | Normal, Dark, Psychic, Poison, Fighting | No | Yes |
+| Makuhita | Fighting | Fighting (50.4%) | Fighting, Dark, Normal, Psychic, Electric | Yes | Yes |
+| Quagsire | Water/Ground | Normal (33.4%) | Normal, Water, Psychic, Ground, Ice | No | Yes |
+| Meganium | Grass | Dragon (33.5%) | Dragon, Normal, Grass, Psychic, Poison | No | Yes |
+| Thievul | Dark | Dark (38.9%) | Dark, Normal, Psychic, Ghost, Fairy | Yes | Yes |
+| Espurr | Psychic | Psychic (29.7%) | Psychic, Normal, Ghost, Dark, Fairy | Yes | Yes |
 
 **Summary:**
 - Top-1 Accuracy: 3/10 = 30%
 - Top-5 Accuracy: 9/10 = 90%
 
-**Observations:**
+**What went wrong:**
 
-CLIP struggles with visually ambiguous Pokemon. Zubat (Poison) gets misclassified as Dark—likely because its purple coloration and bat-like appearance match the Dark-type aesthetic more than Poison. Meganium (Grass) gets classified as Dragon, probably due to its large, dinosaur-like body and neck features that resemble dragon aesthetics. The model performs best when the Pokemon's visual appearance strongly correlates with its type (e.g., Makuhita's fighting stance, Ledyba's insect wings).
+CLIP struggles with visually ambiguous Pokemon. Zubat (Poison) gets misclassified as Dark—its purple coloration and bat-like appearance match the Dark-type look more than Poison. Meganium (Grass) gets called Dragon, probably because its large, dinosaur-like body and long neck look more "dragon" than "plant." The model does better when the Pokemon's appearance lines up clearly with its type (Makuhita's fighting stance, Ledyba's insect wings).
 
 ---
 
@@ -109,17 +109,17 @@ Using the ground-truth primary type label Type1, report Accuracy@1 and Hit@5 for
 
 **Worst Performing Types:** Flying (0.00%), Ground (3.70%), Psychic (10.87%), Poison (13.79%)
 
-**Why Acc@1 is Low but Hit@5 is Reasonably Good:**
+**Why Acc@1 is low but Hit@5 is decent:**
 
-The gap between Acc@1 (32.76%) and Hit@5 (73.34%) confirms that CLIP frequently retrieves the correct type in its top candidates but doesn't reliably rank it first. This happens because:
+The gap between Acc@1 (32.76%) and Hit@5 (73.34%) shows CLIP often finds the right type in its top candidates, but doesn't consistently rank it first. A few reasons:
 
-1. **Dual-encoder limitation:** CLIP independently encodes images and text into a shared space using contrastive learning. Predictions are made by nearest-neighbor similarity without any reasoning step.
+1. **Dual-encoder limitation:** CLIP encodes images and text independently into a shared space using contrastive learning. Predictions are made by nearest-neighbor similarity, without any reasoning step.
 
-2. **Visual ambiguity:** Many Pokemon share visual features across types. A Water-type might look similar to Ice-type (both blue), or a Grass-type might resemble Bug-type (both green with plant/insect features).
+2. **Visual ambiguity:** Many Pokemon share visual features across types. A Water-type might look similar to Ice-type (both blue), or a Grass-type might look like Bug-type (both green with plant/insect features).
 
-3. **Prompt sensitivity:** The template "a photo of a {type} type Pokemon" may not optimally separate visually similar type concepts in CLIP's embedding space.
+3. **Prompt sensitivity:** The template "a photo of a {type} type Pokemon" might not optimally separate visually similar type concepts in CLIP's embedding space.
 
-4. **Game mechanics vs. visual reality:** Pokemon types are game mechanics, not purely visual categories. Flying-type Pokemon have diverse appearances (birds, dragons, insects) with no unifying visual signature—hence 0% accuracy.
+4. **Game mechanics vs. visual reality:** Pokemon types are game mechanics, not purely visual categories. Flying-type Pokemon have diverse appearances (birds, dragons, insects) with no unifying visual look, hence 0% accuracy.
 
 ---
 
@@ -148,31 +148,21 @@ VLM Reranking of CLIP Top-5 Candidates. Report Reranked Accuracy@1 and a compari
 - Total Pokemon: 754
 - VLM Fallbacks: 0 (all responses parsed successfully)
 
-**Does VLM Reranking Help?**
+**Does VLM reranking help?**
 
-Yes, significantly. VLM reranking improves Acc@1 from 32.76% to 43.50%, a **10.74 percentage point improvement (32.8% relative gain)**.
+Yes. VLM reranking bumps Acc@1 from 32.76% to 43.50%, a 10.74 percentage point improvement (32.8% relative gain).
 
-**Why VLM Helps:**
+**Why VLM helps:**
 
 1. **Cross-attention reasoning:** Unlike CLIP's independent encoding, the VLM attends jointly over image tokens and text tokens. It can compare the Pokemon's visual features against each candidate type description and make an informed selection.
 
 2. **Discrete decision-making:** CLIP produces continuous similarity scores that can be noisy at the decision boundary. The VLM makes an explicit, discrete choice from the candidate set, forcing it to commit to one answer.
 
-3. **Instruction following:** The VLM understands the task (select the most likely type) and can apply world knowledge about Pokemon characteristics that may not be captured in CLIP's contrastive training.
+3. **Instruction following:** The VLM understands the task (select the most likely type) and can apply world knowledge about Pokemon characteristics that CLIP's contrastive training might not capture.
 
-4. **Constrained candidate set:** By restricting the VLM to CLIP's top-5 candidates, we leverage CLIP's broad retrieval capability while using the VLM's reasoning to refine the ranking. Since CLIP's Hit@5 is 73.34%, the correct answer is available to the VLM in nearly 3 out of 4 cases.
+4. **Constrained candidate set:** By restricting the VLM to CLIP's top-5 candidates, we use CLIP's broad retrieval capability while letting the VLM refine the ranking. Since CLIP's Hit@5 is 73.34%, the correct answer is available to the VLM in nearly 3 out of 4 cases.
 
 **Limitations:**
 
-The VLM is still constrained by CLIP's candidate pool. For the 26.66% of Pokemon where the correct type isn't in the top-5, the VLM cannot recover the correct answer. Additionally, VLM inference is significantly slower than CLIP (0.6s vs 0.01s per image on MPS), making it more suitable for post-hoc refinement than real-time prediction.
+The VLM is still constrained by CLIP's candidate pool. For the 26.66% of Pokemon where the correct type isn't in the top-5, the VLM can't recover the right answer. Also, VLM inference is significantly slower than CLIP (0.6s vs 0.01s per image on MPS), so it's better suited for post-hoc refinement than real-time prediction.
 
----
-
-## Summary
-
-| Question | Key Finding |
-|----------|-------------|
-| Q20 | CLIP retrieves visually consistent Pokemon for type queries; effectiveness varies by type visual coherence |
-| Q21 | 30% top-1 accuracy, 90% top-5 accuracy on random 10 Pokemon |
-| Q22 | Full dataset: 32.76% Acc@1, 73.34% Hit@5—CLIP finds correct type often but not reliably first |
-| Q23 | VLM reranking improves Acc@1 to 43.50% (+10.74%), demonstrating value of cross-attention reasoning |

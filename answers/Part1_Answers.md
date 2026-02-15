@@ -108,7 +108,7 @@ Plots and Visualization: Select the best-performing configuration for TF–IDF a
 
 #### Answer
 
-Visualization file: `outputs/task1_4_pca_visualizations.png`
+Visualization file: [PCA visualizations](outputs/task1_4_pca_visualizations.png)
 
 PCA reduction with 2 components:
 - TF-IDF explained variance: 4.02% total (PC1: 2.39%, PC2: 1.63%)
