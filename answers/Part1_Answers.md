@@ -58,8 +58,8 @@ _Note: TF-IDF clustering performs very poorly at separating Short vs Long review
 | None + Agglomerative    | 0.543       | 0.547        | 0.545     | 0.643     | 0.545     | 2              | 0      | 11,315 / 9,182       |
 | SVD + K-Means           | 0.508       | 0.509        | 0.509     | 0.612     | 0.509     | 2              | 0      | 9,863 / 10,634       |
 | **SVD + Agglomerative** | **0.646**   | **0.650**    | **0.648** | **0.742** | **0.648** | 2              | 0      | 11,155 / 9,342       |
-| UMAP + K-Means          | 0.0339      | 0.157        | 0.0558    | 0.0075    | 0.0558    | 2              | 0      | 19,791 / 706         |
-| UMAP + Agglomerative    | 0.0339      | 0.157        | 0.0558    | 0.0075    | 0.0558    | 2              | 0      | 19,791 / 706         |
+| UMAP + K-Means          | 0.558       | 0.559        | 0.558     | 0.666     | 0.558     | 2              | 0      | 9,762 / 10,735       |
+| UMAP + Agglomerative    | 0.553       | 0.556        | 0.555     | 0.658     | 0.555     | 2              | 0      | 11,087 / 9,410       |
 | None + HDBSCAN          | 0.221       | 0.0799       | 0.117     | 0.0013    | 0.107     | 554            | 15,681 | Many micro-clusters  |
 
 **Best-performing pipeline:** MiniLM: SVD(50) + Agglomerative Clustering with V-Measure 0.6478, ARI 0.7424, Homogeneity 0.6461, Completeness 0.6496
