@@ -12,12 +12,12 @@ This worked best because CLIP was trained on internet image-text pairs, and "a p
 
 **Top 5 per type:**
 
-| Type | Top 5 Pokemon |
-|------|---------------|
-| Bug | Yanmega, Ariados, Yanma, Butterfree, Anorith |
-| Fire | Simisear, Magmar, Magmortar, Quilava, Delphox |
-| Grass | Oddish, Tropius, Bulbasaur, Leafeon, Bellsprout |
-| Dark | Umbreon, Darkrai, Pincurchin, Gastly, Salandit |
+| Type   | Top 5 Pokemon                                   |
+| ------ | ----------------------------------------------- |
+| Bug    | Yanmega, Ariados, Yanma, Butterfree, Anorith    |
+| Fire   | Simisear, Magmar, Magmortar, Quilava, Delphox   |
+| Grass  | Oddish, Tropius, Bulbasaur, Leafeon, Bellsprout |
+| Dark   | Umbreon, Darkrai, Pincurchin, Gastly, Salandit  |
 | Dragon | Dragonite, Rhydon, Druddigon, Nidorino, Kingdra |
 
 Files: [Bug](outputs/part3_q20_bug.png), [Fire](outputs/part3_q20_fire.png), [Grass](outputs/part3_q20_grass.png), [Dark](outputs/part3_q20_dark.png), [Dragon](outputs/part3_q20_dragon.png)
@@ -42,18 +42,18 @@ Pokemon: Cosmog, Ledyba, Zubat, Wynaut, Spoink, Makuhita, Quagsire, Meganium, Th
 
 File: [predictions](outputs/part3_q21_predictions.png)
 
-| Pokemon | Actual | Top-1 | Top-5 | Correct? |
-|---------|--------|-------|-------|----------|
-| Cosmog | Psychic | Psychic (29.8%) | Psychic, Dark, Fairy, Normal, Poison | Yes |
-| Ledyba | Bug/Flying | Bug (31.1%) | Bug, Normal, Steel, Fighting, Dark | Yes |
-| Zubat | Poison/Flying | Dark (41.5%) | Dark, Flying, Normal, Fighting, Fairy | No |
-| Wynaut | Psychic | Ice (17.0%) | Ice, Normal, Psychic, Water, Ghost | Top-5 |
-| Spoink | Psychic | Normal (19.6%) | Normal, Dark, Psychic, Poison, Fighting | Top-5 |
-| Makuhita | Fighting | Fighting (50.4%) | Fighting, Dark, Normal, Psychic, Electric | Yes |
-| Quagsire | Water/Ground | Normal (33.4%) | Normal, Water, Psychic, Ground, Ice | Top-5 |
-| Meganium | Grass | Dragon (33.5%) | Dragon, Normal, Grass, Psychic, Poison | Top-5 |
-| Thievul | Dark | Dark (38.9%) | Dark, Normal, Psychic, Ghost, Fairy | Yes |
-| Espurr | Psychic | Psychic (29.7%) | Psychic, Normal, Ghost, Dark, Fairy | Yes |
+| Pokemon  | Actual        | Top-1            | Top-5                                     | Correct? |
+| -------- | ------------- | ---------------- | ----------------------------------------- | -------- |
+| Cosmog   | Psychic       | Psychic (29.8%)  | Psychic, Dark, Fairy, Normal, Poison      | Yes      |
+| Ledyba   | Bug/Flying    | Bug (31.1%)      | Bug, Normal, Steel, Fighting, Dark        | Yes      |
+| Zubat    | Poison/Flying | Dark (41.5%)     | Dark, Flying, Normal, Fighting, Fairy     | No       |
+| Wynaut   | Psychic       | Ice (17.0%)      | Ice, Normal, Psychic, Water, Ghost        | Top-5    |
+| Spoink   | Psychic       | Normal (19.6%)   | Normal, Dark, Psychic, Poison, Fighting   | Top-5    |
+| Makuhita | Fighting      | Fighting (50.4%) | Fighting, Dark, Normal, Psychic, Electric | Yes      |
+| Quagsire | Water/Ground  | Normal (33.4%)   | Normal, Water, Psychic, Ground, Ice       | Top-5    |
+| Meganium | Grass         | Dragon (33.5%)   | Dragon, Normal, Grass, Psychic, Poison    | Top-5    |
+| Thievul  | Dark          | Dark (38.9%)     | Dark, Normal, Psychic, Ghost, Fairy       | Yes      |
+| Espurr   | Psychic       | Psychic (29.7%)  | Psychic, Normal, Ghost, Dark, Fairy       | Yes      |
 
 Top-1: 30%, Top-5: 90%
 
@@ -69,26 +69,26 @@ Report Accuracy@1 and Hit@5 for all Pokemon using Type1 ground truth.
 
 Dataset: 754 Pokemon, 18 candidate types
 
-| Metric | Value |
-|--------|-------|
+| Metric     | Value            |
+| ---------- | ---------------- |
 | CLIP Acc@1 | 32.76% (247/754) |
 | CLIP Hit@5 | 73.34% (553/754) |
 
 Per-type Acc@1:
 
-| Type | Acc@1 | Type | Acc@1 |
-|------|-------|------|-------|
-| Fire | 68.18% | Bug | 36.23% |
-| Dark | 66.67% | Steel | 45.83% |
-| Ice | 54.17% | Normal | 31.52% |
-| Dragon | 50.00% | Ghost | 28.00% |
-| Fighting | 46.88% | Rock | 29.27% |
-| Fairy | 40.00% | Grass | 18.99% |
-| Water | 33.02% | Electric | 15.79% |
-| | | Poison | 13.79% |
-| | | Psychic | 10.87% |
-| | | Ground | 3.70% |
-| | | Flying | 0.00% |
+| Type     | Acc@1  | Type     | Acc@1  |
+| -------- | ------ | -------- | ------ |
+| Fire     | 68.18% | Bug      | 36.23% |
+| Dark     | 66.67% | Steel    | 45.83% |
+| Ice      | 54.17% | Normal   | 31.52% |
+| Dragon   | 50.00% | Ghost    | 28.00% |
+| Fighting | 46.88% | Rock     | 29.27% |
+| Fairy    | 40.00% | Grass    | 18.99% |
+| Water    | 33.02% | Electric | 15.79% |
+|          |        | Poison   | 13.79% |
+|          |        | Psychic  | 10.87% |
+|          |        | Ground   | 3.70%  |
+|          |        | Flying   | 0.00%  |
 
 Best: Fire (68%), Dark (67%), Ice (54%), Dragon (50%)
 Worst: Flying (0%), Ground (4%), Psychic (11%), Poison (14%)
@@ -114,15 +114,16 @@ VLM Reranking of CLIP Top-5. Report Reranked Acc@1.
 Model: Qwen3-VL-2B-Instruct
 
 Protocol:
+
 1. CLIP provides top-5 candidates
 2. VLM receives image + candidates, prompted to select one type as JSON
 3. Invalid output falls back to CLIP top-1
 
-| Method | Acc@1 | Hit@5 |
-|--------|-------|-------|
-| CLIP | 32.76% | 73.34% |
-| VLM Rerank | 43.50% | — |
-| Improvement | +10.74% | — |
+| Method      | Acc@1   | Hit@5  |
+| ----------- | ------- | ------ |
+| CLIP        | 32.76%  | 73.34% |
+| VLM Rerank  | 43.50%  | —      |
+| Improvement | +10.74% | —      |
 
 VLM fallbacks: 0
 

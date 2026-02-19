@@ -37,24 +37,24 @@ For each pipeline, report clustering agreement metrics with respect to ground-tr
 
 **TF-IDF (2 pipelines)**
 
-| Pipeline | Homogeneity | Completeness | V-Measure | ARI | AMI |
-|----------|-------------|--------------|-----------|-----|-----|
-| SVD + K-Means | 0.0301 | 0.161 | 0.0507 | 0.0057 | 0.0507 |
-| SVD + Agglomerative | 0.0276 | 0.157 | 0.0470 | 0.0050 | 0.0470 |
+| Pipeline            | Homogeneity | Completeness | V-Measure | ARI    | AMI    |
+| ------------------- | ----------- | ------------ | --------- | ------ | ------ |
+| SVD + K-Means       | 0.0301      | 0.161        | 0.0507    | 0.0057 | 0.0507 |
+| SVD + Agglomerative | 0.0276      | 0.157        | 0.0470    | 0.0050 | 0.0470 |
 
 TF-IDF clustering barely separates Short vs Long. UMAP and no-reduction options were skipped—infeasible on sparse, high-dimensional data.
 
 **MiniLM (7 pipelines)**
 
-| Pipeline | Homogeneity | Completeness | V-Measure | ARI | AMI |
-|----------|-------------|--------------|-----------|-----|-----|
-| None + K-Means | 0.509 | 0.509 | 0.509 | 0.613 | 0.509 |
-| None + Agglomerative | 0.543 | 0.547 | 0.545 | 0.643 | 0.545 |
-| SVD + K-Means | 0.508 | 0.509 | 0.509 | 0.612 | 0.509 |
-| **SVD + Agglomerative** | **0.646** | **0.650** | **0.648** | **0.742** | **0.648** |
-| UMAP + K-Means | 0.558 | 0.559 | 0.558 | 0.666 | 0.558 |
-| UMAP + Agglomerative | 0.553 | 0.556 | 0.555 | 0.658 | 0.555 |
-| None + HDBSCAN | 0.221 | 0.080 | 0.117 | 0.001 | 0.107 |
+| Pipeline                | Homogeneity | Completeness | V-Measure | ARI       | AMI       |
+| ----------------------- | ----------- | ------------ | --------- | --------- | --------- |
+| None + K-Means          | 0.509       | 0.509        | 0.509     | 0.613     | 0.509     |
+| None + Agglomerative    | 0.543       | 0.547        | 0.545     | 0.643     | 0.545     |
+| SVD + K-Means           | 0.508       | 0.509        | 0.509     | 0.612     | 0.509     |
+| **SVD + Agglomerative** | **0.646**   | **0.650**    | **0.648** | **0.742** | **0.648** |
+| UMAP + K-Means          | 0.558       | 0.559        | 0.558     | 0.666     | 0.558     |
+| UMAP + Agglomerative    | 0.553       | 0.556        | 0.555     | 0.658     | 0.555     |
+| None + HDBSCAN          | 0.221       | 0.080        | 0.117     | 0.001     | 0.107     |
 
 **Best:** MiniLM + SVD(50) + Agglomerative. V-Measure 0.648, ARI 0.742.
 
@@ -66,11 +66,11 @@ Compare TF-IDF and MiniLM performance. Which separates Short vs Long more cleanl
 
 **Answer:**
 
-| Metric | TF-IDF | MiniLM | Gap |
-|--------|--------|--------|-----|
-| V-Measure | 0.047 | 0.648 | 13.8x |
-| ARI | 0.005 | 0.742 | 148x |
-| Homogeneity | 0.028 | 0.646 | 23x |
+| Metric      | TF-IDF | MiniLM | Gap   |
+| ----------- | ------ | ------ | ----- |
+| V-Measure   | 0.047  | 0.648  | 13.8x |
+| ARI         | 0.005  | 0.742  | 148x  |
+| Homogeneity | 0.028  | 0.646  | 23x   |
 
 MiniLM wins by a lot. Three reasons:
 
@@ -93,6 +93,7 @@ Plots and Visualization: Reduce embeddings to 2D using PCA and create split visu
 File: [PCA visualizations](outputs/task1_4_pca_visualizations.png)
 
 PCA explained variance:
+
 - TF-IDF: 4.02% total
 - MiniLM: 11.83% total
 
@@ -121,32 +122,32 @@ For each pipeline, report cluster count, sizes, and top 3 genres per cluster.
 
 **MiniLM (7 pipelines)**
 
-| Pipeline | K | Noise | Sizes | Top Genre Purity |
-|----------|---|-------|-------|------------------|
-| None + K-Means | 5 | 0 | 9, 86, 23, 58, 24 | 67-81% |
-| None + Agglomerative | 5 | 0 | 41, 33, 62, 20, 44 | 54-93% |
-| SVD + K-Means | 5 | 0 | 25, 30, 50, 55, 40 | 62-82% |
-| SVD + Agglomerative | 5 | 0 | 37, 62, 32, 13, 56 | 59-100% |
-| UMAP + K-Means | 5 | 0 | 23, 54, 51, 33, 39 | 61-85% |
-| UMAP + Agglomerative | 5 | 0 | 78, 41, 32, 26, 23 | 61-96% |
-| HDBSCAN | 2 | 163 (81.5%) | 28, 9 | 75-100% |
+| Pipeline             | K   | Noise       | Sizes              | Top Genre Purity |
+| -------------------- | --- | ----------- | ------------------ | ---------------- |
+| None + K-Means       | 5   | 0           | 9, 86, 23, 58, 24  | 67-81%           |
+| None + Agglomerative | 5   | 0           | 41, 33, 62, 20, 44 | 54-93%           |
+| SVD + K-Means        | 5   | 0           | 25, 30, 50, 55, 40 | 62-82%           |
+| SVD + Agglomerative  | 5   | 0           | 37, 62, 32, 13, 56 | 59-100%          |
+| UMAP + K-Means       | 5   | 0           | 23, 54, 51, 33, 39 | 61-85%           |
+| UMAP + Agglomerative | 5   | 0           | 78, 41, 32, 26, 23 | 61-96%           |
+| HDBSCAN              | 2   | 163 (81.5%) | 28, 9              | 75-100%          |
 
 **TF-IDF (2 pipelines)**
 
-| Pipeline | K | Sizes | Top Genre Purity |
-|----------|---|-------|------------------|
-| SVD + K-Means | 5 | 5, 94, 35, 62, 4 | 60-100% |
-| SVD + Agglomerative | 5 | 49, 12, 130, 5, 4 | 65-100% |
+| Pipeline            | K   | Sizes             | Top Genre Purity |
+| ------------------- | --- | ----------------- | ---------------- |
+| SVD + K-Means       | 5   | 5, 94, 35, 62, 4  | 60-100%          |
+| SVD + Agglomerative | 5   | 49, 12, 130, 5, 4 | 65-100%          |
 
 Sample genre breakdown (MiniLM + SVD + Agglomerative):
 
-| Cluster | Size | Top Genres | Purity |
-|---------|------|------------|--------|
-| 0 | 37 | Indie (59%), Action (59%), Adventure (43%) | 59% |
-| 1 | 62 | Action (85%), Adventure (56%), RPG (44%) | 85% |
-| 2 | 32 | Adventure (66%), Simulation (63%), Indie (56%) | 66% |
-| 3 | 13 | Action (100%), MMO (38%), Indie (23%) | 100% |
-| 4 | 56 | Action (64%), Adventure (46%), Indie (38%) | 64% |
+| Cluster | Size | Top Genres                                     | Purity |
+| ------- | ---- | ---------------------------------------------- | ------ |
+| 0       | 37   | Indie (59%), Action (59%), Adventure (43%)     | 59%    |
+| 1       | 62   | Action (85%), Adventure (56%), RPG (44%)       | 85%    |
+| 2       | 32   | Adventure (66%), Simulation (63%), Indie (56%) | 66%    |
+| 3       | 13   | Action (100%), MMO (38%), Indie (23%)          | 100%   |
+| 4       | 56   | Action (64%), Adventure (46%), Indie (38%)     | 64%    |
 
 ---
 
@@ -164,11 +165,11 @@ This pipeline performed best in Task 1 and shows strong genre purity here.
 
 Top genres: Action (100%), Massively Multiplayer (38%), Indie (23%)
 
-| Game | Genres |
-|------|--------|
-| Counter-Strike 2 | Action, Massively Multiplayer |
-| Dota 2 | Action, Massively Multiplayer, RPG |
-| Team Fortress 2 | Action, Massively Multiplayer |
+| Game             | Genres                             |
+| ---------------- | ---------------------------------- |
+| Counter-Strike 2 | Action, Massively Multiplayer      |
+| Dota 2           | Action, Massively Multiplayer, RPG |
+| Team Fortress 2  | Action, Massively Multiplayer      |
 
 These are competitive online multiplayer games. All have the Action tag.
 
@@ -176,11 +177,11 @@ These are competitive online multiplayer games. All have the Action tag.
 
 Top genres: Action (85%), Adventure (56%), RPG (44%)
 
-| Game | Genres |
-|------|--------|
-| Dying Light | Action, RPG |
-| Black Mesa | Action, Adventure, Indie |
-| Borderlands 3 | Action, RPG |
+| Game          | Genres                   |
+| ------------- | ------------------------ |
+| Dying Light   | Action, RPG              |
+| Black Mesa    | Action, Adventure, Indie |
+| Borderlands 3 | Action, RPG              |
 
 Narrative-driven action games with RPG elements. The mainstream AAA cluster.
 
@@ -198,11 +199,11 @@ Report assigned cluster ID, top 3 genres, and 3 representative games.
 
 Top genres: Action (80%), Adventure (55%), RPG (35%)
 
-| Game | Genres |
-|------|--------|
-| Dying Light | Action, RPG |
-| Black Mesa | Action, Adventure, Indie |
-| Borderlands 3 | Action, RPG |
+| Game          | Genres                   |
+| ------------- | ------------------------ |
+| Dying Light   | Action, RPG              |
+| Black Mesa    | Action, Adventure, Indie |
+| Borderlands 3 | Action, RPG              |
 
 Why this works as genre estimation: Games are multi-label. Rather than predicting one genre, we assign the held-out game to its nearest cluster and inherit that cluster's genre distribution. The held-out game shares Action-Adventure-RPG characteristics because it clusters semantically with games having those tags.
 
