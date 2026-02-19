@@ -1,26 +1,26 @@
 {
   "original_features": {
     "feature_dim": 4096,
-    "test_accuracy": 0.916893720626831
+    "test_accuracy": 0.9114441275596619
   },
   "reduced_features": {
     "svd": {
       "feature_dim": 50,
-      "test_accuracy": 0.9073569774627686
+      "test_accuracy": 0.9114441275596619
     },
     "umap": {
       "feature_dim": 50,
-      "test_accuracy": 0.8378746509552002
+      "test_accuracy": 0.8106266856193542
     },
     "autoencoder": {
       "feature_dim": 50,
-      "test_accuracy": 0.8841961622238159
+      "test_accuracy": 0.8828337788581848
     }
   },
   "summary": {
-    "original_accuracy": 0.916893720626831,
+    "original_accuracy": 0.9114441275596619,
     "best_reduced_method": "svd",
-    "best_reduced_accuracy": 0.9073569774627686,
-    "accuracy_improvement": -0.0095367431640625
+    "best_reduced_accuracy": 0.9114441275596619,
+    "accuracy_improvement": 0.0
   }
 }
