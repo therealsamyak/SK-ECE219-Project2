@@ -1,18 +1,16 @@
 # Part 3 - Clustering using both Image and Text
 
----
-
 ## Question 20
 
-Try to construct various text queries regarding types of Pokemon to find the relevant images from the dataset. Once you have found the most suitable template for queries, please find the top five most relevant Pokemon for type Bug, Fire and Grass. Repeat this process for Pokemon of Dark and Dragon types.
+Construct text queries to find Pokemon images by type. Report top 5 for Bug, Fire, Grass, Dark, and Dragon.
 
-#### Answer
+**Answer:**
 
 **Query Template:** `"a photo of a {type} type Pokemon"`
 
-This worked best because CLIP was trained on internet-scale image-text pairs, and "a photo of" is how people typically caption images. The phrase "type Pokemon" gives clear context for what we're looking for.
+This worked best because CLIP was trained on internet image-text pairs, and "a photo of" matches typical captions.
 
-**Top 5 Retrieved Pokemon per Type:**
+**Top 5 per type:**
 
 | Type | Top 5 Pokemon |
 |------|---------------|
@@ -22,9 +20,7 @@ This worked best because CLIP was trained on internet-scale image-text pairs, an
 | Dark | Umbreon, Darkrai, Pincurchin, Gastly, Salandit |
 | Dragon | Dragonite, Rhydon, Druddigon, Nidorino, Kingdra |
 
-**Visualizations:** [Bug](outputs/part3_q20_bug.png), [Fire](outputs/part3_q20_fire.png), [Grass](outputs/part3_q20_grass.png), [Dark](outputs/part3_q20_dark.png), [Dragon](outputs/part3_q20_dragon.png)
-
-**How well the queries worked:**
+Files: [Bug](outputs/part3_q20_bug.png), [Fire](outputs/part3_q20_fire.png), [Grass](outputs/part3_q20_grass.png), [Dark](outputs/part3_q20_dark.png), [Dragon](outputs/part3_q20_dragon.png)
 
 Bug, Fire, and Grass types retrieved pretty coherent results. Fire Pokemon tend to have warm colors (red, orange, yellow) and flame-like features. Grass types are mostly green with plant-like body parts. Bug types have insectoid body structures that CLIP picks up on easily.
 
@@ -36,60 +32,49 @@ The main difference: Bug, Fire, and Grass have strong visual-semantic patterns t
 
 ## Question 21
 
-Randomly select 10 Pokemon images from the dataset and use CLIP to find the most relevant types. For each selected Pokemon, please plot it and indicate its name, types, and the five most relevant types predicted by CLIP.
+Randomly select 10 Pokemon. For each, plot and show predicted types.
 
-#### Answer
+**Answer:**
 
-**Random Seed:** 42 (for reproducibility)
+Seed: 42
 
-**Selected Pokemon:** Cosmog, Ledyba, Zubat, Wynaut, Spoink, Makuhita, Quagsire, Meganium, Thievul, Espurr
+Pokemon: Cosmog, Ledyba, Zubat, Wynaut, Spoink, Makuhita, Quagsire, Meganium, Thievul, Espurr
 
-**Visualization:** [predictions](outputs/part3_q21_predictions.png)
+File: [predictions](outputs/part3_q21_predictions.png)
 
-**Detailed Predictions:**
+| Pokemon | Actual | Top-1 | Top-5 | Correct? |
+|---------|--------|-------|-------|----------|
+| Cosmog | Psychic | Psychic (29.8%) | Psychic, Dark, Fairy, Normal, Poison | Yes |
+| Ledyba | Bug/Flying | Bug (31.1%) | Bug, Normal, Steel, Fighting, Dark | Yes |
+| Zubat | Poison/Flying | Dark (41.5%) | Dark, Flying, Normal, Fighting, Fairy | No |
+| Wynaut | Psychic | Ice (17.0%) | Ice, Normal, Psychic, Water, Ghost | Top-5 |
+| Spoink | Psychic | Normal (19.6%) | Normal, Dark, Psychic, Poison, Fighting | Top-5 |
+| Makuhita | Fighting | Fighting (50.4%) | Fighting, Dark, Normal, Psychic, Electric | Yes |
+| Quagsire | Water/Ground | Normal (33.4%) | Normal, Water, Psychic, Ground, Ice | Top-5 |
+| Meganium | Grass | Dragon (33.5%) | Dragon, Normal, Grass, Psychic, Poison | Top-5 |
+| Thievul | Dark | Dark (38.9%) | Dark, Normal, Psychic, Ghost, Fairy | Yes |
+| Espurr | Psychic | Psychic (29.7%) | Psychic, Normal, Ghost, Dark, Fairy | Yes |
 
-| Pokemon | Actual Type | Top-1 Prediction | Top-5 Predictions (with scores) | Top-1 Correct? | Top-5 Correct? |
-|---------|-------------|------------------|--------------------------------|----------------|----------------|
-| Cosmog | Psychic | Psychic (29.8%) | Psychic, Dark, Fairy, Normal, Poison | Yes | Yes |
-| Ledyba | Bug/Flying | Bug (31.1%) | Bug, Normal, Steel, Fighting, Dark | Yes | Yes |
-| Zubat | Poison/Flying | Dark (41.5%) | Dark, Flying, Normal, Fighting, Fairy | No | No |
-| Wynaut | Psychic | Ice (17.0%) | Ice, Normal, Psychic, Water, Ghost | No | Yes |
-| Spoink | Psychic | Normal (19.6%) | Normal, Dark, Psychic, Poison, Fighting | No | Yes |
-| Makuhita | Fighting | Fighting (50.4%) | Fighting, Dark, Normal, Psychic, Electric | Yes | Yes |
-| Quagsire | Water/Ground | Normal (33.4%) | Normal, Water, Psychic, Ground, Ice | No | Yes |
-| Meganium | Grass | Dragon (33.5%) | Dragon, Normal, Grass, Psychic, Poison | No | Yes |
-| Thievul | Dark | Dark (38.9%) | Dark, Normal, Psychic, Ghost, Fairy | Yes | Yes |
-| Espurr | Psychic | Psychic (29.7%) | Psychic, Normal, Ghost, Dark, Fairy | Yes | Yes |
+Top-1: 30%, Top-5: 90%
 
-**Summary:**
-- Top-1 Accuracy: 3/10 = 30%
-- Top-5 Accuracy: 9/10 = 90%
-
-**What went wrong:**
-
-CLIP struggles with visually ambiguous Pokemon. Zubat (Poison) gets misclassified as Dark—its purple coloration and bat-like appearance match the Dark-type look more than Poison. Meganium (Grass) gets called Dragon, probably because its large, dinosaur-like body and long neck look more "dragon" than "plant." The model does better when the Pokemon's appearance lines up clearly with its type (Makuhita's fighting stance, Ledyba's insect wings).
+CLIP struggles with visually ambiguous Pokemon. Zubat (Poison) gets called Dark—purple bat matches Dark-type look. Meganium (Grass) gets called Dragon because its dinosaur body looks more "dragon" than "plant."
 
 ---
 
 ## Question 22
 
-Using the ground-truth primary type label Type1, report Accuracy@1 and Hit@5 for all Pokemon images.
+Report Accuracy@1 and Hit@5 for all Pokemon using Type1 ground truth.
 
-#### Answer
+**Answer:**
 
-**Dataset:** 754 Pokemon (distinct IDs, using 0.jpg image only)
-
-**Candidate Types:** 18 types (Bug, Dark, Dragon, Electric, Fairy, Fighting, Fire, Flying, Ghost, Grass, Ground, Ice, Normal, Poison, Psychic, Rock, Steel, Water)
-
-**Results:**
+Dataset: 754 Pokemon, 18 candidate types
 
 | Metric | Value |
 |--------|-------|
-| **CLIP Acc@1** | 32.76% (247/754 correct) |
-| **CLIP Hit@5** | 73.34% (553/754 correct type in top-5) |
-| Total Pokemon | 754 |
+| CLIP Acc@1 | 32.76% (247/754) |
+| CLIP Hit@5 | 73.34% (553/754) |
 
-**Per-Type Accuracy:**
+Per-type Acc@1:
 
 | Type | Acc@1 | Type | Acc@1 |
 |------|-------|------|-------|
@@ -105,13 +90,10 @@ Using the ground-truth primary type label Type1, report Accuracy@1 and Hit@5 for
 | | | Ground | 3.70% |
 | | | Flying | 0.00% |
 
-**Best Performing Types:** Fire (68.18%), Dark (66.67%), Ice (54.17%), Dragon (50.00%)
+Best: Fire (68%), Dark (67%), Ice (54%), Dragon (50%)
+Worst: Flying (0%), Ground (4%), Psychic (11%), Poison (14%)
 
-**Worst Performing Types:** Flying (0.00%), Ground (3.70%), Psychic (10.87%), Poison (13.79%)
-
-**Why Acc@1 is low but Hit@5 is decent:**
-
-The gap between Acc@1 (32.76%) and Hit@5 (73.34%) shows CLIP often finds the right type in its top candidates, but doesn't consistently rank it first. A few reasons:
+Why the gap between Acc@1 and Hit@5:
 
 1. **Dual-encoder limitation:** CLIP encodes images and text independently into a shared space using contrastive learning. Predictions are made by nearest-neighbor similarity, without any reasoning step.
 
@@ -125,34 +107,30 @@ The gap between Acc@1 (32.76%) and Hit@5 (73.34%) shows CLIP often finds the rig
 
 ## Question 23
 
-VLM Reranking of CLIP Top-5 Candidates. Report Reranked Accuracy@1 and a comparison table.
+VLM Reranking of CLIP Top-5. Report Reranked Acc@1.
 
-#### Answer
+**Answer:**
 
-**VLM Model:** Qwen3-VL-2B-Instruct
+Model: Qwen3-VL-2B-Instruct
 
-**Reranking Protocol:**
-1. For each Pokemon, CLIP provides top-5 candidate types
-2. VLM receives the image and candidate list with prompt: "This is a Pokemon. From these types: {top5}, which is the most likely primary type? Return only the type name as JSON: {"type1": "..."}"
-3. If VLM output is invalid (not in candidate list), fall back to CLIP's top-1
-
-**Results:**
+Protocol:
+1. CLIP provides top-5 candidates
+2. VLM receives image + candidates, prompted to select one type as JSON
+3. Invalid output falls back to CLIP top-1
 
 | Method | Acc@1 | Hit@5 |
 |--------|-------|-------|
 | CLIP | 32.76% | 73.34% |
-| VLM Rerank | 43.50% | N/A |
-| **Improvement** | **+10.74%** | - |
+| VLM Rerank | 43.50% | — |
+| Improvement | +10.74% | — |
 
-**Statistics:**
-- Total Pokemon: 754
-- VLM Fallbacks: 0 (all responses parsed successfully)
+VLM fallbacks: 0
 
-**Does VLM reranking help?**
+Does VLM reranking help?
 
 Yes. VLM reranking bumps Acc@1 from 32.76% to 43.50%, a 10.74 percentage point improvement (32.8% relative gain).
 
-**Why VLM helps:**
+Why VLM helps:
 
 1. **Cross-attention reasoning:** Unlike CLIP's independent encoding, the VLM attends jointly over image tokens and text tokens. It can compare the Pokemon's visual features against each candidate type description and make an informed selection.
 
@@ -162,7 +140,6 @@ Yes. VLM reranking bumps Acc@1 from 32.76% to 43.50%, a 10.74 percentage point i
 
 4. **Constrained candidate set:** By restricting the VLM to CLIP's top-5 candidates, we use CLIP's broad retrieval capability while letting the VLM refine the ranking. Since CLIP's Hit@5 is 73.34%, the correct answer is available to the VLM in nearly 3 out of 4 cases.
 
-**Limitations:**
+Limitations:
 
 The VLM is still constrained by CLIP's candidate pool. For the 26.66% of Pokemon where the correct type isn't in the top-5, the VLM can't recover the right answer. Also, VLM inference is significantly slower than CLIP (0.6s vs 0.01s per image on MPS), so it's better suited for post-hoc refinement than real-time prediction.
-
