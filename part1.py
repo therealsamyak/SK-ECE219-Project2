@@ -20,6 +20,9 @@ from sklearn.metrics import (
 )
 from sklearn.neighbors import kneighbors_graph
 import umap
+import matplotlib
+
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from scipy.stats import entropy
 

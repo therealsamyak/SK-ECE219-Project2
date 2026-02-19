@@ -38,6 +38,3 @@ pythonpath = ["."]
 markers = [
     "slow: marks tests as slow (deselect with '-m \"not slow\"')"
 ]
-
-[tool.uv.extra-build-dependencies]
-git = ["setuptools"]
