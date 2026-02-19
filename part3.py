@@ -12,6 +12,10 @@ import open_clip
 from tqdm import tqdm
 from scipy.special import softmax
 import os
+import matplotlib
+
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
 from transformers import Qwen3VLForConditionalGeneration, AutoProcessor
 
 
@@ -325,8 +329,6 @@ def run_q20():
     types = ["Bug", "Fire", "Grass", "Dark", "Dragon"]
     query_template = "a photo of a {type} type Pokemon"
 
-    import matplotlib.pyplot as plt
-
     # Process each type
     for pokemon_type in types:
         logger.info(f"Processing type: {pokemon_type}")
@@ -418,7 +420,6 @@ def run_q21():
     type_embeddings = clip_inference_text(model, tokenizer, type_texts, device)
     logger.info(f"[Q21] Type embeddings shape: {type_embeddings.shape}")
 
-    import matplotlib.pyplot as plt
     import json
 
     results = []

@@ -3,6 +3,9 @@ import torch.nn as nn
 from torchvision import transforms, datasets
 from torch.utils.data import DataLoader, TensorDataset
 import numpy as np
+import matplotlib
+
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import logging
 from pathlib import Path
