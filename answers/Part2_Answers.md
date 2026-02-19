@@ -81,27 +81,27 @@ Report best ARI result. For HDBSCAN, use parameter grid over min_cluster_size an
 
 **Best:** ARI = 0.5635 (UMAP + HDBSCAN)
 
-| Dim Reduction | Clustering | Parameters | ARI | Clusters | Noise |
-|---------------|------------|------------|-----|----------|-------|
-| UMAP | HDBSCAN | min_cluster_size=50, min_samples=10 | 0.5635 | 10 | 934 |
+| Dim Reduction | Clustering | Parameters                          | ARI    | Clusters | Noise |
+| ------------- | ---------- | ----------------------------------- | ------ | -------- | ----- |
+| UMAP          | HDBSCAN    | min_cluster_size=50, min_samples=10 | 0.5635 | 10       | 934   |
 
 Best ARI by method:
 
-| Method | Best Clustering | ARI |
-|--------|-----------------|-----|
-| None (4096-d) | Agglomerative | 0.2184 |
-| SVD (50-d) | K-Means | 0.1947 |
-| UMAP (50-d) | HDBSCAN | 0.5635 |
-| Autoencoder (50-d) | Agglomerative | 0.2336 |
+| Method             | Best Clustering | ARI    |
+| ------------------ | --------------- | ------ |
+| None (4096-d)      | Agglomerative   | 0.2184 |
+| SVD (50-d)         | K-Means         | 0.1947 |
+| UMAP (50-d)        | HDBSCAN         | 0.5635 |
+| Autoencoder (50-d) | Agglomerative   | 0.2336 |
 
 HDBSCAN grid (on UMAP features):
 
-| min_cluster_size | min_samples | Clusters | Noise | ARI |
-|------------------|-------------|----------|-------|-----|
-| 5 | 3 | 108 | 1,723 | 0.097 |
-| 10 | 3 | 55 | 1,673 | 0.142 |
-| 20 | 5 | 21 | 1,137 | 0.408 |
-| 50 | 10 | 10 | 934 | 0.564 |
+| min_cluster_size | min_samples | Clusters | Noise | ARI   |
+| ---------------- | ----------- | -------- | ----- | ----- |
+| 5                | 3           | 108      | 1,723 | 0.097 |
+| 10               | 3           | 55       | 1,673 | 0.142 |
+| 20               | 5           | 21       | 1,137 | 0.408 |
+| 50               | 10          | 10       | 934   | 0.564 |
 
 What stands out:
 
@@ -118,21 +118,21 @@ Report MLP test accuracy on original and reduced-dimension features. Does perfor
 
 **Answer:**
 
-| Feature | Dimension | Accuracy |
-|---------|-----------|----------|
-| Original VGG16 | 4,096 | 91.69% |
-| SVD | 50 | 90.74% |
-| UMAP | 50 | 83.79% |
-| Autoencoder | 50 | 88.42% |
+| Feature        | Dimension | Accuracy |
+| -------------- | --------- | -------- |
+| Original VGG16 | 4,096     | 91.69%   |
+| SVD            | 50        | 90.74%   |
+| UMAP           | 50        | 83.79%   |
+| Autoencoder    | 50        | 88.42%   |
 
 All reduced methods drop below 91.69%. SVD holds up best—only 0.95 points lost despite 98.8% dimension reduction. UMAP drops 7.9 points.
 
 Comparing with clustering:
 
 | Method | Clustering ARI | Classification Accuracy |
-|--------|----------------|------------------------|
-| SVD | 0.195 (3rd) | 90.74% (1st) |
-| UMAP | 0.564 (1st) | 83.79% (3rd) |
+| ------ | -------------- | ----------------------- |
+| SVD    | 0.195 (3rd)    | 90.74% (1st)            |
+| UMAP   | 0.564 (1st)    | 83.79% (3rd)            |
 
 UMAP crushed clustering but struggled with classification. SVD did the opposite.
 

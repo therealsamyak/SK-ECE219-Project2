@@ -1,4 +1,4 @@
-.PHONY: i install test check lint part1 part2
+.PHONY: i install test check lint part1 part2 part3 all
 
 i install:
 	uv sync && uv run lefthook install
@@ -17,6 +17,11 @@ part1:
 
 part2:
 	uv run part2.py
+
+part3:
+	uv run part3.py
+
+all: part1 part2 part3
 
 notebook:
 	jupyter lab \
