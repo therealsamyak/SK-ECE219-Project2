@@ -292,7 +292,7 @@ def extract_flower_features():
         "classes": sorted(list(set([class_names[int(label)] for label in y_all]))),
     }
 
-    output_json = output_dir / "part2_features.json"
+    output_json = output_dir / "Q13_Q16_features.json"
     with open(output_json, "w") as f:
         json.dump(results, f, indent=2)
     logger.info(f"Saved features metadata to {output_json}")
@@ -355,7 +355,7 @@ def run_tsne_visualization(features, labels, class_names):
     plt.tight_layout()
 
     # Save plot
-    plot_path = output_dir / "part2_tsne.png"
+    plot_path = output_dir / "Q17_tsne.png"
     plt.savefig(plot_path, dpi=150, bbox_inches="tight")
     plt.close()
     logger.info(f"Saved t-SNE plot to {plot_path}")
@@ -366,7 +366,7 @@ def run_tsne_visualization(features, labels, class_names):
         "labels": labels.tolist(),
         "classes": class_names,
     }
-    json_path = output_dir / "part2_tsne.json"
+    json_path = output_dir / "Q17_tsne.json"
     with open(json_path, "w") as f:
         json.dump(tsne_data, f, indent=2)
     logger.info(f"Saved t-SNE coordinates to {json_path}")
@@ -405,7 +405,7 @@ def apply_dim_reduction(features, method, n_components=50, device="cpu"):
         svd = TruncatedSVD(n_components=n_components, random_state=42)
         return svd.fit_transform(features)
     elif method == "umap":
-        umap_model = umap.UMAP(n_components=n_components, random_state=42)
+        umap_model = umap.UMAP(n_components=n_components, random_state=42, n_jobs=1)
         return umap_model.fit_transform(features)
     elif method == "autoencoder":
         autoencoder = Autoencoder(n_components=n_components)
@@ -631,7 +631,7 @@ def run_clustering_grid_search(features, labels, device="cpu"):
     logger.info(f"{'=' * 60}")
 
     # Save results to JSON
-    output_json = output_dir / "part2_clustering.json"
+    output_json = output_dir / "Q18_clustering.json"
     with open(output_json, "w") as f:
         json.dump(results, f, indent=2)
     logger.info(f"Saved clustering results to {output_json}")
@@ -700,7 +700,7 @@ def run_mlp_classifier(features, labels, best_dim_reduction=None, device="cpu"):
             X_train_reduced = reducer.fit_transform(X_train)
             X_test_reduced = reducer.transform(X_test)
         elif dim_method == "umap":
-            reducer = umap.UMAP(n_components=50, random_state=42)
+            reducer = umap.UMAP(n_components=50, random_state=42, n_jobs=1)
             X_train_reduced = reducer.fit_transform(X_train)
             X_test_reduced = reducer.transform(X_test)
         elif dim_method == "autoencoder":
@@ -743,7 +743,7 @@ def run_mlp_classifier(features, labels, best_dim_reduction=None, device="cpu"):
     logger.info(f"{'=' * 60}")
 
     # Save results to JSON
-    output_json = output_dir / "part2_mlp.json"
+    output_json = output_dir / "Q19_mlp.json"
     with open(output_json, "w") as f:
         json.dump(results, f, indent=2)
     logger.info(f"Saved MLP results to {output_json}")
@@ -764,9 +764,9 @@ def create_summary_output():
     output_dir.mkdir(exist_ok=True)
 
     # Read from output files
-    features_file = output_dir / "part2_features.json"
-    clustering_file = output_dir / "part2_clustering.json"
-    mlp_file = output_dir / "part2_mlp.json"
+    features_file = output_dir / "Q13_Q16_features.json"
+    clustering_file = output_dir / "Q18_clustering.json"
+    mlp_file = output_dir / "Q19_mlp.json"
 
     # Load features data
     with open(features_file, "r") as f:
@@ -819,7 +819,7 @@ def create_summary_output():
             "is_dense": features_data["is_dense"],
         },
         "Q17_tsne": {
-            "plot_path": "outputs/part2_tsne.png",
+            "plot_path": "outputs/Q17_tsne.png",
             "n_components": 2,
             "perplexity": 30,
         },
@@ -862,7 +862,7 @@ def create_summary_output():
     }
 
     # Save summary to JSON
-    output_json = output_dir / "part2_summary.json"
+    output_json = output_dir / "Q13_Q19_summary.json"
     with open(output_json, "w") as f:
         json.dump(summary, f, indent=2)
     logger.info(f"Saved summary to {output_json}")
