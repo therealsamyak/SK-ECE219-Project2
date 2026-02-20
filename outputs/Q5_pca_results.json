@@ -1,5 +1,5 @@
 {
-  "plot_path": "outputs/task1_4_pca_visualizations.png",
+  "plot_path": "outputs/Q5_pca_visualizations.png",
   "best_pipelines": {
     "tfidf": {
       "dim_reduction": "svd",

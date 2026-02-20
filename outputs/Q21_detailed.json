@@ -17,13 +17,13 @@
       "actual_type1": "Psychic",
       "actual_type2": "",
       "top5_predictions": [
-        ["Psychic", 0.298],
-        ["Dark", 0.2018],
-        ["Fairy", 0.0775],
-        ["Normal", 0.069],
-        ["Poison", 0.0634]
+        ["Dark", 0.7368],
+        ["Psychic", 0.0839],
+        ["Electric", 0.0435],
+        ["Normal", 0.0275],
+        ["Poison", 0.0203]
       ],
-      "top1_correct": true,
+      "top1_correct": false,
       "top5_correct": true
     },
     {
@@ -31,11 +31,11 @@
       "actual_type1": "Bug",
       "actual_type2": "Flying",
       "top5_predictions": [
-        ["Bug", 0.3112],
-        ["Normal", 0.1951],
-        ["Steel", 0.113],
-        ["Fighting", 0.0804],
-        ["Dark", 0.0463]
+        ["Bug", 0.7864],
+        ["Normal", 0.0459],
+        ["Fighting", 0.0374],
+        ["Steel", 0.0279],
+        ["Rock", 0.0188]
       ],
       "top1_correct": true,
       "top5_correct": true
@@ -45,11 +45,11 @@
       "actual_type1": "Poison",
       "actual_type2": "Flying",
       "top5_predictions": [
-        ["Dark", 0.4154],
-        ["Flying", 0.1206],
-        ["Normal", 0.1076],
-        ["Fighting", 0.0727],
-        ["Fairy", 0.0571]
+        ["Dark", 0.5762],
+        ["Normal", 0.1025],
+        ["Fighting", 0.0972],
+        ["Flying", 0.0947],
+        ["Bug", 0.0182]
       ],
       "top1_correct": false,
       "top5_correct": false
@@ -59,11 +59,11 @@
       "actual_type1": "Psychic",
       "actual_type2": "",
       "top5_predictions": [
-        ["Ice", 0.17],
-        ["Normal", 0.1569],
-        ["Psychic", 0.1424],
-        ["Water", 0.0794],
-        ["Ghost", 0.0657]
+        ["Normal", 0.2244],
+        ["Water", 0.1513],
+        ["Psychic", 0.1402],
+        ["Dark", 0.115],
+        ["Ice", 0.0882]
       ],
       "top1_correct": false,
       "top5_correct": true
@@ -73,11 +73,11 @@
       "actual_type1": "Psychic",
       "actual_type2": "",
       "top5_predictions": [
-        ["Normal", 0.1955],
-        ["Dark", 0.1364],
-        ["Psychic", 0.1033],
-        ["Poison", 0.0894],
-        ["Fighting", 0.0828]
+        ["Dark", 0.3137],
+        ["Normal", 0.2504],
+        ["Psychic", 0.1171],
+        ["Fighting", 0.0835],
+        ["Steel", 0.0583]
       ],
       "top1_correct": false,
       "top5_correct": true
@@ -87,11 +87,11 @@
       "actual_type1": "Fighting",
       "actual_type2": "",
       "top5_predictions": [
-        ["Fighting", 0.5041],
-        ["Dark", 0.1351],
-        ["Normal", 0.0885],
-        ["Psychic", 0.0652],
-        ["Electric", 0.0453]
+        ["Fighting", 0.5952],
+        ["Dark", 0.0994],
+        ["Normal", 0.0901],
+        ["Psychic", 0.0578],
+        ["Electric", 0.0506]
       ],
       "top1_correct": true,
       "top5_correct": true
@@ -101,11 +101,11 @@
       "actual_type1": "Water",
       "actual_type2": "Ground",
       "top5_predictions": [
-        ["Normal", 0.3342],
-        ["Water", 0.1244],
-        ["Psychic", 0.1138],
-        ["Ground", 0.0839],
-        ["Ice", 0.0755]
+        ["Normal", 0.2469],
+        ["Water", 0.1897],
+        ["Psychic", 0.1164],
+        ["Ice", 0.1053],
+        ["Ground", 0.0981]
       ],
       "top1_correct": false,
       "top5_correct": true
@@ -115,27 +115,27 @@
       "actual_type1": "Grass",
       "actual_type2": "",
       "top5_predictions": [
-        ["Dragon", 0.3352],
-        ["Normal", 0.1118],
-        ["Grass", 0.1023],
-        ["Psychic", 0.0973],
-        ["Poison", 0.0776]
+        ["Dragon", 0.2235],
+        ["Poison", 0.1165],
+        ["Psychic", 0.1147],
+        ["Normal", 0.089],
+        ["Water", 0.0713]
       ],
       "top1_correct": false,
-      "top5_correct": true
+      "top5_correct": false
     },
     {
       "name": "Thievul",
       "actual_type1": "Dark",
       "actual_type2": "",
       "top5_predictions": [
-        ["Fire", 0.3742],
-        ["Dark", 0.3618],
-        ["Normal", 0.0686],
-        ["Fighting", 0.0616],
-        ["Poison", 0.0372]
+        ["Dark", 0.4724],
+        ["Fire", 0.3025],
+        ["Fighting", 0.1067],
+        ["Normal", 0.035],
+        ["Psychic", 0.0231]
       ],
-      "top1_correct": false,
+      "top1_correct": true,
       "top5_correct": true
     },
     {
@@ -143,11 +143,11 @@
       "actual_type1": "Psychic",
       "actual_type2": "",
       "top5_predictions": [
-        ["Ghost", 0.2919],
-        ["Dark", 0.2674],
-        ["Psychic", 0.0907],
-        ["Normal", 0.0898],
-        ["Fairy", 0.0663]
+        ["Dark", 0.6542],
+        ["Normal", 0.0975],
+        ["Psychic", 0.0691],
+        ["Ghost", 0.0679],
+        ["Fairy", 0.0305]
       ],
       "top1_correct": false,
       "top5_correct": true
