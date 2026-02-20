@@ -135,9 +135,8 @@ def load_clip_model():
     logger = logging.getLogger(__name__)
     logger.info(f"Loading CLIP model on device: {device}")
 
-    # Load ViT-L/14 model with OpenAI pretrained weights
     model, _, preprocess = open_clip.create_model_and_transforms(
-        "ViT-L-14", pretrained="openai"
+        "ViT-L-14", pretrained="openai", force_quick_gelu=True
     )
     model = model.to(device)
     model.eval()
@@ -376,7 +375,7 @@ def run_q20():
         plt.suptitle(query_text, fontsize=12, y=1.05)
 
         # Save plot
-        output_path = f"outputs/part3_q20_{pokemon_type.lower()}.png"
+        output_path = f"outputs/Q20_{pokemon_type.lower()}.png"
         plt.tight_layout()
         plt.savefig(output_path, dpi=150, bbox_inches="tight")
         plt.close()
@@ -507,7 +506,7 @@ def run_q21():
     plt.suptitle("Q21: Random 10 Pokemon Type Predictions", fontsize=14, y=0.98)
     plt.tight_layout(rect=[0, 0, 1, 0.96])
 
-    output_path = "outputs/part3_q21_predictions.png"
+    output_path = "outputs/Q21_predictions.png"
     plt.savefig(output_path, dpi=150, bbox_inches="tight")
     plt.close()
     logger.info(f"Saved plot to {output_path}")
@@ -527,7 +526,7 @@ def run_q21():
         ],
     }
 
-    json_path = "outputs/part3_q21_detailed.json"
+    json_path = "outputs/Q21_detailed.json"
     with open(json_path, "w") as f:
         json.dump(json_output, f, indent=2)
 
@@ -632,14 +631,14 @@ def run_q22():
 
     output_dir = Path("outputs")
     output_dir.mkdir(exist_ok=True)
-    detailed_output = output_dir / "part3_q22_detailed.json"
+    detailed_output = output_dir / "Q22_detailed.json"
     with open(detailed_output, "w") as f:
         import json
 
         json.dump({"per_pokemon": detailed_results}, f, indent=2)
     logger.info(f"Saved detailed results to {detailed_output}")
 
-    metrics_output = output_dir / "part3_q22_metrics.json"
+    metrics_output = output_dir / "Q22_metrics.json"
     metrics = {
         "clip_acc1": round(acc1, 4),
         "clip_hit5": round(hit5, 4),
@@ -678,7 +677,7 @@ def run_q23():
 
     model, processor = load_qwen3_vl()
 
-    q22_path = Path("outputs/part3_q22_detailed.json")
+    q22_path = Path("outputs/Q22_detailed.json")
     if not q22_path.exists():
         logger.error(f"Q22 results not found at {q22_path}")
         raise FileNotFoundError(f"Run Q22 first to generate {q22_path}")
@@ -767,7 +766,7 @@ def run_q23():
 
     vlm_acc1 = vlm_correct / total
 
-    with open("outputs/part3_q22_metrics.json", "r") as f:
+    with open("outputs/Q22_metrics.json", "r") as f:
         q22_metrics = json.load(f)
 
     clip_acc1 = q22_metrics["clip_acc1"]
@@ -776,12 +775,12 @@ def run_q23():
 
     output_dir = Path("outputs")
     output_dir.mkdir(exist_ok=True)
-    detailed_output = output_dir / "part3_q23_detailed.json"
+    detailed_output = output_dir / "Q23_detailed.json"
     with open(detailed_output, "w") as f:
         json.dump({"per_pokemon": vlm_results}, f, indent=2)
     logger.info(f"Saved detailed results to {detailed_output}")
 
-    metrics_output = output_dir / "part3_q23_metrics.json"
+    metrics_output = output_dir / "Q23_metrics.json"
     metrics = {
         "clip_acc1": round(clip_acc1, 4),
         "clip_hit5": round(clip_hit5, 4),
