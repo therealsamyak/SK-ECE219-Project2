@@ -439,7 +439,6 @@ def run_clustering_pipeline(
         model = KMeans(n_clusters=n_clusters, random_state=random_state, n_init=10)
         return model.fit_predict(X), model
     elif method == "agglomerative":
-        # Use kneighbors_graph for efficiency with linkage="ward"
         k = min(50, X.shape[0] // 10) if X.shape[0] > 100 else 10
         conn = kneighbors_graph(
             X, n_neighbors=k, mode="connectivity", include_self=False
@@ -709,9 +708,6 @@ def run_task1_2(data=None):
         )
     logger.info(f"Saved MiniLM clustering results to {minilm_path}")
 
-    logger.info("\n" + "=" * 60)
-    logger.info("Best Performing Pipelines Summary:")
-    logger.info("=" * 60)
     logger.info("\n" + "=" * 60)
     logger.info("Best Performing Pipelines Summary:")
     logger.info("=" * 60)

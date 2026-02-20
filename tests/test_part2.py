@@ -222,7 +222,6 @@ class TestRunClusteringGridSearch:
         self, mock_tqdm, mock_umap, sample_4096_features, sample_labels, outputs_dir
     ):
         mock_tqdm.return_value = iter(range(100))
-        # Mock UMAP to return proper shape
         mock_umap_instance = MagicMock()
         mock_umap_instance.fit_transform.return_value = np.random.randn(40, 50).astype(
             np.float32
@@ -246,7 +245,6 @@ class TestRunClusteringGridSearch:
         self, mock_tqdm, mock_umap, sample_4096_features, sample_labels, outputs_dir
     ):
         mock_tqdm.return_value = iter(range(100))
-        # Mock UMAP to return proper shape
         mock_umap_instance = MagicMock()
         mock_umap_instance.fit_transform.return_value = np.random.randn(40, 50).astype(
             np.float32
@@ -273,7 +271,6 @@ class TestRunClusteringGridSearch:
         self, mock_tqdm, mock_umap, sample_4096_features, sample_labels, outputs_dir
     ):
         mock_tqdm.return_value = iter(range(100))
-        # Mock UMAP to return proper shape
         mock_umap_instance = MagicMock()
         mock_umap_instance.fit_transform.return_value = np.random.randn(40, 50).astype(
             np.float32
@@ -302,7 +299,6 @@ class TestRunMlpClassifier:
         self, mock_tqdm, mock_umap, sample_4096_features, sample_labels, outputs_dir
     ):
         mock_tqdm.return_value = iter(range(100))
-        # Mock UMAP to return proper shape
         mock_umap_instance = MagicMock()
         mock_umap_instance.fit_transform.return_value = np.random.randn(40, 50).astype(
             np.float32
@@ -326,7 +322,6 @@ class TestRunMlpClassifier:
         self, mock_tqdm, mock_umap, sample_4096_features, sample_labels, outputs_dir
     ):
         mock_tqdm.return_value = iter(range(100))
-        # Mock UMAP to return proper shape
         mock_umap_instance = MagicMock()
         mock_umap_instance.fit_transform.return_value = np.random.randn(40, 50).astype(
             np.float32
@@ -350,7 +345,6 @@ class TestRunMlpClassifier:
         self, mock_tqdm, mock_umap, sample_4096_features, sample_labels, outputs_dir
     ):
         mock_tqdm.return_value = iter(range(100))
-        # Mock UMAP to return proper shape
         mock_umap_instance = MagicMock()
         mock_umap_instance.fit_transform.return_value = np.random.randn(40, 50).astype(
             np.float32
