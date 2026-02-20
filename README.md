@@ -10,11 +10,6 @@
   - Python package manager
   - Automatically handles virtual environments and Python versions
 
-### Optional
-
-- ruff (https://docs.astral.sh/ruff/)
-  - Python formatting / linting
-
 ## Install
 
 ```bash
