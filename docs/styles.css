@@ -52,6 +52,20 @@ h1 {
   text-decoration: underline;
 }
 
+.ai-disclaimer {
+  background-color: #fff3cd;
+  border: 1px solid #ffc107;
+  border-left: 4px solid #ffc107;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.ai-disclaimer p {
+  margin: 0;
+  color: #856404;
+}
+
 nav {
   padding: 20px 0;
   margin-bottom: 20px;

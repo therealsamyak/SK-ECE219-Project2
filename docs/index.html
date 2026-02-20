@@ -24,6 +24,15 @@
       </p>
     </header>
 
+    <div class="ai-disclaimer">
+      <p>
+        <strong>AI Disclaimer:</strong> AI tools were used to assist with code
+        generation and formatting in this repository. All code has been
+        rigorously tested, reviewed, and structured to ensure it meets academic
+        standards and is easily replicable.
+      </p>
+    </div>
+
     <nav>
       <h2>Table of Contents</h2>
       <hr />
@@ -1061,6 +1070,14 @@ Output a 3-6 word label describing what these reviews have in common.
     <!-- Part 3: Multi-modal -->
     <h2 id="multi-modal">Multi-modal</h2>
     <hr />
+    <blockquote>
+      <strong>Note:</strong> We use the <code>open_clip</code> library instead of
+      the official OpenAI <code>clip</code> library. Both load the same ViT-L-14
+      model with identical OpenAI pretrained weights, but
+      <code>open_clip</code> is an easily installable Python package
+      (<code>pip install open-clip-torch</code>) with no additional setup
+      required.
+    </blockquote>
     <h2 id="q20">Question 20</h2>
     <div class="question-text">
       <p>

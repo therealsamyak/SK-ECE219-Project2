@@ -1,5 +1,7 @@
 # Part 3 - Clustering using both Image and Text
 
+> **Note:** We use the `open_clip` library instead of the official OpenAI `clip` library. Both load the same ViT-L-14 model with identical OpenAI pretrained weights, but `open_clip` is an easily installable Python package (`pip install open-clip-torch`) with no additional setup required.
+
 ## Question 20
 
 Construct text queries to find Pokemon images by type. Report top 5 for Bug, Fire, Grass, Dark, and Dragon.
