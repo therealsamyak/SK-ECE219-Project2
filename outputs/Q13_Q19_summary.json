@@ -36,7 +36,7 @@
     "is_dense": true
   },
   "Q17_tsne": {
-    "plot_path": "outputs/part2_tsne.png",
+    "plot_path": "outputs/Q17_tsne.png",
     "n_components": 2,
     "perplexity": 30
   },
@@ -62,20 +62,20 @@
         "best_clustering": "hdbscan"
       },
       "autoencoder": {
-        "best_ari": 0.22059262065484175,
+        "best_ari": 0.16285083738330047,
         "best_clustering": "kmeans"
       }
     }
   },
   "Q19_mlp": {
-    "original_accuracy": 0.9114441275596619,
-    "best_reduced_accuracy": 0.9114441275596619,
+    "original_accuracy": 0.9141689538955688,
+    "best_reduced_accuracy": 0.9087193608283997,
     "best_method": "svd",
-    "accuracy_drop_percent": 0.0,
-    "does_performance_suffer": false,
+    "accuracy_drop_percent": 0.544959306716919,
+    "does_performance_suffer": true,
     "is_drop_significant": false,
     "all_reduced_accuracies": {
-      "svd": 0.9114441275596619,
+      "svd": 0.9087193608283997,
       "umap": 0.8106266856193542,
       "autoencoder": 0.8828337788581848
     },

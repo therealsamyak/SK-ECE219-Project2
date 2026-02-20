@@ -1,12 +1,12 @@
 {
   "original_features": {
     "feature_dim": 4096,
-    "test_accuracy": 0.9114441275596619
+    "test_accuracy": 0.9141689538955688
   },
   "reduced_features": {
     "svd": {
       "feature_dim": 50,
-      "test_accuracy": 0.9114441275596619
+      "test_accuracy": 0.9087193608283997
     },
     "umap": {
       "feature_dim": 50,
@@ -18,9 +18,9 @@
     }
   },
   "summary": {
-    "original_accuracy": 0.9114441275596619,
+    "original_accuracy": 0.9141689538955688,
     "best_reduced_method": "svd",
-    "best_reduced_accuracy": 0.9114441275596619,
-    "accuracy_improvement": 0.0
+    "best_reduced_accuracy": 0.9087193608283997,
+    "accuracy_improvement": -0.0054495930671691895
   }
 }

@@ -1,0 +1,25 @@
+{
+  "clip_acc1": 0.3329,
+  "clip_hit5": 0.7427,
+  "total_pokemon": 754,
+  "per_type_accuracy": {
+    "Bug": 0.4493,
+    "Dark": 0.7667,
+    "Dragon": 0.3636,
+    "Electric": 0.1842,
+    "Fairy": 0.5,
+    "Fighting": 0.4688,
+    "Fire": 0.5455,
+    "Flying": 0.0,
+    "Ghost": 0.04,
+    "Grass": 0.0759,
+    "Ground": 0.037,
+    "Ice": 0.5833,
+    "Normal": 0.2391,
+    "Poison": 0.2414,
+    "Psychic": 0.1087,
+    "Rock": 0.4146,
+    "Steel": 0.4583,
+    "Water": 0.4623
+  }
+}
