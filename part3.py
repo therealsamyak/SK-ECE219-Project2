@@ -73,6 +73,9 @@ def qwen_vl_infer_one(model, processor, image_path, prompt, max_new_tokens=128):
         **inputs,
         max_new_tokens=max_new_tokens,
         do_sample=False,
+        temperature=None,
+        top_p=None,
+        top_k=None,
     )
 
     # Remove the prompt tokens from the output before decoding

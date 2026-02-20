@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import logging
+
 from pathlib import Path
 import json
 from collections import Counter
@@ -194,7 +195,13 @@ Label:"""
 
         with torch.no_grad():
             outputs = model.generate(
-                **inputs, do_sample=False, num_beams=1, max_new_tokens=20
+                **inputs,
+                do_sample=False,
+                num_beams=1,
+                max_new_tokens=20,
+                temperature=None,
+                top_p=None,
+                top_k=None,
             )
 
         # Decode only newly generated tokens
@@ -300,12 +307,12 @@ def run_task1_1():
     }
 
     # Save JSON files
-    results_path = output_dir / "task1_1_results.json"
+    results_path = output_dir / "Q1_Q2_results.json"
     with open(results_path, "w") as f:
         json.dump(results, f, indent=2)
     logger.info(f"Saved results to {results_path}")
 
-    tfidf_path = output_dir / "task1_1_tfidf.json"
+    tfidf_path = output_dir / "Q2_tfidf.json"
     with open(tfidf_path, "w") as f:
         json.dump(
             {
@@ -318,7 +325,7 @@ def run_task1_1():
         )
     logger.info(f"Saved TF-IDF info to {tfidf_path}")
 
-    minilm_path = output_dir / "task1_1_minilm.json"
+    minilm_path = output_dir / "Q2_minilm.json"
     with open(minilm_path, "w") as f:
         json.dump(
             {
@@ -363,7 +370,9 @@ def apply_dimensionality_reduction(X, method, n_components=50, random_state=42):
         if X.shape[1] > 200:
             svd_preprocess = TruncatedSVD(n_components=200, random_state=random_state)
             X = svd_preprocess.fit_transform(X)
-        umap_model = umap.UMAP(n_components=n_components, random_state=random_state)
+        umap_model = umap.UMAP(
+            n_components=n_components, random_state=random_state, n_jobs=1
+        )
         return umap_model.fit_transform(X)
     elif method == "autoencoder":
         if hasattr(X, "toarray"):
@@ -441,7 +450,7 @@ def run_clustering_pipeline(
         return model.fit_predict(X), model
     elif method == "hdbscan":
         # Use min_cluster_size=2 initially, can adjust if noise dominates
-        model = HDBSCAN(min_cluster_size=hdbscan_min_size, min_samples=5)
+        model = HDBSCAN(min_cluster_size=hdbscan_min_size, min_samples=5, copy=False)
         return model.fit_predict(X), model
     else:
         raise ValueError(f"Unknown clustering method: {method}")
@@ -671,12 +680,12 @@ def run_task1_2(data=None):
         },
     }
 
-    results_path = output_dir / "task1_2_clustering_results.json"
+    results_path = output_dir / "Q3_Q4_clustering_results.json"
     with open(results_path, "w") as f:
         json.dump(results, f, indent=2)
     logger.info(f"Saved clustering results to {results_path}")
 
-    tfidf_path = output_dir / "task1_2_tfidf_clustering.json"
+    tfidf_path = output_dir / "Q3_tfidf_clustering.json"
     with open(tfidf_path, "w") as f:
         json.dump(
             {
@@ -688,7 +697,7 @@ def run_task1_2(data=None):
         )
     logger.info(f"Saved TF-IDF clustering results to {tfidf_path}")
 
-    minilm_path = output_dir / "task1_2_minilm_clustering.json"
+    minilm_path = output_dir / "Q3_minilm_clustering.json"
     with open(minilm_path, "w") as f:
         json.dump(
             {
@@ -741,11 +750,11 @@ def plot_pca_visualizations(use_clustering_results_if_available=True):
     Create PCA visualization plots for TF-IDF and MiniLM representations.
 
     This function:
-    1. Loads clustering results from task1_2_clustering_results.json if available
+    1. Loads clustering results from Q3_Q4_clustering_results.json if available
     2. Computes TF-IDF and MiniLM representations from the filtered dataset
     3. Applies PCA to reduce dimensions to 2D
     4. Creates 2x2 visualization: ground truth and cluster colors for each representation
-    5. Saves plots to outputs/task1_4_pca_visualizations.png
+    5. Saves plots to outputs/Q5_pca_visualizations.png
 
     Args:
         use_clustering_results_if_available: If True, try to load and use clustering results.
@@ -763,13 +772,11 @@ def plot_pca_visualizations(use_clustering_results_if_available=True):
     best_pipelines = {}
 
     if use_clustering_results_if_available:
-        clustering_results_path = output_dir / "task1_2_clustering_results.json"
+        clustering_results_path = output_dir / "Q3_Q4_clustering_results.json"
         if clustering_results_path.exists():
             with open(clustering_results_path, "r") as f:
                 clustering_results = json.load(f)
-            logger.info(
-                "Loaded clustering results from task1_2_clustering_results.json"
-            )
+            logger.info("Loaded clustering results from Q3_Q4_clustering_results.json")
 
             # Find best pipeline for each representation
             for rep_name in ["tfidf", "minilm"]:
@@ -1044,7 +1051,7 @@ def plot_pca_visualizations(use_clustering_results_if_available=True):
     plt.tight_layout()
 
     # Save plot
-    plot_path = output_dir / "task1_4_pca_visualizations.png"
+    plot_path = output_dir / "Q5_pca_visualizations.png"
     plt.savefig(plot_path, dpi=150, bbox_inches="tight")
     logger.info("Saved PCA visualizations to " + str(plot_path))
 
@@ -1070,7 +1077,7 @@ def plot_pca_visualizations(use_clustering_results_if_available=True):
     }
 
     # Save results to JSON
-    results_json_path = output_dir / "task1_4_results.json"
+    results_json_path = output_dir / "Q5_pca_results.json"
     with open(results_json_path, "w") as f:
         json.dump(results, f, indent=2)
     logger.info("Saved PCA results to " + str(results_json_path))
@@ -1098,7 +1105,7 @@ def load_main_dataset():
 def run_task2_1():
     """
     Task 2.1: Construct game vectors from positive reviews only.
-    Saves results to outputs/task2_1_results.json
+    Saves results to outputs/Q6_game_vectors.json
     """
     logger = logging.getLogger(__name__)
     logger.info("=" * 60)
@@ -1174,13 +1181,13 @@ def run_task2_1():
         "num_games": len(game_info),
         "games": game_info[:10],
     }
-    with open(output_dir / "task2_1_results.json", "w") as f:
+    with open(output_dir / "Q6_game_vectors.json", "w") as f:
         json.dump(results, f, indent=2, default=str)
 
-    np.save(output_dir / "task2_minilm_matrix.npy", minilm_matrix)
-    game_df.to_csv(output_dir / "task2_game_info.csv", index=False)
+    np.save(output_dir / "Q6_minilm_matrix.npy", minilm_matrix)
+    game_df.to_csv(output_dir / "Q6_game_info.csv", index=False)
 
-    logger.info(f"Saved results to {output_dir / 'task2_1_results.json'}")
+    logger.info(f"Saved results to {output_dir / 'Q6_game_vectors.json'}")
 
     return {
         "tfidf_matrix": tfidf_matrix,
@@ -1274,7 +1281,7 @@ def compute_genre_entropy(game_df, labels, cluster_id):
 def run_task2_2(game_data=None):
     """
     Task 2.2: Cluster games with default pipelines.
-    Saves results to outputs/task2_2_clustering.json
+    Saves results to outputs/Q7_Q8_game_clustering.json
     """
     logger = logging.getLogger(__name__)
     logger.info("=" * 60)
@@ -1371,22 +1378,24 @@ def run_task2_2(game_data=None):
             }
         )
 
-    with open(output_dir / "task2_2_clustering.json", "w") as f:
+    with open(output_dir / "Q7_Q8_game_clustering.json", "w") as f:
         json.dump(results, f, indent=2, default=str)
 
     # Save best model for Task 3
     best_X = apply_dimensionality_reduction(minilm_matrix, "svd", n_components=50)
     best_labels, best_model = run_clustering_pipeline(best_X, "kmeans", n_clusters=5)
-    np.save(output_dir / "task2_best_labels.npy", best_labels)
+    np.save(output_dir / "Q7_Q8_best_labels.npy", best_labels)
 
     import pickle
 
-    with open(output_dir / "task2_best_model.pkl", "wb") as f:
+    with open(output_dir / "Q7_Q8_best_model.pkl", "wb") as f:
         pickle.dump(
             {"model": best_model, "X_reduced": best_X, "labels": best_labels}, f
         )
 
-    logger.info(f"Saved clustering results to {output_dir / 'task2_2_clustering.json'}")
+    logger.info(
+        f"Saved clustering results to {output_dir / 'Q7_Q8_game_clustering.json'}"
+    )
 
     return results
 
@@ -1409,7 +1418,7 @@ def load_heldout_dataset():
 def run_task3_1(game_data=None, clustering_results=None):
     """
     Task 3.1: Genre estimation for held-out game.
-    Saves results to outputs/task3_1_results.json
+    Saves results to outputs/Q9_genre_estimation.json
     """
     logger = logging.getLogger(__name__)
     logger.info("=" * 60)
@@ -1447,14 +1456,14 @@ def run_task3_1(game_data=None, clustering_results=None):
     # Load best model
     import pickle
 
-    with open(output_dir / "task2_best_model.pkl", "rb") as f:
+    with open(output_dir / "Q7_Q8_best_model.pkl", "rb") as f:
         saved_data = pickle.load(f)
 
     best_model = saved_data["model"]
     labels = saved_data["labels"]
 
     # Reduce heldout vector
-    minilm_matrix = np.load(output_dir / "task2_minilm_matrix.npy")
+    minilm_matrix = np.load(output_dir / "Q6_minilm_matrix.npy")
     svd = TruncatedSVD(n_components=50, random_state=42)
     svd.fit(minilm_matrix)
     heldout_reduced = svd.transform(heldout_game_vector.reshape(1, -1))
@@ -1483,10 +1492,10 @@ def run_task3_1(game_data=None, clustering_results=None):
         "heldout_positive_reviews": len(heldout_positive),
     }
 
-    with open(output_dir / "task3_1_results.json", "w") as f:
+    with open(output_dir / "Q9_genre_estimation.json", "w") as f:
         json.dump(results, f, indent=2, default=str)
 
-    logger.info(f"Saved results to {output_dir / 'task3_1_results.json'}")
+    logger.info(f"Saved results to {output_dir / 'Q9_genre_estimation.json'}")
 
     return results
 
@@ -1538,7 +1547,7 @@ def get_exemplar_reviews(reviews, embeddings, labels, cluster_id, n_exemplars=2)
 def run_task3_2():
     """
     Task 3.2: Theme clustering for held-out game reviews.
-    Saves results to outputs/task3_2_results.json
+    Saves results to outputs/Q10_Q11_theme_clustering.json
     """
     logger = logging.getLogger(__name__)
     logger.info("=" * 60)
@@ -1660,10 +1669,10 @@ Label:"""
     results["llm_prompt_template"] = llm_prompt_template
     results["llm_examples"] = llm_examples
 
-    with open(output_dir / "task3_2_results.json", "w") as f:
+    with open(output_dir / "Q10_Q11_theme_clustering.json", "w") as f:
         json.dump(results, f, indent=2, default=str)
 
-    logger.info(f"Saved results to {output_dir / 'task3_2_results.json'}")
+    logger.info(f"Saved results to {output_dir / 'Q10_Q11_theme_clustering.json'}")
 
     return results
 
@@ -1709,13 +1718,13 @@ def main():
     logger.info("ALL TASKS COMPLETE")
     logger.info("=" * 60)
     logger.info("\nOutput files generated in outputs/:")
-    logger.info("  - task1_1_results.json (Q1-Q2)")
-    logger.info("  - task1_2_clustering_results.json (Q3)")
-    logger.info("  - task1_4_pca_visualizations.png (Q5)")
-    logger.info("  - task2_1_results.json (Q6)")
-    logger.info("  - task2_2_clustering.json (Q7-Q8)")
-    logger.info("  - task3_1_results.json (Q9)")
-    logger.info("  - task3_2_results.json (Q10-Q11)")
+    logger.info("  - Q1_Q2_results.json (Q1-Q2)")
+    logger.info("  - Q3_Q4_clustering_results.json (Q3)")
+    logger.info("  - Q5_pca_visualizations.png (Q5)")
+    logger.info("  - Q6_game_vectors.json (Q6)")
+    logger.info("  - Q7_Q8_game_clustering.json (Q7-Q8)")
+    logger.info("  - Q9_genre_estimation.json (Q9)")
+    logger.info("  - Q10_Q11_theme_clustering.json (Q10-Q11)")
     logger.info("\nSee Part1_Answers.md for complete answers to all 12 questions.")
 
     return {
