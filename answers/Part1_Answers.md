@@ -130,36 +130,36 @@ For each pipeline, report cluster count, sizes, and top 3 genres per cluster.
 | SVD + K-Means        | 5   | 25, 30, 50, 55, 40 | 62-82%           |
 | SVD + Agglomerative  | 5   | 37, 62, 32, 13, 56 | 59-100%          |
 | UMAP + K-Means       | 5   | 39, 61, 26, 42, 32 | 62-85%           |
-| UMAP + Agglomerative | 5   | 85, 40, 30, 22, 23 | 61-96%           |
-| AE + K-Means         | 5   | 63, 8, 34, 38, 57  | 67-75%           |
-| AE + Agglomerative   | 5   | 50, 33, 63, 39, 15 | 62-100%          |
+| UMAP + Agglomerative | 5   | 85, 40, 30, 22, 23 | 61-87%           |
+| AE + K-Means         | 5   | 36, 43, 34, 58, 29 | 62-84%           |
+| AE + Agglomerative   | 5   | 50, 40, 27, 43, 40 | 58-85%           |
 
 **HDBSCAN (4 pipelines)**
 
-| Pipeline       | K   | Noise       | Sizes  | Top Genre Purity |
-| -------------- | --- | ----------- | ------ | ---------------- |
-| None + HDBSCAN | 2   | 175 (87.5%) | 18, 7  | 83-100%          |
-| SVD + HDBSCAN  | 2   | 168 (84%)   | 25, 7  | 72-100%          |
-| UMAP + HDBSCAN | 10  | 64 (32%)    | 5-35   | 60-100%          |
-| AE + HDBSCAN   | 2   | 89 (44.5%)  | 104, 7 | 74-100%          |
+| Pipeline       | K   | Noise        | Sizes  | Top Genre Purity |
+| -------------- | --- | ------------ | ------ | ---------------- |
+| None + HDBSCAN | 2   | 175 (87.5%)  | 18, 7  | 83-100%          |
+| SVD + HDBSCAN  | 2   | 168 (84%)    | 25, 7  | 72-100%          |
+| UMAP + HDBSCAN | 10  | 64 (32%)     | 5-35   | 60-100%          |
+| AE + HDBSCAN   | 2   | 161 (80.5%)  | 33, 6  | 76-100%          |
 
 **TF-IDF (3 pipelines)**
 
-| Pipeline            | K   | Sizes             | Top Genre Purity |
-| ------------------- | --- | ----------------- | ---------------- | ------ |
-| SVD + K-Means       | 5   | 5, 94, 35, 62, 4  | 60-100%          |
-| SVD + Agglomerative | 5   | 49, 12, 130, 5, 4 | 65-100%          |
-| SVD + HDBSCAN       | 2   | 7 (3.5%)          | 188, 5           | 69-80% |
+| Pipeline            | K   | Sizes              | Top Genre Purity |
+| ------------------- | --- | ------------------ | ---------------- |
+| SVD + K-Means       | 5   | 5, 94, 35, 62, 4   | 60-100%          |
+| SVD + Agglomerative | 5   | 49, 12, 130, 5, 4  | 65-100%          |
+| SVD + HDBSCAN       | 2   | 188, 5 (3.5% noise)| 69-80%           |
 
 Sample genre breakdown (MiniLM + SVD + Agglomerative):
 
-| Cluster | Size | Top Genres                                     | Purity |
-| ------- | ---- | ---------------------------------------------- | ------ |
-| 0       | 37   | Indie (59%), Action (59%), Adventure (43%)     | 59%    |
-| 1       | 62   | Action (85%), Adventure (56%), RPG (44%)       | 85%    |
-| 2       | 32   | Adventure (66%), Simulation (63%), Indie (56%) | 66%    |
-| 3       | 13   | Action (100%), MMO (38%), Indie (23%)          | 100%   |
-| 4       | 56   | Action (64%), Adventure (46%), Indie (38%)     | 64%    |
+| Cluster | Size | Top Genres                                           | Purity |
+| ------- | ---- | ---------------------------------------------------- | ------ |
+| 0       | 37   | Indie (59%), Action (59%), Adventure (43%)           | 59%    |
+| 1       | 62   | Action (85%), Adventure (56%), RPG (44%)             | 85%    |
+| 2       | 32   | Adventure (66%), Simulation (63%), Indie (56%)       | 66%    |
+| 3       | 13   | Action (100%), Massively Multiplayer (38%), Indie (23%) | 100%   |
+| 4       | 56   | Action (64%), Adventure (46%), Indie (38%)           | 64%    |
 
 ---
 
