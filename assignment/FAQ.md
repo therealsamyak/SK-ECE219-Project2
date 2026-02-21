@@ -27,6 +27,8 @@ threadpoolctl==2.1.0
 tqdm==4.50.0
 umap-learn==0.5.0
 ```
+
+If your setup is already working, you do not need to adhere to this.
 ---
 
 Q: Hi instructors,
