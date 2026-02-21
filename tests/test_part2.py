@@ -19,7 +19,6 @@ from part2 import (
     run_tsne_visualization,
     run_clustering_grid_search,
     run_mlp_classifier,
-    create_summary_output,
 )
 
 
@@ -361,47 +360,3 @@ class TestRunMlpClassifier:
         assert "svd" in result["reduced_features"]
         assert "umap" in result["reduced_features"]
         assert "autoencoder" in result["reduced_features"]
-
-
-class TestCreateSummaryOutput:
-    @pytest.mark.slow
-    def test_creates_json(self, outputs_dir):
-        (outputs_dir / "Q13_Q16_features.json").write_text(
-            '{"feature_dim": 4096, "num_images": 50, "is_dense": true, "original_pixels": [224,224,3]}'
-        )
-        (outputs_dir / "Q18_clustering.json").write_text(
-            '{"best_overall": {"best_ari": 0.5, "dim_reduction": "umap", "config": {"clustering": "kmeans"}}, "best_per_dim_reduction": {"none": {"best_ari": 0.4, "config": {"clustering": "kmeans"}}, "svd": {"best_ari": 0.5, "config": {"clustering": "kmeans"}}, "umap": {"best_ari": 0.5, "config": {"clustering": "kmeans"}}, "autoencoder": {"best_ari": 0.45, "config": {"clustering": "kmeans"}}}}'
-        )
-        (outputs_dir / "Q19_mlp.json").write_text(
-            '{"summary": {"original_accuracy": 0.85, "best_reduced_accuracy": 0.87, "best_reduced_method": "umap", "accuracy_improvement": 0.02}, "reduced_features": {"svd": {"test_accuracy": 0.86}, "umap": {"test_accuracy": 0.87}, "autoencoder": {"test_accuracy": 0.85}}}'
-        )
-
-        with patch("part2.Path") as mock_path:
-            mock_path.return_value = outputs_dir
-            result = create_summary_output()
-        assert isinstance(result, dict)
-        assert "Q13_transfer_learning" in result
-        assert "Q14_feature_extraction_pipeline" in result
-        assert "Q15_dimensions" in result
-        assert "Q16_sparsity" in result
-        assert "Q17_tsne" in result
-        assert "Q18_clustering" in result
-        assert "Q19_mlp" in result
-
-    @pytest.mark.slow
-    def test_json_file_created(self, outputs_dir):
-        (outputs_dir / "Q13_Q16_features.json").write_text(
-            '{"feature_dim": 4096, "num_images": 50, "is_dense": true, "original_pixels": [224,224,3]}'
-        )
-        (outputs_dir / "Q18_clustering.json").write_text(
-            '{"best_overall": {"best_ari": 0.5, "dim_reduction": "umap", "config": {"clustering": "kmeans"}}, "best_per_dim_reduction": {"none": {"best_ari": 0.4, "config": {"clustering": "kmeans"}}, "svd": {"best_ari": 0.5, "config": {"clustering": "kmeans"}}, "umap": {"best_ari": 0.5, "config": {"clustering": "kmeans"}}, "autoencoder": {"best_ari": 0.45, "config": {"clustering": "kmeans"}}}}'
-        )
-        (outputs_dir / "Q19_mlp.json").write_text(
-            '{"summary": {"original_accuracy": 0.85, "best_reduced_accuracy": 0.87, "best_reduced_method": "umap", "accuracy_improvement": 0.02}, "reduced_features": {"svd": {"test_accuracy": 0.86}, "umap": {"test_accuracy": 0.87}, "autoencoder": {"test_accuracy": 0.85}}}'
-        )
-
-        with patch("part2.Path") as mock_path:
-            mock_path.return_value = outputs_dir
-            create_summary_output()
-        json_file = outputs_dir / "Q13_Q19_summary.json"
-        assert json_file.exists()

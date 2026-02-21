@@ -751,125 +751,6 @@ def run_mlp_classifier(features, labels, best_dim_reduction=None, device="cpu"):
     return results
 
 
-def create_summary_output():
-    """
-    Create summary JSON output with answers to Q13-Q19.
-
-    Reads from existing JSON output files and generates summary answers.
-    """
-    logger = setup_logging()
-    logger.info("Creating Summary Output")
-
-    output_dir = Path("outputs")
-    output_dir.mkdir(exist_ok=True)
-
-    # Read from output files
-    features_file = output_dir / "Q13_Q16_features.json"
-    clustering_file = output_dir / "Q18_clustering.json"
-    mlp_file = output_dir / "Q19_mlp.json"
-
-    # Load features data
-    with open(features_file, "r") as f:
-        features_data = json.load(f)
-
-    # Load clustering data
-    with open(clustering_file, "r") as f:
-        clustering_data = json.load(f)
-
-    # Load MLP data
-    with open(mlp_file, "r") as f:
-        mlp_data = json.load(f)
-
-    # Build summary JSON - numbers only, no text explanations
-    summary = {
-        "Q13_transfer_learning": {
-            "model": "VGG16",
-            "pretrained_dataset": "ImageNet",
-            "pretrained_classes": 1000,
-            "target_dataset": "tf_flowers",
-            "target_classes": 5,
-            "extraction_layer": "fc[0] (first fully-connected)",
-            "why_effective": [
-                "early_layers_learn_general_features",
-                "edges_textures_colors_transfer_across_domains",
-                "later_layers_capture_abstract_patterns",
-            ],
-        },
-        "Q14_feature_extraction_pipeline": {
-            "steps": [
-                "load_pretrained_vgg16",
-                "resize_image_to_224x224",
-                "normalize_with_imagenet_mean_std",
-                "pass_through_convolutional_features",
-                "apply_average_pooling_7x7",
-                "flatten_to_1d",
-                "extract_from_fc0_layer",
-            ],
-            "input_shape": [224, 224, 3],
-            "output_dim": 4096,
-            "normalization_mean": [0.485, 0.456, 0.406],
-            "normalization_std": [0.229, 0.224, 0.225],
-        },
-        "Q15_dimensions": {
-            "original_pixels": features_data["original_pixels"],
-            "feature_dim": features_data["feature_dim"],
-            "num_images": features_data["num_images"],
-        },
-        "Q16_sparsity": {
-            "is_dense": features_data["is_dense"],
-        },
-        "Q17_tsne": {
-            "plot_path": "outputs/Q17_tsne.png",
-            "n_components": 2,
-            "perplexity": 30,
-        },
-        "Q18_clustering": {
-            "best_ari": clustering_data["best_overall"]["best_ari"],
-            "best_method": clustering_data["best_overall"]["dim_reduction"],
-            "best_clustering_method": clustering_data["best_overall"]["config"].get(
-                "clustering", None
-            ),
-            "best_hdbscan_params": clustering_data["best_overall"]["config"].get(
-                "hdbscan_params", None
-            ),
-            "results_by_dim_reduction": {
-                dim: {
-                    "best_ari": data["best_ari"],
-                    "best_clustering": data["config"]["clustering"],
-                }
-                for dim, data in clustering_data["best_per_dim_reduction"].items()
-            },
-        },
-        "Q19_mlp": {
-            "original_accuracy": mlp_data["summary"]["original_accuracy"],
-            "best_reduced_accuracy": mlp_data["summary"]["best_reduced_accuracy"],
-            "best_method": mlp_data["summary"]["best_reduced_method"],
-            "accuracy_drop_percent": (
-                mlp_data["summary"]["original_accuracy"]
-                - mlp_data["summary"]["best_reduced_accuracy"]
-            )
-            * 100,
-            "does_performance_suffer": mlp_data["summary"]["accuracy_improvement"] < 0,
-            "is_drop_significant": abs(mlp_data["summary"]["accuracy_improvement"])
-            > 0.05,
-            "all_reduced_accuracies": {
-                method: data["test_accuracy"]
-                for method, data in mlp_data["reduced_features"].items()
-            },
-            "best_clustering_dim": clustering_data["best_overall"]["dim_reduction"],
-            "best_clustering_ari": clustering_data["best_overall"]["best_ari"],
-        },
-    }
-
-    # Save summary to JSON
-    output_json = output_dir / "Q13_Q19_summary.json"
-    with open(output_json, "w") as f:
-        json.dump(summary, f, indent=2)
-    logger.info(f"Saved summary to {output_json}")
-
-    return summary
-
-
 if __name__ == "__main__":
     # Extract features (loads from cache if available)
     data = extract_flower_features()
@@ -889,9 +770,6 @@ if __name__ == "__main__":
     mlp_results = run_mlp_classifier(
         features, labels, best_dim_reduction=best_dim, device=device
     )
-
-    # Create summary output
-    create_summary_output()
 
     # Print completion message
     print("\n" + "=" * 60)
