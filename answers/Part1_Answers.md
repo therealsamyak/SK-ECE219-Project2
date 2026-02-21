@@ -163,7 +163,7 @@ Top genres: Action (100%), Massively Multiplayer (38%), Indie (23%)
 | Dota 2           | Action, Massively Multiplayer, RPG |
 | Team Fortress 2  | Action, Massively Multiplayer      |
 
-These are competitive online multiplayer games. All have the Action tag.
+These are competitive online multiplayer first-person-shooter games. All have the Action tag.
 
 **Cluster 1 (62 games, 85% pure)**
 
@@ -175,7 +175,7 @@ Top genres: Action (85%), Adventure (56%), RPG (44%)
 | Black Mesa    | Action, Adventure, Indie |
 | Borderlands 3 | Action, RPG              |
 
-Narrative-driven action games with RPG elements. The mainstream AAA cluster.
+These are mostly narrative-driven action games with RPG elements.
 
 ---
 
@@ -199,7 +199,8 @@ Top genres: Action (80%), Adventure (55%), RPG (35%)
 | Black Mesa    | Action, Adventure, Indie |
 | Borderlands 3 | Action, RPG              |
 
-Why this works as genre estimation: Games are multi-label. Rather than predicting one genre, we assign the held-out game to its nearest cluster and inherit that cluster's genre distribution. The held-out game shares Action-Adventure-RPG characteristics because it clusters semantically with games having those tags.
+
+This is genre-estimation, because the games themselves are multi-label. Rather than predicting one genre, we assign the held-out game to its nearest cluster and inherit that cluster's genre distribution. The held-out game shares Action / Adventure / RPG characteristics because it clusters semantically with games having those tags.
 
 ---
 
@@ -277,7 +278,7 @@ For positive reviews: repeat with praise clusters.
 
 **Answer:**
 
-I selected MiniLM + SVD(50) + Agglomerative because it achieved the best performance in Task 1 (V-Measure 0.648, ARI 0.742) and Task 2 (up to 100% genre purity).
+We used MiniLM + SVD(50) + Agglomerative (same logic as Q10).
 
 **Cluster 0 - Positive Gameplay Experience (49 reviews)**
 
