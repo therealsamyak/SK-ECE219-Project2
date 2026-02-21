@@ -22,7 +22,7 @@ This worked best because CLIP was trained on internet image-text pairs, and "a p
 | Dark   | Umbreon, Darkrai, Pincurchin, Gastly, Salandit  |
 | Dragon | Dragonite, Rhydon, Druddigon, Nidorino, Kingdra |
 
-Files: [Bug](outputs/part3_q20_bug.png), [Fire](outputs/part3_q20_fire.png), [Grass](outputs/part3_q20_grass.png), [Dark](outputs/part3_q20_dark.png), [Dragon](outputs/part3_q20_dragon.png)
+Files: [Bug](outputs/Q20_bug.png), [Fire](outputs/Q20_fire.png), [Grass](outputs/Q20_grass.png), [Dark](outputs/Q20_dark.png), [Dragon](outputs/Q20_dragon.png)
 
 Bug, Fire, and Grass types retrieved pretty coherent results. Fire Pokemon tend to have warm colors (red, orange, yellow) and flame-like features. Grass types are mostly green with plant-like body parts. Bug types have insectoid body structures that CLIP picks up on easily.
 
@@ -42,7 +42,7 @@ Seed: 42
 
 Pokemon: Cosmog, Ledyba, Zubat, Wynaut, Spoink, Makuhita, Quagsire, Meganium, Thievul, Espurr
 
-File: [predictions](outputs/part3_q21_predictions.png)
+File: [predictions](outputs/Q21_predictions.png)
 
 | Pokemon  | Actual        | Top-1            | Top-5                                     | Correct? |
 | -------- | ------------- | ---------------- | ----------------------------------------- | -------- |
