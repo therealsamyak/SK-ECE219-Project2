@@ -199,7 +199,6 @@ Top genres: Action (80%), Adventure (55%), RPG (35%)
 | Black Mesa    | Action, Adventure, Indie |
 | Borderlands 3 | Action, RPG              |
 
-
 This is genre-estimation, because the games themselves are multi-label. Rather than predicting one genre, we assign the held-out game to its nearest cluster and inherit that cluster's genre distribution. The held-out game shares Action / Adventure / RPG characteristics because it clusters semantically with games having those tags.
 
 ---
