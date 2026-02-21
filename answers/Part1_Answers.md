@@ -110,29 +110,28 @@ For each pipeline, report cluster count, sizes, and top 3 genres per cluster.
 **Answer:**
 
 **MiniLM (12 pipelines)**
-
-| Pipeline             | K   | Noise       | Sizes              | Top Genre Purity |
-| -------------------- | --- | ----------- | ------------------ | ---------------- |
-| None + K-Means       | 5   |             | 9, 86, 23, 58, 24  | 67-81%           |
-| None + Agglomerative | 5   |             | 41, 33, 62, 20, 44 | 54-93%           |
-| SVD + K-Means        | 5   |             | 25, 30, 50, 55, 40 | 62-82%           |
-| SVD + Agglomerative  | 5   |             | 37, 62, 32, 13, 56 | 59-100%          |
-| UMAP + K-Means       | 5   |             | 39, 61, 26, 42, 32 | 62-85%           |
-| UMAP + Agglomerative | 5   |             | 85, 40, 30, 22, 23 | 61-87%           |
-| AE + K-Means         | 5   |             | 36, 43, 34, 58, 29 | 62-84%           |
-| AE + Agglomerative   | 5   |             | 50, 40, 27, 43, 40 | 58-85%           |
-| None + HDBSCAN       | 2   | 175 (87.5%) | 18, 7              | 83-100%          |
-| SVD + HDBSCAN        | 2   | 168 (84%)   | 25, 7              | 72-100%          |
-| UMAP + HDBSCAN       | 10  | 64 (32%)    | 5-35               | 60-100%          |
-| AE + HDBSCAN         | 2   | 161 (80.5%) | 33, 6              | 76-100%          |
+| Pipeline | K | Noise | Sizes | Top Genre Purity | Top 3 Genres per Cluster |
+| -------------------- | --- | ----------- | ------------------ | ---------------- | -------------------------- |
+| None + Kmeans | 5 | | 9, 23, 24, 58, 86 | 67-81% | 0. Simulation (67%), Sports (67%), Action (33%)<br>1. Action (69%), Indie (55%), Adventure (50%)<br>2. Action (74%), Adventure (52%), RPG (48%)<br>3. Action (81%), Adventure (48%), RPG (33%)<br>4. Adventure (71%), Simulation (54%), Indie (50%) |
+| None + Agglomerative | 5 | | 20, 33, 41, 44, 62 | 55-93% | 0. Action (63%), Adventure (49%), Indie (49%)<br>1. Action (82%), Adventure (45%), RPG (27%)<br>2. Action (55%), Indie (53%), Adventure (50%)<br>3. Simulation (70%), Indie (60%), Adventure (55%)<br>4. Action (93%), Adventure (52%), RPG (48%) |
+| SVD + Kmeans | 5 | | 25, 30, 40, 50, 55 | 62-82% | 0. Action (76%), Adventure (52%), RPG (44%)<br>1. Adventure (67%), Simulation (57%), Indie (53%)<br>2. Indie (62%), Action (58%), Adventure (54%)<br>3. Action (82%), Indie (38%), Adventure (33%)<br>4. Action (80%), Adventure (55%), RPG (35%) |
+| SVD + Agglomerative | 5 | | 13, 32, 37, 56, 62 | 59-100% | 0. Indie (59%), Action (59%), Adventure (43%)<br>1. Action (85%), Adventure (56%), RPG (44%)<br>2. Adventure (66%), Simulation (62%), Indie (56%)<br>3. Action (100%), Massively Multiplayer (38%), Indie (23%)<br>4. Action (64%), Adventure (46%), Indie (38%) |
+| UMAP + Kmeans | 5 | | 26, 32, 39, 42, 61 | 62-85% | 0. Action (85%), Adventure (49%), RPG (36%)<br>1. Action (64%), Adventure (46%), Indie (39%)<br>2. Simulation (62%), Adventure (54%), Indie (54%)<br>3. Indie (62%), Action (60%), Adventure (50%)<br>4. Action (84%), Adventure (56%), RPG (34%) |
+| UMAP + Agglomerative | 5 | | 22, 23, 30, 40, 85 | 63-87% | 0. Action (66%), Adventure (52%), Indie (41%)<br>1. Action (85%), Adventure (45%), RPG (38%)<br>2. Indie (63%), Action (53%), Adventure (47%)<br>3. Simulation (64%), Adventure (55%), Indie (50%)<br>4. Action (87%), Adventure (52%), RPG (35%) |
+| AE + Kmeans | 5 | | 29, 34, 36, 43, 58 | 62-84% | 0. Indie (67%), Adventure (56%), Action (53%)<br>1. Action (84%), Adventure (51%), RPG (30%)<br>2. Action (74%), Adventure (59%), RPG (41%)<br>3. Action (79%), Indie (40%), Adventure (38%)<br>4. Indie (62%), Adventure (55%), Simulation (55%) |
+| AE + Agglomerative | 5 | | 27, 40, 40, 43, 50 | 57-85% | 0. Indie (68%), Action (58%), Adventure (54%)<br>1. Action (85%), Adventure (50%), RPG (28%)<br>2. Action (70%), Adventure (59%), RPG (37%)<br>3. Action (77%), Indie (35%), Adventure (35%)<br>4. Indie (57%), Adventure (55%), Action (52%) |
+| None + Hdbscan | 2 | 175 (87.5%) | 7-18 | 83-100% | 0. Action (83%), Adventure (56%), Indie (50%)<br>1. Action (100%), Massively Multiplayer (43%), Early Access (29%) |
+| SVD + Hdbscan | 2 | 168 (84.0%) | 7-25 | 72-100% | 0. Action (72%), Adventure (64%), Indie (52%)<br>1. Action (100%), Massively Multiplayer (43%), Early Access (29%) |
+| UMAP + Hdbscan | 10 | 64 (32.0%) | 5-35 | 60-100% | 0. Action (80%), Racing (80%), Adventure (60%)<br>1. Adventure (86%), Simulation (57%), Indie (43%)<br>2. Action (83%), RPG (50%), Adventure (50%)<br>3. Simulation (65%), Adventure (60%), Indie (55%)<br>4. Casual (80%), Indie (60%), Action (60%)<br>5. Action (91%), Adventure (60%), RPG (40%)<br>6. Action (100%), Free To Play (30%), Massively Multiplayer (20%)<br>7. Action (60%), Indie (53%), Adventure (47%)<br>8. Indie (85%), Adventure (60%), Action (60%)<br>9. Simulation (86%), Sports (86%), Action (14%) |
+| AE + Hdbscan | 2 | 161 (80.5%) | 6-33 | 76-100% | 0. Action (76%), Indie (55%), Adventure (52%)<br>1. Action (100%), Early Access (33%), Massively Multiplayer (33%) |
 
 **TF-IDF (3 pipelines)**
 
-| Pipeline            | K   | Sizes               | Top Genre Purity |
-| ------------------- | --- | ------------------- | ---------------- |
-| SVD + K-Means       | 5   | 5, 94, 35, 62, 4    | 60-100%          |
-| SVD + Agglomerative | 5   | 49, 12, 130, 5, 4   | 65-100%          |
-| SVD + HDBSCAN       | 2   | 188, 5 (3.5% noise) | 69-80%           |
+| Pipeline            | K   | Sizes              | Top Genre Purity | Top 3 Genres per Cluster                                                                                                                                                                                                                             |
+| ------------------- | --- | ------------------ | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| SVD + Kmeans        | 5   | 4, 5, 35, 62, 94   | 60-100%          | 0. Action (80%), Massively Multiplayer (60%), Strategy (40%)<br>1. Action (71%), Adventure (57%), RPG (46%)<br>2. Action (60%), Adventure (60%), Indie (43%)<br>3. Action (71%), Indie (40%), Adventure (39%)<br>4. Simulation (100%), Sports (100%) |
+| SVD + Agglomerative | 5   | 4, 5, 12, 49, 130  | 65-100%          | 0. Action (80%), Indie (45%), Adventure (43%)<br>1. Action (67%), Adventure (58%), Indie (58%)<br>2. Action (65%), Adventure (55%), RPG (41%)<br>3. Action (80%), Massively Multiplayer (60%), Strategy (40%)<br>4. Simulation (100%), Sports (100%) |
+| SVD + Hdbscan       | 2   | 5-188 (3.5% noise) | 69-80%           | 0. Action (69%), Adventure (52%), Indie (41%)<br>1. Action (80%), Massively Multiplayer (60%), Strategy (40%)                                                                                                                                        |
 
 Sample genre breakdown (MiniLM + SVD + Agglomerative):
 
@@ -152,7 +151,7 @@ Pick the best pipeline and report two high-purity clusters with genres, purity, 
 
 **Answer:**
 
-I selected MiniLM + SVD(50) + Agglomerative because it performed the best in Task 1 and shows strong genre purity.
+We selected MiniLM + SVD(50) + Agglomerative because it performed the best in Task 1 and shows strong genre purity.
 
 **Cluster 3 (13 games, 100% pure)**
 
@@ -188,7 +187,7 @@ Report assigned cluster ID, top 3 genres, and 3 representative games.
 
 **Answer:**
 
-We used MiniLM + SVD + Agglomerative.
+The best Task 2 pipeline is MiniLM + SVD + Agglomerative.
 
 **Cluster ID:** 4
 
@@ -210,7 +209,7 @@ For negative reviews: report 3-5 clusters with top terms, exemplar reviews, and 
 
 **Answer:**
 
-I selected MiniLM + SVD(50) + Agglomerative because it achieved the best performance in Task 1 (V-Measure 0.648, ARI 0.742) and Task 2 (up to 100% genre purity).
+We used MiniLM + SVD(50) + Agglomerative because it achieved the best performance in Task 1 (V-Measure 0.648, ARI 0.742) and Task 2 (up to 100% genre purity).
 
 **Cluster 0 - Boss-Focused Gameplay Issues (48 reviews)**
 
