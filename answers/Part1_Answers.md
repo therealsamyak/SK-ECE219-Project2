@@ -231,61 +231,63 @@ For negative reviews: report 3-5 clusters with top terms, exemplar reviews, and 
 
 **Justification:** This pipeline achieved best performance in Task 1 (V-Measure 0.648, ARI 0.742) and Task 2 (up to 100% genre purity). Consistent with Q8 and Q9.
 
-**Cluster 0 - Difficult & Repetitive (32 reviews)**
+**Cluster 0 - Boss-Focused Gameplay Issues (48 reviews)**
 
-Terms: game, boss, just, like, bosses, fun, fight, really, design, attacks
+Terms: game, like, just, boss, fun, games, combat, boring, good, don
 
-> "Lots of Misleading reviews on here. The game is beyond difficult, not suitable for anyone less than a hardcore gamer. It is not open map and not explorable. Instead, you go through a linear style path way encountering boss after boss which are incredibly difficult to beat..."
+> "First of all it's a beautiful game. The visuals are great, It also has some unique combat that when you get used to it, it's enjoyable. But beyond that...this game is a boss simulator. I'm sure a lot of people will enjoy that aspect. I was hoping for more exploration. The game is linear, which isn't bad in itself, but it's boss fight after boss fight after boss fight..."
 
-> "Unlike most people who reviewed this game after 30 minutes and declared it GOTY, i actually played the game. TLDR: Fun at the start, get repetitive really fast and overstays its welcome, with a bunch of glitches and graphical errors..."
+> "Is a fun game but with a lot of problems. First of all performance is not great and not consistent at all through the chapters. There's a beautiful world to look at but full of invisible walls that takes me out of the immersion..."
 
-Label: Difficult and repetitive gameplay
-
----
-
-**Cluster 1 - Boring/Political (12 reviews)**
-
-Terms: game, like, developers misogynists, taiwan country, boring, fun
-
-> "Game is boring af. Another souls game wannabe except without it's charm. Sekiro had satisfying combat, Elden ring had massive open world and a doll waifu..."
-
-Label: Boring, repetitive, misogynistic criticism
+Label: Boss-focused gameplay issues
 
 ---
 
-**Cluster 2 - Performance Issues (18 reviews)**
+**Cluster 1 - Frustrating Combat & Boss Design (21 reviews)**
 
-Terms: fps, low, crashes, settings, issues, amd, 7900xtx, rtx
+Terms: game, boss, like, just, bosses, combat, design, really, attacks, feel
+
+> "The other negative reviews have already covered most of it. I can just add that I too find the game very frustrating. I want to love it, but the poor combat design, getting locked into animations far too often, which punishes you constantly..."
+
+> "I really wanted to like this game, but it falls victim to many poor design decisions and I found the game far more tedious and frustrating than it should be..."
+
+Label: Frustrating Combat and Boss Design
+
+---
+
+**Cluster 2 - Misogynistic Developers Criticism (6 reviews)**
+
+Terms: developers misogynists, developers, country, misogynists, taiwan, taiwan country, game, want, talking, feets
+
+> "If you want to support a super misogynistic games company then this is the game for you"
+
+> "The developers are misogynists"
+
+Label: Misogynistic Developers Criticism
+
+---
+
+**Cluster 3 - Wukong Game Criticism (8 reviews)**
+
+Terms: game, boss, just, like, wukong, story, design, level, black, black myth
+
+> "Do be aware that the majority of the reviews for Wukong are from China, even those in English, and as such this review will probably trigger some..."
+
+> "Is Black Myth: Wukong the best game ever made and ever will be made? ...... A sudden uproar of positive feedback for this game brings me here..."
+
+Label: Wukong game criticism
+
+---
+
+**Cluster 4 - Performance Issues (17 reviews)**
+
+Terms: game, fps, low, crashes, settings, issues, like, amd, 7900xtx, low fps
 
 > "I wanted to share my recent experience with this where I have seen that's been getting positive reviews. I'm running this on an i7 13th gen, RTX 4080, and 32 gigs RAM, which should be more than capable. However, the game crashes consistently..."
 
 > "Not really sure what these purchased reviews are all about. Game runs terribly.1440p, Cinematic, 4090, 32GB Ram, 13900kConstant stutters."
 
 Label: Performance Issues
-
----
-
-**Cluster 3 - Boring Gameplay (14 reviews)**
-
-Terms: game, like, just, graphics, level, play, really, good, feels, story
-
-> "NGL this game looks really good, but god it is boring. The world and details look incredible but everything feels lifeless and the combat also just feels boring..."
-
-> "Gameplay is boring. Cutscenes and graphics are very nice, story seems interesting, but it's not enough to carry the game for me..."
-
-Label: Boring gameplay, lifeless world
-
----
-
-**Cluster 4 - Souls-like Comparison (24 reviews)**
-
-Terms: game, boss, like, just, games, combat, story, souls, bosses, good
-
-> "-Intriguing prologue, the whole game is a piece of... Same monsters and bosses. No story. Characters are empty, they only give quests. Monotonous combat. Graphics good, level design sucks..."
-
-> "I simply do not understand how this game is overwhelmingly positive. It feels, in many places, extremely amateurish in fact. Level design is objectively terrible. Huge open maps that feel procedurally generated..."
-
-Label: Monotonous, Amateurish Gameplay
 
 ---
 
@@ -297,59 +299,63 @@ For positive reviews: repeat with praise clusters.
 
 **Pipeline:** MiniLM + SVD(50) + Agglomerative
 
-**Justification:** Parity with Q10.
+**Justification:** Same as Q10 - best performer in Task 1 and Task 2.
 
-**Cluster 0 - Monke Meme (6 reviews)**
+**Cluster 0 - Positive Gameplay Experience (49 reviews)**
 
-Terms: monke, reject, monke approves, embraces, embraces monke
-
-> "REJECT MODERNITYRETURN TO MONKE"
-
-Label: Monke Embrace & Approval
-
----
-
-**Cluster 1 - Black Myth Praise (26 reviews)**
-
-Terms: game, 10, wukong, chinese, like, good, myth, games, black
-
-> "Black Myth: Wukong was released under a lot of anticipation after gameplay showcases had been shown over the past few years, leading people to even question if the game would really come out like that. Thankfully, it really did – and overcame all expectations..."
-
-> "Black Myth Wukong is an absolute masterclass of a game. All the hype, all the praise, all the positive buzz surrounding this game...they're absolutely deserved..."
-
-Label: Hype and Praise for Black Myth: Wukong
-
----
-
-**Cluster 2 - Template Reviews (15 reviews)**
-
-Terms: good, grind, just, bad, 10, long, average, bugs, game, hard
-
-> "---{ Graphics }---☑ You forget what reality is..."
-
-Label: Grind and repetitive gameplay
-
----
-
-**Cluster 3 - Combat Satisfaction (41 reviews)**
-
-Terms: game, like, games, just, good, graphics, really, play, combat, great
+Terms: game, like, just, good, games, really, graphics, combat, 10, play
 
 > "This game has the big awesome set pieces and aesthetic from the old school God of War games, the core gameplay of a Soul-like (albeit a tad more forgiving), really sick and fast paced Sekiro / Bloodborne combat..."
 
-> ""Wisdom lies in the balance of wit and humility." ~ Sun Wukong. I've been waiting for the game ever since it's 1st reveal... the soundtracks, visual setting, bosses everything is so good so far..."
+> "(Review in progress, 8h so far, 2 chapters completed)This game surprised me more than I expected. The level of polish and care put into it is quite impressive and I absolutely loved my time with it so far..."
 
 Label: Positive gameplay experience
 
 ---
 
-**Cluster 4 - Sweet Baby Reference (12 reviews)**
+**Cluster 1 - Mythical Chinese Game Excellence (15 reviews)**
 
-Terms: ign, sweet, sweet baby, baby, add, monke
+Terms: game, wukong, chinese, myth, good, black, black myth, games, myth wukong, like
+
+> "Black Myth: Wukong was released under a lot of anticipation after gameplay showcases had been shown over the past few years, leading people to even question if the game would really come out like that. Thankfully, it really did – and overcame all expectations..."
+
+> "Black Myth Wukong is an absolute masterclass of a game. All the hype, all the praise, all the positive buzz surrounding this game...they're absolutely deserved..."
+
+Label: Mythical Chinese Game Excellence
+
+---
+
+**Cluster 2 - Perfect 10s and Sweet Baby Praise (16 reviews)**
+
+Terms: 10, sweet baby, baby, sweet, ign, game, add, monke, ape, game ape
 
 > "※This game does not include Sweet Baby"
 
-Label: Sweet Baby Game Reference
+> "Story: 10/10Gameplay: 10/10Graphic & Sound: 10/10Animation: 10/10Game's World: 10/10Character: 10/10Combat: 10/10Enemy's AI: 10/10Soundtrack: 10/10Game Optimize: 10/10It's Wukong: 10/10OVERALL: 10+/10"
+
+Label: Perfect 10s and Sweet Baby praise
+
+---
+
+**Cluster 3 - Grind and Repetitive Gameplay (15 reviews)**
+
+Terms: good, grind, just, bad, 10, long, average, bugs, game, hard
+
+> "---{ Graphics }---☑ You forget what reality is☑ Beautiful☑ Good☑ Decent☑ Bad☑ Don't look too long at it☐ MS-DOS---{ Gameplay }---☑ Very good☐ Good☐ It's just gameplay☐ Mehh☐ Watch paint dry instead☐ Just don't..."
+
+Label: Grind and repetitive gameplay
+
+---
+
+**Cluster 4 - Monke Embrace Approved (5 reviews)**
+
+Terms: monke, reject, approves, monke approves, embrace, embrace monke, modernityreturn monke, modernityreturn, reject modernityreturn, dei
+
+> "MONKE APPROVES..."
+
+> "REJECT MODERNITYRETURN TO MONKE"
+
+Label: Monke Embrace Approved
 
 ---
 
@@ -375,21 +381,21 @@ Output a 3-6 word label describing what these reviews have in common.
 
 **Example 1 (Negative Cluster 0)**
 
-Terms: game, boss, just, like, bosses, fun, fight, design, attacks
-Exemplar: "Lots of Misleading reviews on here. The game is beyond difficult..."
+Terms: game, like, just, boss, fun, games, combat, boring, good, don
+Exemplar: "First of all it's a beautiful game. The visuals are great, It also has some unique combat that when you get used to it, it's enjoyable. But beyond that...this game is a boss simulator..."
 
-LLM output: "Difficult and repetitive gameplay"
+LLM output: "Boss-focused gameplay issues"
 
-**Example 2 (Negative Cluster 2)**
+**Example 2 (Negative Cluster 4)**
 
-Terms: fps, low, crashes, settings, issues, amd, rtx
+Terms: game, fps, low, crashes, settings, issues, like, amd, 7900xtx, low fps
 Exemplar: "I'm running this on an i7 13th gen, RTX 4080, and 32 gigs RAM... the game crashes consistently..."
 
 LLM output: "Performance Issues"
 
 **Example 3 (Positive Cluster 1)**
 
-Terms: game, 10, wukong, chinese, like, good, myth, games, black
+Terms: game, wukong, chinese, myth, good, black, black myth, games, myth wukong, like
 Exemplar: "Black Myth: Wukong was released under a lot of anticipation..."
 
-LLM output: "Hype and Praise for Black Myth: Wukong"
+LLM output: "Mythical Chinese Game Excellence"
