@@ -313,10 +313,10 @@
       <h3>Answer</h3>
       <p>
         File:
-        <a href="images/task1_4_pca_visualizations.png">PCA visualizations</a>
+        <a href="images/Q5_pca_visualizations.png">PCA visualizations</a>
       </p>
       <img
-        src="images/task1_4_pca_visualizations.png"
+        src="images/Q5_pca_visualizations.png"
         alt="PCA visualizations"
       />
 
@@ -881,8 +881,8 @@ Output a 3-6 word label describing what these reviews have in common.
     </div>
     <div class="answer">
       <h3>Answer</h3>
-      <p>File: <a href="images/part2_tsne.png">t-SNE plot</a></p>
-      <img src="images/part2_tsne.png" alt="t-SNE visualization" />
+      <p>File: <a href="images/Q17_tsne.png">t-SNE plot</a></p>
+      <img src="images/Q17_tsne.png" alt="t-SNE visualization" />
       <p>Settings: 2 components, perplexity=30, 3,670 points</p>
       <p>
         Some flower classes form distinct blobs—tulips and sunflowers cluster
@@ -962,7 +962,7 @@ Output a 3-6 word label describing what these reviews have in common.
           <tr>
             <td>Autoencoder (50-d)</td>
             <td>Agglomerative</td>
-            <td>0.2336</td>
+            <td>0.2920</td>
           </tr>
         </tbody>
       </table>
@@ -1053,29 +1053,29 @@ Output a 3-6 word label describing what these reviews have in common.
           <tr>
             <td>Original VGG16</td>
             <td>4,096</td>
-            <td>91.42%</td>
+            <td>91.96%</td>
           </tr>
           <tr>
             <td>SVD</td>
             <td>50</td>
-            <td>90.87%</td>
+            <td>91.28%</td>
           </tr>
           <tr>
             <td>UMAP</td>
             <td>50</td>
-            <td>81.06%</td>
+            <td>82.15%</td>
           </tr>
           <tr>
             <td>Autoencoder</td>
             <td>50</td>
-            <td>88.28%</td>
+            <td>89.37%</td>
           </tr>
         </tbody>
       </table>
 
       <p>
-        All reduced methods drop below 91.42%. SVD holds up best—only 0.55
-        points lost despite 98.8% dimension reduction. UMAP drops 10.4 points.
+        All reduced methods drop below 91.96%. SVD holds up best—only 0.68
+        points lost despite 98.8% dimension reduction. UMAP drops 9.8 points.
       </p>
 
       <p>Comparing with clustering:</p>
@@ -1091,12 +1091,12 @@ Output a 3-6 word label describing what these reviews have in common.
           <tr>
             <td>SVD</td>
             <td>0.195 (3rd)</td>
-            <td>90.87% (1st)</td>
+            <td>91.28% (1st)</td>
           </tr>
           <tr>
             <td>UMAP</td>
             <td>0.564 (1st)</td>
-            <td>81.06% (3rd)</td>
+            <td>82.15% (3rd)</td>
           </tr>
         </tbody>
       </table>
