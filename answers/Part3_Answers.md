@@ -8,9 +8,14 @@ Construct text queries to find Pokemon images by type. Report top 5 for Bug, Fir
 
 **Answer:**
 
-**Query Template:** `"a photo of a {type} type Pokemon"`
+**Queries Tried:**
 
-This worked best because CLIP was trained on internet image-text pairs, and "a photo of" matches typical captions.
+- `"type: {type}"`
+- `"{type} type Pokemon"`
+- `"Pokemon with {type} abilities"`
+- `"a photo of a {type} type Pokemon"`
+
+**Best one:** `"a photo of a {type} type Pokemon"`. This is likely the best due to most internet photo captions being in this format.
 
 **Top 5 per type:**
 
@@ -24,11 +29,9 @@ This worked best because CLIP was trained on internet image-text pairs, and "a p
 
 Files: [Bug](outputs/Q20_bug.png), [Fire](outputs/Q20_fire.png), [Grass](outputs/Q20_grass.png), [Dark](outputs/Q20_dark.png), [Dragon](outputs/Q20_dragon.png)
 
-Bug, Fire, and Grass types retrieved pretty coherent results. Fire Pokemon tend to have warm colors (red, orange, yellow) and flame-like features. Grass types are mostly green with plant-like body parts. Bug types have insectoid body structures that CLIP picks up on easily.
+Bug, Fire, and Grass types retrieved pretty coherent results. Fire Pokemon tend to have warm colors (red, orange, yellow) and flame-like features. Grass types are mostly green with plant-like body parts. Bug types have insectoid body structures that CLIP picks up on easily. However, Dark and Dragon were trickier. Dark-type visual identity isn't very consistent. Dragon types are visually all over the place, from serpentine (Kingdra) to dinosaur-like (Dragonite). The fact that Rhydon (Ground/Rock) and Nidorino (Poison) showed up for Dragon queries suggests CLIP associates "dragon-like features" (horns, bulky bodies) with the Dragon type.
 
-Dark and Dragon were trickier. Dark-type visual identity isn't very consistent—it includes shadowy creatures like Umbreon and Darkrai, but also Pokemon that just don't fit other categories. Dragon types are visually all over the place, from serpentine (Kingdra) to dinosaur-like (Dragonite). The fact that Rhydon (Ground/Rock) and Nidorino (Poison) showed up for Dragon queries suggests CLIP associates "dragon-like features" (horns, bulky bodies) with the Dragon type concept, regardless of the official type classification.
-
-The difference is straightforward: Bug, Fire, and Grass have clear visual patterns that match how people describe them. Dark and Dragon are more abstract categories with weaker visual cues.
+The performance difference matches the uniformity of appearances within the classes: Bug, Fire, and Grass have clear visual patterns that match how people describe them, and Dark and Dragon are more abstract categories with weaker visual cues.
 
 ---
 
@@ -59,7 +62,7 @@ File: [predictions](outputs/Q21_predictions.png)
 
 Top-1: 30%, Top-5: 70%
 
-CLIP struggles with visually ambiguous Pokemon. Zubat (Poison) gets called Dark—purple bat matches Dark-type look. Meganium (Grass) gets called Dragon because its dinosaur body looks more "dragon" than "plant."
+The results line up with what we found in Q20. For example, Zubat (Poison) gets called Dark type because its apperance of a purple bat matches Dark-type look. Similarly, Meganium (Grass) gets called Dragon because its dinosaur body looks more "dragon" than "plant."
 
 ---
 
@@ -95,16 +98,6 @@ Per-type Acc@1:
 Best: Dark (77%), Ice (58%), Fire (55%), Fairy (50%)
 Worst: Flying (0%), Ground (4%), Ghost (4%), Grass (8%)
 
-Why the gap between Acc@1 and Hit@5:
-
-1. **CLIP's design:** CLIP matches images to text by similarity. It doesn't reason about why something matches, just finds the closest option.
-
-2. **Similar looks:** Many Pokemon types look alike. Water and Ice types are both blue. Grass and Bug types are both green and plant-like.
-
-3. **Simple prompts:** Using "a photo of a {type} type Pokemon" doesn't help CLIP tell similar-looking types apart.
-
-4. **Types aren't visual:** Pokemon types are game rules, not appearance-based. Flying types include birds, dragons, and insects with nothing in common visually, so CLIP gets 0% right.
-
 ---
 
 ## Question 23
@@ -115,34 +108,14 @@ VLM Reranking of CLIP Top-5. Report Reranked Acc@1.
 
 Model: Qwen3-VL-2B-Instruct
 
-Protocol:
-
-1. CLIP provides top-5 candidates
-2. VLM receives image + candidates, prompted to select one type as JSON
-3. Invalid output falls back to CLIP top-1
-
 | Method      | Acc@1   | Hit@5  |
 | ----------- | ------- | ------ |
 | CLIP        | 33.29%  | 74.27% |
 | VLM Rerank  | 44.96%  | —      |
 | Improvement | +11.67% | —      |
 
-VLM fallbacks: 1
+Files: [metrics](outputs/Q23_metrics.json), [detailed](outputs/Q23_detailed.json)
 
-Does VLM reranking help?
+Yes, VLM reranking helps. It bumps Acc@1 from 33.29% to 44.96%, an 11.67 percentage point improvement. The VLM works because it can attend jointly over the image and the candidate type names, whereas CLIP encodes them separately and just compares similarity scores. Since CLIP already finds the right type somewhere in the top 5 about 74% of the time, the VLM just needs to pick the best one from that list. It's basically a second opinion that's better at the final decision. Only 1 case needed a fallback to CLIP's top-1.
 
-Yes. VLM reranking bumps Acc@1 from 33.29% to 44.96%, an 11.67 percentage point improvement (35.1% relative gain).
-
-Why VLM helps:
-
-1. **Cross-attention reasoning:** CLIP encodes image and text separately. The VLM attends jointly over both, comparing visual features directly to each type description.
-
-2. **Discrete decision-making:** CLIP outputs continuous similarity scores that can be noisy near the decision boundary. The VLM picks one answer from the candidates.
-
-3. **Instruction following:** The VLM understands the task and uses Pokemon knowledge that CLIP's contrastive training may not capture.
-
-4. **Constrained candidate set:** CLIP's top-5 retrieval finds the right type in 74.27% of cases. The VLM then ranks these candidates accurately.
-
-Limitations:
-
-The VLM is still constrained by CLIP's candidate pool. For the 25.73% of Pokemon where the correct type isn't in the top-5, the VLM can't recover the right answer. Also, VLM inference is significantly slower than CLIP (0.6s vs 0.01s per image on MPS), so it's better suited for post-hoc refinement than real-time prediction.
+The major drawback is that VLM can't recover the right answer if CLIP's top-5 never included it in the first place. VLM inference is also much slower (0.6s per image vs CLIP's 0.01s), making this approach less ideal in real-time classification scenarios.
