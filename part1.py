@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import logging
-
+import random
 from pathlib import Path
 import json
 from collections import Counter
@@ -1717,6 +1717,11 @@ def main():
         "task3": {"genre": task3_genre, "themes": task3_themes},
     }
 
+
+# Set random seeds
+random.seed(42)
+np.random.seed(42)
+torch.manual_seed(42)
 
 if __name__ == "__main__":
     main()
