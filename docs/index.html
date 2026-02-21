@@ -1236,9 +1236,9 @@ Output a 3-6 word label describing what these reviews have in common.</pre
         <li><code>"a photo of a {type} type Pokemon"</code></li>
       </ul>
       <p>
-        <strong>Best one:</strong> <code>"a photo of a {type} type Pokemon"</code>.
-        This is likely the best due to most internet photo captions being in this
-        format.
+        <strong>Best one:</strong>
+        <code>"a photo of a {type} type Pokemon"</code>. This is likely the best
+        due to most internet photo captions being in this format.
       </p>
 
       <p><strong>Top 5 per type:</strong></p>
@@ -1571,8 +1571,8 @@ Output a 3-6 word label describing what these reviews have in common.</pre
       </p>
 
       <p>
-        Yes, VLM reranking helps. It bumps Acc@1 from 33.29% to 44.96%, an
-        11.67 percentage point improvement. The VLM works because it can attend
+        Yes, VLM reranking helps. It bumps Acc@1 from 33.29% to 44.96%, an 11.67
+        percentage point improvement. The VLM works because it can attend
         jointly over the image and the candidate type names, whereas CLIP
         encodes them separately and just compares similarity scores. Since CLIP
         already finds the right type somewhere in the top 5 about 74% of the
