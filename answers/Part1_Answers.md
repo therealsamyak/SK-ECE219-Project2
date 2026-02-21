@@ -79,7 +79,7 @@ Plots and Visualization: Reduce embeddings to 2D using PCA and create split visu
 
 **Answer:**
 
-File: [PCA visualizations](docs/images/Q5_pca_visualizations.png)
+File: [PCA visualizations](outputs/Q5_pca_visualizations.png)
 
 PCA explained variance:
 
