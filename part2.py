@@ -771,6 +771,11 @@ np.random.seed(42)
 torch.manual_seed(42)
 
 if __name__ == "__main__":
+    logger = setup_logging()
+    logger.info("=" * 60)
+    logger.info("PART 2 - RUNNING ALL TASKS (Q13-Q19)")
+    logger.info("=" * 60)
+
     # Extract features (loads from cache if available)
     data = extract_flower_features()
     features = data["features"]
@@ -790,7 +795,6 @@ if __name__ == "__main__":
         features, labels, best_dim_reduction=best_dim, device=device
     )
 
-    # Print completion message
-    print("\n" + "=" * 60)
-    print("=== Part 2 Complete ===")
-    print("=" * 60)
+    logger.info("\n" + "=" * 60)
+    logger.info("ALL TASKS COMPLETE")
+    logger.info("=" * 60)

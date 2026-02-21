@@ -808,8 +808,16 @@ torch.manual_seed(42)
 
 
 if __name__ == "__main__":
-    setup_logging()
+    logger = setup_logging()
+    logger.info("=" * 60)
+    logger.info("PART 3 - RUNNING ALL TASKS (Q20-Q23)")
+    logger.info("=" * 60)
+
     run_q20()
     run_q21()
     run_q22()
     run_q23()
+
+    logger.info("\n" + "=" * 60)
+    logger.info("ALL TASKS COMPLETE")
+    logger.info("=" * 60)
