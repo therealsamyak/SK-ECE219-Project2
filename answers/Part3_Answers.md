@@ -28,7 +28,7 @@ Bug, Fire, and Grass types retrieved pretty coherent results. Fire Pokemon tend 
 
 Dark and Dragon were trickier. Dark-type visual identity isn't very consistent—it includes shadowy creatures like Umbreon and Darkrai, but also Pokemon that just don't fit other categories. Dragon types are visually all over the place, from serpentine (Kingdra) to dinosaur-like (Dragonite). The fact that Rhydon (Ground/Rock) and Nidorino (Poison) showed up for Dragon queries suggests CLIP associates "dragon-like features" (horns, bulky bodies) with the Dragon type concept, regardless of the official type classification.
 
-The main difference: Bug, Fire, and Grass have strong visual-semantic patterns that match common language descriptions. Dark and Dragon are more abstract game mechanics with weaker visual signatures.
+The difference is straightforward: Bug, Fire, and Grass have clear visual patterns that match how people describe them. Dark and Dragon are more abstract categories with weaker visual cues.
 
 ---
 
@@ -97,13 +97,13 @@ Worst: Flying (0%), Ground (4%), Ghost (4%), Grass (8%)
 
 Why the gap between Acc@1 and Hit@5:
 
-1. **Dual-encoder limitation:** CLIP encodes images and text independently into a shared space using contrastive learning. Predictions are made by nearest-neighbor similarity, without any reasoning step.
+1. **CLIP's design:** CLIP matches images to text by similarity. It doesn't reason about why something matches, just finds the closest option.
 
-2. **Visual ambiguity:** Many Pokemon share visual features across types. A Water-type might look similar to Ice-type (both blue), or a Grass-type might look like Bug-type (both green with plant/insect features).
+2. **Similar looks:** Many Pokemon types look alike. Water and Ice types are both blue. Grass and Bug types are both green and plant-like.
 
-3. **Prompt sensitivity:** The template "a photo of a {type} type Pokemon" might not optimally separate visually similar type concepts in CLIP's embedding space.
+3. **Simple prompts:** Using "a photo of a {type} type Pokemon" doesn't help CLIP tell similar-looking types apart.
 
-4. **Game mechanics vs. visual reality:** Pokemon types are game mechanics, not purely visual categories. Flying-type Pokemon have diverse appearances (birds, dragons, insects) with no unifying visual look, hence 0% accuracy.
+4. **Types aren't visual:** Pokemon types are game rules, not appearance-based. Flying types include birds, dragons, and insects with nothing in common visually, so CLIP gets 0% right.
 
 ---
 
@@ -135,13 +135,13 @@ Yes. VLM reranking bumps Acc@1 from 33.29% to 44.96%, an 11.67 percentage point 
 
 Why VLM helps:
 
-1. **Cross-attention reasoning:** Unlike CLIP's independent encoding, the VLM attends jointly over image tokens and text tokens. It can compare the Pokemon's visual features against each candidate type description and make an informed selection.
+1. **Cross-attention reasoning:** CLIP encodes image and text separately. The VLM attends jointly over both, comparing visual features directly to each type description.
 
-2. **Discrete decision-making:** CLIP produces continuous similarity scores that can be noisy at the decision boundary. The VLM makes an explicit, discrete choice from the candidate set, forcing it to commit to one answer.
+2. **Discrete decision-making:** CLIP outputs continuous similarity scores that can be noisy near the decision boundary. The VLM picks one answer from the candidates.
 
-3. **Instruction following:** The VLM understands the task (select the most likely type) and can apply world knowledge about Pokemon characteristics that CLIP's contrastive training might not capture.
+3. **Instruction following:** The VLM understands the task and uses Pokemon knowledge that CLIP's contrastive training may not capture.
 
-4. **Constrained candidate set:** By restricting the VLM to CLIP's top-5 candidates, we use CLIP's broad retrieval capability while letting the VLM refine the ranking. Since CLIP's Hit@5 is 74.27%, the correct answer is available to the VLM in nearly 3 out of 4 cases.
+4. **Constrained candidate set:** CLIP's top-5 retrieval finds the right type in 74.27% of cases. The VLM then ranks these candidates accurately.
 
 Limitations:
 

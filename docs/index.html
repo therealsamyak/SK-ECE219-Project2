@@ -107,12 +107,12 @@
       </ul>
       <p>
         TF-IDF scores each vocabulary term independently. A 50-word review might
-        touch 30 unique terms out of 25,085—everything else is zero.
+        touch 30 unique terms out of 25,085, everything else is zero.
       </p>
       <p>
         MiniLM runs the entire sentence through a neural network that outputs a
         384-d vector. All dimensions get non-zero values because the model
-        encodes meaning holistically, not by counting words.
+        captures meaning from the whole sentence, not by counting words.
       </p>
     </div>
 
@@ -272,33 +272,20 @@
         </tbody>
       </table>
 
-      <p>MiniLM wins by a lot. Three reasons:</p>
-      <ol>
-        <li>
-          <strong>Semantic understanding:</strong> MiniLM captures sentence
-          structure and semantic meaning. Long reviews differ from short ones in
-          topic depth, discourse structure, and complexity—neural embeddings
-          pick up on these differences naturally.
-        </li>
-        <li>
-          <strong>Document length as latent signal:</strong> Transformers attend
-          to longer sequences differently, creating distinct representations for
-          different-length inputs.
-        </li>
-        <li>
-          <strong>TF-IDF limitations:</strong> TF-IDF only counts word
-          frequencies. Long and short reviews both contain "game", "play",
-          "good", so they look similar in TF-IDF space even when structurally
-          different.
-        </li>
-      </ol>
+      <p>
+        MiniLM outperforms TF-IDF on all metrics. The neural model captures
+        sentence structure and semantic meaning, while TF-IDF only counts word
+        frequencies. Long reviews differ from short ones in topic depth,
+        discourse structure, and complexity—neural embeddings pick up on these
+        differences naturally. Transformers also attend to longer sequences
+        differently, creating distinct representations for different-length
+        inputs.
+      </p>
 
       <p>
-        UMAP actually hurts here. It preserves local neighborhoods, but Short vs
-        Long is a global, linear signal. Document length affects all dimensions
-        similarly. UMAP's focus on local structure blurs this global pattern.
-        SVD (linear) works better for capturing this simple length-based
-        separation.
+        SVD works better than UMAP here. Document length is a linear signal that
+        affects all dimensions similarly. UMAP's focus on local neighborhoods
+        blurs this global pattern.
       </p>
     </div>
 
@@ -324,10 +311,9 @@
       </ul>
 
       <p>
-        The MiniLM plot shows clear separation between Short and Long clusters.
-        TF-IDF is scattered. The higher variance explained by MiniLM's first two
-        PCs (11.83% vs 4.02%) tells us the structure is more amenable to
-        low-dimensional projection.
+        MiniLM clearly separates Short and Long clusters. TF-IDF is scattered.
+        With its first two PCs explaining 11.83% variance (vs 4.02% for TF-IDF),
+        MiniLM projects better in low dimensions.
       </p>
     </div>
 
@@ -358,70 +344,6 @@
     <div class="answer">
       <h3>Answer</h3>
       <p><strong>MiniLM (12 pipelines)</strong></p>
-
-      <p>Non-HDBSCAN (8 pipelines)</p>
-      <table>
-        <thead>
-          <tr>
-            <th>Pipeline</th>
-            <th>K</th>
-            <th>Sizes</th>
-            <th>Top Genre Purity</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>None + K-Means</td>
-            <td>5</td>
-            <td>9, 86, 23, 58, 24</td>
-            <td>67-81%</td>
-          </tr>
-          <tr>
-            <td>None + Agglomerative</td>
-            <td>5</td>
-            <td>41, 33, 62, 20, 44</td>
-            <td>54-93%</td>
-          </tr>
-          <tr>
-            <td>SVD + K-Means</td>
-            <td>5</td>
-            <td>25, 30, 50, 55, 40</td>
-            <td>62-82%</td>
-          </tr>
-          <tr>
-            <td>SVD + Agglomerative</td>
-            <td>5</td>
-            <td>37, 62, 32, 13, 56</td>
-            <td>59-100%</td>
-          </tr>
-          <tr>
-            <td>UMAP + K-Means</td>
-            <td>5</td>
-            <td>39, 61, 26, 42, 32</td>
-            <td>62-85%</td>
-          </tr>
-          <tr>
-            <td>UMAP + Agglomerative</td>
-            <td>5</td>
-            <td>85, 40, 30, 22, 23</td>
-            <td>61-87%</td>
-          </tr>
-          <tr>
-            <td>AE + K-Means</td>
-            <td>5</td>
-            <td>36, 43, 34, 58, 29</td>
-            <td>62-84%</td>
-          </tr>
-          <tr>
-            <td>AE + Agglomerative</td>
-            <td>5</td>
-            <td>50, 40, 27, 43, 40</td>
-            <td>58-85%</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <p>HDBSCAN (4 pipelines)</p>
       <table>
         <thead>
           <tr>
@@ -433,6 +355,62 @@
           </tr>
         </thead>
         <tbody>
+          <tr>
+            <td>None + K-Means</td>
+            <td>5</td>
+            <td></td>
+            <td>9, 86, 23, 58, 24</td>
+            <td>67-81%</td>
+          </tr>
+          <tr>
+            <td>None + Agglomerative</td>
+            <td>5</td>
+            <td></td>
+            <td>41, 33, 62, 20, 44</td>
+            <td>54-93%</td>
+          </tr>
+          <tr>
+            <td>SVD + K-Means</td>
+            <td>5</td>
+            <td></td>
+            <td>25, 30, 50, 55, 40</td>
+            <td>62-82%</td>
+          </tr>
+          <tr>
+            <td>SVD + Agglomerative</td>
+            <td>5</td>
+            <td></td>
+            <td>37, 62, 32, 13, 56</td>
+            <td>59-100%</td>
+          </tr>
+          <tr>
+            <td>UMAP + K-Means</td>
+            <td>5</td>
+            <td></td>
+            <td>39, 61, 26, 42, 32</td>
+            <td>62-85%</td>
+          </tr>
+          <tr>
+            <td>UMAP + Agglomerative</td>
+            <td>5</td>
+            <td></td>
+            <td>85, 40, 30, 22, 23</td>
+            <td>61-87%</td>
+          </tr>
+          <tr>
+            <td>AE + K-Means</td>
+            <td>5</td>
+            <td></td>
+            <td>36, 43, 34, 58, 29</td>
+            <td>62-84%</td>
+          </tr>
+          <tr>
+            <td>AE + Agglomerative</td>
+            <td>5</td>
+            <td></td>
+            <td>50, 40, 27, 43, 40</td>
+            <td>58-85%</td>
+          </tr>
           <tr>
             <td>None + HDBSCAN</td>
             <td>2</td>
@@ -550,10 +528,9 @@
     </div>
     <div class="answer">
       <h3>Answer</h3>
-      <p><strong>Selected:</strong> MiniLM + SVD(50) + Agglomerative</p>
       <p>
-        This pipeline performed best in Task 1 and shows strong genre purity
-        here.
+        I selected MiniLM + SVD(50) + Agglomerative because it performed the
+        best in Task 1 and shows strong genre purity.
       </p>
 
       <p><strong>Cluster 3 (13 games, 100% pure)</strong></p>
@@ -622,7 +599,8 @@
     </div>
     <div class="answer">
       <h3>Answer</h3>
-      <p><strong>Cluster ID:</strong> 4 (MiniLM + SVD + Agglomerative)</p>
+      <p>We used MiniLM + SVD + Agglomerative.</p>
+      <p><strong>Cluster ID:</strong> 4</p>
       <p>Top genres: Action (80%), Adventure (55%), RPG (35%)</p>
       <table>
         <thead>
@@ -664,11 +642,10 @@
     </div>
     <div class="answer">
       <h3>Answer</h3>
-      <p><strong>Pipeline:</strong> MiniLM + SVD(50) + Agglomerative</p>
       <p>
-        <strong>Justification:</strong> This pipeline achieved best performance
-        in Task 1 (V-Measure 0.648, ARI 0.742) and Task 2 (up to 100% genre
-        purity). Consistent with Q8 and Q9.
+        I selected MiniLM + SVD(50) + Agglomerative because it achieved the best
+        performance in Task 1 (V-Measure 0.648, ARI 0.742) and Task 2 (up to
+        100% genre purity).
       </p>
 
       <p>
@@ -765,10 +742,10 @@
     </div>
     <div class="answer">
       <h3>Answer</h3>
-      <p><strong>Pipeline:</strong> MiniLM + SVD(50) + Agglomerative</p>
       <p>
-        <strong>Justification:</strong> Same as Q10 - best performer in Task 1
-        and Task 2.
+        I selected MiniLM + SVD(50) + Agglomerative because it achieved the best
+        performance in Task 1 (V-Measure 0.648, ARI 0.742) and Task 2 (up to 100%
+        genre purity).
       </p>
 
       <p>
@@ -863,8 +840,9 @@ You are analyzing Steam review clusters. Input:
 Top Terms: [terms]
 Exemplar Reviews: [reviews]
 
-Output a 3-6 word label describing what these reviews have in common.
-      </pre>
+Output a 3-6 word label describing what these reviews have in common.</pre
+      >
+      <br />
 
       <p><strong>Example 1 (Negative Cluster 0)</strong></p>
       <p>
@@ -901,11 +879,11 @@ Output a 3-6 word label describing what these reviews have in common.
     <div class="answer">
       <h3>Answer</h3>
       <p>
-        VGG16 learns a hierarchy of visual patterns, not ImageNet-specific
-        categories. Early layers pick up edges, textures, and colors. Middle
-        layers learn shapes. Deep layers capture abstract concepts. Since
-        ImageNet spans 1000 diverse classes, the network learns general visual
-        primitives that transfer to domains it never saw during training.
+        VGG16 learns visual patterns, not ImageNet-specific categories. Early
+        layers detect edges, textures, and colors. Middle layers learn shapes.
+        Deep layers capture abstract concepts. Because ImageNet has 1000 diverse
+        classes, the network learns general visual primitives that transfer to
+        new domains.
       </p>
       <p>
         The 4096-d first FC layer encodes high-level content that distinguishes
@@ -960,13 +938,17 @@ Output a 3-6 word label describing what these reviews have in common.
       <p>VGG16 features are dense.</p>
       <p>
         TF-IDF vectors are mostly zeros. A 50-word review might touch 30 terms
-        out of 25,000—everything else is 0, giving 99%+ sparsity.
+        out of 25,000, everything else is 0, giving 99%+ sparsity.
       </p>
       <p>
-        VGG16 works differently. Each of the 4096 neurons receives weighted
-        input from all 25,088 pooled features, so every dimension is non-zero.
-        The dense representation spreads information about the entire image
-        across all dimensions.
+        VGG16 isn't like that. All 4096 neurons connect to every one of 25,088
+        pooled features, so every dimension has a value. All dimensions capture
+        information about the entire image.
+      </p>
+      <p>
+        VGG16 isn't like that. All 4096 neurons connect to every one of the
+        25,088 pooled features, so every dimension has a value. Information
+        about the whole image ends up spread across all dimensions.
       </p>
     </div>
 
@@ -984,16 +966,16 @@ Output a 3-6 word label describing what these reviews have in common.
       <p>
         Some flower classes form distinct blobs—tulips and sunflowers cluster
         pretty cleanly. Others overlap, like roses and dandelions, which makes
-        sense given their similar petal structures. A few classes split into
-        multiple small clusters, probably reflecting intra-class variation
+        sense since they have similar petal structures. A few classes split into
+        multiple small clusters, probably because of variation within each class
         (different colors, angles, or developmental stages).
       </p>
       <p>
         The five classes don't separate perfectly, which matches what we'll see
-        later with clustering: the features are discriminative enough to capture
-        class structure, but not so cleanly separable that any clustering method
-        will nail it. Still, for a network trained on ImageNet having never seen
-        flowers, the class structure that emerges is pretty good.
+        later with clustering: the features capture class structure well enough,
+        but aren't cleanly separable enough for any clustering method to nail
+        it. Still, for a network trained on ImageNet that's never seen flowers,
+        the class structure that emerges is pretty good.
       </p>
     </div>
 
@@ -1110,8 +1092,8 @@ Output a 3-6 word label describing what these reviews have in common.
       <p>What stands out:</p>
       <ul>
         <li>
-          UMAP + HDBSCAN wins by a lot—2.6x better ARI than anything else.
-          UMAP's non-linear embedding plays well with density-based clustering.
+          UMAP + HDBSCAN performs best, with 2.6x better ARI than anything else.
+          UMAP's non-linear embedding works well with density-based clustering.
         </li>
         <li>
           Linear methods (SVD, no reduction) struggle, suggesting the flower
@@ -1123,8 +1105,8 @@ Output a 3-6 word label describing what these reviews have in common.
           instead settle on 10 meaningful ones.
         </li>
         <li>
-          The autoencoder lands close to raw features, so it's not adding much
-          beyond what's already there.
+          The autoencoder performs similar to raw features, so it's not adding
+          much beyond what's already there.
         </li>
       </ul>
     </div>
@@ -1171,9 +1153,9 @@ Output a 3-6 word label describing what these reviews have in common.
       </table>
 
       <p>
-        Surprisingly, SVD slightly outperforms the original features—91.14% vs
-        91.01%, a 0.13% gain despite 98.8% dimension reduction. UMAP drops 10.2
-        points. Autoencoder lands in between at 88.56%.
+        SVD actually beats the original features—91.14% vs 91.01%, a 0.13% gain
+        while cutting dimensions by 98.8%. UMAP loses 10.2 points. Autoencoder
+        sits in the middle at 88.56%.
       </p>
 
       <p>Comparing with clustering:</p>
@@ -1200,19 +1182,16 @@ Output a 3-6 word label describing what these reviews have in common.
       </table>
 
       <p>
-        UMAP crushed clustering but struggled with classification. SVD did the
-        opposite.
+        UMAP excels at clustering but struggles with classification. SVD shows
+        the opposite trend.
       </p>
       <p>
-        Why: UMAP preserves local neighborhoods (good for density-based
-        clustering) but warps global structure (bad for linear classifiers). SVD
-        preserves global variance (good for classification) but doesn't create
-        cluster-friendly manifold structure.
+        UMAP preserves local neighborhoods (good for density-based clustering)
+        but distorts global structure (bad for linear classifiers). SVD
+        preserves global variance (good for classification) but doesn't build a
+        cluster-friendly manifold.
       </p>
-      <p>
-        Pick your method based on goal: SVD for classification, UMAP for
-        clustering.
-      </p>
+      <p>Use SVD for classification accuracy, UMAP for clustering.</p>
     </div>
 
     <!-- Part 3: Multi-modal -->
@@ -1300,9 +1279,9 @@ Output a 3-6 word label describing what these reviews have in common.
         of the official type classification.
       </p>
       <p>
-        The main difference: Bug, Fire, and Grass have strong visual-semantic
-        patterns that match common language descriptions. Dark and Dragon are
-        more abstract game mechanics with weaker visual signatures.
+        The difference is straightforward: Bug, Fire, and Grass have clear
+        visual patterns that match how people describe them. Dark and Dragon are
+        more abstract categories with weaker visual cues.
       </p>
     </div>
 
@@ -1534,27 +1513,23 @@ Output a 3-6 word label describing what these reviews have in common.
       <p>Why the gap between Acc@1 and Hit@5:</p>
       <ol>
         <li>
-          <strong>Dual-encoder limitation:</strong> CLIP encodes images and text
-          independently into a shared space using contrastive learning.
-          Predictions are made by nearest-neighbor similarity, without any
-          reasoning step.
+          <strong>CLIP's design:</strong> CLIP matches images to text by
+          similarity. It doesn't reason about why something matches, just finds
+          the closest option.
         </li>
         <li>
-          <strong>Visual ambiguity:</strong> Many Pokemon share visual features
-          across types. A Water-type might look similar to Ice-type (both blue),
-          or a Grass-type might look like Bug-type (both green with plant/insect
-          features).
+          <strong>Similar looks:</strong> Many Pokemon types look alike. Water
+          and Ice types are both blue. Grass and Bug types are both green and
+          plant-like.
         </li>
         <li>
-          <strong>Prompt sensitivity:</strong> The template "a photo of a {type}
-          type Pokemon" might not optimally separate visually similar type
-          concepts in CLIP's embedding space.
+          <strong>Simple prompts:</strong> Using "a photo of a {type} type
+          Pokemon" doesn't help CLIP tell similar-looking types apart.
         </li>
         <li>
-          <strong>Game mechanics vs. visual reality:</strong> Pokemon types are
-          game mechanics, not purely visual categories. Flying-type Pokemon have
-          diverse appearances (birds, dragons, insects) with no unifying visual
-          look, hence 0% accuracy.
+          <strong>Types aren't visual:</strong> Pokemon types are game rules,
+          not appearance-based. Flying types include birds, dragons, and insects
+          with nothing in common visually, so CLIP gets 0% right.
         </li>
       </ol>
     </div>
@@ -1613,29 +1588,24 @@ Output a 3-6 word label describing what these reviews have in common.
       <p>Why VLM helps:</p>
       <ol>
         <li>
-          <strong>Cross-attention reasoning:</strong> Unlike CLIP's independent
-          encoding, the VLM attends jointly over image tokens and text tokens.
-          It can compare the Pokemon's visual features against each candidate
-          type description and make an informed selection.
+          <strong>Cross-attention reasoning:</strong> CLIP encodes image and
+          text separately. The VLM attends jointly over both, comparing visual
+          features directly to each type description.
         </li>
         <li>
-          <strong>Discrete decision-making:</strong> CLIP produces continuous
-          similarity scores that can be noisy at the decision boundary. The VLM
-          makes an explicit, discrete choice from the candidate set, forcing it
-          to commit to one answer.
+          <strong>Discrete decision-making:</strong> CLIP outputs continuous
+          similarity scores that can be noisy near the decision boundary. The
+          VLM picks one answer from the candidates.
         </li>
         <li>
           <strong>Instruction following:</strong> The VLM understands the task
-          (select the most likely type) and can apply world knowledge about
-          Pokemon characteristics that CLIP's contrastive training might not
+          and uses Pokemon knowledge that CLIP's contrastive training may not
           capture.
         </li>
         <li>
-          <strong>Constrained candidate set:</strong> By restricting the VLM to
-          CLIP's top-5 candidates, we use CLIP's broad retrieval capability
-          while letting the VLM refine the ranking. Since CLIP's Hit@5 is
-          74.27%, the correct answer is available to the VLM in nearly 3 out of
-          4 cases.
+          <strong>Constrained candidate set:</strong> CLIP's top-5 retrieval
+          finds the right type in 74.27% of cases. The VLM then ranks these
+          candidates accurately.
         </li>
       </ol>
 
