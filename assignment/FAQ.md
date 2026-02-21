@@ -28,8 +28,7 @@ tqdm==4.50.0
 umap-learn==0.5.0
 ```
 
-If your setup is already working, you do not need to adhere to this.
----
+## If your setup is already working, you do not need to adhere to this.
 
 Q: Hi instructors,
 
@@ -44,7 +43,7 @@ Could you please clarify:
 Whether Task 3.2 requires systematic comparison of multiple pipelines, or
 Whether it is sufficient to choose one reasonable pipeline per subset and report interpretable clusters from it?
 Thank you!
-A: 
+A:
 Choose one reasonable pipeline (e.g., MiniLM + [your chosen method]). Once the clustering is completed using the selected approach, pick 3–5 representative clusters and assign meaningful labels to them.
 
 A key decision is determining which pipeline is most appropriate—for instance, KMeans with SVD, UMAP with Agglomerative Clustering, or other reasonable combinations.
@@ -56,7 +55,7 @@ My recommendation is to experiment with multiple pipeline variants and compare t
 Q: For task 3.2, should we use main.csv or held_out.csv?
 A: for the held out csv
 
---- 
+---
 
 Q: For task 2.2's clustering, I've found that using the autoencoder tends to essentially collapse the input embeddings into one or a few, resulting in horrible clustering. I've kept the autoencooder very similar to the helper code provided, just with the necessary dimension adaptations and other logistical changes. One interpretation I had was that because the autoencoder is focused on minimizing reconstruction error, the embeddings it produces may not be well suited for the clustering task, but I also am wondering if I've just implemented wrong. What kind of behavior should be expected?
 A: that sounds counter-intuitive. If the autoencoder collapses all the inputs to similar embeddings, then the reconstruction will become difficult even for the model. I would check the train-test loss while training the AE.
@@ -72,7 +71,6 @@ Q: "For each pipeline, report a summary table that includes:...." --> Does this 
 A: what do you mean 'one hyperparameter each'? they are already given to you!
 Q: oh what i meant was default hyperparameter. so which one of these options to do:
 
-
 Default setting policy: To keep the project lightweight and focus on interpretation, you only need to run one default hyperparameter choice per method (unless a question explicitly requests a sweep).
 
 So since we have:
@@ -83,14 +81,12 @@ Dimensionality reduction: None, SVD(50), UMAP(50), Autoencoder(50)
 
 Clustering: K-Means (k = 5), Agglomerative (n clusters = 5), HDBSCAN
 
-could you clarify, what a set of pipelines would look like for "QUESTION 7: For each pipeline, report a summary table that includes:" 
+could you clarify, what a set of pipelines would look like for "QUESTION 7: For each pipeline, report a summary table that includes:"
 
-For TD-IDF, for example, do we evaluate all 4*3 = 12 pipelines or only (1*3)+(4*1) = 7 pipelines
+For TD-IDF, for example, do we evaluate all 4*3 = 12 pipelines or only (1*3)+(4\*1) = 7 pipelines
 A: 12.
 
-
 (I will give you a 5 mark bonus if you can make something with 7 pipelines. How can you use "None" (as dim red) and not do any clustering after that? I still dont understand how you would even come up with 7 configurations here?)
-
 
 Good luck!
 Q: Thanks for the clarification.
