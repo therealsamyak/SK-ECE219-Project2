@@ -1003,29 +1003,29 @@ Output a 3-6 word label describing what these reviews have in common.
           <tr>
             <td>Original VGG16</td>
             <td>4,096</td>
-            <td>91.69%</td>
+            <td>91.42%</td>
           </tr>
           <tr>
             <td>SVD</td>
             <td>50</td>
-            <td>90.74%</td>
+            <td>90.87%</td>
           </tr>
           <tr>
             <td>UMAP</td>
             <td>50</td>
-            <td>83.79%</td>
+            <td>81.06%</td>
           </tr>
           <tr>
             <td>Autoencoder</td>
             <td>50</td>
-            <td>88.42%</td>
+            <td>88.28%</td>
           </tr>
         </tbody>
       </table>
 
       <p>
-        All reduced methods drop below 91.69%. SVD holds up best—only 0.95
-        points lost despite 98.8% dimension reduction. UMAP drops 7.9 points.
+        All reduced methods drop below 91.42%. SVD holds up best—only 0.55
+        points lost despite 98.8% dimension reduction. UMAP drops 10.4 points.
       </p>
 
       <p>Comparing with clustering:</p>
@@ -1041,12 +1041,12 @@ Output a 3-6 word label describing what these reviews have in common.
           <tr>
             <td>SVD</td>
             <td>0.195 (3rd)</td>
-            <td>90.74% (1st)</td>
+            <td>90.87% (1st)</td>
           </tr>
           <tr>
             <td>UMAP</td>
             <td>0.564 (1st)</td>
-            <td>83.79% (3rd)</td>
+            <td>81.06% (3rd)</td>
           </tr>
         </tbody>
       </table>
@@ -1188,77 +1188,77 @@ Output a 3-6 word label describing what these reviews have in common.
           <tr>
             <td>Cosmog</td>
             <td>Psychic</td>
-            <td>Psychic (29.8%)</td>
-            <td>Psychic, Dark, Fairy, Normal, Poison</td>
-            <td>Yes</td>
+            <td>Dark (73.68%)</td>
+            <td>Dark, Psychic, Electric, Normal, Poison</td>
+            <td>Top-5</td>
           </tr>
           <tr>
             <td>Ledyba</td>
             <td>Bug/Flying</td>
-            <td>Bug (31.1%)</td>
-            <td>Bug, Normal, Steel, Fighting, Dark</td>
+            <td>Bug (78.64%)</td>
+            <td>Bug, Normal, Fighting, Steel, Rock</td>
             <td>Yes</td>
           </tr>
           <tr>
             <td>Zubat</td>
             <td>Poison/Flying</td>
-            <td>Dark (41.5%)</td>
-            <td>Dark, Flying, Normal, Fighting, Fairy</td>
+            <td>Dark (57.62%)</td>
+            <td>Dark, Normal, Fighting, Flying, Bug</td>
             <td>No</td>
           </tr>
           <tr>
             <td>Wynaut</td>
             <td>Psychic</td>
-            <td>Ice (17.0%)</td>
-            <td>Ice, Normal, Psychic, Water, Ghost</td>
+            <td>Normal (22.44%)</td>
+            <td>Normal, Water, Psychic, Dark, Ice</td>
             <td>Top-5</td>
           </tr>
           <tr>
             <td>Spoink</td>
             <td>Psychic</td>
-            <td>Normal (19.6%)</td>
-            <td>Normal, Dark, Psychic, Poison, Fighting</td>
+            <td>Dark (31.37%)</td>
+            <td>Dark, Normal, Psychic, Fighting, Steel</td>
             <td>Top-5</td>
           </tr>
           <tr>
             <td>Makuhita</td>
             <td>Fighting</td>
-            <td>Fighting (50.4%)</td>
+            <td>Fighting (59.52%)</td>
             <td>Fighting, Dark, Normal, Psychic, Electric</td>
             <td>Yes</td>
           </tr>
           <tr>
             <td>Quagsire</td>
             <td>Water/Ground</td>
-            <td>Normal (33.4%)</td>
-            <td>Normal, Water, Psychic, Ground, Ice</td>
+            <td>Normal (24.69%)</td>
+            <td>Normal, Water, Psychic, Ice, Ground</td>
             <td>Top-5</td>
           </tr>
           <tr>
             <td>Meganium</td>
             <td>Grass</td>
-            <td>Dragon (33.5%)</td>
-            <td>Dragon, Normal, Grass, Psychic, Poison</td>
-            <td>Top-5</td>
+            <td>Dragon (22.35%)</td>
+            <td>Dragon, Poison, Psychic, Normal, Water</td>
+            <td>No</td>
           </tr>
           <tr>
             <td>Thievul</td>
             <td>Dark</td>
-            <td>Dark (38.9%)</td>
-            <td>Dark, Normal, Psychic, Ghost, Fairy</td>
+            <td>Dark (47.24%)</td>
+            <td>Dark, Fire, Fighting, Normal, Psychic</td>
             <td>Yes</td>
           </tr>
           <tr>
             <td>Espurr</td>
             <td>Psychic</td>
-            <td>Psychic (29.7%)</td>
-            <td>Psychic, Normal, Ghost, Dark, Fairy</td>
-            <td>Yes</td>
+            <td>Dark (65.42%)</td>
+            <td>Dark, Normal, Psychic, Ghost, Fairy</td>
+            <td>Top-5</td>
           </tr>
         </tbody>
       </table>
 
-      <p>Top-1: 30%, Top-5: 90%</p>
+      <p>Top-1: 30%, Top-5: 70%</p>
       <p>
         CLIP struggles with visually ambiguous Pokemon. Zubat (Poison) gets
         called Dark—purple bat matches Dark-type look. Meganium (Grass) gets
@@ -1287,11 +1287,11 @@ Output a 3-6 word label describing what these reviews have in common.
         <tbody>
           <tr>
             <td>CLIP Acc@1</td>
-            <td>32.76% (247/754)</td>
+            <td>33.29% (251/754)</td>
           </tr>
           <tr>
             <td>CLIP Hit@5</td>
-            <td>73.34% (553/754)</td>
+            <td>74.27% (560/754)</td>
           </tr>
         </tbody>
       </table>
@@ -1306,78 +1306,68 @@ Output a 3-6 word label describing what these reviews have in common.
         </thead>
         <tbody>
           <tr>
-            <td>Fire</td>
-            <td>68.18%</td>
-          </tr>
-          <tr>
             <td>Dark</td>
-            <td>66.67%</td>
+            <td>76.67%</td>
           </tr>
           <tr>
             <td>Ice</td>
-            <td>54.17%</td>
+            <td>58.33%</td>
           </tr>
           <tr>
-            <td>Dragon</td>
+            <td>Fire</td>
+            <td>54.55%</td>
+          </tr>
+          <tr>
+            <td>Fairy</td>
             <td>50.00%</td>
+          </tr>
+          <tr>
+            <td>Water</td>
+            <td>46.23%</td>
           </tr>
           <tr>
             <td>Fighting</td>
             <td>46.88%</td>
           </tr>
           <tr>
-            <td>Fairy</td>
-            <td>40.00%</td>
-          </tr>
-          <tr>
-            <td>Water</td>
-            <td>33.02%</td>
-          </tr>
-        </tbody>
-      </table>
-      <table>
-        <thead>
-          <tr>
-            <th>Type</th>
-            <th>Acc@1</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
             <td>Steel</td>
             <td>45.83%</td>
           </tr>
           <tr>
             <td>Bug</td>
-            <td>36.23%</td>
-          </tr>
-          <tr>
-            <td>Normal</td>
-            <td>31.52%</td>
-          </tr>
-          <tr>
-            <td>Ghost</td>
-            <td>28.00%</td>
+            <td>44.93%</td>
           </tr>
           <tr>
             <td>Rock</td>
-            <td>29.27%</td>
+            <td>41.46%</td>
           </tr>
           <tr>
-            <td>Grass</td>
-            <td>18.99%</td>
+            <td>Dragon</td>
+            <td>36.36%</td>
           </tr>
           <tr>
-            <td>Electric</td>
-            <td>15.79%</td>
+            <td>Normal</td>
+            <td>23.91%</td>
           </tr>
           <tr>
             <td>Poison</td>
-            <td>13.79%</td>
+            <td>24.14%</td>
+          </tr>
+          <tr>
+            <td>Electric</td>
+            <td>18.42%</td>
           </tr>
           <tr>
             <td>Psychic</td>
             <td>10.87%</td>
+          </tr>
+          <tr>
+            <td>Grass</td>
+            <td>7.59%</td>
+          </tr>
+          <tr>
+            <td>Ghost</td>
+            <td>4.00%</td>
           </tr>
           <tr>
             <td>Ground</td>
@@ -1390,8 +1380,8 @@ Output a 3-6 word label describing what these reviews have in common.
         </tbody>
       </table>
 
-      <p>Best: Fire (68%), Dark (67%), Ice (54%), Dragon (50%)</p>
-      <p>Worst: Flying (0%), Ground (4%), Psychic (11%), Poison (14%)</p>
+      <p>Best: Dark (77%), Ice (58%), Fire (55%), Fairy (50%)</p>
+      <p>Worst: Flying (0%), Ground (4%), Ghost (4%), Grass (8%)</p>
 
       <p>Why the gap between Acc@1 and Hit@5:</p>
       <ol>
@@ -1448,28 +1438,28 @@ Output a 3-6 word label describing what these reviews have in common.
         <tbody>
           <tr>
             <td>CLIP</td>
-            <td>32.76%</td>
-            <td>73.34%</td>
+            <td>33.29%</td>
+            <td>74.27%</td>
           </tr>
           <tr>
             <td>VLM Rerank</td>
-            <td>43.50%</td>
+            <td>44.96%</td>
             <td>—</td>
           </tr>
           <tr>
             <td>Improvement</td>
-            <td>+10.74%</td>
+            <td>+11.67%</td>
             <td>—</td>
           </tr>
         </tbody>
       </table>
 
-      <p>VLM fallbacks: 0</p>
+      <p>VLM fallbacks: 1</p>
 
       <p>Does VLM reranking help?</p>
       <p>
-        Yes. VLM reranking bumps Acc@1 from 32.76% to 43.50%, a 10.74 percentage
-        point improvement (32.8% relative gain).
+        Yes. VLM reranking bumps Acc@1 from 33.29% to 44.96%, an 11.67 percentage
+        point improvement (35.1% relative gain).
       </p>
 
       <p>Why VLM helps:</p>
@@ -1496,14 +1486,14 @@ Output a 3-6 word label describing what these reviews have in common.
           <strong>Constrained candidate set:</strong> By restricting the VLM to
           CLIP's top-5 candidates, we use CLIP's broad retrieval capability
           while letting the VLM refine the ranking. Since CLIP's Hit@5 is
-          73.34%, the correct answer is available to the VLM in nearly 3 out of
+          74.27%, the correct answer is available to the VLM in nearly 3 out of
           4 cases.
         </li>
       </ol>
 
       <p>Limitations:</p>
       <p>
-        The VLM is still constrained by CLIP's candidate pool. For the 26.66% of
+        The VLM is still constrained by CLIP's candidate pool. For the 25.73% of
         Pokemon where the correct type isn't in the top-5, the VLM can't recover
         the right answer. Also, VLM inference is significantly slower than CLIP
         (0.6s vs 0.01s per image on MPS), so it's better suited for post-hoc

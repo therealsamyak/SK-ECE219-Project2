@@ -120,19 +120,19 @@ Report MLP test accuracy on original and reduced-dimension features. Does perfor
 
 | Feature        | Dimension | Accuracy |
 | -------------- | --------- | -------- |
-| Original VGG16 | 4,096     | 91.69%   |
-| SVD            | 50        | 90.74%   |
-| UMAP           | 50        | 83.79%   |
-| Autoencoder    | 50        | 88.42%   |
+| Original VGG16 | 4,096     | 91.42%   |
+| SVD            | 50        | 90.87%   |
+| UMAP           | 50        | 81.06%   |
+| Autoencoder    | 50        | 88.28%   |
 
-All reduced methods drop below 91.69%. SVD holds up best—only 0.95 points lost despite 98.8% dimension reduction. UMAP drops 7.9 points.
+All reduced methods drop below 91.42%. SVD holds up best—only 0.55 points lost despite 98.8% dimension reduction. UMAP drops 10.4 points.
 
 Comparing with clustering:
 
 | Method | Clustering ARI | Classification Accuracy |
 | ------ | -------------- | ----------------------- |
-| SVD    | 0.195 (3rd)    | 90.74% (1st)            |
-| UMAP   | 0.564 (1st)    | 83.79% (3rd)            |
+| SVD    | 0.195 (3rd)    | 90.87% (1st)            |
+| UMAP   | 0.564 (1st)    | 81.06% (3rd)            |
 
 UMAP crushed clustering but struggled with classification. SVD did the opposite.
 
