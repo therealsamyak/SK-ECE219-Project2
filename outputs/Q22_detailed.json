@@ -1,0 +1,6036 @@
+{
+  "per_pokemon": [
+    {
+      "name": "Bulbasaur",
+      "actual": "Grass",
+      "top1": "Grass",
+      "top5": ["Grass", "Normal", "Poison", "Water", "Ground"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Ivysaur",
+      "actual": "Grass",
+      "top1": "Grass",
+      "top5": ["Grass", "Water", "Poison", "Fighting", "Ice"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Charmander",
+      "actual": "Fire",
+      "top1": "Fire",
+      "top5": ["Fire", "Fighting", "Dragon", "Psychic", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Charmeleon",
+      "actual": "Fire",
+      "top1": "Fire",
+      "top5": ["Fire", "Fighting", "Dragon", "Water", "Steel"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Squirtle",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Ice", "Normal", "Fighting", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Wartortle",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Fighting", "Dragon", "Ice", "Dark"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Caterpie",
+      "actual": "Bug",
+      "top1": "Normal",
+      "top5": ["Normal", "Poison", "Fighting", "Bug", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Metapod",
+      "actual": "Bug",
+      "top1": "Rock",
+      "top5": ["Rock", "Normal", "Water", "Ground", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Butterfree",
+      "actual": "Bug",
+      "top1": "Bug",
+      "top5": ["Bug", "Normal", "Poison", "Dark", "Fairy"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Weedle",
+      "actual": "Bug",
+      "top1": "Normal",
+      "top5": ["Normal", "Ground", "Poison", "Bug", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Kakuna",
+      "actual": "Bug",
+      "top1": "Rock",
+      "top5": ["Rock", "Dark", "Normal", "Bug", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Pidgey",
+      "actual": "Normal",
+      "top1": "Normal",
+      "top5": ["Normal", "Psychic", "Fighting", "Dark", "Electric"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Pidgeotto",
+      "actual": "Normal",
+      "top1": "Flying",
+      "top5": ["Flying", "Fighting", "Psychic", "Normal", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Spearow",
+      "actual": "Normal",
+      "top1": "Psychic",
+      "top5": ["Psychic", "Fighting", "Normal", "Rock", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Fearow",
+      "actual": "Normal",
+      "top1": "Flying",
+      "top5": ["Flying", "Psychic", "Fire", "Fighting", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Ekans",
+      "actual": "Poison",
+      "top1": "Poison",
+      "top5": ["Poison", "Normal", "Ground", "Fighting", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Arbok",
+      "actual": "Poison",
+      "top1": "Dark",
+      "top5": ["Dark", "Poison", "Normal", "Psychic", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Nidorina",
+      "actual": "Poison",
+      "top1": "Ice",
+      "top5": ["Ice", "Fighting", "Water", "Dragon", "Electric"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Nidoqueen",
+      "actual": "Poison",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Water", "Ground", "Rock", "Dragon"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Nidorino",
+      "actual": "Poison",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Dragon", "Dark", "Ground", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Nidoking",
+      "actual": "Poison",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Dark", "Rock", "Ground", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Clefairy",
+      "actual": "Fairy",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Normal", "Fighting", "Dark", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Clefable",
+      "actual": "Fairy",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Normal", "Ice", "Psychic", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Jigglypuff",
+      "actual": "Normal",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Normal", "Psychic", "Poison", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Wigglytuff",
+      "actual": "Normal",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Normal", "Fighting", "Electric", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Zubat",
+      "actual": "Poison",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Fighting", "Flying", "Bug"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Golbat",
+      "actual": "Poison",
+      "top1": "Dark",
+      "top5": ["Dark", "Fighting", "Flying", "Normal", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Oddish",
+      "actual": "Grass",
+      "top1": "Poison",
+      "top5": ["Poison", "Grass", "Dark", "Normal", "Fairy"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Gloom",
+      "actual": "Grass",
+      "top1": "Poison",
+      "top5": ["Poison", "Dark", "Normal", "Psychic", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Vileplume",
+      "actual": "Grass",
+      "top1": "Poison",
+      "top5": ["Poison", "Dark", "Normal", "Psychic", "Fairy"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Paras",
+      "actual": "Bug",
+      "top1": "Bug",
+      "top5": ["Bug", "Normal", "Fighting", "Rock", "Poison"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Parasect",
+      "actual": "Bug",
+      "top1": "Bug",
+      "top5": ["Bug", "Normal", "Poison", "Rock", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Venonat",
+      "actual": "Bug",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Bug", "Fighting", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Venomoth",
+      "actual": "Bug",
+      "top1": "Bug",
+      "top5": ["Bug", "Fairy", "Dark", "Normal", "Flying"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Psyduck",
+      "actual": "Water",
+      "top1": "Psychic",
+      "top5": ["Psychic", "Normal", "Dark", "Fighting", "Water"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Golduck",
+      "actual": "Water",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Dragon", "Water", "Dark", "Ice"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Mankey",
+      "actual": "Fighting",
+      "top1": "Psychic",
+      "top5": ["Psychic", "Normal", "Fighting", "Dark", "Ice"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Primeape",
+      "actual": "Fighting",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Dark", "Rock", "Psychic", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Poliwag",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Psychic", "Normal", "Ice", "Steel"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Poliwhirl",
+      "actual": "Water",
+      "top1": "Psychic",
+      "top5": ["Psychic", "Water", "Fighting", "Poison", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Poliwrath",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Psychic", "Poison", "Fighting", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Abra",
+      "actual": "Psychic",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Psychic", "Steel", "Dark", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Kadabra",
+      "actual": "Psychic",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Steel", "Normal", "Dark", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Machop",
+      "actual": "Fighting",
+      "top1": "Water",
+      "top5": ["Water", "Fighting", "Rock", "Dark", "Ice"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Machoke",
+      "actual": "Fighting",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Steel", "Rock", "Normal", "Dark"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Machamp",
+      "actual": "Fighting",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Normal", "Steel", "Rock", "Ice"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Bellsprout",
+      "actual": "Grass",
+      "top1": "Normal",
+      "top5": ["Normal", "Grass", "Ground", "Psychic", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Weepinbell",
+      "actual": "Grass",
+      "top1": "Water",
+      "top5": ["Water", "Normal", "Dark", "Psychic", "Fairy"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Victreebel",
+      "actual": "Grass",
+      "top1": "Grass",
+      "top5": ["Grass", "Dark", "Normal", "Fighting", "Poison"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Tentacool",
+      "actual": "Water",
+      "top1": "Poison",
+      "top5": ["Poison", "Psychic", "Water", "Normal", "Ice"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Tentacruel",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Poison", "Psychic", "Normal", "Dark"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Magnemite",
+      "actual": "Electric",
+      "top1": "Steel",
+      "top5": ["Steel", "Fighting", "Water", "Electric", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Magneton",
+      "actual": "Electric",
+      "top1": "Steel",
+      "top5": ["Steel", "Ice", "Fighting", "Electric", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Doduo",
+      "actual": "Normal",
+      "top1": "Normal",
+      "top5": ["Normal", "Psychic", "Fighting", "Dark", "Fairy"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Dodrio",
+      "actual": "Normal",
+      "top1": "Normal",
+      "top5": ["Normal", "Fairy", "Psychic", "Fighting", "Bug"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Seel",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Normal", "Ice", "Psychic", "Dark"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Dewgong",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Normal", "Ice", "Psychic", "Dark"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Shellder",
+      "actual": "Water",
+      "top1": "Poison",
+      "top5": ["Poison", "Normal", "Dark", "Rock", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Cloyster",
+      "actual": "Water",
+      "top1": "Poison",
+      "top5": ["Poison", "Normal", "Rock", "Dark", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Gastly",
+      "actual": "Ghost",
+      "top1": "Dark",
+      "top5": ["Dark", "Poison", "Ghost", "Psychic", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Haunter",
+      "actual": "Ghost",
+      "top1": "Dark",
+      "top5": ["Dark", "Ghost", "Normal", "Psychic", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Onix",
+      "actual": "Rock",
+      "top1": "Rock",
+      "top5": ["Rock", "Ground", "Steel", "Dark", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Drowzee",
+      "actual": "Psychic",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Normal", "Psychic", "Dark", "Fire"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Hypno",
+      "actual": "Psychic",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Psychic", "Dark", "Steel", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Krabby",
+      "actual": "Water",
+      "top1": "Normal",
+      "top5": ["Normal", "Fighting", "Psychic", "Bug", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Kingler",
+      "actual": "Water",
+      "top1": "Bug",
+      "top5": ["Bug", "Normal", "Fighting", "Rock", "Poison"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Exeggcute",
+      "actual": "Grass",
+      "top1": "Normal",
+      "top5": ["Normal", "Rock", "Dark", "Psychic", "Poison"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Cubone",
+      "actual": "Ground",
+      "top1": "Dark",
+      "top5": ["Dark", "Steel", "Rock", "Fighting", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Hitmonlee",
+      "actual": "Fighting",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Psychic", "Normal", "Rock", "Dark"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Hitmonchan",
+      "actual": "Fighting",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Rock", "Fairy", "Dark", "Ground"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Lickitung",
+      "actual": "Normal",
+      "top1": "Poison",
+      "top5": ["Poison", "Normal", "Psychic", "Fighting", "Ground"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Koffing",
+      "actual": "Poison",
+      "top1": "Poison",
+      "top5": ["Poison", "Normal", "Dark", "Psychic", "Rock"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Rhyhorn",
+      "actual": "Ground",
+      "top1": "Rock",
+      "top5": ["Rock", "Ground", "Steel", "Dark", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Rhydon",
+      "actual": "Ground",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Fighting", "Dark", "Steel", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Chansey",
+      "actual": "Normal",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Normal", "Psychic", "Water", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Tangela",
+      "actual": "Grass",
+      "top1": "Dark",
+      "top5": ["Dark", "Poison", "Normal", "Psychic", "Water"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Horsea",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Ice", "Dragon", "Normal", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Seadra",
+      "actual": "Water",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Water", "Ice", "Psychic", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Goldeen",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Normal", "Fairy", "Psychic", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Seaking",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Normal", "Fairy", "Dark", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Staryu",
+      "actual": "Water",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Fairy", "Fighting", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Starmie",
+      "actual": "Water",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Psychic", "Normal", "Dark", "Ghost"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Scyther",
+      "actual": "Bug",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Fighting", "Bug", "Dark", "Steel"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Jynx",
+      "actual": "Ice",
+      "top1": "Psychic",
+      "top5": ["Psychic", "Dark", "Normal", "Poison", "Ghost"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Electabuzz",
+      "actual": "Electric",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Electric", "Psychic", "Rock", "Steel"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Magmar",
+      "actual": "Fire",
+      "top1": "Fire",
+      "top5": ["Fire", "Fighting", "Dragon", "Steel", "Dark"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Magikarp",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Psychic", "Normal", "Fighting", "Dark"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Lapras",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Rock", "Poison", "Ice", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Ditto",
+      "actual": "Normal",
+      "top1": "Ground",
+      "top5": ["Ground", "Normal", "Psychic", "Rock", "Poison"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Vaporeon",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Ice", "Fairy", "Normal", "Dragon"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Jolteon",
+      "actual": "Electric",
+      "top1": "Electric",
+      "top5": ["Electric", "Dark", "Fire", "Psychic", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Flareon",
+      "actual": "Fire",
+      "top1": "Fire",
+      "top5": ["Fire", "Fighting", "Normal", "Psychic", "Fairy"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Porygon",
+      "actual": "Normal",
+      "top1": "Rock",
+      "top5": ["Rock", "Ice", "Steel", "Normal", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Omanyte",
+      "actual": "Rock",
+      "top1": "Normal",
+      "top5": ["Normal", "Psychic", "Dark", "Rock", "Poison"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Omastar",
+      "actual": "Rock",
+      "top1": "Poison",
+      "top5": ["Poison", "Bug", "Normal", "Water", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Kabuto",
+      "actual": "Rock",
+      "top1": "Dark",
+      "top5": ["Dark", "Bug", "Normal", "Rock", "Poison"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Kabutops",
+      "actual": "Rock",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Dark", "Steel", "Bug", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Snorlax",
+      "actual": "Normal",
+      "top1": "Normal",
+      "top5": ["Normal", "Dark", "Water", "Rock", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Dratini",
+      "actual": "Dragon",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Water", "Normal", "Ice", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Dragonair",
+      "actual": "Dragon",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Poison", "Water", "Normal", "Ice"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Dragonite",
+      "actual": "Dragon",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Fire", "Fighting", "Psychic", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Mew",
+      "actual": "Psychic",
+      "top1": "Poison",
+      "top5": ["Poison", "Psychic", "Fairy", "Fighting", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Chikorita",
+      "actual": "Grass",
+      "top1": "Normal",
+      "top5": ["Normal", "Grass", "Rock", "Psychic", "Electric"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Bayleef",
+      "actual": "Grass",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Normal", "Ground", "Grass", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Meganium",
+      "actual": "Grass",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Poison", "Psychic", "Normal", "Water"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Cyndaquil",
+      "actual": "Fire",
+      "top1": "Fire",
+      "top5": ["Fire", "Electric", "Fighting", "Dark", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Quilava",
+      "actual": "Fire",
+      "top1": "Fire",
+      "top5": ["Fire", "Dragon", "Fighting", "Water", "Dark"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Totodile",
+      "actual": "Water",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Fighting", "Water", "Ground", "Steel"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Croconaw",
+      "actual": "Water",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Water", "Dragon", "Ice", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Feraligatr",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Fighting", "Steel", "Ice", "Dragon"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Sentret",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Rock", "Fighting", "Normal", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Furret",
+      "actual": "Normal",
+      "top1": "Ground",
+      "top5": ["Ground", "Dark", "Normal", "Rock", "Electric"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Hoothoot",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Psychic", "Fighting", "Electric"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Noctowl",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Psychic", "Fighting", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Ledyba",
+      "actual": "Bug",
+      "top1": "Bug",
+      "top5": ["Bug", "Normal", "Fighting", "Steel", "Rock"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Ledian",
+      "actual": "Bug",
+      "top1": "Bug",
+      "top5": ["Bug", "Fighting", "Dark", "Normal", "Steel"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Spinarak",
+      "actual": "Bug",
+      "top1": "Bug",
+      "top5": ["Bug", "Poison", "Dark", "Ground", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Ariados",
+      "actual": "Bug",
+      "top1": "Bug",
+      "top5": ["Bug", "Poison", "Dark", "Fighting", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Crobat",
+      "actual": "Poison",
+      "top1": "Dark",
+      "top5": ["Dark", "Fighting", "Flying", "Normal", "Dragon"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Chinchou",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Electric", "Normal", "Fairy", "Dark"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Lanturn",
+      "actual": "Water",
+      "top1": "Normal",
+      "top5": ["Normal", "Water", "Dark", "Psychic", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Pichu",
+      "actual": "Electric",
+      "top1": "Electric",
+      "top5": ["Electric", "Dark", "Fighting", "Normal", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Cleffa",
+      "actual": "Fairy",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Normal", "Fighting", "Psychic", "Dark"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Igglybuff",
+      "actual": "Normal",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Psychic", "Normal", "Poison", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Togepi",
+      "actual": "Fairy",
+      "top1": "Psychic",
+      "top5": ["Psychic", "Normal", "Electric", "Rock", "Ice"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Togetic",
+      "actual": "Fairy",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Ice", "Psychic", "Normal", "Water"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Natu",
+      "actual": "Psychic",
+      "top1": "Psychic",
+      "top5": ["Psychic", "Normal", "Flying", "Dark", "Bug"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Xatu",
+      "actual": "Psychic",
+      "top1": "Psychic",
+      "top5": ["Psychic", "Dark", "Normal", "Bug", "Rock"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Mareep",
+      "actual": "Electric",
+      "top1": "Normal",
+      "top5": ["Normal", "Dark", "Fighting", "Psychic", "Electric"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Flaaffy",
+      "actual": "Electric",
+      "top1": "Normal",
+      "top5": ["Normal", "Fairy", "Fighting", "Psychic", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Bellossom",
+      "actual": "Grass",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Grass", "Poison", "Psychic", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Marill",
+      "actual": "Water",
+      "top1": "Electric",
+      "top5": ["Electric", "Normal", "Psychic", "Ice", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Azumarill",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Normal", "Ice", "Electric", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Sudowoodo",
+      "actual": "Rock",
+      "top1": "Ground",
+      "top5": ["Ground", "Normal", "Fighting", "Psychic", "Grass"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Politoed",
+      "actual": "Water",
+      "top1": "Normal",
+      "top5": ["Normal", "Psychic", "Fighting", "Dark", "Electric"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Hoppip",
+      "actual": "Grass",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Electric", "Poison", "Normal", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Skiploom",
+      "actual": "Grass",
+      "top1": "Normal",
+      "top5": ["Normal", "Grass", "Poison", "Psychic", "Fairy"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Jumpluff",
+      "actual": "Grass",
+      "top1": "Normal",
+      "top5": ["Normal", "Fairy", "Psychic", "Electric", "Water"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Aipom",
+      "actual": "Normal",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Psychic", "Normal", "Dark", "Fairy"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Sunkern",
+      "actual": "Grass",
+      "top1": "Electric",
+      "top5": ["Electric", "Dark", "Normal", "Psychic", "Ground"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Sunflora",
+      "actual": "Grass",
+      "top1": "Psychic",
+      "top5": ["Psychic", "Normal", "Dark", "Fairy", "Grass"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Yanma",
+      "actual": "Bug",
+      "top1": "Bug",
+      "top5": ["Bug", "Fairy", "Fighting", "Poison", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Quagsire",
+      "actual": "Water",
+      "top1": "Normal",
+      "top5": ["Normal", "Water", "Psychic", "Ice", "Ground"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Espeon",
+      "actual": "Psychic",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Psychic", "Poison", "Dark", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Umbreon",
+      "actual": "Dark",
+      "top1": "Dark",
+      "top5": ["Dark", "Fighting", "Psychic", "Steel", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Murkrow",
+      "actual": "Dark",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Psychic", "Fighting", "Poison"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Misdreavus",
+      "actual": "Ghost",
+      "top1": "Dark",
+      "top5": ["Dark", "Water", "Poison", "Ghost", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Unown",
+      "actual": "Psychic",
+      "top1": "Dark",
+      "top5": ["Dark", "Steel", "Fighting", "Normal", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Wobbuffet",
+      "actual": "Psychic",
+      "top1": "Ghost",
+      "top5": ["Ghost", "Psychic", "Dark", "Normal", "Ground"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Girafarig",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Fighting", "Fire", "Ground"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Pineco",
+      "actual": "Bug",
+      "top1": "Rock",
+      "top5": ["Rock", "Dark", "Ground", "Normal", "Ice"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Forretress",
+      "actual": "Bug",
+      "top1": "Rock",
+      "top5": ["Rock", "Normal", "Ground", "Electric", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Dunsparce",
+      "actual": "Normal",
+      "top1": "Water",
+      "top5": ["Water", "Normal", "Electric", "Psychic", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Gligar",
+      "actual": "Ground",
+      "top1": "Dark",
+      "top5": ["Dark", "Poison", "Normal", "Fighting", "Bug"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Snubbull",
+      "actual": "Fairy",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Dark", "Rock", "Poison", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Granbull",
+      "actual": "Fairy",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Normal", "Dark", "Psychic", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Shuckle",
+      "actual": "Bug",
+      "top1": "Normal",
+      "top5": ["Normal", "Ground", "Rock", "Fighting", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Teddiursa",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Fighting", "Normal", "Steel", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Ursaring",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Fighting", "Steel", "Normal", "Ground"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Slugma",
+      "actual": "Fire",
+      "top1": "Fire",
+      "top5": ["Fire", "Rock", "Normal", "Ground", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Magcargo",
+      "actual": "Fire",
+      "top1": "Fire",
+      "top5": ["Fire", "Rock", "Normal", "Dark", "Poison"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Swinub",
+      "actual": "Ice",
+      "top1": "Rock",
+      "top5": ["Rock", "Dark", "Ground", "Normal", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Piloswine",
+      "actual": "Ice",
+      "top1": "Normal",
+      "top5": ["Normal", "Rock", "Dark", "Fighting", "Ground"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Remoraid",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Normal", "Ice", "Dark", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Octillery",
+      "actual": "Water",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Psychic", "Poison", "Normal", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Delibird",
+      "actual": "Ice",
+      "top1": "Ice",
+      "top5": ["Ice", "Dark", "Normal", "Fighting", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Mantine",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Normal", "Dark", "Steel", "Ice"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Skarmory",
+      "actual": "Steel",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Flying", "Steel", "Ice", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Houndour",
+      "actual": "Dark",
+      "top1": "Dark",
+      "top5": ["Dark", "Steel", "Fighting", "Normal", "Rock"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Kingdra",
+      "actual": "Water",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Water", "Ice", "Psychic", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Phanpy",
+      "actual": "Ground",
+      "top1": "Normal",
+      "top5": ["Normal", "Fighting", "Ice", "Psychic", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Donphan",
+      "actual": "Ground",
+      "top1": "Steel",
+      "top5": ["Steel", "Ground", "Fighting", "Dark", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Porygon2",
+      "actual": "Normal",
+      "top1": "Water",
+      "top5": ["Water", "Psychic", "Normal", "Fighting", "Ice"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Stantler",
+      "actual": "Normal",
+      "top1": "Normal",
+      "top5": ["Normal", "Dark", "Ice", "Rock", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Smeargle",
+      "actual": "Normal",
+      "top1": "Psychic",
+      "top5": ["Psychic", "Normal", "Fighting", "Dark", "Dragon"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Tyrogue",
+      "actual": "Fighting",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Poison", "Rock", "Dark", "Ground"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Hitmontop",
+      "actual": "Fighting",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Rock", "Ground", "Dark", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Smoochum",
+      "actual": "Ice",
+      "top1": "Normal",
+      "top5": ["Normal", "Fairy", "Psychic", "Dark", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Elekid",
+      "actual": "Electric",
+      "top1": "Electric",
+      "top5": ["Electric", "Fighting", "Normal", "Dark", "Rock"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Magby",
+      "actual": "Fire",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Dragon", "Dark", "Poison", "Fire"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Miltank",
+      "actual": "Normal",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Dark", "Normal", "Psychic", "Fire"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Blissey",
+      "actual": "Normal",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Normal", "Psychic", "Poison", "Flying"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Raikou",
+      "actual": "Electric",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Electric", "Fire", "Dark", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Entei",
+      "actual": "Fire",
+      "top1": "Steel",
+      "top5": ["Steel", "Fire", "Fighting", "Dark", "Dragon"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Suicune",
+      "actual": "Water",
+      "top1": "Psychic",
+      "top5": ["Psychic", "Ice", "Fighting", "Normal", "Water"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Larvitar",
+      "actual": "Rock",
+      "top1": "Rock",
+      "top5": ["Rock", "Ground", "Normal", "Dark", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Pupitar",
+      "actual": "Rock",
+      "top1": "Dark",
+      "top5": ["Dark", "Ghost", "Ice", "Psychic", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Lugia",
+      "actual": "Psychic",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Ice", "Water", "Flying", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Ho-oh",
+      "actual": "Fire",
+      "top1": "Flying",
+      "top5": ["Flying", "Psychic", "Fire", "Normal", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Celebi",
+      "actual": "Psychic",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Water", "Bug", "Psychic", "Grass"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Treecko",
+      "actual": "Grass",
+      "top1": "Normal",
+      "top5": ["Normal", "Psychic", "Grass", "Fighting", "Poison"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Grovyle",
+      "actual": "Grass",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Flying", "Fighting", "Grass", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Torchic",
+      "actual": "Fire",
+      "top1": "Normal",
+      "top5": ["Normal", "Fairy", "Psychic", "Electric", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Combusken",
+      "actual": "Fire",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Psychic", "Electric", "Normal", "Fire"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Mudkip",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Normal", "Ice", "Fighting", "Fairy"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Marshtomp",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Normal", "Psychic", "Ice", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Poochyena",
+      "actual": "Dark",
+      "top1": "Dark",
+      "top5": ["Dark", "Steel", "Fighting", "Normal", "Ground"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Mightyena",
+      "actual": "Dark",
+      "top1": "Dark",
+      "top5": ["Dark", "Fighting", "Steel", "Normal", "Fire"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Wurmple",
+      "actual": "Bug",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Rock", "Fighting", "Normal", "Ground"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Silcoon",
+      "actual": "Bug",
+      "top1": "Normal",
+      "top5": ["Normal", "Poison", "Psychic", "Dark", "Ice"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Beautifly",
+      "actual": "Bug",
+      "top1": "Dark",
+      "top5": ["Dark", "Bug", "Fighting", "Normal", "Fairy"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Cascoon",
+      "actual": "Bug",
+      "top1": "Poison",
+      "top5": ["Poison", "Normal", "Dark", "Ground", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Dustox",
+      "actual": "Bug",
+      "top1": "Bug",
+      "top5": ["Bug", "Dark", "Normal", "Fairy", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Lotad",
+      "actual": "Water",
+      "top1": "Grass",
+      "top5": ["Grass", "Normal", "Water", "Dark", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Lombre",
+      "actual": "Water",
+      "top1": "Normal",
+      "top5": ["Normal", "Grass", "Fighting", "Psychic", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Ludicolo",
+      "actual": "Water",
+      "top1": "Normal",
+      "top5": ["Normal", "Grass", "Psychic", "Fighting", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Seedot",
+      "actual": "Grass",
+      "top1": "Steel",
+      "top5": ["Steel", "Dark", "Fighting", "Normal", "Ground"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Nuzleaf",
+      "actual": "Grass",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Normal", "Dark", "Rock", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Shiftry",
+      "actual": "Grass",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Normal", "Dark", "Rock", "Fairy"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Taillow",
+      "actual": "Normal",
+      "top1": "Normal",
+      "top5": ["Normal", "Dark", "Psychic", "Fairy", "Flying"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Swellow",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Psychic", "Fighting", "Flying"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Wingull",
+      "actual": "Water",
+      "top1": "Flying",
+      "top5": ["Flying", "Normal", "Ice", "Psychic", "Dragon"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Pelipper",
+      "actual": "Water",
+      "top1": "Normal",
+      "top5": ["Normal", "Water", "Psychic", "Ice", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Ralts",
+      "actual": "Psychic",
+      "top1": "Poison",
+      "top5": ["Poison", "Normal", "Psychic", "Fairy", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Kirlia",
+      "actual": "Psychic",
+      "top1": "Normal",
+      "top5": ["Normal", "Psychic", "Poison", "Dark", "Grass"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Surskit",
+      "actual": "Bug",
+      "top1": "Normal",
+      "top5": ["Normal", "Psychic", "Electric", "Water", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Masquerain",
+      "actual": "Bug",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Bug", "Normal", "Psychic", "Flying"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Shroomish",
+      "actual": "Grass",
+      "top1": "Normal",
+      "top5": ["Normal", "Poison", "Rock", "Ground", "Grass"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Breloom",
+      "actual": "Grass",
+      "top1": "Poison",
+      "top5": ["Poison", "Psychic", "Normal", "Grass", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Slakoth",
+      "actual": "Normal",
+      "top1": "Normal",
+      "top5": ["Normal", "Dark", "Psychic", "Ground", "Rock"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Vigoroth",
+      "actual": "Normal",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Dark", "Normal", "Ice", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Slaking",
+      "actual": "Normal",
+      "top1": "Normal",
+      "top5": ["Normal", "Dark", "Fighting", "Steel", "Rock"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Nincada",
+      "actual": "Bug",
+      "top1": "Normal",
+      "top5": ["Normal", "Ice", "Steel", "Dark", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Ninjask",
+      "actual": "Bug",
+      "top1": "Bug",
+      "top5": ["Bug", "Flying", "Dark", "Fighting", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Shedinja",
+      "actual": "Bug",
+      "top1": "Bug",
+      "top5": ["Bug", "Dark", "Normal", "Psychic", "Rock"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Whismur",
+      "actual": "Normal",
+      "top1": "Normal",
+      "top5": ["Normal", "Psychic", "Fighting", "Ground", "Fairy"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Loudred",
+      "actual": "Normal",
+      "top1": "Normal",
+      "top5": ["Normal", "Fighting", "Dark", "Steel", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Exploud",
+      "actual": "Normal",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Ground", "Dark", "Normal", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Makuhita",
+      "actual": "Fighting",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Dark", "Normal", "Psychic", "Electric"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Hariyama",
+      "actual": "Fighting",
+      "top1": "Psychic",
+      "top5": ["Psychic", "Fighting", "Rock", "Normal", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Azurill",
+      "actual": "Normal",
+      "top1": "Ice",
+      "top5": ["Ice", "Normal", "Psychic", "Dark", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Nosepass",
+      "actual": "Rock",
+      "top1": "Rock",
+      "top5": ["Rock", "Ice", "Ground", "Fighting", "Steel"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Skitty",
+      "actual": "Normal",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Psychic", "Normal", "Fighting", "Electric"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Delcatty",
+      "actual": "Normal",
+      "top1": "Electric",
+      "top5": ["Electric", "Psychic", "Normal", "Dark", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Aron",
+      "actual": "Steel",
+      "top1": "Rock",
+      "top5": ["Rock", "Steel", "Dark", "Ground", "Bug"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Lairon",
+      "actual": "Steel",
+      "top1": "Rock",
+      "top5": ["Rock", "Steel", "Dark", "Ground", "Ice"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Meditite",
+      "actual": "Fighting",
+      "top1": "Psychic",
+      "top5": ["Psychic", "Ice", "Steel", "Normal", "Water"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Electrike",
+      "actual": "Electric",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Fighting", "Ice", "Steel", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Plusle",
+      "actual": "Electric",
+      "top1": "Electric",
+      "top5": ["Electric", "Fighting", "Fairy", "Normal", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Minun",
+      "actual": "Electric",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Electric", "Fairy", "Psychic", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Volbeat",
+      "actual": "Bug",
+      "top1": "Bug",
+      "top5": ["Bug", "Dark", "Steel", "Fighting", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Illumise",
+      "actual": "Bug",
+      "top1": "Bug",
+      "top5": ["Bug", "Normal", "Dark", "Fighting", "Steel"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Roselia",
+      "actual": "Grass",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Psychic", "Poison", "Dark", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Gulpin",
+      "actual": "Poison",
+      "top1": "Normal",
+      "top5": ["Normal", "Rock", "Psychic", "Dark", "Ground"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Swalot",
+      "actual": "Poison",
+      "top1": "Poison",
+      "top5": ["Poison", "Normal", "Dark", "Psychic", "Rock"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Carvanha",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Dark", "Psychic", "Fighting", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Wailmer",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Normal", "Dark", "Fighting", "Rock"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Wailord",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Normal", "Ground", "Dark", "Ice"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Numel",
+      "actual": "Fire",
+      "top1": "Rock",
+      "top5": ["Rock", "Normal", "Fighting", "Ground", "Dragon"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Torkoal",
+      "actual": "Fire",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Fire", "Rock", "Steel", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Spoink",
+      "actual": "Psychic",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Psychic", "Fighting", "Steel"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Grumpig",
+      "actual": "Psychic",
+      "top1": "Dark",
+      "top5": ["Dark", "Psychic", "Normal", "Fighting", "Steel"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Spinda",
+      "actual": "Normal",
+      "top1": "Psychic",
+      "top5": ["Psychic", "Dark", "Normal", "Fighting", "Fire"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Trapinch",
+      "actual": "Ground",
+      "top1": "Rock",
+      "top5": ["Rock", "Normal", "Fighting", "Dark", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Vibrava",
+      "actual": "Ground",
+      "top1": "Bug",
+      "top5": ["Bug", "Dragon", "Steel", "Dark", "Flying"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Flygon",
+      "actual": "Ground",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Flying", "Fairy", "Fighting", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Cacnea",
+      "actual": "Grass",
+      "top1": "Rock",
+      "top5": ["Rock", "Normal", "Dark", "Bug", "Poison"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Cacturne",
+      "actual": "Grass",
+      "top1": "Rock",
+      "top5": ["Rock", "Normal", "Grass", "Psychic", "Ground"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Swablu",
+      "actual": "Normal",
+      "top1": "Flying",
+      "top5": ["Flying", "Normal", "Fairy", "Electric", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Zangoose",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Fighting", "Normal", "Psychic", "Steel"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Seviper",
+      "actual": "Poison",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Poison", "Ground", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Lunatone",
+      "actual": "Rock",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Fighting", "Steel", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Solrock",
+      "actual": "Rock",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Rock", "Psychic", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Barboach",
+      "actual": "Water",
+      "top1": "Steel",
+      "top5": ["Steel", "Flying", "Ground", "Normal", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Whiscash",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Electric", "Normal", "Dark", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Corphish",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Normal", "Psychic", "Dark", "Rock"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Crawdaunt",
+      "actual": "Water",
+      "top1": "Normal",
+      "top5": ["Normal", "Rock", "Fighting", "Dark", "Bug"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Baltoy",
+      "actual": "Ground",
+      "top1": "Rock",
+      "top5": ["Rock", "Ground", "Fighting", "Steel", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Claydol",
+      "actual": "Ground",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Poison", "Psychic", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Lileep",
+      "actual": "Rock",
+      "top1": "Poison",
+      "top5": ["Poison", "Psychic", "Dark", "Normal", "Bug"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Cradily",
+      "actual": "Rock",
+      "top1": "Poison",
+      "top5": ["Poison", "Psychic", "Normal", "Grass", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Anorith",
+      "actual": "Rock",
+      "top1": "Bug",
+      "top5": ["Bug", "Steel", "Fighting", "Normal", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Armaldo",
+      "actual": "Rock",
+      "top1": "Steel",
+      "top5": ["Steel", "Water", "Dragon", "Dark", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Feebas",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Rock", "Normal", "Dark", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Milotic",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Poison", "Dragon", "Normal", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Kecleon",
+      "actual": "Normal",
+      "top1": "Normal",
+      "top5": ["Normal", "Psychic", "Fighting", "Water", "Grass"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Shuppet",
+      "actual": "Ghost",
+      "top1": "Dark",
+      "top5": ["Dark", "Ghost", "Poison", "Psychic", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Duskull",
+      "actual": "Ghost",
+      "top1": "Dark",
+      "top5": ["Dark", "Ghost", "Normal", "Psychic", "Steel"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Dusclops",
+      "actual": "Ghost",
+      "top1": "Steel",
+      "top5": ["Steel", "Rock", "Ground", "Dark", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Tropius",
+      "actual": "Grass",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Grass", "Normal", "Dark", "Ground"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Chimecho",
+      "actual": "Psychic",
+      "top1": "Water",
+      "top5": ["Water", "Ice", "Normal", "Poison", "Ghost"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Wynaut",
+      "actual": "Psychic",
+      "top1": "Normal",
+      "top5": ["Normal", "Water", "Psychic", "Dark", "Ice"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Snorunt",
+      "actual": "Ice",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Psychic", "Ground", "Electric"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Spheal",
+      "actual": "Ice",
+      "top1": "Water",
+      "top5": ["Water", "Normal", "Fighting", "Ground", "Ice"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Sealeo",
+      "actual": "Ice",
+      "top1": "Water",
+      "top5": ["Water", "Normal", "Ice", "Psychic", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Walrein",
+      "actual": "Ice",
+      "top1": "Water",
+      "top5": ["Water", "Ice", "Normal", "Dark", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Clamperl",
+      "actual": "Water",
+      "top1": "Psychic",
+      "top5": ["Psychic", "Normal", "Water", "Dark", "Ice"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Huntail",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Normal", "Psychic", "Ice", "Poison"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Gorebyss",
+      "actual": "Water",
+      "top1": "Normal",
+      "top5": ["Normal", "Fairy", "Psychic", "Poison", "Water"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Relicanth",
+      "actual": "Water",
+      "top1": "Dark",
+      "top5": ["Dark", "Rock", "Water", "Ground", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Luvdisc",
+      "actual": "Water",
+      "top1": "Rock",
+      "top5": ["Rock", "Normal", "Psychic", "Dark", "Ground"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Bagon",
+      "actual": "Dragon",
+      "top1": "Ice",
+      "top5": ["Ice", "Fighting", "Psychic", "Water", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Shelgon",
+      "actual": "Dragon",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Rock", "Bug", "Ground"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Beldum",
+      "actual": "Steel",
+      "top1": "Rock",
+      "top5": ["Rock", "Steel", "Fighting", "Ground", "Ice"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Metang",
+      "actual": "Steel",
+      "top1": "Steel",
+      "top5": ["Steel", "Rock", "Ice", "Ground", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Regirock",
+      "actual": "Rock",
+      "top1": "Rock",
+      "top5": ["Rock", "Ground", "Normal", "Steel", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Regice",
+      "actual": "Ice",
+      "top1": "Ice",
+      "top5": ["Ice", "Rock", "Ground", "Steel", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Registeel",
+      "actual": "Steel",
+      "top1": "Steel",
+      "top5": ["Steel", "Ground", "Normal", "Dark", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Jirachi",
+      "actual": "Steel",
+      "top1": "Psychic",
+      "top5": ["Psychic", "Normal", "Ice", "Water", "Electric"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Turtwig",
+      "actual": "Grass",
+      "top1": "Normal",
+      "top5": ["Normal", "Grass", "Psychic", "Dark", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Grotle",
+      "actual": "Grass",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Ground", "Rock", "Grass", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Torterra",
+      "actual": "Grass",
+      "top1": "Rock",
+      "top5": ["Rock", "Steel", "Ground", "Fighting", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Chimchar",
+      "actual": "Fire",
+      "top1": "Fire",
+      "top5": ["Fire", "Fighting", "Psychic", "Normal", "Dark"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Monferno",
+      "actual": "Fire",
+      "top1": "Fire",
+      "top5": ["Fire", "Fighting", "Psychic", "Dark", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Infernape",
+      "actual": "Fire",
+      "top1": "Fire",
+      "top5": ["Fire", "Fighting", "Psychic", "Dark", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Piplup",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Normal", "Psychic", "Dark", "Ice"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Prinplup",
+      "actual": "Water",
+      "top1": "Normal",
+      "top5": ["Normal", "Dark", "Ice", "Psychic", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Empoleon",
+      "actual": "Water",
+      "top1": "Dark",
+      "top5": ["Dark", "Water", "Ice", "Normal", "Steel"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Starly",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Psychic", "Rock", "Steel"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Staravia",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Steel", "Normal", "Rock", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Staraptor",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Psychic", "Fighting", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Bidoof",
+      "actual": "Normal",
+      "top1": "Normal",
+      "top5": ["Normal", "Dark", "Ground", "Fighting", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Bibarel",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Psychic", "Ground", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Kricketot",
+      "actual": "Bug",
+      "top1": "Bug",
+      "top5": ["Bug", "Rock", "Normal", "Dark", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Kricketune",
+      "actual": "Bug",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Psychic", "Fire", "Steel", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Shinx",
+      "actual": "Electric",
+      "top1": "Dark",
+      "top5": ["Dark", "Fighting", "Psychic", "Electric", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Luxio",
+      "actual": "Electric",
+      "top1": "Dark",
+      "top5": ["Dark", "Fighting", "Fire", "Water", "Electric"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Luxray",
+      "actual": "Electric",
+      "top1": "Dark",
+      "top5": ["Dark", "Electric", "Fire", "Fighting", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Budew",
+      "actual": "Grass",
+      "top1": "Normal",
+      "top5": ["Normal", "Grass", "Psychic", "Poison", "Electric"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Roserade",
+      "actual": "Grass",
+      "top1": "Poison",
+      "top5": ["Poison", "Psychic", "Normal", "Fighting", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Cranidos",
+      "actual": "Rock",
+      "top1": "Dark",
+      "top5": ["Dark", "Dragon", "Rock", "Steel", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Rampardos",
+      "actual": "Rock",
+      "top1": "Steel",
+      "top5": ["Steel", "Dark", "Fighting", "Rock", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Shieldon",
+      "actual": "Rock",
+      "top1": "Rock",
+      "top5": ["Rock", "Steel", "Fighting", "Ground", "Dark"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Bastiodon",
+      "actual": "Rock",
+      "top1": "Rock",
+      "top5": ["Rock", "Dark", "Ground", "Normal", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Mothim",
+      "actual": "Bug",
+      "top1": "Bug",
+      "top5": ["Bug", "Dark", "Fighting", "Normal", "Steel"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Combee",
+      "actual": "Bug",
+      "top1": "Bug",
+      "top5": ["Bug", "Fighting", "Normal", "Steel", "Rock"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Vespiquen",
+      "actual": "Bug",
+      "top1": "Bug",
+      "top5": ["Bug", "Fighting", "Normal", "Rock", "Dark"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Pachirisu",
+      "actual": "Electric",
+      "top1": "Ice",
+      "top5": ["Ice", "Normal", "Water", "Psychic", "Electric"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Buizel",
+      "actual": "Water",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Fire", "Water", "Normal", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Floatzel",
+      "actual": "Water",
+      "top1": "Fire",
+      "top5": ["Fire", "Fighting", "Water", "Dragon", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Cherubi",
+      "actual": "Grass",
+      "top1": "Poison",
+      "top5": ["Poison", "Normal", "Fairy", "Electric", "Ground"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Cherrim",
+      "actual": "Grass",
+      "top1": "Poison",
+      "top5": ["Poison", "Dark", "Normal", "Psychic", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Shellos",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Normal", "Dragon", "Psychic", "Ice"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Gastrodon",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Normal", "Psychic", "Dragon", "Dark"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Ambipom",
+      "actual": "Normal",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Normal", "Psychic", "Dark", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Drifloon",
+      "actual": "Ghost",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Psychic", "Poison", "Electric"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Drifblim",
+      "actual": "Ghost",
+      "top1": "Bug",
+      "top5": ["Bug", "Normal", "Poison", "Dark", "Flying"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Buneary",
+      "actual": "Normal",
+      "top1": "Normal",
+      "top5": ["Normal", "Fairy", "Dark", "Psychic", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Mismagius",
+      "actual": "Ghost",
+      "top1": "Dark",
+      "top5": ["Dark", "Psychic", "Ghost", "Normal", "Poison"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Honchkrow",
+      "actual": "Dark",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Psychic", "Fighting", "Flying"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Glameow",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Poison", "Psychic", "Fighting", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Purugly",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Fighting", "Normal", "Psychic", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Chingling",
+      "actual": "Psychic",
+      "top1": "Normal",
+      "top5": ["Normal", "Flying", "Electric", "Bug", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Stunky",
+      "actual": "Poison",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Psychic", "Fighting", "Ground"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Skuntank",
+      "actual": "Poison",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Ground", "Fighting", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Bronzor",
+      "actual": "Steel",
+      "top1": "Water",
+      "top5": ["Water", "Normal", "Rock", "Bug", "Poison"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Bronzong",
+      "actual": "Steel",
+      "top1": "Steel",
+      "top5": ["Steel", "Rock", "Dark", "Fighting", "Ground"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Bonsly",
+      "actual": "Rock",
+      "top1": "Grass",
+      "top5": ["Grass", "Ground", "Normal", "Rock", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Happiny",
+      "actual": "Normal",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Normal", "Psychic", "Poison", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Chatot",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Fighting", "Normal", "Psychic", "Electric"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Spiritomb",
+      "actual": "Ghost",
+      "top1": "Ghost",
+      "top5": ["Ghost", "Psychic", "Dark", "Poison", "Rock"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Gible",
+      "actual": "Dragon",
+      "top1": "Water",
+      "top5": ["Water", "Dark", "Fighting", "Steel", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Gabite",
+      "actual": "Dragon",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Fighting", "Dark", "Water", "Steel"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Munchlax",
+      "actual": "Normal",
+      "top1": "Water",
+      "top5": ["Water", "Dark", "Fighting", "Normal", "Ground"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Riolu",
+      "actual": "Fighting",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Dark", "Fire", "Water", "Ice"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Hippopotas",
+      "actual": "Ground",
+      "top1": "Normal",
+      "top5": ["Normal", "Dark", "Psychic", "Rock", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Hippowdon",
+      "actual": "Ground",
+      "top1": "Ground",
+      "top5": ["Ground", "Rock", "Fighting", "Normal", "Dark"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Skorupi",
+      "actual": "Poison",
+      "top1": "Poison",
+      "top5": ["Poison", "Dark", "Bug", "Normal", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Drapion",
+      "actual": "Poison",
+      "top1": "Poison",
+      "top5": ["Poison", "Normal", "Fighting", "Dark", "Rock"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Croagunk",
+      "actual": "Poison",
+      "top1": "Dark",
+      "top5": ["Dark", "Fighting", "Normal", "Steel", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Toxicroak",
+      "actual": "Poison",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Water", "Dark", "Normal", "Steel"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Carnivine",
+      "actual": "Grass",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Grass", "Fighting", "Poison"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Finneon",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Dark", "Normal", "Poison", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Lumineon",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Dark", "Normal", "Fighting", "Rock"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Mantyke",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Normal", "Ice", "Fairy", "Bug"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Snover",
+      "actual": "Grass",
+      "top1": "Normal",
+      "top5": ["Normal", "Psychic", "Dark", "Rock", "Ice"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Weavile",
+      "actual": "Dark",
+      "top1": "Dark",
+      "top5": ["Dark", "Water", "Fighting", "Rock", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Magnezone",
+      "actual": "Electric",
+      "top1": "Steel",
+      "top5": ["Steel", "Normal", "Ground", "Bug", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Lickilicky",
+      "actual": "Normal",
+      "top1": "Normal",
+      "top5": ["Normal", "Fighting", "Psychic", "Rock", "Poison"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Rhyperior",
+      "actual": "Ground",
+      "top1": "Rock",
+      "top5": ["Rock", "Ground", "Ice", "Fighting", "Steel"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Tangrowth",
+      "actual": "Grass",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Ghost", "Fighting", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Electivire",
+      "actual": "Electric",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Dark", "Electric", "Normal", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Magmortar",
+      "actual": "Fire",
+      "top1": "Fire",
+      "top5": ["Fire", "Fighting", "Dark", "Steel", "Dragon"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Togekiss",
+      "actual": "Fairy",
+      "top1": "Flying",
+      "top5": ["Flying", "Normal", "Ice", "Steel", "Water"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Yanmega",
+      "actual": "Bug",
+      "top1": "Bug",
+      "top5": ["Bug", "Poison", "Steel", "Fighting", "Dark"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Leafeon",
+      "actual": "Grass",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Dragon", "Dark", "Fighting", "Grass"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Glaceon",
+      "actual": "Ice",
+      "top1": "Ice",
+      "top5": ["Ice", "Water", "Steel", "Psychic", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Gliscor",
+      "actual": "Ground",
+      "top1": "Dark",
+      "top5": ["Dark", "Fighting", "Poison", "Normal", "Steel"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Mamoswine",
+      "actual": "Ice",
+      "top1": "Normal",
+      "top5": ["Normal", "Fighting", "Dark", "Ice", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Porygon-Z",
+      "actual": "Normal",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Psychic", "Water", "Steel", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Probopass",
+      "actual": "Rock",
+      "top1": "Rock",
+      "top5": ["Rock", "Steel", "Normal", "Dark", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Dusknoir",
+      "actual": "Ghost",
+      "top1": "Steel",
+      "top5": ["Steel", "Dark", "Ground", "Rock", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Froslass",
+      "actual": "Ice",
+      "top1": "Ice",
+      "top5": ["Ice", "Psychic", "Steel", "Dragon", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Uxie",
+      "actual": "Psychic",
+      "top1": "Psychic",
+      "top5": ["Psychic", "Normal", "Dark", "Fighting", "Rock"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Mesprit",
+      "actual": "Psychic",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Psychic", "Fighting", "Ice", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Azelf",
+      "actual": "Psychic",
+      "top1": "Water",
+      "top5": ["Water", "Dark", "Psychic", "Ice", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Heatran",
+      "actual": "Fire",
+      "top1": "Rock",
+      "top5": ["Rock", "Ground", "Steel", "Fighting", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Regigigas",
+      "actual": "Normal",
+      "top1": "Steel",
+      "top5": ["Steel", "Normal", "Ground", "Fighting", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Cresselia",
+      "actual": "Psychic",
+      "top1": "Psychic",
+      "top5": ["Psychic", "Flying", "Fairy", "Fighting", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Phione",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Ice", "Fairy", "Psychic", "Poison"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Manaphy",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Normal", "Ice", "Psychic", "Electric"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Darkrai",
+      "actual": "Dark",
+      "top1": "Dark",
+      "top5": ["Dark", "Psychic", "Normal", "Fighting", "Ghost"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Arceus",
+      "actual": "Normal",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Psychic", "Dark", "Normal", "Steel"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Victini",
+      "actual": "Psychic",
+      "top1": "Electric",
+      "top5": ["Electric", "Normal", "Psychic", "Fighting", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Snivy",
+      "actual": "Grass",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Water", "Normal", "Fighting", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Servine",
+      "actual": "Grass",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Normal", "Psychic", "Grass", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Serperior",
+      "actual": "Grass",
+      "top1": "Water",
+      "top5": ["Water", "Dragon", "Psychic", "Normal", "Ice"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Tepig",
+      "actual": "Fire",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Fire", "Fighting", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Pignite",
+      "actual": "Fire",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Dark", "Normal", "Fire", "Steel"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Emboar",
+      "actual": "Fire",
+      "top1": "Fire",
+      "top5": ["Fire", "Dark", "Fighting", "Steel", "Dragon"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Oshawott",
+      "actual": "Water",
+      "top1": "Normal",
+      "top5": ["Normal", "Psychic", "Ice", "Rock", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Dewott",
+      "actual": "Water",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Ice", "Water", "Electric", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Patrat",
+      "actual": "Normal",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Dark", "Normal", "Psychic", "Ground"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Watchog",
+      "actual": "Normal",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Fire", "Normal", "Dark", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Lillipup",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Fighting", "Normal", "Psychic", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Herdier",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Psychic", "Fighting", "Fire"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Stoutland",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Fire", "Normal", "Fighting", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Purrloin",
+      "actual": "Dark",
+      "top1": "Dark",
+      "top5": ["Dark", "Poison", "Normal", "Psychic", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Liepard",
+      "actual": "Dark",
+      "top1": "Psychic",
+      "top5": ["Psychic", "Fire", "Dark", "Normal", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Pansage",
+      "actual": "Grass",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Normal", "Psychic", "Grass", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Simisage",
+      "actual": "Grass",
+      "top1": "Grass",
+      "top5": ["Grass", "Normal", "Psychic", "Fighting", "Electric"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Pansear",
+      "actual": "Fire",
+      "top1": "Fire",
+      "top5": ["Fire", "Fighting", "Psychic", "Normal", "Dark"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Simisear",
+      "actual": "Fire",
+      "top1": "Fire",
+      "top5": ["Fire", "Fighting", "Normal", "Dark", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Panpour",
+      "actual": "Water",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Psychic", "Normal", "Water", "Ice"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Simipour",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Ice", "Normal", "Fighting", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Munna",
+      "actual": "Psychic",
+      "top1": "Poison",
+      "top5": ["Poison", "Fairy", "Normal", "Psychic", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Musharna",
+      "actual": "Psychic",
+      "top1": "Poison",
+      "top5": ["Poison", "Psychic", "Fairy", "Dark", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Pidove",
+      "actual": "Normal",
+      "top1": "Normal",
+      "top5": ["Normal", "Psychic", "Dark", "Flying", "Rock"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Tranquill",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Psychic", "Flying", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Unfezant",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Psychic", "Rock", "Flying"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Blitzle",
+      "actual": "Electric",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Electric", "Steel", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Zebstrika",
+      "actual": "Electric",
+      "top1": "Dark",
+      "top5": ["Dark", "Electric", "Steel", "Psychic", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Roggenrola",
+      "actual": "Rock",
+      "top1": "Rock",
+      "top5": ["Rock", "Dark", "Normal", "Steel", "Ground"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Boldore",
+      "actual": "Rock",
+      "top1": "Rock",
+      "top5": ["Rock", "Ground", "Dark", "Bug", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Gigalith",
+      "actual": "Rock",
+      "top1": "Rock",
+      "top5": ["Rock", "Ground", "Dark", "Steel", "Ice"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Woobat",
+      "actual": "Psychic",
+      "top1": "Normal",
+      "top5": ["Normal", "Dark", "Ice", "Fighting", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Swoobat",
+      "actual": "Psychic",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Fighting", "Flying", "Bug"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Drilbur",
+      "actual": "Ground",
+      "top1": "Steel",
+      "top5": ["Steel", "Rock", "Dark", "Normal", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Excadrill",
+      "actual": "Ground",
+      "top1": "Dark",
+      "top5": ["Dark", "Steel", "Fighting", "Rock", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Timburr",
+      "actual": "Fighting",
+      "top1": "Rock",
+      "top5": ["Rock", "Dark", "Normal", "Steel", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Gurdurr",
+      "actual": "Fighting",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Normal", "Steel", "Dark", "Rock"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Conkeldurr",
+      "actual": "Fighting",
+      "top1": "Rock",
+      "top5": ["Rock", "Fighting", "Dark", "Normal", "Steel"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Tympole",
+      "actual": "Water",
+      "top1": "Steel",
+      "top5": ["Steel", "Normal", "Fighting", "Electric", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Palpitoad",
+      "actual": "Water",
+      "top1": "Steel",
+      "top5": ["Steel", "Normal", "Electric", "Fighting", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Seismitoad",
+      "actual": "Water",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Normal", "Water", "Steel", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Throh",
+      "actual": "Fighting",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Rock", "Dark", "Normal", "Steel"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Sawk",
+      "actual": "Fighting",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Rock", "Steel", "Dark", "Ice"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Sewaddle",
+      "actual": "Bug",
+      "top1": "Normal",
+      "top5": ["Normal", "Fighting", "Dark", "Grass", "Electric"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Swadloon",
+      "actual": "Bug",
+      "top1": "Grass",
+      "top5": ["Grass", "Normal", "Dark", "Psychic", "Ground"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Leavanny",
+      "actual": "Bug",
+      "top1": "Grass",
+      "top5": ["Grass", "Normal", "Fighting", "Bug", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Venipede",
+      "actual": "Bug",
+      "top1": "Bug",
+      "top5": ["Bug", "Poison", "Normal", "Dark", "Rock"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Whirlipede",
+      "actual": "Bug",
+      "top1": "Dark",
+      "top5": ["Dark", "Steel", "Rock", "Normal", "Bug"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Scolipede",
+      "actual": "Bug",
+      "top1": "Dark",
+      "top5": ["Dark", "Bug", "Poison", "Normal", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Cottonee",
+      "actual": "Grass",
+      "top1": "Normal",
+      "top5": ["Normal", "Ice", "Psychic", "Grass", "Water"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Whimsicott",
+      "actual": "Grass",
+      "top1": "Normal",
+      "top5": ["Normal", "Grass", "Fairy", "Dark", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Petilil",
+      "actual": "Grass",
+      "top1": "Normal",
+      "top5": ["Normal", "Grass", "Psychic", "Poison", "Fairy"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Sandile",
+      "actual": "Ground",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Ground", "Psychic", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Krokorok",
+      "actual": "Ground",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Rock", "Dark", "Normal", "Dragon"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Krookodile",
+      "actual": "Ground",
+      "top1": "Dark",
+      "top5": ["Dark", "Fighting", "Normal", "Steel", "Dragon"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Maractus",
+      "actual": "Grass",
+      "top1": "Normal",
+      "top5": ["Normal", "Dark", "Grass", "Poison", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Dwebble",
+      "actual": "Bug",
+      "top1": "Rock",
+      "top5": ["Rock", "Normal", "Bug", "Steel", "Ground"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Crustle",
+      "actual": "Bug",
+      "top1": "Rock",
+      "top5": ["Rock", "Ground", "Bug", "Normal", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Scraggy",
+      "actual": "Dark",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Normal", "Ground", "Rock", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Scrafty",
+      "actual": "Dark",
+      "top1": "Rock",
+      "top5": ["Rock", "Fighting", "Ground", "Psychic", "Fire"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Sigilyph",
+      "actual": "Psychic",
+      "top1": "Psychic",
+      "top5": ["Psychic", "Dark", "Normal", "Flying", "Electric"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Cofagrigus",
+      "actual": "Ghost",
+      "top1": "Dark",
+      "top5": ["Dark", "Psychic", "Normal", "Steel", "Ground"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Tirtouga",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Steel", "Dark", "Normal", "Rock"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Carracosta",
+      "actual": "Water",
+      "top1": "Rock",
+      "top5": ["Rock", "Dark", "Fighting", "Steel", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Archen",
+      "actual": "Rock",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Dragon", "Normal", "Psychic", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Archeops",
+      "actual": "Rock",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Flying", "Fighting", "Psychic", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Trubbish",
+      "actual": "Poison",
+      "top1": "Rock",
+      "top5": ["Rock", "Normal", "Dark", "Ground", "Poison"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Garbodor",
+      "actual": "Poison",
+      "top1": "Rock",
+      "top5": ["Rock", "Ground", "Normal", "Dark", "Poison"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Minccino",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Fairy", "Normal", "Psychic", "Electric"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Cinccino",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Fairy", "Ghost", "Psychic", "Electric"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Gothita",
+      "actual": "Psychic",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Fairy", "Poison", "Bug"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Gothorita",
+      "actual": "Psychic",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Poison", "Psychic", "Bug"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Gothitelle",
+      "actual": "Psychic",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Psychic", "Poison", "Bug"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Solosis",
+      "actual": "Psychic",
+      "top1": "Grass",
+      "top5": ["Grass", "Normal", "Water", "Fairy", "Poison"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Duosion",
+      "actual": "Psychic",
+      "top1": "Water",
+      "top5": ["Water", "Normal", "Rock", "Psychic", "Grass"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Reuniclus",
+      "actual": "Psychic",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Water", "Grass", "Normal", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Ducklett",
+      "actual": "Water",
+      "top1": "Normal",
+      "top5": ["Normal", "Psychic", "Dark", "Water", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Swanna",
+      "actual": "Water",
+      "top1": "Psychic",
+      "top5": ["Psychic", "Normal", "Dragon", "Ice", "Water"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Vanillite",
+      "actual": "Ice",
+      "top1": "Ice",
+      "top5": ["Ice", "Normal", "Rock", "Water", "Ghost"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Vanillish",
+      "actual": "Ice",
+      "top1": "Ice",
+      "top5": ["Ice", "Normal", "Psychic", "Dark", "Rock"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Vanilluxe",
+      "actual": "Ice",
+      "top1": "Ice",
+      "top5": ["Ice", "Normal", "Psychic", "Ghost", "Rock"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Deerling",
+      "actual": "Normal",
+      "top1": "Fire",
+      "top5": ["Fire", "Normal", "Psychic", "Dark", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Sawsbuck",
+      "actual": "Normal",
+      "top1": "Fire",
+      "top5": ["Fire", "Dark", "Normal", "Fighting", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Emolga",
+      "actual": "Electric",
+      "top1": "Dark",
+      "top5": ["Dark", "Electric", "Fighting", "Flying", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Karrablast",
+      "actual": "Bug",
+      "top1": "Water",
+      "top5": ["Water", "Dark", "Fighting", "Dragon", "Fire"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Escavalier",
+      "actual": "Bug",
+      "top1": "Steel",
+      "top5": ["Steel", "Fighting", "Dark", "Bug", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Foongus",
+      "actual": "Grass",
+      "top1": "Normal",
+      "top5": ["Normal", "Poison", "Fairy", "Psychic", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Amoonguss",
+      "actual": "Grass",
+      "top1": "Normal",
+      "top5": ["Normal", "Poison", "Psychic", "Dark", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Frillish",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Fairy", "Psychic", "Normal", "Poison"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Jellicent",
+      "actual": "Water",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Water", "Normal", "Flying", "Ice"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Alomomola",
+      "actual": "Water",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Normal", "Water", "Dark", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Joltik",
+      "actual": "Bug",
+      "top1": "Electric",
+      "top5": ["Electric", "Bug", "Normal", "Rock", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Galvantula",
+      "actual": "Bug",
+      "top1": "Bug",
+      "top5": ["Bug", "Dark", "Normal", "Ground", "Electric"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Ferroseed",
+      "actual": "Grass",
+      "top1": "Rock",
+      "top5": ["Rock", "Poison", "Dark", "Steel", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Ferrothorn",
+      "actual": "Grass",
+      "top1": "Poison",
+      "top5": ["Poison", "Dark", "Normal", "Steel", "Ground"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Klink",
+      "actual": "Steel",
+      "top1": "Steel",
+      "top5": ["Steel", "Normal", "Dark", "Rock", "Electric"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Klang",
+      "actual": "Steel",
+      "top1": "Steel",
+      "top5": ["Steel", "Normal", "Dark", "Electric", "Ice"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Klinklang",
+      "actual": "Steel",
+      "top1": "Steel",
+      "top5": ["Steel", "Normal", "Dark", "Electric", "Rock"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Tynamo",
+      "actual": "Electric",
+      "top1": "Ghost",
+      "top5": ["Ghost", "Psychic", "Normal", "Electric", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Eelektrik",
+      "actual": "Electric",
+      "top1": "Water",
+      "top5": ["Water", "Normal", "Fighting", "Dark", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Eelektross",
+      "actual": "Electric",
+      "top1": "Water",
+      "top5": ["Water", "Dark", "Dragon", "Normal", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Elgyem",
+      "actual": "Psychic",
+      "top1": "Steel",
+      "top5": ["Steel", "Normal", "Psychic", "Ice", "Water"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Beheeyem",
+      "actual": "Psychic",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Steel", "Psychic", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Litwick",
+      "actual": "Ghost",
+      "top1": "Dark",
+      "top5": ["Dark", "Psychic", "Normal", "Ghost", "Ice"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Lampent",
+      "actual": "Ghost",
+      "top1": "Dark",
+      "top5": ["Dark", "Psychic", "Electric", "Normal", "Ghost"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Chandelure",
+      "actual": "Ghost",
+      "top1": "Dark",
+      "top5": ["Dark", "Electric", "Ghost", "Steel", "Fire"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Axew",
+      "actual": "Dragon",
+      "top1": "Dark",
+      "top5": ["Dark", "Fighting", "Steel", "Dragon", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Fraxure",
+      "actual": "Dragon",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Dark", "Normal", "Rock", "Dragon"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Haxorus",
+      "actual": "Dragon",
+      "top1": "Bug",
+      "top5": ["Bug", "Dark", "Steel", "Fighting", "Dragon"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Cubchoo",
+      "actual": "Ice",
+      "top1": "Ice",
+      "top5": ["Ice", "Psychic", "Normal", "Dark", "Water"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Beartic",
+      "actual": "Ice",
+      "top1": "Ice",
+      "top5": ["Ice", "Normal", "Dark", "Fighting", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Cryogonal",
+      "actual": "Ice",
+      "top1": "Ice",
+      "top5": ["Ice", "Rock", "Normal", "Electric", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Shelmet",
+      "actual": "Bug",
+      "top1": "Normal",
+      "top5": ["Normal", "Poison", "Dark", "Rock", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Accelgor",
+      "actual": "Bug",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Dark", "Poison", "Steel", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Mienfoo",
+      "actual": "Fighting",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Fire", "Psychic", "Rock", "Dark"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Mienshao",
+      "actual": "Fighting",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Psychic", "Dark", "Normal", "Dragon"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Druddigon",
+      "actual": "Dragon",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Fighting", "Dark", "Water", "Rock"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Golett",
+      "actual": "Ground",
+      "top1": "Rock",
+      "top5": ["Rock", "Steel", "Ground", "Fighting", "Ice"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Golurk",
+      "actual": "Ground",
+      "top1": "Steel",
+      "top5": ["Steel", "Rock", "Fighting", "Ground", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Pawniard",
+      "actual": "Dark",
+      "top1": "Steel",
+      "top5": ["Steel", "Fighting", "Dark", "Normal", "Bug"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Bisharp",
+      "actual": "Dark",
+      "top1": "Steel",
+      "top5": ["Steel", "Fighting", "Normal", "Psychic", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Bouffalant",
+      "actual": "Normal",
+      "top1": "Normal",
+      "top5": ["Normal", "Fire", "Rock", "Dark", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Rufflet",
+      "actual": "Normal",
+      "top1": "Normal",
+      "top5": ["Normal", "Dark", "Psychic", "Rock", "Electric"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Vullaby",
+      "actual": "Dark",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Rock", "Psychic", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Mandibuzz",
+      "actual": "Dark",
+      "top1": "Dark",
+      "top5": ["Dark", "Fighting", "Normal", "Psychic", "Rock"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Heatmor",
+      "actual": "Fire",
+      "top1": "Steel",
+      "top5": ["Steel", "Fighting", "Dark", "Fire", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Durant",
+      "actual": "Bug",
+      "top1": "Bug",
+      "top5": ["Bug", "Steel", "Dark", "Poison", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Deino",
+      "actual": "Dark",
+      "top1": "Dark",
+      "top5": ["Dark", "Rock", "Normal", "Psychic", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Zweilous",
+      "actual": "Dark",
+      "top1": "Rock",
+      "top5": ["Rock", "Dark", "Fighting", "Normal", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Hydreigon",
+      "actual": "Dark",
+      "top1": "Dark",
+      "top5": ["Dark", "Dragon", "Fighting", "Poison", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Larvesta",
+      "actual": "Bug",
+      "top1": "Dark",
+      "top5": ["Dark", "Fire", "Normal", "Psychic", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Volcarona",
+      "actual": "Bug",
+      "top1": "Bug",
+      "top5": ["Bug", "Dark", "Fire", "Fairy", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Cobalion",
+      "actual": "Steel",
+      "top1": "Ice",
+      "top5": ["Ice", "Dragon", "Fighting", "Dark", "Steel"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Terrakion",
+      "actual": "Rock",
+      "top1": "Steel",
+      "top5": ["Steel", "Rock", "Fighting", "Ground", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Virizion",
+      "actual": "Grass",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Normal", "Psychic", "Fighting", "Grass"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Reshiram",
+      "actual": "Dragon",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Ice", "Steel", "Psychic", "Flying"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Zekrom",
+      "actual": "Dragon",
+      "top1": "Steel",
+      "top5": ["Steel", "Dark", "Fighting", "Rock", "Dragon"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Genesect",
+      "actual": "Bug",
+      "top1": "Steel",
+      "top5": ["Steel", "Bug", "Fighting", "Dark", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Chespin",
+      "actual": "Grass",
+      "top1": "Normal",
+      "top5": ["Normal", "Fighting", "Dark", "Grass", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Quilladin",
+      "actual": "Grass",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Normal", "Rock", "Ground", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Chesnaught",
+      "actual": "Grass",
+      "top1": "Normal",
+      "top5": ["Normal", "Fighting", "Steel", "Dark", "Dragon"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Fennekin",
+      "actual": "Fire",
+      "top1": "Fire",
+      "top5": ["Fire", "Fighting", "Psychic", "Dark", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Braixen",
+      "actual": "Fire",
+      "top1": "Fire",
+      "top5": ["Fire", "Normal", "Dark", "Dragon", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Delphox",
+      "actual": "Fire",
+      "top1": "Fire",
+      "top5": ["Fire", "Fighting", "Dark", "Fairy", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Froakie",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Psychic", "Normal", "Ice", "Dark"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Frogadier",
+      "actual": "Water",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Psychic", "Poison", "Ice", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Bunnelby",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Fighting", "Ground", "Steel"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Diggersby",
+      "actual": "Normal",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Dark", "Ground", "Normal", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Fletchling",
+      "actual": "Normal",
+      "top1": "Normal",
+      "top5": ["Normal", "Dark", "Psychic", "Flying", "Fairy"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Fletchinder",
+      "actual": "Fire",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Fighting", "Psychic", "Fire"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Talonflame",
+      "actual": "Fire",
+      "top1": "Fire",
+      "top5": ["Fire", "Flying", "Dark", "Fighting", "Dragon"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Scatterbug",
+      "actual": "Bug",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Bug", "Steel", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Spewpa",
+      "actual": "Bug",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Steel", "Psychic", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Vivillon",
+      "actual": "Bug",
+      "top1": "Bug",
+      "top5": ["Bug", "Dark", "Normal", "Fairy", "Ground"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Litleo",
+      "actual": "Fire",
+      "top1": "Fire",
+      "top5": ["Fire", "Dark", "Fighting", "Normal", "Ground"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Pyroar",
+      "actual": "Fire",
+      "top1": "Fire",
+      "top5": ["Fire", "Dark", "Fighting", "Psychic", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Flab\u00e9b\u00e9",
+      "actual": "Fairy",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Psychic", "Normal", "Dark", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Floette",
+      "actual": "Fairy",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Normal", "Water", "Psychic", "Poison"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Florges",
+      "actual": "Fairy",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Water", "Poison", "Psychic", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Skiddo",
+      "actual": "Grass",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Rock", "Fighting", "Fire"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Gogoat",
+      "actual": "Grass",
+      "top1": "Normal",
+      "top5": ["Normal", "Dark", "Rock", "Fighting", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Pancham",
+      "actual": "Fighting",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Fighting", "Poison", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Pangoro",
+      "actual": "Fighting",
+      "top1": "Dark",
+      "top5": ["Dark", "Fighting", "Steel", "Normal", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Furfrou",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Psychic", "Ghost", "Ice"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Espurr",
+      "actual": "Psychic",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Psychic", "Ghost", "Fairy"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Honedge",
+      "actual": "Steel",
+      "top1": "Dark",
+      "top5": ["Dark", "Steel", "Water", "Psychic", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Doublade",
+      "actual": "Steel",
+      "top1": "Dark",
+      "top5": ["Dark", "Steel", "Psychic", "Fighting", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Spritzee",
+      "actual": "Fairy",
+      "top1": "Dark",
+      "top5": ["Dark", "Fairy", "Normal", "Psychic", "Poison"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Aromatisse",
+      "actual": "Fairy",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Dark", "Psychic", "Normal", "Rock"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Swirlix",
+      "actual": "Fairy",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Normal", "Ice", "Psychic", "Dark"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Slurpuff",
+      "actual": "Fairy",
+      "top1": "Normal",
+      "top5": ["Normal", "Fairy", "Dark", "Ice", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Inkay",
+      "actual": "Dark",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Water", "Psychic", "Normal", "Poison"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Malamar",
+      "actual": "Dark",
+      "top1": "Dark",
+      "top5": ["Dark", "Psychic", "Water", "Poison", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Binacle",
+      "actual": "Rock",
+      "top1": "Rock",
+      "top5": ["Rock", "Normal", "Fighting", "Dark", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Barbaracle",
+      "actual": "Rock",
+      "top1": "Steel",
+      "top5": ["Steel", "Fighting", "Rock", "Bug", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Skrelp",
+      "actual": "Poison",
+      "top1": "Poison",
+      "top5": ["Poison", "Dark", "Fighting", "Normal", "Water"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Dragalge",
+      "actual": "Poison",
+      "top1": "Dark",
+      "top5": ["Dark", "Ground", "Fighting", "Dragon", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Clauncher",
+      "actual": "Water",
+      "top1": "Bug",
+      "top5": ["Bug", "Water", "Fighting", "Steel", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Clawitzer",
+      "actual": "Water",
+      "top1": "Steel",
+      "top5": ["Steel", "Fighting", "Water", "Bug", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Helioptile",
+      "actual": "Electric",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Dark", "Psychic", "Electric", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Heliolisk",
+      "actual": "Electric",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Fighting", "Dragon", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Tyrunt",
+      "actual": "Rock",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Dark", "Rock", "Fighting", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Tyrantrum",
+      "actual": "Rock",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Fighting", "Rock", "Fire", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Amaura",
+      "actual": "Rock",
+      "top1": "Ice",
+      "top5": ["Ice", "Dragon", "Water", "Rock", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Aurorus",
+      "actual": "Rock",
+      "top1": "Water",
+      "top5": ["Water", "Ice", "Dragon", "Rock", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Sylveon",
+      "actual": "Fairy",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Normal", "Psychic", "Fighting", "Ice"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Hawlucha",
+      "actual": "Fighting",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Flying", "Normal", "Dark", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Dedenne",
+      "actual": "Electric",
+      "top1": "Electric",
+      "top5": ["Electric", "Fighting", "Dark", "Psychic", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Carbink",
+      "actual": "Rock",
+      "top1": "Rock",
+      "top5": ["Rock", "Ice", "Normal", "Steel", "Ground"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Goomy",
+      "actual": "Dragon",
+      "top1": "Normal",
+      "top5": ["Normal", "Poison", "Psychic", "Dark", "Ghost"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Klefki",
+      "actual": "Steel",
+      "top1": "Steel",
+      "top5": ["Steel", "Psychic", "Normal", "Dark", "Ice"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Phantump",
+      "actual": "Ghost",
+      "top1": "Dark",
+      "top5": ["Dark", "Psychic", "Normal", "Ghost", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Trevenant",
+      "actual": "Ghost",
+      "top1": "Dark",
+      "top5": ["Dark", "Ground", "Fighting", "Normal", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Bergmite",
+      "actual": "Ice",
+      "top1": "Ice",
+      "top5": ["Ice", "Rock", "Normal", "Dark", "Water"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Noibat",
+      "actual": "Flying",
+      "top1": "Dark",
+      "top5": ["Dark", "Fighting", "Normal", "Bug", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Noivern",
+      "actual": "Flying",
+      "top1": "Dark",
+      "top5": ["Dark", "Dragon", "Fighting", "Normal", "Poison"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Xerneas",
+      "actual": "Fairy",
+      "top1": "Dark",
+      "top5": ["Dark", "Psychic", "Electric", "Normal", "Fire"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Yveltal",
+      "actual": "Dark",
+      "top1": "Dark",
+      "top5": ["Dark", "Fighting", "Dragon", "Steel", "Fire"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Volcanion",
+      "actual": "Fire",
+      "top1": "Steel",
+      "top5": ["Steel", "Fighting", "Rock", "Dragon", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Zygarde",
+      "actual": "Dragon",
+      "top1": "Dark",
+      "top5": ["Dark", "Rock", "Water", "Psychic", "Poison"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Rowlet",
+      "actual": "Grass",
+      "top1": "Normal",
+      "top5": ["Normal", "Dark", "Psychic", "Fairy", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Dartrix",
+      "actual": "Grass",
+      "top1": "Normal",
+      "top5": ["Normal", "Psychic", "Dark", "Fighting", "Grass"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Litten",
+      "actual": "Fire",
+      "top1": "Dark",
+      "top5": ["Dark", "Fire", "Fighting", "Normal", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Torracat",
+      "actual": "Fire",
+      "top1": "Fire",
+      "top5": ["Fire", "Dark", "Fighting", "Normal", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Incineroar",
+      "actual": "Fire",
+      "top1": "Fire",
+      "top5": ["Fire", "Fighting", "Dark", "Steel", "Rock"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Popplio",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Dark", "Ice", "Normal", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Brionne",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Ice", "Fighting", "Poison", "Fairy"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Primarina",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Ice", "Psychic", "Normal", "Fairy"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Pikipek",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Flying", "Fighting", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Trumbeak",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Psychic", "Fighting", "Flying"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Toucannon",
+      "actual": "Normal",
+      "top1": "Normal",
+      "top5": ["Normal", "Dark", "Fighting", "Psychic", "Steel"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Yungoos",
+      "actual": "Normal",
+      "top1": "Normal",
+      "top5": ["Normal", "Dark", "Electric", "Fighting", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Gumshoos",
+      "actual": "Normal",
+      "top1": "Normal",
+      "top5": ["Normal", "Dark", "Ground", "Fighting", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Grubbin",
+      "actual": "Bug",
+      "top1": "Bug",
+      "top5": ["Bug", "Fighting", "Normal", "Steel", "Dark"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Charjabug",
+      "actual": "Bug",
+      "top1": "Rock",
+      "top5": ["Rock", "Ground", "Bug", "Normal", "Grass"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Vikavolt",
+      "actual": "Bug",
+      "top1": "Bug",
+      "top5": ["Bug", "Steel", "Fighting", "Flying", "Dark"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Crabrawler",
+      "actual": "Fighting",
+      "top1": "Normal",
+      "top5": ["Normal", "Fighting", "Dark", "Poison", "Bug"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Crabominable",
+      "actual": "Fighting",
+      "top1": "Normal",
+      "top5": ["Normal", "Dark", "Ice", "Fighting", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Cutiefly",
+      "actual": "Bug",
+      "top1": "Bug",
+      "top5": ["Bug", "Normal", "Electric", "Fairy", "Flying"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Ribombee",
+      "actual": "Bug",
+      "top1": "Bug",
+      "top5": ["Bug", "Dark", "Normal", "Fairy", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Mareanie",
+      "actual": "Poison",
+      "top1": "Dark",
+      "top5": ["Dark", "Water", "Poison", "Psychic", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Toxapex",
+      "actual": "Poison",
+      "top1": "Poison",
+      "top5": ["Poison", "Dark", "Normal", "Bug", "Rock"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Mudbray",
+      "actual": "Ground",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Fighting", "Steel", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Mudsdale",
+      "actual": "Ground",
+      "top1": "Fire",
+      "top5": ["Fire", "Dark", "Fighting", "Rock", "Ground"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Dewpider",
+      "actual": "Water",
+      "top1": "Bug",
+      "top5": ["Bug", "Dark", "Psychic", "Water", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Araquanid",
+      "actual": "Water",
+      "top1": "Bug",
+      "top5": ["Bug", "Water", "Poison", "Dark", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Fomantis",
+      "actual": "Grass",
+      "top1": "Poison",
+      "top5": ["Poison", "Grass", "Normal", "Fairy", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Lurantis",
+      "actual": "Grass",
+      "top1": "Bug",
+      "top5": ["Bug", "Fairy", "Poison", "Normal", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Morelull",
+      "actual": "Grass",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Normal", "Poison", "Psychic", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Shiinotic",
+      "actual": "Grass",
+      "top1": "Normal",
+      "top5": ["Normal", "Fairy", "Psychic", "Poison", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Salandit",
+      "actual": "Poison",
+      "top1": "Dark",
+      "top5": ["Dark", "Dragon", "Fire", "Psychic", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Salazzle",
+      "actual": "Poison",
+      "top1": "Dark",
+      "top5": ["Dark", "Dragon", "Poison", "Psychic", "Fire"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Stufful",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Fighting", "Normal", "Steel", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Bewear",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Fighting", "Psychic", "Fire"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Bounsweet",
+      "actual": "Grass",
+      "top1": "Normal",
+      "top5": ["Normal", "Poison", "Grass", "Fairy", "Electric"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Steenee",
+      "actual": "Grass",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Normal", "Psychic", "Grass", "Poison"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Tsareena",
+      "actual": "Grass",
+      "top1": "Poison",
+      "top5": ["Poison", "Normal", "Psychic", "Bug", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Comfey",
+      "actual": "Fairy",
+      "top1": "Psychic",
+      "top5": ["Psychic", "Grass", "Electric", "Fairy", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Oranguru",
+      "actual": "Normal",
+      "top1": "Psychic",
+      "top5": ["Psychic", "Dark", "Normal", "Fighting", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Passimian",
+      "actual": "Fighting",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Fighting", "Psychic", "Electric"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Wimpod",
+      "actual": "Bug",
+      "top1": "Rock",
+      "top5": ["Rock", "Bug", "Normal", "Poison", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Golisopod",
+      "actual": "Bug",
+      "top1": "Bug",
+      "top5": ["Bug", "Ground", "Steel", "Fighting", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Sandygast",
+      "actual": "Ghost",
+      "top1": "Rock",
+      "top5": ["Rock", "Ground", "Normal", "Dark", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Palossand",
+      "actual": "Ghost",
+      "top1": "Ground",
+      "top5": ["Ground", "Rock", "Normal", "Fairy", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Pyukumuku",
+      "actual": "Water",
+      "top1": "Rock",
+      "top5": ["Rock", "Ground", "Dark", "Normal", "Poison"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Silvally",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Dragon", "Steel", "Normal", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Komala",
+      "actual": "Normal",
+      "top1": "Rock",
+      "top5": ["Rock", "Normal", "Dark", "Steel", "Ground"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Turtonator",
+      "actual": "Fire",
+      "top1": "Rock",
+      "top5": ["Rock", "Fire", "Fighting", "Dark", "Ground"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Togedemaru",
+      "actual": "Electric",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Fighting", "Rock", "Ground"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Mimikyu",
+      "actual": "Ghost",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Electric", "Fighting", "Ground"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Bruxish",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Normal", "Psychic", "Dark", "Poison"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Drampa",
+      "actual": "Normal",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Psychic", "Normal", "Ice", "Water"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Dhelmise",
+      "actual": "Ghost",
+      "top1": "Steel",
+      "top5": ["Steel", "Dark", "Dragon", "Water", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Jangmo-o",
+      "actual": "Dragon",
+      "top1": "Dark",
+      "top5": ["Dark", "Rock", "Dragon", "Steel", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Hakamo-o",
+      "actual": "Dragon",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Steel", "Fighting", "Dark", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Kommo-o",
+      "actual": "Dragon",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Fire", "Dark", "Psychic", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Tapu Koko",
+      "actual": "Electric",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Fire", "Steel", "Dark", "Dragon"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Tapu Lele",
+      "actual": "Psychic",
+      "top1": "Poison",
+      "top5": ["Poison", "Dark", "Normal", "Fairy", "Water"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Tapu Bulu",
+      "actual": "Grass",
+      "top1": "Dark",
+      "top5": ["Dark", "Fighting", "Bug", "Normal", "Steel"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Tapu Fini",
+      "actual": "Water",
+      "top1": "Dark",
+      "top5": ["Dark", "Water", "Poison", "Normal", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Cosmog",
+      "actual": "Psychic",
+      "top1": "Dark",
+      "top5": ["Dark", "Psychic", "Electric", "Normal", "Poison"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Cosmoem",
+      "actual": "Psychic",
+      "top1": "Dark",
+      "top5": ["Dark", "Psychic", "Electric", "Normal", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Solgaleo",
+      "actual": "Psychic",
+      "top1": "Fire",
+      "top5": ["Fire", "Fighting", "Steel", "Dark", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Lunala",
+      "actual": "Psychic",
+      "top1": "Dark",
+      "top5": ["Dark", "Psychic", "Normal", "Fighting", "Dragon"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Nihilego",
+      "actual": "Rock",
+      "top1": "Water",
+      "top5": ["Water", "Ice", "Ghost", "Psychic", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Buzzwole",
+      "actual": "Bug",
+      "top1": "Bug",
+      "top5": ["Bug", "Fighting", "Dark", "Steel", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Pheromosa",
+      "actual": "Bug",
+      "top1": "Psychic",
+      "top5": ["Psychic", "Dark", "Bug", "Normal", "Fairy"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Xurkitree",
+      "actual": "Electric",
+      "top1": "Dark",
+      "top5": ["Dark", "Ice", "Electric", "Steel", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Celesteela",
+      "actual": "Steel",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Ground", "Water", "Dragon", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Kartana",
+      "actual": "Grass",
+      "top1": "Steel",
+      "top5": ["Steel", "Fighting", "Psychic", "Ground", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Guzzlord",
+      "actual": "Dark",
+      "top1": "Dark",
+      "top5": ["Dark", "Bug", "Fighting", "Poison", "Steel"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Magearna",
+      "actual": "Steel",
+      "top1": "Steel",
+      "top5": ["Steel", "Normal", "Dark", "Psychic", "Bug"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Marshadow",
+      "actual": "Fighting",
+      "top1": "Dark",
+      "top5": ["Dark", "Ghost", "Psychic", "Fighting", "Fire"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Poipole",
+      "actual": "Poison",
+      "top1": "Dark",
+      "top5": ["Dark", "Poison", "Normal", "Psychic", "Bug"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Naganadel",
+      "actual": "Poison",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Dark", "Poison", "Fighting", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Stakataka",
+      "actual": "Rock",
+      "top1": "Rock",
+      "top5": ["Rock", "Steel", "Ground", "Fighting", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Blacephalon",
+      "actual": "Fire",
+      "top1": "Psychic",
+      "top5": ["Psychic", "Normal", "Poison", "Electric", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Zeraora",
+      "actual": "Electric",
+      "top1": "Electric",
+      "top5": ["Electric", "Fighting", "Dark", "Fire", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Meltan",
+      "actual": "Steel",
+      "top1": "Steel",
+      "top5": ["Steel", "Psychic", "Normal", "Fighting", "Dark"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Melmetal",
+      "actual": "Steel",
+      "top1": "Steel",
+      "top5": ["Steel", "Rock", "Fighting", "Normal", "Ground"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Grookey",
+      "actual": "Grass",
+      "top1": "Normal",
+      "top5": ["Normal", "Fighting", "Psychic", "Dark", "Grass"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Thwackey",
+      "actual": "Grass",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Normal", "Dark", "Psychic", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Rillaboom",
+      "actual": "Grass",
+      "top1": "Dark",
+      "top5": ["Dark", "Fighting", "Normal", "Rock", "Grass"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Scorbunny",
+      "actual": "Fire",
+      "top1": "Normal",
+      "top5": ["Normal", "Fighting", "Steel", "Fire", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Raboot",
+      "actual": "Fire",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Steel", "Dark", "Normal", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Cinderace",
+      "actual": "Fire",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Fire", "Steel", "Dragon", "Ice"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Sobble",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Normal", "Fighting", "Dark", "Ice"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Drizzile",
+      "actual": "Water",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Normal", "Psychic", "Water", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Inteleon",
+      "actual": "Water",
+      "top1": "Psychic",
+      "top5": ["Psychic", "Dark", "Normal", "Electric", "Poison"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Skwovet",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Ground", "Fighting", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Greedent",
+      "actual": "Normal",
+      "top1": "Normal",
+      "top5": ["Normal", "Dark", "Ground", "Psychic", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Rookidee",
+      "actual": "Flying",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Psychic", "Fighting", "Electric"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Corvisquire",
+      "actual": "Flying",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Psychic", "Fighting", "Flying"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Corviknight",
+      "actual": "Flying",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Psychic", "Fighting", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Blipbug",
+      "actual": "Bug",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Psychic", "Fighting", "Water"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Dottler",
+      "actual": "Bug",
+      "top1": "Rock",
+      "top5": ["Rock", "Bug", "Normal", "Psychic", "Ground"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Orbeetle",
+      "actual": "Bug",
+      "top1": "Bug",
+      "top5": ["Bug", "Dark", "Normal", "Rock", "Poison"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Nickit",
+      "actual": "Dark",
+      "top1": "Dark",
+      "top5": ["Dark", "Fire", "Psychic", "Normal", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Thievul",
+      "actual": "Dark",
+      "top1": "Dark",
+      "top5": ["Dark", "Fire", "Fighting", "Normal", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Gossifleur",
+      "actual": "Grass",
+      "top1": "Grass",
+      "top5": ["Grass", "Psychic", "Fairy", "Normal", "Dark"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Eldegoss",
+      "actual": "Grass",
+      "top1": "Grass",
+      "top5": ["Grass", "Normal", "Psychic", "Dark", "Fairy"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Wooloo",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Fighting", "Psychic", "Fairy"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Dubwool",
+      "actual": "Normal",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Fire", "Rock", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Chewtle",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Fighting", "Normal", "Psychic", "Rock"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Drednaw",
+      "actual": "Water",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Rock", "Water", "Normal", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Yamper",
+      "actual": "Electric",
+      "top1": "Normal",
+      "top5": ["Normal", "Electric", "Dark", "Fighting", "Ground"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Boltund",
+      "actual": "Electric",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Dragon", "Dark", "Psychic", "Fire"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Rolycoly",
+      "actual": "Rock",
+      "top1": "Rock",
+      "top5": ["Rock", "Dark", "Ground", "Steel", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Carkol",
+      "actual": "Rock",
+      "top1": "Rock",
+      "top5": ["Rock", "Dark", "Fire", "Ground", "Steel"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Coalossal",
+      "actual": "Rock",
+      "top1": "Rock",
+      "top5": ["Rock", "Fire", "Ground", "Steel", "Dark"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Applin",
+      "actual": "Grass",
+      "top1": "Poison",
+      "top5": ["Poison", "Normal", "Fairy", "Dark", "Grass"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Flapple",
+      "actual": "Grass",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Fighting", "Psychic", "Dark", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Appletun",
+      "actual": "Grass",
+      "top1": "Normal",
+      "top5": ["Normal", "Dragon", "Dark", "Poison", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Silicobra",
+      "actual": "Ground",
+      "top1": "Normal",
+      "top5": ["Normal", "Poison", "Dark", "Ground", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Sandaconda",
+      "actual": "Ground",
+      "top1": "Normal",
+      "top5": ["Normal", "Rock", "Ground", "Dark", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Cramorant",
+      "actual": "Flying",
+      "top1": "Normal",
+      "top5": ["Normal", "Dark", "Psychic", "Dragon", "Water"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Arrokuda",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Normal", "Fighting", "Dark", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Barraskewda",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Steel", "Dark", "Fighting", "Dragon"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Toxel",
+      "actual": "Electric",
+      "top1": "Dark",
+      "top5": ["Dark", "Poison", "Fighting", "Normal", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Sizzlipede",
+      "actual": "Fire",
+      "top1": "Ground",
+      "top5": ["Ground", "Steel", "Fire", "Normal", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Centiskorch",
+      "actual": "Fire",
+      "top1": "Fire",
+      "top5": ["Fire", "Dark", "Dragon", "Fighting", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Clobbopus",
+      "actual": "Fighting",
+      "top1": "Psychic",
+      "top5": ["Psychic", "Normal", "Dark", "Water", "Poison"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Grapploct",
+      "actual": "Fighting",
+      "top1": "Dark",
+      "top5": ["Dark", "Fighting", "Psychic", "Water", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Sinistea",
+      "actual": "Ghost",
+      "top1": "Psychic",
+      "top5": ["Psychic", "Ghost", "Normal", "Dark", "Water"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Polteageist",
+      "actual": "Ghost",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Psychic", "Fighting", "Water"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Hatenna",
+      "actual": "Psychic",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Normal", "Psychic", "Water", "Ice"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Hattrem",
+      "actual": "Psychic",
+      "top1": "Normal",
+      "top5": ["Normal", "Ice", "Fairy", "Psychic", "Poison"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Hatterene",
+      "actual": "Psychic",
+      "top1": "Poison",
+      "top5": ["Poison", "Psychic", "Normal", "Fairy", "Water"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Impidimp",
+      "actual": "Dark",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Poison", "Fighting", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Morgrem",
+      "actual": "Dark",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Poison", "Fighting", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Grimmsnarl",
+      "actual": "Dark",
+      "top1": "Dark",
+      "top5": ["Dark", "Fighting", "Normal", "Psychic", "Poison"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Obstagoon",
+      "actual": "Dark",
+      "top1": "Dark",
+      "top5": ["Dark", "Fighting", "Steel", "Normal", "Rock"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Perrserker",
+      "actual": "Steel",
+      "top1": "Dark",
+      "top5": ["Dark", "Fighting", "Steel", "Normal", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Cursola",
+      "actual": "Ghost",
+      "top1": "Psychic",
+      "top5": ["Psychic", "Rock", "Normal", "Ghost", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Sirfetch'd",
+      "actual": "Fighting",
+      "top1": "Normal",
+      "top5": ["Normal", "Grass", "Fighting", "Dark", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Mr. Rime",
+      "actual": "Ice",
+      "top1": "Normal",
+      "top5": ["Normal", "Dark", "Psychic", "Ice", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Runerigus",
+      "actual": "Ground",
+      "top1": "Rock",
+      "top5": ["Rock", "Steel", "Dark", "Ground", "Fighting"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Milcery",
+      "actual": "Fairy",
+      "top1": "Normal",
+      "top5": ["Normal", "Rock", "Water", "Psychic", "Ground"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Alcremie",
+      "actual": "Fairy",
+      "top1": "Fairy",
+      "top5": ["Fairy", "Normal", "Psychic", "Ghost", "Ice"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Falinks",
+      "actual": "Fighting",
+      "top1": "Bug",
+      "top5": ["Bug", "Steel", "Fighting", "Electric", "Dark"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Pincurchin",
+      "actual": "Electric",
+      "top1": "Dark",
+      "top5": ["Dark", "Normal", "Poison", "Fighting", "Ground"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Snom",
+      "actual": "Ice",
+      "top1": "Ice",
+      "top5": ["Ice", "Normal", "Rock", "Ground", "Dark"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Frosmoth",
+      "actual": "Ice",
+      "top1": "Ice",
+      "top5": ["Ice", "Dark", "Psychic", "Normal", "Dragon"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Stonjourner",
+      "actual": "Rock",
+      "top1": "Rock",
+      "top5": ["Rock", "Ground", "Steel", "Normal", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Cufant",
+      "actual": "Steel",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Normal", "Ground", "Psychic", "Water"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Copperajah",
+      "actual": "Steel",
+      "top1": "Fighting",
+      "top5": ["Fighting", "Dark", "Ground", "Normal", "Rock"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Dracozolt",
+      "actual": "Electric",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Fire", "Fighting", "Dark", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Arctozolt",
+      "actual": "Electric",
+      "top1": "Ice",
+      "top5": ["Ice", "Water", "Dragon", "Dark", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Dracovish",
+      "actual": "Water",
+      "top1": "Dragon",
+      "top5": ["Dragon", "Dark", "Rock", "Fighting", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": false
+    },
+    {
+      "name": "Arctovish",
+      "actual": "Water",
+      "top1": "Water",
+      "top5": ["Water", "Normal", "Steel", "Ice", "Fighting"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Duraludon",
+      "actual": "Steel",
+      "top1": "Steel",
+      "top5": ["Steel", "Rock", "Ice", "Normal", "Dark"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Dreepy",
+      "actual": "Dragon",
+      "top1": "Dark",
+      "top5": ["Dark", "Dragon", "Water", "Steel", "Normal"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Drakloak",
+      "actual": "Dragon",
+      "top1": "Dark",
+      "top5": ["Dark", "Dragon", "Steel", "Normal", "Water"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Dragapult",
+      "actual": "Dragon",
+      "top1": "Dark",
+      "top5": ["Dark", "Psychic", "Dragon", "Water", "Ice"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Kubfu",
+      "actual": "Fighting",
+      "top1": "Dark",
+      "top5": ["Dark", "Fighting", "Normal", "Steel", "Psychic"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Zarude",
+      "actual": "Dark",
+      "top1": "Dark",
+      "top5": ["Dark", "Fighting", "Psychic", "Normal", "Rock"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Regieleki",
+      "actual": "Electric",
+      "top1": "Electric",
+      "top5": ["Electric", "Psychic", "Fighting", "Dark", "Normal"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Regidrago",
+      "actual": "Dragon",
+      "top1": "Dark",
+      "top5": ["Dark", "Steel", "Fighting", "Dragon", "Poison"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    },
+    {
+      "name": "Glastrier",
+      "actual": "Ice",
+      "top1": "Ice",
+      "top5": ["Ice", "Normal", "Rock", "Dark", "Psychic"],
+      "acc1_correct": true,
+      "hit5_correct": true
+    },
+    {
+      "name": "Spectrier",
+      "actual": "Ghost",
+      "top1": "Dark",
+      "top5": ["Dark", "Poison", "Normal", "Psychic", "Ghost"],
+      "acc1_correct": false,
+      "hit5_correct": true
+    }
+  ]
+}

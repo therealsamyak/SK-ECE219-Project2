@@ -1,0 +1,1653 @@
+[
+  {
+    "pipeline_id": 1,
+    "representation": "minilm",
+    "dim_reduction": "none",
+    "clustering": "kmeans",
+    "n_clusters_found": 5,
+    "noise_count": 0,
+    "noise_fraction": 0.0,
+    "clusters": [
+      {
+        "cluster_id": 0,
+        "size": 9,
+        "top_genres": [
+          {
+            "genre": "Simulation",
+            "count": 6,
+            "percentage": 66.66666666666666
+          },
+          {
+            "genre": "Sports",
+            "count": 6,
+            "percentage": 66.66666666666666
+          },
+          {
+            "genre": "Action",
+            "count": 3,
+            "percentage": 33.33333333333333
+          }
+        ],
+        "purity": 0.6666666666666666
+      },
+      {
+        "cluster_id": 1,
+        "size": 86,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 59,
+            "percentage": 68.6046511627907
+          },
+          {
+            "genre": "Indie",
+            "count": 47,
+            "percentage": 54.65116279069767
+          },
+          {
+            "genre": "Adventure",
+            "count": 43,
+            "percentage": 50.0
+          }
+        ],
+        "purity": 0.686046511627907
+      },
+      {
+        "cluster_id": 2,
+        "size": 23,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 17,
+            "percentage": 73.91304347826086
+          },
+          {
+            "genre": "Adventure",
+            "count": 12,
+            "percentage": 52.17391304347826
+          },
+          {
+            "genre": "RPG",
+            "count": 11,
+            "percentage": 47.82608695652174
+          }
+        ],
+        "purity": 0.7391304347826086
+      },
+      {
+        "cluster_id": 3,
+        "size": 58,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 47,
+            "percentage": 81.03448275862068
+          },
+          {
+            "genre": "Adventure",
+            "count": 28,
+            "percentage": 48.275862068965516
+          },
+          {
+            "genre": "RPG",
+            "count": 19,
+            "percentage": 32.758620689655174
+          }
+        ],
+        "purity": 0.8103448275862069
+      },
+      {
+        "cluster_id": 4,
+        "size": 24,
+        "top_genres": [
+          {
+            "genre": "Adventure",
+            "count": 17,
+            "percentage": 70.83333333333334
+          },
+          {
+            "genre": "Simulation",
+            "count": 13,
+            "percentage": 54.166666666666664
+          },
+          {
+            "genre": "Indie",
+            "count": 12,
+            "percentage": 50.0
+          }
+        ],
+        "purity": 0.7083333333333334
+      }
+    ]
+  },
+  {
+    "pipeline_id": 2,
+    "representation": "minilm",
+    "dim_reduction": "none",
+    "clustering": "agglomerative",
+    "n_clusters_found": 5,
+    "noise_count": 0,
+    "noise_fraction": 0.0,
+    "clusters": [
+      {
+        "cluster_id": 0,
+        "size": 41,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 26,
+            "percentage": 63.41463414634146
+          },
+          {
+            "genre": "Adventure",
+            "count": 20,
+            "percentage": 48.78048780487805
+          },
+          {
+            "genre": "Indie",
+            "count": 20,
+            "percentage": 48.78048780487805
+          }
+        ],
+        "purity": 0.6341463414634146
+      },
+      {
+        "cluster_id": 1,
+        "size": 33,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 27,
+            "percentage": 81.81818181818183
+          },
+          {
+            "genre": "Adventure",
+            "count": 15,
+            "percentage": 45.45454545454545
+          },
+          {
+            "genre": "RPG",
+            "count": 9,
+            "percentage": 27.27272727272727
+          }
+        ],
+        "purity": 0.8181818181818182
+      },
+      {
+        "cluster_id": 2,
+        "size": 62,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 34,
+            "percentage": 54.83870967741935
+          },
+          {
+            "genre": "Indie",
+            "count": 33,
+            "percentage": 53.2258064516129
+          },
+          {
+            "genre": "Adventure",
+            "count": 31,
+            "percentage": 50.0
+          }
+        ],
+        "purity": 0.5483870967741935
+      },
+      {
+        "cluster_id": 3,
+        "size": 20,
+        "top_genres": [
+          {
+            "genre": "Simulation",
+            "count": 14,
+            "percentage": 70.0
+          },
+          {
+            "genre": "Indie",
+            "count": 12,
+            "percentage": 60.0
+          },
+          {
+            "genre": "Adventure",
+            "count": 11,
+            "percentage": 55.00000000000001
+          }
+        ],
+        "purity": 0.7
+      },
+      {
+        "cluster_id": 4,
+        "size": 44,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 41,
+            "percentage": 93.18181818181817
+          },
+          {
+            "genre": "Adventure",
+            "count": 23,
+            "percentage": 52.27272727272727
+          },
+          {
+            "genre": "RPG",
+            "count": 21,
+            "percentage": 47.72727272727273
+          }
+        ],
+        "purity": 0.9318181818181818
+      }
+    ]
+  },
+  {
+    "pipeline_id": 3,
+    "representation": "minilm",
+    "dim_reduction": "svd",
+    "clustering": "kmeans",
+    "n_clusters_found": 5,
+    "noise_count": 0,
+    "noise_fraction": 0.0,
+    "clusters": [
+      {
+        "cluster_id": 0,
+        "size": 25,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 19,
+            "percentage": 76.0
+          },
+          {
+            "genre": "Adventure",
+            "count": 13,
+            "percentage": 52.0
+          },
+          {
+            "genre": "RPG",
+            "count": 11,
+            "percentage": 44.0
+          }
+        ],
+        "purity": 0.76
+      },
+      {
+        "cluster_id": 1,
+        "size": 30,
+        "top_genres": [
+          {
+            "genre": "Adventure",
+            "count": 20,
+            "percentage": 66.66666666666666
+          },
+          {
+            "genre": "Simulation",
+            "count": 17,
+            "percentage": 56.666666666666664
+          },
+          {
+            "genre": "Indie",
+            "count": 16,
+            "percentage": 53.333333333333336
+          }
+        ],
+        "purity": 0.6666666666666666
+      },
+      {
+        "cluster_id": 2,
+        "size": 50,
+        "top_genres": [
+          {
+            "genre": "Indie",
+            "count": 31,
+            "percentage": 62.0
+          },
+          {
+            "genre": "Action",
+            "count": 29,
+            "percentage": 57.99999999999999
+          },
+          {
+            "genre": "Adventure",
+            "count": 27,
+            "percentage": 54.0
+          }
+        ],
+        "purity": 0.62
+      },
+      {
+        "cluster_id": 3,
+        "size": 55,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 45,
+            "percentage": 81.81818181818183
+          },
+          {
+            "genre": "Indie",
+            "count": 21,
+            "percentage": 38.18181818181819
+          },
+          {
+            "genre": "Adventure",
+            "count": 18,
+            "percentage": 32.72727272727273
+          }
+        ],
+        "purity": 0.8181818181818182
+      },
+      {
+        "cluster_id": 4,
+        "size": 40,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 32,
+            "percentage": 80.0
+          },
+          {
+            "genre": "Adventure",
+            "count": 22,
+            "percentage": 55.00000000000001
+          },
+          {
+            "genre": "RPG",
+            "count": 14,
+            "percentage": 35.0
+          }
+        ],
+        "purity": 0.8
+      }
+    ]
+  },
+  {
+    "pipeline_id": 4,
+    "representation": "minilm",
+    "dim_reduction": "svd",
+    "clustering": "agglomerative",
+    "n_clusters_found": 5,
+    "noise_count": 0,
+    "noise_fraction": 0.0,
+    "clusters": [
+      {
+        "cluster_id": 0,
+        "size": 37,
+        "top_genres": [
+          {
+            "genre": "Indie",
+            "count": 22,
+            "percentage": 59.45945945945946
+          },
+          {
+            "genre": "Action",
+            "count": 22,
+            "percentage": 59.45945945945946
+          },
+          {
+            "genre": "Adventure",
+            "count": 16,
+            "percentage": 43.24324324324324
+          }
+        ],
+        "purity": 0.5945945945945946
+      },
+      {
+        "cluster_id": 1,
+        "size": 62,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 53,
+            "percentage": 85.48387096774194
+          },
+          {
+            "genre": "Adventure",
+            "count": 35,
+            "percentage": 56.451612903225815
+          },
+          {
+            "genre": "RPG",
+            "count": 27,
+            "percentage": 43.54838709677419
+          }
+        ],
+        "purity": 0.8548387096774194
+      },
+      {
+        "cluster_id": 2,
+        "size": 32,
+        "top_genres": [
+          {
+            "genre": "Adventure",
+            "count": 21,
+            "percentage": 65.625
+          },
+          {
+            "genre": "Simulation",
+            "count": 20,
+            "percentage": 62.5
+          },
+          {
+            "genre": "Indie",
+            "count": 18,
+            "percentage": 56.25
+          }
+        ],
+        "purity": 0.65625
+      },
+      {
+        "cluster_id": 3,
+        "size": 13,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 13,
+            "percentage": 100.0
+          },
+          {
+            "genre": "Massively Multiplayer",
+            "count": 5,
+            "percentage": 38.46153846153847
+          },
+          {
+            "genre": "Indie",
+            "count": 3,
+            "percentage": 23.076923076923077
+          }
+        ],
+        "purity": 1.0
+      },
+      {
+        "cluster_id": 4,
+        "size": 56,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 36,
+            "percentage": 64.28571428571429
+          },
+          {
+            "genre": "Adventure",
+            "count": 26,
+            "percentage": 46.42857142857143
+          },
+          {
+            "genre": "Indie",
+            "count": 21,
+            "percentage": 37.5
+          }
+        ],
+        "purity": 0.6428571428571429
+      }
+    ]
+  },
+  {
+    "pipeline_id": 5,
+    "representation": "minilm",
+    "dim_reduction": "umap",
+    "clustering": "kmeans",
+    "n_clusters_found": 5,
+    "noise_count": 0,
+    "noise_fraction": 0.0,
+    "clusters": [
+      {
+        "cluster_id": 0,
+        "size": 39,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 33,
+            "percentage": 84.61538461538461
+          },
+          {
+            "genre": "Adventure",
+            "count": 19,
+            "percentage": 48.717948717948715
+          },
+          {
+            "genre": "RPG",
+            "count": 14,
+            "percentage": 35.8974358974359
+          }
+        ],
+        "purity": 0.8461538461538461
+      },
+      {
+        "cluster_id": 1,
+        "size": 61,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 39,
+            "percentage": 63.934426229508205
+          },
+          {
+            "genre": "Adventure",
+            "count": 28,
+            "percentage": 45.90163934426229
+          },
+          {
+            "genre": "Indie",
+            "count": 24,
+            "percentage": 39.34426229508197
+          }
+        ],
+        "purity": 0.639344262295082
+      },
+      {
+        "cluster_id": 2,
+        "size": 26,
+        "top_genres": [
+          {
+            "genre": "Simulation",
+            "count": 16,
+            "percentage": 61.53846153846154
+          },
+          {
+            "genre": "Adventure",
+            "count": 14,
+            "percentage": 53.84615384615385
+          },
+          {
+            "genre": "Indie",
+            "count": 14,
+            "percentage": 53.84615384615385
+          }
+        ],
+        "purity": 0.6153846153846154
+      },
+      {
+        "cluster_id": 3,
+        "size": 42,
+        "top_genres": [
+          {
+            "genre": "Indie",
+            "count": 26,
+            "percentage": 61.904761904761905
+          },
+          {
+            "genre": "Action",
+            "count": 25,
+            "percentage": 59.523809523809526
+          },
+          {
+            "genre": "Adventure",
+            "count": 21,
+            "percentage": 50.0
+          }
+        ],
+        "purity": 0.6190476190476191
+      },
+      {
+        "cluster_id": 4,
+        "size": 32,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 27,
+            "percentage": 84.375
+          },
+          {
+            "genre": "Adventure",
+            "count": 18,
+            "percentage": 56.25
+          },
+          {
+            "genre": "RPG",
+            "count": 11,
+            "percentage": 34.375
+          }
+        ],
+        "purity": 0.84375
+      }
+    ]
+  },
+  {
+    "pipeline_id": 6,
+    "representation": "minilm",
+    "dim_reduction": "umap",
+    "clustering": "agglomerative",
+    "n_clusters_found": 5,
+    "noise_count": 0,
+    "noise_fraction": 0.0,
+    "clusters": [
+      {
+        "cluster_id": 0,
+        "size": 85,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 56,
+            "percentage": 65.88235294117646
+          },
+          {
+            "genre": "Adventure",
+            "count": 44,
+            "percentage": 51.76470588235295
+          },
+          {
+            "genre": "Indie",
+            "count": 35,
+            "percentage": 41.17647058823529
+          }
+        ],
+        "purity": 0.6588235294117647
+      },
+      {
+        "cluster_id": 1,
+        "size": 40,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 34,
+            "percentage": 85.0
+          },
+          {
+            "genre": "Adventure",
+            "count": 18,
+            "percentage": 45.0
+          },
+          {
+            "genre": "RPG",
+            "count": 15,
+            "percentage": 37.5
+          }
+        ],
+        "purity": 0.85
+      },
+      {
+        "cluster_id": 2,
+        "size": 30,
+        "top_genres": [
+          {
+            "genre": "Indie",
+            "count": 19,
+            "percentage": 63.33333333333333
+          },
+          {
+            "genre": "Action",
+            "count": 16,
+            "percentage": 53.333333333333336
+          },
+          {
+            "genre": "Adventure",
+            "count": 14,
+            "percentage": 46.666666666666664
+          }
+        ],
+        "purity": 0.6333333333333333
+      },
+      {
+        "cluster_id": 3,
+        "size": 22,
+        "top_genres": [
+          {
+            "genre": "Simulation",
+            "count": 14,
+            "percentage": 63.63636363636363
+          },
+          {
+            "genre": "Adventure",
+            "count": 12,
+            "percentage": 54.54545454545454
+          },
+          {
+            "genre": "Indie",
+            "count": 11,
+            "percentage": 50.0
+          }
+        ],
+        "purity": 0.6363636363636364
+      },
+      {
+        "cluster_id": 4,
+        "size": 23,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 20,
+            "percentage": 86.95652173913044
+          },
+          {
+            "genre": "Adventure",
+            "count": 12,
+            "percentage": 52.17391304347826
+          },
+          {
+            "genre": "RPG",
+            "count": 8,
+            "percentage": 34.78260869565217
+          }
+        ],
+        "purity": 0.8695652173913043
+      }
+    ]
+  },
+  {
+    "pipeline_id": 7,
+    "representation": "minilm",
+    "dim_reduction": "autoencoder",
+    "clustering": "kmeans",
+    "n_clusters_found": 5,
+    "noise_count": 0,
+    "noise_fraction": 0.0,
+    "clusters": [
+      {
+        "cluster_id": 0,
+        "size": 63,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 42,
+            "percentage": 66.66666666666666
+          },
+          {
+            "genre": "Adventure",
+            "count": 36,
+            "percentage": 57.14285714285714
+          },
+          {
+            "genre": "Indie",
+            "count": 25,
+            "percentage": 39.682539682539684
+          }
+        ],
+        "purity": 0.6666666666666666
+      },
+      {
+        "cluster_id": 1,
+        "size": 8,
+        "top_genres": [
+          {
+            "genre": "Simulation",
+            "count": 6,
+            "percentage": 75.0
+          },
+          {
+            "genre": "Sports",
+            "count": 6,
+            "percentage": 75.0
+          },
+          {
+            "genre": "Action",
+            "count": 2,
+            "percentage": 25.0
+          }
+        ],
+        "purity": 0.75
+      },
+      {
+        "cluster_id": 2,
+        "size": 34,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 25,
+            "percentage": 73.52941176470588
+          },
+          {
+            "genre": "Adventure",
+            "count": 20,
+            "percentage": 58.82352941176471
+          },
+          {
+            "genre": "RPG",
+            "count": 14,
+            "percentage": 41.17647058823529
+          }
+        ],
+        "purity": 0.7352941176470589
+      },
+      {
+        "cluster_id": 3,
+        "size": 38,
+        "top_genres": [
+          {
+            "genre": "Indie",
+            "count": 27,
+            "percentage": 71.05263157894737
+          },
+          {
+            "genre": "Adventure",
+            "count": 25,
+            "percentage": 65.78947368421053
+          },
+          {
+            "genre": "Action",
+            "count": 24,
+            "percentage": 63.1578947368421
+          }
+        ],
+        "purity": 0.7105263157894737
+      },
+      {
+        "cluster_id": 4,
+        "size": 57,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 43,
+            "percentage": 75.43859649122807
+          },
+          {
+            "genre": "Indie",
+            "count": 20,
+            "percentage": 35.08771929824561
+          },
+          {
+            "genre": "Adventure",
+            "count": 19,
+            "percentage": 33.33333333333333
+          }
+        ],
+        "purity": 0.7543859649122807
+      }
+    ]
+  },
+  {
+    "pipeline_id": 8,
+    "representation": "minilm",
+    "dim_reduction": "autoencoder",
+    "clustering": "agglomerative",
+    "n_clusters_found": 5,
+    "noise_count": 0,
+    "noise_fraction": 0.0,
+    "clusters": [
+      {
+        "cluster_id": 0,
+        "size": 50,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 31,
+            "percentage": 62.0
+          },
+          {
+            "genre": "Adventure",
+            "count": 24,
+            "percentage": 48.0
+          },
+          {
+            "genre": "Indie",
+            "count": 21,
+            "percentage": 42.0
+          }
+        ],
+        "purity": 0.62
+      },
+      {
+        "cluster_id": 1,
+        "size": 33,
+        "top_genres": [
+          {
+            "genre": "Indie",
+            "count": 24,
+            "percentage": 72.72727272727273
+          },
+          {
+            "genre": "Adventure",
+            "count": 17,
+            "percentage": 51.515151515151516
+          },
+          {
+            "genre": "Action",
+            "count": 16,
+            "percentage": 48.484848484848484
+          }
+        ],
+        "purity": 0.7272727272727273
+      },
+      {
+        "cluster_id": 2,
+        "size": 63,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 47,
+            "percentage": 74.60317460317461
+          },
+          {
+            "genre": "Adventure",
+            "count": 24,
+            "percentage": 38.095238095238095
+          },
+          {
+            "genre": "Indie",
+            "count": 22,
+            "percentage": 34.92063492063492
+          }
+        ],
+        "purity": 0.746031746031746
+      },
+      {
+        "cluster_id": 3,
+        "size": 39,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 27,
+            "percentage": 69.23076923076923
+          },
+          {
+            "genre": "Adventure",
+            "count": 23,
+            "percentage": 58.97435897435898
+          },
+          {
+            "genre": "RPG",
+            "count": 16,
+            "percentage": 41.02564102564102
+          }
+        ],
+        "purity": 0.6923076923076923
+      },
+      {
+        "cluster_id": 4,
+        "size": 15,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 15,
+            "percentage": 100.0
+          },
+          {
+            "genre": "Adventure",
+            "count": 12,
+            "percentage": 80.0
+          },
+          {
+            "genre": "RPG",
+            "count": 7,
+            "percentage": 46.666666666666664
+          }
+        ],
+        "purity": 1.0
+      }
+    ]
+  },
+  {
+    "pipeline_id": 9,
+    "representation": "minilm",
+    "dim_reduction": "none",
+    "clustering": "hdbscan",
+    "n_clusters_found": 2,
+    "noise_count": 175,
+    "noise_fraction": 0.875,
+    "clusters": [
+      {
+        "cluster_id": 0,
+        "size": 18,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 15,
+            "percentage": 83.33333333333334
+          },
+          {
+            "genre": "Adventure",
+            "count": 10,
+            "percentage": 55.55555555555556
+          },
+          {
+            "genre": "Indie",
+            "count": 9,
+            "percentage": 50.0
+          }
+        ],
+        "purity": 0.8333333333333334
+      },
+      {
+        "cluster_id": 1,
+        "size": 7,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 7,
+            "percentage": 100.0
+          },
+          {
+            "genre": "Massively Multiplayer",
+            "count": 3,
+            "percentage": 42.857142857142854
+          },
+          {
+            "genre": "Early Access",
+            "count": 2,
+            "percentage": 28.57142857142857
+          }
+        ],
+        "purity": 1.0
+      }
+    ]
+  },
+  {
+    "pipeline_id": 10,
+    "representation": "minilm",
+    "dim_reduction": "svd",
+    "clustering": "hdbscan",
+    "n_clusters_found": 2,
+    "noise_count": 168,
+    "noise_fraction": 0.84,
+    "clusters": [
+      {
+        "cluster_id": 0,
+        "size": 25,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 18,
+            "percentage": 72.0
+          },
+          {
+            "genre": "Adventure",
+            "count": 16,
+            "percentage": 64.0
+          },
+          {
+            "genre": "Indie",
+            "count": 13,
+            "percentage": 52.0
+          }
+        ],
+        "purity": 0.72
+      },
+      {
+        "cluster_id": 1,
+        "size": 7,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 7,
+            "percentage": 100.0
+          },
+          {
+            "genre": "Massively Multiplayer",
+            "count": 3,
+            "percentage": 42.857142857142854
+          },
+          {
+            "genre": "Early Access",
+            "count": 2,
+            "percentage": 28.57142857142857
+          }
+        ],
+        "purity": 1.0
+      }
+    ]
+  },
+  {
+    "pipeline_id": 11,
+    "representation": "minilm",
+    "dim_reduction": "umap",
+    "clustering": "hdbscan",
+    "n_clusters_found": 10,
+    "noise_count": 64,
+    "noise_fraction": 0.32,
+    "clusters": [
+      {
+        "cluster_id": 0,
+        "size": 5,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 4,
+            "percentage": 80.0
+          },
+          {
+            "genre": "Racing",
+            "count": 4,
+            "percentage": 80.0
+          },
+          {
+            "genre": "Adventure",
+            "count": 3,
+            "percentage": 60.0
+          }
+        ],
+        "purity": 0.8
+      },
+      {
+        "cluster_id": 1,
+        "size": 7,
+        "top_genres": [
+          {
+            "genre": "Adventure",
+            "count": 6,
+            "percentage": 85.71428571428571
+          },
+          {
+            "genre": "Simulation",
+            "count": 4,
+            "percentage": 57.14285714285714
+          },
+          {
+            "genre": "Indie",
+            "count": 3,
+            "percentage": 42.857142857142854
+          }
+        ],
+        "purity": 0.8571428571428571
+      },
+      {
+        "cluster_id": 2,
+        "size": 12,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 10,
+            "percentage": 83.33333333333334
+          },
+          {
+            "genre": "RPG",
+            "count": 6,
+            "percentage": 50.0
+          },
+          {
+            "genre": "Adventure",
+            "count": 6,
+            "percentage": 50.0
+          }
+        ],
+        "purity": 0.8333333333333334
+      },
+      {
+        "cluster_id": 3,
+        "size": 20,
+        "top_genres": [
+          {
+            "genre": "Simulation",
+            "count": 13,
+            "percentage": 65.0
+          },
+          {
+            "genre": "Adventure",
+            "count": 12,
+            "percentage": 60.0
+          },
+          {
+            "genre": "Indie",
+            "count": 11,
+            "percentage": 55.00000000000001
+          }
+        ],
+        "purity": 0.65
+      },
+      {
+        "cluster_id": 4,
+        "size": 5,
+        "top_genres": [
+          {
+            "genre": "Casual",
+            "count": 4,
+            "percentage": 80.0
+          },
+          {
+            "genre": "Indie",
+            "count": 3,
+            "percentage": 60.0
+          },
+          {
+            "genre": "Action",
+            "count": 3,
+            "percentage": 60.0
+          }
+        ],
+        "purity": 0.8
+      },
+      {
+        "cluster_id": 5,
+        "size": 35,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 32,
+            "percentage": 91.42857142857143
+          },
+          {
+            "genre": "Adventure",
+            "count": 21,
+            "percentage": 60.0
+          },
+          {
+            "genre": "RPG",
+            "count": 14,
+            "percentage": 40.0
+          }
+        ],
+        "purity": 0.9142857142857143
+      },
+      {
+        "cluster_id": 6,
+        "size": 10,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 10,
+            "percentage": 100.0
+          },
+          {
+            "genre": "Free To Play",
+            "count": 3,
+            "percentage": 30.0
+          },
+          {
+            "genre": "Massively Multiplayer",
+            "count": 2,
+            "percentage": 20.0
+          }
+        ],
+        "purity": 1.0
+      },
+      {
+        "cluster_id": 7,
+        "size": 15,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 9,
+            "percentage": 60.0
+          },
+          {
+            "genre": "Indie",
+            "count": 8,
+            "percentage": 53.333333333333336
+          },
+          {
+            "genre": "Adventure",
+            "count": 7,
+            "percentage": 46.666666666666664
+          }
+        ],
+        "purity": 0.6
+      },
+      {
+        "cluster_id": 8,
+        "size": 20,
+        "top_genres": [
+          {
+            "genre": "Indie",
+            "count": 17,
+            "percentage": 85.0
+          },
+          {
+            "genre": "Adventure",
+            "count": 12,
+            "percentage": 60.0
+          },
+          {
+            "genre": "Action",
+            "count": 12,
+            "percentage": 60.0
+          }
+        ],
+        "purity": 0.85
+      },
+      {
+        "cluster_id": 9,
+        "size": 7,
+        "top_genres": [
+          {
+            "genre": "Simulation",
+            "count": 6,
+            "percentage": 85.71428571428571
+          },
+          {
+            "genre": "Sports",
+            "count": 6,
+            "percentage": 85.71428571428571
+          },
+          {
+            "genre": "Action",
+            "count": 1,
+            "percentage": 14.285714285714285
+          }
+        ],
+        "purity": 0.8571428571428571
+      }
+    ]
+  },
+  {
+    "pipeline_id": 12,
+    "representation": "minilm",
+    "dim_reduction": "autoencoder",
+    "clustering": "hdbscan",
+    "n_clusters_found": 2,
+    "noise_count": 89,
+    "noise_fraction": 0.445,
+    "clusters": [
+      {
+        "cluster_id": 0,
+        "size": 104,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 77,
+            "percentage": 74.03846153846155
+          },
+          {
+            "genre": "Adventure",
+            "count": 56,
+            "percentage": 53.84615384615385
+          },
+          {
+            "genre": "Indie",
+            "count": 48,
+            "percentage": 46.15384615384615
+          }
+        ],
+        "purity": 0.7403846153846154
+      },
+      {
+        "cluster_id": 1,
+        "size": 7,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 7,
+            "percentage": 100.0
+          },
+          {
+            "genre": "Adventure",
+            "count": 3,
+            "percentage": 42.857142857142854
+          },
+          {
+            "genre": "RPG",
+            "count": 2,
+            "percentage": 28.57142857142857
+          }
+        ],
+        "purity": 1.0
+      }
+    ]
+  },
+  {
+    "pipeline_id": 13,
+    "representation": "tfidf",
+    "dim_reduction": "svd",
+    "clustering": "kmeans",
+    "n_clusters_found": 5,
+    "noise_count": 0,
+    "noise_fraction": 0.0,
+    "clusters": [
+      {
+        "cluster_id": 0,
+        "size": 5,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 4,
+            "percentage": 80.0
+          },
+          {
+            "genre": "Massively Multiplayer",
+            "count": 3,
+            "percentage": 60.0
+          },
+          {
+            "genre": "Strategy",
+            "count": 2,
+            "percentage": 40.0
+          }
+        ],
+        "purity": 0.8
+      },
+      {
+        "cluster_id": 1,
+        "size": 94,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 67,
+            "percentage": 71.27659574468085
+          },
+          {
+            "genre": "Adventure",
+            "count": 54,
+            "percentage": 57.446808510638306
+          },
+          {
+            "genre": "RPG",
+            "count": 43,
+            "percentage": 45.744680851063826
+          }
+        ],
+        "purity": 0.7127659574468085
+      },
+      {
+        "cluster_id": 2,
+        "size": 35,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 21,
+            "percentage": 60.0
+          },
+          {
+            "genre": "Adventure",
+            "count": 21,
+            "percentage": 60.0
+          },
+          {
+            "genre": "Indie",
+            "count": 15,
+            "percentage": 42.857142857142854
+          }
+        ],
+        "purity": 0.6
+      },
+      {
+        "cluster_id": 3,
+        "size": 62,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 44,
+            "percentage": 70.96774193548387
+          },
+          {
+            "genre": "Indie",
+            "count": 25,
+            "percentage": 40.32258064516129
+          },
+          {
+            "genre": "Adventure",
+            "count": 24,
+            "percentage": 38.70967741935484
+          }
+        ],
+        "purity": 0.7096774193548387
+      },
+      {
+        "cluster_id": 4,
+        "size": 4,
+        "top_genres": [
+          {
+            "genre": "Simulation",
+            "count": 4,
+            "percentage": 100.0
+          },
+          {
+            "genre": "Sports",
+            "count": 4,
+            "percentage": 100.0
+          }
+        ],
+        "purity": 1.0
+      }
+    ]
+  },
+  {
+    "pipeline_id": 14,
+    "representation": "tfidf",
+    "dim_reduction": "svd",
+    "clustering": "agglomerative",
+    "n_clusters_found": 5,
+    "noise_count": 0,
+    "noise_fraction": 0.0,
+    "clusters": [
+      {
+        "cluster_id": 0,
+        "size": 49,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 39,
+            "percentage": 79.59183673469387
+          },
+          {
+            "genre": "Indie",
+            "count": 22,
+            "percentage": 44.89795918367347
+          },
+          {
+            "genre": "Adventure",
+            "count": 21,
+            "percentage": 42.857142857142854
+          }
+        ],
+        "purity": 0.7959183673469388
+      },
+      {
+        "cluster_id": 1,
+        "size": 12,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 8,
+            "percentage": 66.66666666666666
+          },
+          {
+            "genre": "Adventure",
+            "count": 7,
+            "percentage": 58.333333333333336
+          },
+          {
+            "genre": "Indie",
+            "count": 7,
+            "percentage": 58.333333333333336
+          }
+        ],
+        "purity": 0.6666666666666666
+      },
+      {
+        "cluster_id": 2,
+        "size": 130,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 85,
+            "percentage": 65.38461538461539
+          },
+          {
+            "genre": "Adventure",
+            "count": 71,
+            "percentage": 54.61538461538461
+          },
+          {
+            "genre": "RPG",
+            "count": 53,
+            "percentage": 40.76923076923077
+          }
+        ],
+        "purity": 0.6538461538461539
+      },
+      {
+        "cluster_id": 3,
+        "size": 5,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 4,
+            "percentage": 80.0
+          },
+          {
+            "genre": "Massively Multiplayer",
+            "count": 3,
+            "percentage": 60.0
+          },
+          {
+            "genre": "Strategy",
+            "count": 2,
+            "percentage": 40.0
+          }
+        ],
+        "purity": 0.8
+      },
+      {
+        "cluster_id": 4,
+        "size": 4,
+        "top_genres": [
+          {
+            "genre": "Simulation",
+            "count": 4,
+            "percentage": 100.0
+          },
+          {
+            "genre": "Sports",
+            "count": 4,
+            "percentage": 100.0
+          }
+        ],
+        "purity": 1.0
+      }
+    ]
+  },
+  {
+    "pipeline_id": 15,
+    "representation": "tfidf",
+    "dim_reduction": "svd",
+    "clustering": "hdbscan",
+    "n_clusters_found": 2,
+    "noise_count": 7,
+    "noise_fraction": 0.035,
+    "clusters": [
+      {
+        "cluster_id": 0,
+        "size": 188,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 129,
+            "percentage": 68.61702127659575
+          },
+          {
+            "genre": "Adventure",
+            "count": 98,
+            "percentage": 52.12765957446809
+          },
+          {
+            "genre": "Indie",
+            "count": 78,
+            "percentage": 41.48936170212766
+          }
+        ],
+        "purity": 0.6861702127659575
+      },
+      {
+        "cluster_id": 1,
+        "size": 5,
+        "top_genres": [
+          {
+            "genre": "Action",
+            "count": 4,
+            "percentage": 80.0
+          },
+          {
+            "genre": "Massively Multiplayer",
+            "count": 3,
+            "percentage": 60.0
+          },
+          {
+            "genre": "Strategy",
+            "count": 2,
+            "percentage": 40.0
+          }
+        ],
+        "purity": 0.8
+      }
+    ]
+  }
+]
