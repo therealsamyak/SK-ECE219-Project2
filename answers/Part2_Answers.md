@@ -63,7 +63,7 @@ Map features to 2D with t-SNE and plot. Color by ground-truth labels.
 
 **Answer:**
 
-File: [t-SNE plot](outputs/part2_tsne.png)
+File: [t-SNE plot](outputs/Q17_tsne.png)
 
 Settings: 2 components, perplexity=30, 3,670 points
 
@@ -92,7 +92,7 @@ Best ARI by method:
 | None (4096-d)      | Agglomerative   | 0.2184 |
 | SVD (50-d)         | K-Means         | 0.1947 |
 | UMAP (50-d)        | HDBSCAN         | 0.5635 |
-| Autoencoder (50-d) | Agglomerative   | 0.2336 |
+| Autoencoder (50-d) | Agglomerative   | 0.2920 |
 
 HDBSCAN grid (on UMAP features):
 
@@ -120,19 +120,19 @@ Report MLP test accuracy on original and reduced-dimension features. Does perfor
 
 | Feature        | Dimension | Accuracy |
 | -------------- | --------- | -------- |
-| Original VGG16 | 4,096     | 91.42%   |
-| SVD            | 50        | 90.87%   |
-| UMAP           | 50        | 81.06%   |
-| Autoencoder    | 50        | 88.28%   |
+| Original VGG16 | 4,096     | 91.96%   |
+| SVD            | 50        | 91.28%   |
+| UMAP           | 50        | 82.15%   |
+| Autoencoder    | 50        | 89.37%   |
 
-All reduced methods drop below 91.42%. SVD holds up best—only 0.55 points lost despite 98.8% dimension reduction. UMAP drops 10.4 points.
+All reduced methods drop below 91.96%. SVD holds up best—only 0.68 points lost despite 98.8% dimension reduction. UMAP drops 9.8 points.
 
 Comparing with clustering:
 
 | Method | Clustering ARI | Classification Accuracy |
 | ------ | -------------- | ----------------------- |
-| SVD    | 0.195 (3rd)    | 90.87% (1st)            |
-| UMAP   | 0.564 (1st)    | 81.06% (3rd)            |
+| SVD    | 0.195 (3rd)    | 91.28% (1st)            |
+| UMAP   | 0.564 (1st)    | 82.15% (3rd)            |
 
 UMAP crushed clustering but struggled with classification. SVD did the opposite.
 
