@@ -1306,8 +1306,6 @@ def run_task2_2(game_data=None):
         {"rep": "tfidf", "dim": "svd", "cluster": "agglomerative"},
         {"rep": "minilm", "dim": "autoencoder", "cluster": "kmeans"},
         {"rep": "minilm", "dim": "autoencoder", "cluster": "agglomerative"},
-        {"rep": "tfidf", "dim": "autoencoder", "cluster": "kmeans"},
-        {"rep": "tfidf", "dim": "autoencoder", "cluster": "agglomerative"},
         {"rep": "minilm", "dim": "svd", "cluster": "hdbscan"},
         {"rep": "minilm", "dim": "umap", "cluster": "hdbscan"},
         {"rep": "minilm", "dim": "autoencoder", "cluster": "hdbscan"},
