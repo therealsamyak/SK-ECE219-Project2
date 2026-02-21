@@ -133,13 +133,26 @@ class Autoencoder(nn.Module, TransformerMixin):
         dataset = TensorDataset(X)
         dataloader = DataLoader(dataset, batch_size=128, shuffle=True)
 
+        logger = logging.getLogger(__name__)
+        epoch_losses = []
         for epoch in tqdm(range(100), desc="Training Autoencoder"):
+            epoch_loss = 0
+            n_batches = 0
             for (X_,) in dataloader:
                 output = self(X_)
                 loss = criterion(output, X_)
                 optimizer.zero_grad()
                 loss.backward()
                 optimizer.step()
+                epoch_loss += loss.item()
+                n_batches += 1
+            avg_loss = epoch_loss / n_batches
+            epoch_losses.append(avg_loss)
+            if epoch % 20 == 0:
+                logger.info(f"Autoencoder epoch {epoch}: loss={avg_loss:.6f}")
+        logger.info(
+            f"Autoencoder training complete: initial_loss={epoch_losses[0]:.6f}, final_loss={epoch_losses[-1]:.6f}"
+        )
 
         return self
 

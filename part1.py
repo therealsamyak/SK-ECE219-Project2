@@ -406,13 +406,26 @@ def apply_dimensionality_reduction(X, method, n_components=50, random_state=42):
         loader = torch.utils.data.DataLoader(dataset, batch_size=32, shuffle=True)
 
         model.train()
+        logger = logging.getLogger(__name__)
+        epoch_losses = []
         for epoch in range(50):
+            epoch_loss = 0
+            n_batches = 0
             for (batch,) in loader:
                 optimizer.zero_grad()
                 output = model(batch)
                 loss = criterion(output, batch)
                 loss.backward()
                 optimizer.step()
+                epoch_loss += loss.item()
+                n_batches += 1
+            avg_loss = epoch_loss / n_batches
+            epoch_losses.append(avg_loss)
+            if epoch % 10 == 0:
+                logger.info(f"Autoencoder epoch {epoch}: loss={avg_loss:.6f}")
+        logger.info(
+            f"Autoencoder training complete: initial_loss={epoch_losses[0]:.6f}, final_loss={epoch_losses[-1]:.6f}"
+        )
 
         model.eval()
         with torch.no_grad():
