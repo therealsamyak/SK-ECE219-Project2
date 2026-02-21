@@ -162,7 +162,7 @@
         options were skipped—infeasible on sparse, high-dimensional data.
       </p>
 
-      <p><strong>MiniLM (7 pipelines)</strong></p>
+      <p><strong>MiniLM (6 pipelines)</strong></p>
       <table>
         <thead>
           <tr>
@@ -222,14 +222,6 @@
             <td>0.555</td>
             <td>0.658</td>
             <td>0.555</td>
-          </tr>
-          <tr>
-            <td>None + HDBSCAN</td>
-            <td>0.221</td>
-            <td>0.080</td>
-            <td>0.117</td>
-            <td>0.001</td>
-            <td>0.107</td>
           </tr>
         </tbody>
       </table>
@@ -368,7 +360,71 @@
     </div>
     <div class="answer">
       <h3>Answer</h3>
-      <p><strong>MiniLM (7 pipelines)</strong></p>
+      <p><strong>MiniLM (12 pipelines)</strong></p>
+      
+      <p>Non-HDBSCAN (8 pipelines)</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Pipeline</th>
+            <th>K</th>
+            <th>Sizes</th>
+            <th>Top Genre Purity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>None + K-Means</td>
+            <td>5</td>
+            <td>9, 86, 23, 58, 24</td>
+            <td>67-81%</td>
+          </tr>
+          <tr>
+            <td>None + Agglomerative</td>
+            <td>5</td>
+            <td>41, 33, 62, 20, 44</td>
+            <td>54-93%</td>
+          </tr>
+          <tr>
+            <td>SVD + K-Means</td>
+            <td>5</td>
+            <td>25, 30, 50, 55, 40</td>
+            <td>62-82%</td>
+          </tr>
+          <tr>
+            <td>SVD + Agglomerative</td>
+            <td>5</td>
+            <td>37, 62, 32, 13, 56</td>
+            <td>59-100%</td>
+          </tr>
+          <tr>
+            <td>UMAP + K-Means</td>
+            <td>5</td>
+            <td>39, 61, 26, 42, 32</td>
+            <td>62-85%</td>
+          </tr>
+          <tr>
+            <td>UMAP + Agglomerative</td>
+            <td>5</td>
+            <td>85, 40, 30, 22, 23</td>
+            <td>61-96%</td>
+          </tr>
+          <tr>
+            <td>AE + K-Means</td>
+            <td>5</td>
+            <td>63, 8, 34, 38, 57</td>
+            <td>67-75%</td>
+          </tr>
+          <tr>
+            <td>AE + Agglomerative</td>
+            <td>5</td>
+            <td>50, 33, 63, 39, 15</td>
+            <td>62-100%</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>HDBSCAN (4 pipelines)</p>
       <table>
         <thead>
           <tr>
@@ -381,58 +437,37 @@
         </thead>
         <tbody>
           <tr>
-            <td>None + K-Means</td>
-            <td>5</td>
-            <td>0</td>
-            <td>9, 86, 23, 58, 24</td>
-            <td>67-81%</td>
-          </tr>
-          <tr>
-            <td>None + Agglomerative</td>
-            <td>5</td>
-            <td>0</td>
-            <td>41, 33, 62, 20, 44</td>
-            <td>54-93%</td>
-          </tr>
-          <tr>
-            <td>SVD + K-Means</td>
-            <td>5</td>
-            <td>0</td>
-            <td>25, 30, 50, 55, 40</td>
-            <td>62-82%</td>
-          </tr>
-          <tr>
-            <td>SVD + Agglomerative</td>
-            <td>5</td>
-            <td>0</td>
-            <td>37, 62, 32, 13, 56</td>
-            <td>59-100%</td>
-          </tr>
-          <tr>
-            <td>UMAP + K-Means</td>
-            <td>5</td>
-            <td>0</td>
-            <td>23, 54, 51, 33, 39</td>
-            <td>61-85%</td>
-          </tr>
-          <tr>
-            <td>UMAP + Agglomerative</td>
-            <td>5</td>
-            <td>0</td>
-            <td>78, 41, 32, 26, 23</td>
-            <td>61-96%</td>
-          </tr>
-          <tr>
-            <td>HDBSCAN</td>
+            <td>None + HDBSCAN</td>
             <td>2</td>
-            <td>163 (81.5%)</td>
-            <td>28, 9</td>
-            <td>75-100%</td>
+            <td>175 (87.5%)</td>
+            <td>18, 7</td>
+            <td>83-100%</td>
+          </tr>
+          <tr>
+            <td>SVD + HDBSCAN</td>
+            <td>2</td>
+            <td>168 (84%)</td>
+            <td>25, 7</td>
+            <td>72-100%</td>
+          </tr>
+          <tr>
+            <td>UMAP + HDBSCAN</td>
+            <td>10</td>
+            <td>64 (32%)</td>
+            <td>5-35</td>
+            <td>60-100%</td>
+          </tr>
+          <tr>
+            <td>AE + HDBSCAN</td>
+            <td>2</td>
+            <td>89 (44.5%)</td>
+            <td>104, 7</td>
+            <td>74-100%</td>
           </tr>
         </tbody>
       </table>
 
-      <p><strong>TF-IDF (2 pipelines)</strong></p>
+      <p><strong>TF-IDF (3 pipelines)</strong></p>
       <table>
         <thead>
           <tr>
@@ -454,6 +489,12 @@
             <td>5</td>
             <td>49, 12, 130, 5, 4</td>
             <td>65-100%</td>
+          </tr>
+          <tr>
+            <td>SVD + HDBSCAN</td>
+            <td>2</td>
+            <td>188, 5</td>
+            <td>69-80%</td>
           </tr>
         </tbody>
       </table>
@@ -627,50 +668,52 @@
     <div class="answer">
       <h3>Answer</h3>
 
-      <p><strong>Cluster 0 - Boss Difficulty (32 reviews)</strong></p>
-      <p>Terms: game, boss, just, like, bosses, fun, fight, design, attacks</p>
+      <p><strong>Cluster 0 - Difficult & Repetitive (32 reviews)</strong></p>
+      <p>Terms: game, boss, just, like, bosses, fun, fight, really, design, attacks</p>
       <blockquote>
-        "The game is beyond difficult, not suitable for anyone less than a
-        hardcore gamer. Linear path, boss after boss which are incredibly
-        difficult to beat..."
+        "Lots of Misleading reviews on here. The game is beyond difficult, not suitable for anyone less than a hardcore gamer. It is not open map and not explorable. Instead, you go through a linear style path way encountering boss after boss..."
       </blockquote>
       <blockquote>
-        "Fun at the start, gets repetitive really fast. Bunch of glitches and
-        graphical errors..."
+        "Unlike most people who reviewed this game after 30 minutes and declared it GOTY, i actually played the game. TLDR: Fun at the start, get repetitive really fast..."
       </blockquote>
-      <p>Label: Boss Difficulty & Repetitive Combat</p>
+      <p>Label: Difficult and repetitive gameplay</p>
+
+      <p><strong>Cluster 1 - Boring/Political (12 reviews)</strong></p>
+      <p>Terms: game, like, developers misogynists, taiwan country, boring, fun</p>
+      <blockquote>
+        "Game is boring af. Another souls game wannabe except without it's charm. Sekiro had satisfying combat, Elden ring had massive open world and a doll waifu..."
+      </blockquote>
+      <p>Label: Boring, repetitive, misogynistic criticism</p>
 
       <p><strong>Cluster 2 - Performance Issues (18 reviews)</strong></p>
-      <p>Terms: fps, low, crashes, settings, issues, amd, rtx</p>
+      <p>Terms: fps, low, crashes, settings, issues, amd, 7900xtx, rtx</p>
       <blockquote>
-        "RTX 4080, 32GB RAM. Game crashes consistently before I can get past the
-        intro..."
+        "I wanted to share my recent experience... I'm running this on an i7 13th gen, RTX 4080, and 32 gigs RAM... the game crashes consistently..."
       </blockquote>
-      <blockquote>"1440p, 4090, 32GB, 13900k. Constant stutters."</blockquote>
-      <p>Label: Technical Performance & Crashes</p>
+      <blockquote>
+        "Not really sure what these purchased reviews are all about. Game runs terribly.1440p, Cinematic, 4090, 32GB Ram, 13900kConstant stutters."
+      </blockquote>
+      <p>Label: Performance Issues</p>
 
       <p><strong>Cluster 3 - Boring Gameplay (14 reviews)</strong></p>
-      <p>Terms: graphics, level, play, feels, story</p>
+      <p>Terms: game, like, just, graphics, level, play, really, good, feels, story</p>
       <blockquote>
-        "Looks really good, but god it is boring. Everything feels lifeless,
-        combat feels boring..."
+        "NGL this game looks really good, but god it is boring. The world and details look incredible but everything feels lifeless..."
       </blockquote>
       <blockquote>
-        "Graphics nice, story interesting, but not enough to carry the game."
+        "Gameplay is boring. Cutscenes and graphics are very nice, story seems interesting, but it's not enough to carry the game for me."
       </blockquote>
-      <p>Label: Good Graphics, Boring Gameplay</p>
+      <p>Label: Boring gameplay, lifeless world</p>
 
       <p><strong>Cluster 4 - Souls-like Comparison (24 reviews)</strong></p>
-      <p>Terms: boss, combat, souls, bosses, level design</p>
+      <p>Terms: game, boss, like, just, games, combat, story, souls, bosses, good</p>
       <blockquote>
-        "Same monsters and bosses. No story. Monotonous combat. Graphics good,
-        level design sucks..."
+        "-Intriguing prologue, the whole game is a piece of... Same monsters and bosses. No story. Characters are empty. Monotonous combat. Graphics good, level design sucks..."
       </blockquote>
       <blockquote>
-        "Level design objectively terrible. Huge open maps that feel
-        procedurally generated..."
+        "I simply do not understand how this game is overwhelmingly positive. It feels, in many places, extremely amateurish in fact. Level design is objectively terrible..."
       </blockquote>
-      <p>Label: Poor Level Design & Repetitive Combat</p>
+      <p>Label: Monotonous, Amateurish Gameplay</p>
     </div>
 
     <h2 id="q11">Question 11</h2>
@@ -680,33 +723,40 @@
     <div class="answer">
       <h3>Answer</h3>
 
-      <p><strong>Cluster 1 - Visual Excellence (26 reviews)</strong></p>
-      <p>Terms: wukong, chinese, myth, black, beautiful</p>
-      <blockquote>
-        "Engaging, well made, fluid, fair difficulty, beautiful, worth every
-        penny..."
-      </blockquote>
-      <blockquote>
-        "Absolute masterclass. All the hype is deserved. One of the best games
-        of this generation..."
-      </blockquote>
-      <p>Label: Visual Excellence & Quality</p>
+      <p><strong>Cluster 0 - Monke Meme (6 reviews)</strong></p>
+      <p>Terms: monke, reject, monke approves, embraces, embraces monke</p>
+      <blockquote>"REJECT MODERNITYRETURN TO MONKE"</blockquote>
+      <p>Label: Monke Embrace & Approval</p>
 
-      <p><strong>Cluster 2 - Fair Difficulty (15 reviews)</strong></p>
-      <p>Terms: good, grind, balanced, hard</p>
-      <blockquote>"Good game. Fair difficulty. Good combat."</blockquote>
-      <p>Label: Balanced & Fair Design</p>
+      <p><strong>Cluster 1 - Black Myth Praise (26 reviews)</strong></p>
+      <p>Terms: game, 10, wukong, chinese, like, good, myth, games, black</p>
+      <blockquote>
+        "Black Myth: Wukong was released under a lot of anticipation after gameplay showcases had been shown over the past few years, leading people to even question if the game would really come out like that..."
+      </blockquote>
+      <blockquote>
+        "Black Myth Wukong is an absolute masterclass of a game. All the hype, all the praise, all the positive buzz surrounding this game...they're absolutely deserved..."
+      </blockquote>
+      <p>Label: Hype and Praise for Black Myth: Wukong</p>
+
+      <p><strong>Cluster 2 - Template Reviews (15 reviews)</strong></p>
+      <p>Terms: good, grind, just, bad, 10, long, average, bugs, game, hard</p>
+      <blockquote>"---{ Graphics }---☑ You forget what reality is..."</blockquote>
+      <p>Label: Grind and repetitive gameplay</p>
 
       <p><strong>Cluster 3 - Combat Satisfaction (41 reviews)</strong></p>
-      <p>Terms: combat, great, play, graphics, really</p>
+      <p>Terms: game, like, games, just, good, graphics, really, play, combat, great</p>
       <blockquote>
-        "Big set pieces, core gameplay of a Soul-like but forgiving, fast paced
-        Sekiro/Bloodborne combat..."
+        "This game has the big awesome set pieces and aesthetic from the old school God of War games, the core gameplay of a Soul-like (albeit a tad more forgiving), really sick and fast paced Sekiro / Bloodborne combat..."
       </blockquote>
       <blockquote>
-        "Soundtracks, visual setting, bosses—everything is so good..."
+        ""Wisdom lies in the balance of wit and humility." ~ Sun Wukong. I've been waiting for the game ever since it's 1st reveal... the soundtracks, visual setting, bosses everything is so good so far..."
       </blockquote>
-      <p>Label: Engaging Combat & Mechanics</p>
+      <p>Label: Positive gameplay experience</p>
+
+      <p><strong>Cluster 4 - Sweet Baby Reference (12 reviews)</strong></p>
+      <p>Terms: ign, sweet, sweet baby, baby, add, monke</p>
+      <blockquote>"※This game does not include Sweet Baby"</blockquote>
+      <p>Label: Sweet Baby Game Reference</p>
     </div>
 
     <h2 id="q12">Question 12</h2>
@@ -729,15 +779,15 @@ Output a 3-6 word label describing what these reviews have in common.
 
       <p><strong>Example 1 (Negative Cluster 0)</strong></p>
       <p>Terms: game, boss, just, like, bosses, fun, fight, design, attacks</p>
-      <p>LLM output: "Unfair Boss Difficulty & Hardcore Gatekeeping"</p>
+      <p>LLM output: "Difficult and repetitive gameplay"</p>
 
       <p><strong>Example 2 (Negative Cluster 2)</strong></p>
       <p>Terms: fps, low, crashes, settings, issues, amd, rtx</p>
-      <p>LLM output: "High-End PC Performance Failures"</p>
+      <p>LLM output: "Performance Issues"</p>
 
       <p><strong>Example 3 (Positive Cluster 1)</strong></p>
-      <p>Terms: game, wukong, chinese, myth, beautiful</p>
-      <p>LLM output: "Masterclass Action Game With Cultural Depth"</p>
+      <p>Terms: game, 10, wukong, chinese, like, good, myth, games, black</p>
+      <p>LLM output: "Hype and Praise for Black Myth: Wukong"</p>
     </div>
 
     <!-- Part 2: Image Clustering -->

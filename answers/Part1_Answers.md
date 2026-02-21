@@ -44,7 +44,7 @@ For each pipeline, report clustering agreement metrics with respect to ground-tr
 
 TF-IDF clustering barely separates Short vs Long. UMAP and no-reduction options were skipped—infeasible on sparse, high-dimensional data.
 
-**MiniLM (7 pipelines)**
+**MiniLM (6 pipelines)**
 
 | Pipeline                | Homogeneity | Completeness | V-Measure | ARI       | AMI       |
 | ----------------------- | ----------- | ------------ | --------- | --------- | --------- |
@@ -54,7 +54,6 @@ TF-IDF clustering barely separates Short vs Long. UMAP and no-reduction options 
 | **SVD + Agglomerative** | **0.646**   | **0.650**    | **0.648** | **0.742** | **0.648** |
 | UMAP + K-Means          | 0.558       | 0.559        | 0.558     | 0.666     | 0.558     |
 | UMAP + Agglomerative    | 0.553       | 0.556        | 0.555     | 0.658     | 0.555     |
-| None + HDBSCAN          | 0.221       | 0.080        | 0.117     | 0.001     | 0.107     |
 
 **Best:** MiniLM + SVD(50) + Agglomerative. V-Measure 0.648, ARI 0.742.
 
@@ -120,24 +119,37 @@ For each pipeline, report cluster count, sizes, and top 3 genres per cluster.
 
 **Answer:**
 
-**MiniLM (7 pipelines)**
+**MiniLM (12 pipelines)**
 
-| Pipeline             | K   | Noise       | Sizes              | Top Genre Purity |
-| -------------------- | --- | ----------- | ------------------ | ---------------- |
-| None + K-Means       | 5   | 0           | 9, 86, 23, 58, 24  | 67-81%           |
-| None + Agglomerative | 5   | 0           | 41, 33, 62, 20, 44 | 54-93%           |
-| SVD + K-Means        | 5   | 0           | 25, 30, 50, 55, 40 | 62-82%           |
-| SVD + Agglomerative  | 5   | 0           | 37, 62, 32, 13, 56 | 59-100%          |
-| UMAP + K-Means       | 5   | 0           | 23, 54, 51, 33, 39 | 61-85%           |
-| UMAP + Agglomerative | 5   | 0           | 78, 41, 32, 26, 23 | 61-96%           |
-| HDBSCAN              | 2   | 163 (81.5%) | 28, 9              | 75-100%          |
+**Non-HDBSCAN (8 pipelines)**
 
-**TF-IDF (2 pipelines)**
+| Pipeline             | K   | Sizes              | Top Genre Purity |
+| -------------------- | --- | ------------------ | ---------------- |
+| None + K-Means       | 5   | 9, 86, 23, 58, 24  | 67-81%           |
+| None + Agglomerative | 5   | 41, 33, 62, 20, 44 | 54-93%           |
+| SVD + K-Means        | 5   | 25, 30, 50, 55, 40 | 62-82%           |
+| SVD + Agglomerative  | 5   | 37, 62, 32, 13, 56 | 59-100%          |
+| UMAP + K-Means       | 5   | 39, 61, 26, 42, 32 | 62-85%           |
+| UMAP + Agglomerative | 5   | 85, 40, 30, 22, 23 | 61-96%           |
+| AE + K-Means         | 5   | 63, 8, 34, 38, 57  | 67-75%           |
+| AE + Agglomerative   | 5   | 50, 33, 63, 39, 15 | 62-100%          |
+
+**HDBSCAN (4 pipelines)**
+
+| Pipeline        | K   | Noise        | Sizes    | Top Genre Purity |
+| --------------- | --- | ------------ | -------- | ---------------- |
+| None + HDBSCAN  | 2   | 175 (87.5%)  | 18, 7    | 83-100%          |
+| SVD + HDBSCAN   | 2   | 168 (84%)    | 25, 7    | 72-100%          |
+| UMAP + HDBSCAN  | 10  | 64 (32%)     | 5-35     | 60-100%          |
+| AE + HDBSCAN    | 2   | 89 (44.5%)   | 104, 7   | 74-100%          |
+
+**TF-IDF (3 pipelines)**
 
 | Pipeline            | K   | Sizes             | Top Genre Purity |
 | ------------------- | --- | ----------------- | ---------------- |
 | SVD + K-Means       | 5   | 5, 94, 35, 62, 4  | 60-100%          |
 | SVD + Agglomerative | 5   | 49, 12, 130, 5, 4 | 65-100%          |
+| SVD + HDBSCAN       | 2   | 7 (3.5%)     | 188, 5   | 69-80%           |
 
 Sample genre breakdown (MiniLM + SVD + Agglomerative):
 
@@ -215,51 +227,61 @@ For negative reviews: report 3-5 clusters with top terms, exemplar reviews, and 
 
 **Answer:**
 
-**Cluster 0 - Boss Difficulty (32 reviews)**
+**Cluster 0 - Difficult & Repetitive (32 reviews)**
 
-Terms: game, boss, just, like, bosses, fun, fight, design, attacks
+Terms: game, boss, just, like, bosses, fun, fight, really, design, attacks
 
-> "The game is beyond difficult, not suitable for anyone less than a hardcore gamer. Linear path, boss after boss which are incredibly difficult to beat..."
+> "Lots of Misleading reviews on here. The game is beyond difficult, not suitable for anyone less than a hardcore gamer. It is not open map and not explorable. Instead, you go through a linear style path way encountering boss after boss which are incredibly difficult to beat..."
 
-> "Fun at the start, gets repetitive really fast. Bunch of glitches and graphical errors..."
+> "Unlike most people who reviewed this game after 30 minutes and declared it GOTY, i actually played the game. TLDR: Fun at the start, get repetitive really fast and overstays its welcome, with a bunch of glitches and graphical errors..."
 
-Label: Boss Difficulty & Repetitive Combat
+Label: Difficult and repetitive gameplay
+
+---
+
+**Cluster 1 - Boring/Political (12 reviews)**
+
+Terms: game, like, developers misogynists, taiwan country, boring, fun
+
+> "Game is boring af. Another souls game wannabe except without it's charm. Sekiro had satisfying combat, Elden ring had massive open world and a doll waifu..."
+
+Label: Boring, repetitive, misogynistic criticism
 
 ---
 
 **Cluster 2 - Performance Issues (18 reviews)**
 
-Terms: fps, low, crashes, settings, issues, amd, rtx
+Terms: fps, low, crashes, settings, issues, amd, 7900xtx, rtx
 
-> "RTX 4080, 32GB RAM. Game crashes consistently before I can get past the intro..."
+> "I wanted to share my recent experience with this where I have seen that's been getting positive reviews. I'm running this on an i7 13th gen, RTX 4080, and 32 gigs RAM, which should be more than capable. However, the game crashes consistently..."
 
-> "1440p, 4090, 32GB, 13900k. Constant stutters."
+> "Not really sure what these purchased reviews are all about. Game runs terribly.1440p, Cinematic, 4090, 32GB Ram, 13900kConstant stutters."
 
-Label: Technical Performance & Crashes
+Label: Performance Issues
 
 ---
 
 **Cluster 3 - Boring Gameplay (14 reviews)**
 
-Terms: graphics, level, play, feels, story
+Terms: game, like, just, graphics, level, play, really, good, feels, story
 
-> "Looks really good, but god it is boring. Everything feels lifeless, combat feels boring..."
+> "NGL this game looks really good, but god it is boring. The world and details look incredible but everything feels lifeless and the combat also just feels boring..."
 
-> "Graphics nice, story interesting, but not enough to carry the game."
+> "Gameplay is boring. Cutscenes and graphics are very nice, story seems interesting, but it's not enough to carry the game for me..."
 
-Label: Good Graphics, Boring Gameplay
+Label: Boring gameplay, lifeless world
 
 ---
 
 **Cluster 4 - Souls-like Comparison (24 reviews)**
 
-Terms: boss, combat, souls, bosses, level design
+Terms: game, boss, like, just, games, combat, story, souls, bosses, good
 
-> "Same monsters and bosses. No story. Monotonous combat. Graphics good, level design sucks..."
+> "-Intriguing prologue, the whole game is a piece of... Same monsters and bosses. No story. Characters are empty, they only give quests. Monotonous combat. Graphics good, level design sucks..."
 
-> "Level design objectively terrible. Huge open maps that feel procedurally generated..."
+> "I simply do not understand how this game is overwhelmingly positive. It feels, in many places, extremely amateurish in fact. Level design is objectively terrible. Huge open maps that feel procedurally generated..."
 
-Label: Poor Level Design & Repetitive Combat
+Label: Monotonous, Amateurish Gameplay
 
 ---
 
@@ -269,37 +291,57 @@ For positive reviews: repeat with praise clusters.
 
 **Answer:**
 
-**Cluster 1 - Visual Excellence (26 reviews)**
+**Cluster 0 - Monke Meme (6 reviews)**
 
-Terms: wukong, chinese, myth, black, beautiful
+Terms: monke, reject, monke approves, embraces, embraces monke
 
-> "Engaging, well made, fluid, fair difficulty, beautiful, worth every penny..."
+> "REJECT MODERNITYRETURN TO MONKE"
 
-> "Absolute masterclass. All the hype is deserved. One of the best games of this generation..."
-
-Label: Visual Excellence & Quality
+Label: Monke Embrace & Approval
 
 ---
 
-**Cluster 2 - Fair Difficulty (15 reviews)**
+**Cluster 1 - Black Myth Praise (26 reviews)**
 
-Terms: good, grind, balanced, hard
+Terms: game, 10, wukong, chinese, like, good, myth, games, black
 
-> "Good game. Fair difficulty. Good combat."
+> "Black Myth: Wukong was released under a lot of anticipation after gameplay showcases had been shown over the past few years, leading people to even question if the game would really come out like that. Thankfully, it really did – and overcame all expectations..."
 
-Label: Balanced & Fair Design
+> "Black Myth Wukong is an absolute masterclass of a game. All the hype, all the praise, all the positive buzz surrounding this game...they're absolutely deserved..."
+
+Label: Hype and Praise for Black Myth: Wukong
+
+---
+
+**Cluster 2 - Template Reviews (15 reviews)**
+
+Terms: good, grind, just, bad, 10, long, average, bugs, game, hard
+
+> "---{ Graphics }---☑ You forget what reality is..."
+
+Label: Grind and repetitive gameplay
 
 ---
 
 **Cluster 3 - Combat Satisfaction (41 reviews)**
 
-Terms: combat, great, play, graphics, really
+Terms: game, like, games, just, good, graphics, really, play, combat, great
 
-> "Big set pieces, core gameplay of a Soul-like but forgiving, fast paced Sekiro/Bloodborne combat..."
+> "This game has the big awesome set pieces and aesthetic from the old school God of War games, the core gameplay of a Soul-like (albeit a tad more forgiving), really sick and fast paced Sekiro / Bloodborne combat..."
 
-> "Soundtracks, visual setting, bosses—everything is so good..."
+> ""Wisdom lies in the balance of wit and humility." ~ Sun Wukong. I've been waiting for the game ever since it's 1st reveal... the soundtracks, visual setting, bosses everything is so good so far..."
 
-Label: Engaging Combat & Mechanics
+Label: Positive gameplay experience
+
+---
+
+**Cluster 4 - Sweet Baby Reference (12 reviews)**
+
+Terms: ign, sweet, sweet baby, baby, add, monke
+
+> "※This game does not include Sweet Baby"
+
+Label: Sweet Baby Game Reference
 
 ---
 
@@ -326,20 +368,20 @@ Output a 3-6 word label describing what these reviews have in common.
 **Example 1 (Negative Cluster 0)**
 
 Terms: game, boss, just, like, bosses, fun, fight, design, attacks
-Exemplar: "Game is beyond difficult...boss after boss..."
+Exemplar: "Lots of Misleading reviews on here. The game is beyond difficult..."
 
-LLM output: "Unfair Boss Difficulty & Hardcore Gatekeeping"
+LLM output: "Difficult and repetitive gameplay"
 
 **Example 2 (Negative Cluster 2)**
 
 Terms: fps, low, crashes, settings, issues, amd, rtx
-Exemplar: "RTX 4080...crashes consistently..."
+Exemplar: "I'm running this on an i7 13th gen, RTX 4080, and 32 gigs RAM... the game crashes consistently..."
 
-LLM output: "High-End PC Performance Failures"
+LLM output: "Performance Issues"
 
 **Example 3 (Positive Cluster 1)**
 
-Terms: game, wukong, chinese, myth, beautiful
-Exemplar: "Absolute masterclass...hype deserved..."
+Terms: game, 10, wukong, chinese, like, good, myth, games, black
+Exemplar: "Black Myth: Wukong was released under a lot of anticipation..."
 
-LLM output: "Masterclass Action Game With Cultural Depth"
+LLM output: "Hype and Praise for Black Myth: Wukong"
