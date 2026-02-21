@@ -136,20 +136,20 @@ For each pipeline, report cluster count, sizes, and top 3 genres per cluster.
 
 **HDBSCAN (4 pipelines)**
 
-| Pipeline        | K   | Noise        | Sizes    | Top Genre Purity |
-| --------------- | --- | ------------ | -------- | ---------------- |
-| None + HDBSCAN  | 2   | 175 (87.5%)  | 18, 7    | 83-100%          |
-| SVD + HDBSCAN   | 2   | 168 (84%)    | 25, 7    | 72-100%          |
-| UMAP + HDBSCAN  | 10  | 64 (32%)     | 5-35     | 60-100%          |
-| AE + HDBSCAN    | 2   | 89 (44.5%)   | 104, 7   | 74-100%          |
+| Pipeline       | K   | Noise       | Sizes  | Top Genre Purity |
+| -------------- | --- | ----------- | ------ | ---------------- |
+| None + HDBSCAN | 2   | 175 (87.5%) | 18, 7  | 83-100%          |
+| SVD + HDBSCAN  | 2   | 168 (84%)   | 25, 7  | 72-100%          |
+| UMAP + HDBSCAN | 10  | 64 (32%)    | 5-35   | 60-100%          |
+| AE + HDBSCAN   | 2   | 89 (44.5%)  | 104, 7 | 74-100%          |
 
 **TF-IDF (3 pipelines)**
 
 | Pipeline            | K   | Sizes             | Top Genre Purity |
-| ------------------- | --- | ----------------- | ---------------- |
+| ------------------- | --- | ----------------- | ---------------- | ------ |
 | SVD + K-Means       | 5   | 5, 94, 35, 62, 4  | 60-100%          |
 | SVD + Agglomerative | 5   | 49, 12, 130, 5, 4 | 65-100%          |
-| SVD + HDBSCAN       | 2   | 7 (3.5%)     | 188, 5   | 69-80%           |
+| SVD + HDBSCAN       | 2   | 7 (3.5%)          | 188, 5           | 69-80% |
 
 Sample genre breakdown (MiniLM + SVD + Agglomerative):
 
@@ -227,6 +227,10 @@ For negative reviews: report 3-5 clusters with top terms, exemplar reviews, and 
 
 **Answer:**
 
+**Pipeline:** MiniLM + SVD(50) + Agglomerative
+
+**Justification:** This pipeline achieved best performance in Task 1 (V-Measure 0.648, ARI 0.742) and Task 2 (up to 100% genre purity). Consistent with Q8 and Q9.
+
 **Cluster 0 - Difficult & Repetitive (32 reviews)**
 
 Terms: game, boss, just, like, bosses, fun, fight, really, design, attacks
@@ -290,6 +294,10 @@ Label: Monotonous, Amateurish Gameplay
 For positive reviews: repeat with praise clusters.
 
 **Answer:**
+
+**Pipeline:** MiniLM + SVD(50) + Agglomerative
+
+**Justification:** Parity with Q10.
 
 **Cluster 0 - Monke Meme (6 reviews)**
 

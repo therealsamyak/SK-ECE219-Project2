@@ -44,18 +44,18 @@ Pokemon: Cosmog, Ledyba, Zubat, Wynaut, Spoink, Makuhita, Quagsire, Meganium, Th
 
 File: [predictions](outputs/Q21_predictions.png)
 
-| Pokemon  | Actual        | Top-1            | Top-5                                     | Correct? |
-| -------- | ------------- | ---------------- | ----------------------------------------- | -------- |
-| Cosmog   | Psychic       | Dark (73.68%)    | Dark, Psychic, Electric, Normal, Poison   | Top-5    |
-| Ledyba   | Bug/Flying    | Bug (78.64%)     | Bug, Normal, Fighting, Steel, Rock        | Yes      |
-| Zubat    | Poison/Flying | Dark (57.62%)    | Dark, Normal, Fighting, Flying, Bug       | No       |
-| Wynaut   | Psychic       | Normal (22.44%)  | Normal, Water, Psychic, Dark, Ice         | Top-5    |
-| Spoink   | Psychic       | Dark (31.37%)    | Dark, Normal, Psychic, Fighting, Steel    | Top-5    |
-| Makuhita | Fighting      | Fighting (59.52%)| Fighting, Dark, Normal, Psychic, Electric | Yes      |
-| Quagsire | Water/Ground  | Normal (24.69%)  | Normal, Water, Psychic, Ice, Ground       | Top-5    |
-| Meganium | Grass         | Dragon (22.35%)  | Dragon, Poison, Psychic, Normal, Water    | No       |
-| Thievul  | Dark          | Dark (47.24%)    | Dark, Fire, Fighting, Normal, Psychic     | Yes      |
-| Espurr   | Psychic       | Dark (65.42%)    | Dark, Normal, Psychic, Ghost, Fairy       | Top-5    |
+| Pokemon  | Actual        | Top-1             | Top-5                                     | Correct? |
+| -------- | ------------- | ----------------- | ----------------------------------------- | -------- |
+| Cosmog   | Psychic       | Dark (73.68%)     | Dark, Psychic, Electric, Normal, Poison   | Top-5    |
+| Ledyba   | Bug/Flying    | Bug (78.64%)      | Bug, Normal, Fighting, Steel, Rock        | Yes      |
+| Zubat    | Poison/Flying | Dark (57.62%)     | Dark, Normal, Fighting, Flying, Bug       | No       |
+| Wynaut   | Psychic       | Normal (22.44%)   | Normal, Water, Psychic, Dark, Ice         | Top-5    |
+| Spoink   | Psychic       | Dark (31.37%)     | Dark, Normal, Psychic, Fighting, Steel    | Top-5    |
+| Makuhita | Fighting      | Fighting (59.52%) | Fighting, Dark, Normal, Psychic, Electric | Yes      |
+| Quagsire | Water/Ground  | Normal (24.69%)   | Normal, Water, Psychic, Ice, Ground       | Top-5    |
+| Meganium | Grass         | Dragon (22.35%)   | Dragon, Poison, Psychic, Normal, Water    | No       |
+| Thievul  | Dark          | Dark (47.24%)     | Dark, Fire, Fighting, Normal, Psychic     | Yes      |
+| Espurr   | Psychic       | Dark (65.42%)     | Dark, Normal, Psychic, Ghost, Fairy       | Top-5    |
 
 Top-1: 30%, Top-5: 70%
 
