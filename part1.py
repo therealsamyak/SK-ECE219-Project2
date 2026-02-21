@@ -1530,7 +1530,7 @@ def get_exemplar_reviews(reviews, embeddings, labels, cluster_id, n_exemplars=2)
 def run_task3_2():
     """
     Task 3.2: Theme clustering for held-out game reviews.
-    Saves results to outputs/Q10_Q11_theme_clustering.json
+    Saves results to outputs/Q10_Q11_Q12_theme_clustering.json
     """
     logger = logging.getLogger(__name__)
     logger.info("=" * 60)
@@ -1652,10 +1652,10 @@ Label:"""
     results["llm_prompt_template"] = llm_prompt_template
     results["llm_examples"] = llm_examples
 
-    with open(output_dir / "Q10_Q11_theme_clustering.json", "w") as f:
+    with open(output_dir / "Q10_Q11_Q12_theme_clustering.json", "w") as f:
         json.dump(results, f, indent=2, default=str)
 
-    logger.info(f"Saved results to {output_dir / 'Q10_Q11_theme_clustering.json'}")
+    logger.info(f"Saved results to {output_dir / 'Q10_Q11_Q12_theme_clustering.json'}")
 
     return results
 
@@ -1708,7 +1708,7 @@ def main():
     logger.info("  - Q6_game_vectors.json (Q6)")
     logger.info("  - Q7_Q8_game_clustering.json (Q7-Q8)")
     logger.info("  - Q9_genre_estimation.json (Q9)")
-    logger.info("  - Q10_Q11_theme_clustering.json (Q10-Q11)")
+    logger.info("  - Q10_Q11_Q12_theme_clustering.json (Q10-Q12)")
     logger.info("\nSee Part1_Answers.md for complete answers to all 12 questions.")
 
     return {
