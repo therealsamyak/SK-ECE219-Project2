@@ -1,7 +1,0 @@
-{
-  "original_pixels": [224, 224, 3],
-  "feature_dim": 4096,
-  "num_images": 3670,
-  "is_dense": true,
-  "classes": ["daisy", "dandelion", "roses", "sunflowers", "tulips"]
-}

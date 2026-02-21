@@ -1,8 +1,0 @@
-{
-  "clip_acc1": 0.3329,
-  "clip_hit5": 0.7427,
-  "vlm_acc1": 0.4496,
-  "improvement": 0.1167,
-  "total_pokemon": 754,
-  "vlm_fallbacks": 1
-}
