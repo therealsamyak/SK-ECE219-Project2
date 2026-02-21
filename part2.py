@@ -1,3 +1,4 @@
+import random
 import torch
 import torch.nn as nn
 from torchvision import transforms, datasets
@@ -763,6 +764,11 @@ def run_mlp_classifier(features, labels, best_dim_reduction=None, device="cpu"):
 
     return results
 
+
+# Set random seeds
+random.seed(42)
+np.random.seed(42)
+torch.manual_seed(42)
 
 if __name__ == "__main__":
     # Extract features (loads from cache if available)
