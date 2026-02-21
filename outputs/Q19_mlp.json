@@ -1,0 +1,26 @@
+{
+  "original_features": {
+    "feature_dim": 4096,
+    "test_accuracy": 0.919618546962738
+  },
+  "reduced_features": {
+    "svd": {
+      "feature_dim": 50,
+      "test_accuracy": 0.912806510925293
+    },
+    "umap": {
+      "feature_dim": 50,
+      "test_accuracy": 0.8215258717536926
+    },
+    "autoencoder": {
+      "feature_dim": 50,
+      "test_accuracy": 0.8937329649925232
+    }
+  },
+  "summary": {
+    "original_accuracy": 0.919618546962738,
+    "best_reduced_method": "svd",
+    "best_reduced_accuracy": 0.912806510925293,
+    "accuracy_improvement": -0.006812036037445068
+  }
+}

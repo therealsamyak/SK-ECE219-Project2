@@ -1,0 +1,35 @@
+{
+  "assigned_cluster": 4,
+  "top_genres": [
+    {
+      "genre": "Action",
+      "count": 32,
+      "percentage": 80.0
+    },
+    {
+      "genre": "Adventure",
+      "count": 22,
+      "percentage": 55.00000000000001
+    },
+    {
+      "genre": "RPG",
+      "count": 14,
+      "percentage": 35.0
+    }
+  ],
+  "representative_games": [
+    {
+      "game_name": "Dying Light",
+      "genres": "Action, RPG"
+    },
+    {
+      "game_name": "Black Mesa",
+      "genres": "Action, Adventure, Indie"
+    },
+    {
+      "game_name": "Borderlands 3",
+      "genres": "Action, RPG"
+    }
+  ],
+  "heldout_positive_reviews": 100
+}

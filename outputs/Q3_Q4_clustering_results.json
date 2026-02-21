@@ -1,0 +1,168 @@
+{
+  "tfidf": {
+    "results": [
+      {
+        "pipeline_id": 1,
+        "dim_reduction": "svd",
+        "clustering": "kmeans",
+        "n_components": 50,
+        "cluster_distribution": {
+          "cluster_0": 19911,
+          "cluster_1": 586
+        },
+        "metrics": {
+          "homogeneity": 0.03010476594633528,
+          "completeness": 0.16070648378577937,
+          "v_measure": 0.05071012413808581,
+          "ari": 0.005708453889781343,
+          "ami": 0.05065378018620265
+        }
+      },
+      {
+        "pipeline_id": 2,
+        "dim_reduction": "svd",
+        "clustering": "agglomerative",
+        "n_components": 50,
+        "cluster_distribution": {
+          "cluster_0": 19958,
+          "cluster_1": 539
+        },
+        "metrics": {
+          "homogeneity": 0.027642194510328847,
+          "completeness": 0.1574872930763754,
+          "v_measure": 0.04702972438232992,
+          "ari": 0.005009430461936662,
+          "ami": 0.046972589544860686
+        }
+      }
+    ]
+  },
+  "minilm": {
+    "results": [
+      {
+        "pipeline_id": 1,
+        "dim_reduction": "none",
+        "clustering": "kmeans",
+        "n_components": null,
+        "n_clusters_found": 2,
+        "noise_points": 0,
+        "cluster_distribution": {
+          "cluster_0": 10632,
+          "cluster_1": 9865
+        },
+        "metrics": {
+          "homogeneity": 0.5089307808565229,
+          "completeness": 0.509284487043779,
+          "v_measure": 0.509107572515172,
+          "ari": 0.6127528020897255,
+          "ami": 0.5090902832778028
+        }
+      },
+      {
+        "pipeline_id": 2,
+        "dim_reduction": "none",
+        "clustering": "agglomerative",
+        "n_components": null,
+        "n_clusters_found": 2,
+        "noise_points": 0,
+        "cluster_distribution": {
+          "cluster_0": 11315,
+          "cluster_1": 9182
+        },
+        "metrics": {
+          "homogeneity": 0.5425247909786268,
+          "completeness": 0.5466312045862783,
+          "v_measure": 0.5445702566357363,
+          "ari": 0.6433734005155122,
+          "ami": 0.5445541614926389
+        }
+      },
+      {
+        "pipeline_id": 3,
+        "dim_reduction": "svd",
+        "clustering": "kmeans",
+        "n_components": 50,
+        "n_clusters_found": 2,
+        "noise_points": 0,
+        "cluster_distribution": {
+          "cluster_0": 9863,
+          "cluster_1": 10634
+        },
+        "metrics": {
+          "homogeneity": 0.5083571981518508,
+          "completeness": 0.5087158871393626,
+          "v_measure": 0.5085364793965681,
+          "ari": 0.6121418687749641,
+          "ami": 0.508519169953742
+        }
+      },
+      {
+        "pipeline_id": 4,
+        "dim_reduction": "svd",
+        "clustering": "agglomerative",
+        "n_components": 50,
+        "n_clusters_found": 2,
+        "noise_points": 0,
+        "cluster_distribution": {
+          "cluster_0": 11155,
+          "cluster_1": 9342
+        },
+        "metrics": {
+          "homogeneity": 0.6461053295679333,
+          "completeness": 0.649571896688187,
+          "v_measure": 0.6478339757510361,
+          "ari": 0.7424071932554444,
+          "ami": 0.6478215435842385
+        }
+      },
+      {
+        "pipeline_id": 5,
+        "dim_reduction": "umap",
+        "clustering": "kmeans",
+        "n_components": 50,
+        "n_clusters_found": 2,
+        "noise_points": 0,
+        "cluster_distribution": {
+          "cluster_0": 9762,
+          "cluster_1": 10735
+        },
+        "metrics": {
+          "homogeneity": 0.5580416232069935,
+          "completeness": 0.558773906612267,
+          "v_measure": 0.5584075248346262,
+          "ari": 0.6664325920377688,
+          "ami": 0.5583919671472657
+        }
+      },
+      {
+        "pipeline_id": 6,
+        "dim_reduction": "umap",
+        "clustering": "agglomerative",
+        "n_components": 50,
+        "n_clusters_found": 2,
+        "noise_points": 0,
+        "cluster_distribution": {
+          "cluster_0": 11087,
+          "cluster_1": 9410
+        },
+        "metrics": {
+          "homogeneity": 0.5534994243465227,
+          "completeness": 0.5560123283641146,
+          "v_measure": 0.5547530306501757,
+          "ari": 0.6581730218210338,
+          "ami": 0.5547373189782021
+        }
+      }
+    ]
+  },
+  "summary": {
+    "total_pipelines": 8,
+    "tfidf_pipelines": 2,
+    "minilm_pipelines": 6,
+    "dataset_size": 20497,
+    "ground_truth_distribution": {
+      "Short": 10463,
+      "Long": 10034
+    }
+  }
+}

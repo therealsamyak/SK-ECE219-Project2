@@ -1,0 +1,5282 @@
+{
+  "per_pokemon": [
+    {
+      "name": "Bulbasaur",
+      "actual": "Grass",
+      "clip_top1": "Grass",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Ivysaur",
+      "actual": "Grass",
+      "clip_top1": "Grass",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Charmander",
+      "actual": "Fire",
+      "clip_top1": "Fire",
+      "vlm_selected": "Fire",
+      "correct": true
+    },
+    {
+      "name": "Charmeleon",
+      "actual": "Fire",
+      "clip_top1": "Fire",
+      "vlm_selected": "Fire",
+      "correct": true
+    },
+    {
+      "name": "Squirtle",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Wartortle",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Caterpie",
+      "actual": "Bug",
+      "clip_top1": "Normal",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Metapod",
+      "actual": "Bug",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Butterfree",
+      "actual": "Bug",
+      "clip_top1": "Bug",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Weedle",
+      "actual": "Bug",
+      "clip_top1": "Normal",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Kakuna",
+      "actual": "Bug",
+      "clip_top1": "Rock",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Pidgey",
+      "actual": "Normal",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Pidgeotto",
+      "actual": "Normal",
+      "clip_top1": "Flying",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Spearow",
+      "actual": "Normal",
+      "clip_top1": "Psychic",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Fearow",
+      "actual": "Normal",
+      "clip_top1": "Flying",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Ekans",
+      "actual": "Poison",
+      "clip_top1": "Poison",
+      "vlm_selected": "Poison",
+      "correct": true
+    },
+    {
+      "name": "Arbok",
+      "actual": "Poison",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Nidorina",
+      "actual": "Poison",
+      "clip_top1": "Ice",
+      "vlm_selected": "Ice",
+      "correct": false
+    },
+    {
+      "name": "Nidoqueen",
+      "actual": "Poison",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Nidorino",
+      "actual": "Poison",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Nidoking",
+      "actual": "Poison",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Ground",
+      "correct": false
+    },
+    {
+      "name": "Clefairy",
+      "actual": "Fairy",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Clefable",
+      "actual": "Fairy",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Jigglypuff",
+      "actual": "Normal",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Wigglytuff",
+      "actual": "Normal",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Zubat",
+      "actual": "Poison",
+      "clip_top1": "Dark",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Golbat",
+      "actual": "Poison",
+      "clip_top1": "Dark",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Oddish",
+      "actual": "Grass",
+      "clip_top1": "Poison",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Gloom",
+      "actual": "Grass",
+      "clip_top1": "Poison",
+      "vlm_selected": "Poison",
+      "correct": false
+    },
+    {
+      "name": "Vileplume",
+      "actual": "Grass",
+      "clip_top1": "Poison",
+      "vlm_selected": "Poison",
+      "correct": false
+    },
+    {
+      "name": "Paras",
+      "actual": "Bug",
+      "clip_top1": "Bug",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Parasect",
+      "actual": "Bug",
+      "clip_top1": "Bug",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Venonat",
+      "actual": "Bug",
+      "clip_top1": "Dark",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Venomoth",
+      "actual": "Bug",
+      "clip_top1": "Bug",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Psyduck",
+      "actual": "Water",
+      "clip_top1": "Psychic",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Golduck",
+      "actual": "Water",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Mankey",
+      "actual": "Fighting",
+      "clip_top1": "Psychic",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Primeape",
+      "actual": "Fighting",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Poliwag",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Poliwhirl",
+      "actual": "Water",
+      "clip_top1": "Psychic",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Poliwrath",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Abra",
+      "actual": "Psychic",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Kadabra",
+      "actual": "Psychic",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Machop",
+      "actual": "Fighting",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Machoke",
+      "actual": "Fighting",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Machamp",
+      "actual": "Fighting",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Fighting",
+      "correct": true
+    },
+    {
+      "name": "Bellsprout",
+      "actual": "Grass",
+      "clip_top1": "Normal",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Weepinbell",
+      "actual": "Grass",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Victreebel",
+      "actual": "Grass",
+      "clip_top1": "Grass",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Tentacool",
+      "actual": "Water",
+      "clip_top1": "Poison",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Tentacruel",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Magnemite",
+      "actual": "Electric",
+      "clip_top1": "Steel",
+      "vlm_selected": "Electric",
+      "correct": true
+    },
+    {
+      "name": "Magneton",
+      "actual": "Electric",
+      "clip_top1": "Steel",
+      "vlm_selected": "Electric",
+      "correct": true
+    },
+    {
+      "name": "Doduo",
+      "actual": "Normal",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Dodrio",
+      "actual": "Normal",
+      "clip_top1": "Normal",
+      "vlm_selected": "Bug",
+      "correct": false
+    },
+    {
+      "name": "Seel",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Dewgong",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Shellder",
+      "actual": "Water",
+      "clip_top1": "Poison",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Cloyster",
+      "actual": "Water",
+      "clip_top1": "Poison",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Gastly",
+      "actual": "Ghost",
+      "clip_top1": "Dark",
+      "vlm_selected": "Ghost",
+      "correct": true
+    },
+    {
+      "name": "Haunter",
+      "actual": "Ghost",
+      "clip_top1": "Dark",
+      "vlm_selected": "Ghost",
+      "correct": true
+    },
+    {
+      "name": "Onix",
+      "actual": "Rock",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": true
+    },
+    {
+      "name": "Drowzee",
+      "actual": "Psychic",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Hypno",
+      "actual": "Psychic",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Krabby",
+      "actual": "Water",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Kingler",
+      "actual": "Water",
+      "clip_top1": "Bug",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Exeggcute",
+      "actual": "Grass",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Cubone",
+      "actual": "Ground",
+      "clip_top1": "Dark",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Hitmonlee",
+      "actual": "Fighting",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Hitmonchan",
+      "actual": "Fighting",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Fighting",
+      "correct": true
+    },
+    {
+      "name": "Lickitung",
+      "actual": "Normal",
+      "clip_top1": "Poison",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Koffing",
+      "actual": "Poison",
+      "clip_top1": "Poison",
+      "vlm_selected": "Poison",
+      "correct": true
+    },
+    {
+      "name": "Rhyhorn",
+      "actual": "Ground",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Rhydon",
+      "actual": "Ground",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Chansey",
+      "actual": "Normal",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Tangela",
+      "actual": "Grass",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Horsea",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Seadra",
+      "actual": "Water",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Goldeen",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Seaking",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Staryu",
+      "actual": "Water",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Starmie",
+      "actual": "Water",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Psychic",
+      "correct": false
+    },
+    {
+      "name": "Scyther",
+      "actual": "Bug",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Jynx",
+      "actual": "Ice",
+      "clip_top1": "Psychic",
+      "vlm_selected": "Ghost",
+      "correct": false
+    },
+    {
+      "name": "Electabuzz",
+      "actual": "Electric",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Electric",
+      "correct": true
+    },
+    {
+      "name": "Magmar",
+      "actual": "Fire",
+      "clip_top1": "Fire",
+      "vlm_selected": "Fire",
+      "correct": true
+    },
+    {
+      "name": "Magikarp",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Lapras",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Ditto",
+      "actual": "Normal",
+      "clip_top1": "Ground",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Vaporeon",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Jolteon",
+      "actual": "Electric",
+      "clip_top1": "Electric",
+      "vlm_selected": "Electric",
+      "correct": true
+    },
+    {
+      "name": "Flareon",
+      "actual": "Fire",
+      "clip_top1": "Fire",
+      "vlm_selected": "Fire",
+      "correct": true
+    },
+    {
+      "name": "Porygon",
+      "actual": "Normal",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Omanyte",
+      "actual": "Rock",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Omastar",
+      "actual": "Rock",
+      "clip_top1": "Poison",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Kabuto",
+      "actual": "Rock",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Kabutops",
+      "actual": "Rock",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Bug",
+      "correct": false
+    },
+    {
+      "name": "Snorlax",
+      "actual": "Normal",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Dratini",
+      "actual": "Dragon",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Dragonair",
+      "actual": "Dragon",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Dragonite",
+      "actual": "Dragon",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Dragon",
+      "correct": true
+    },
+    {
+      "name": "Mew",
+      "actual": "Psychic",
+      "clip_top1": "Poison",
+      "vlm_selected": "Psychic",
+      "correct": true
+    },
+    {
+      "name": "Chikorita",
+      "actual": "Grass",
+      "clip_top1": "Normal",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Bayleef",
+      "actual": "Grass",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Meganium",
+      "actual": "Grass",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Cyndaquil",
+      "actual": "Fire",
+      "clip_top1": "Fire",
+      "vlm_selected": "Fire",
+      "correct": true
+    },
+    {
+      "name": "Quilava",
+      "actual": "Fire",
+      "clip_top1": "Fire",
+      "vlm_selected": "Fire",
+      "correct": true
+    },
+    {
+      "name": "Totodile",
+      "actual": "Water",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Croconaw",
+      "actual": "Water",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Feraligatr",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Sentret",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Furret",
+      "actual": "Normal",
+      "clip_top1": "Ground",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Hoothoot",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Noctowl",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Ledyba",
+      "actual": "Bug",
+      "clip_top1": "Bug",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Ledian",
+      "actual": "Bug",
+      "clip_top1": "Bug",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Spinarak",
+      "actual": "Bug",
+      "clip_top1": "Bug",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Ariados",
+      "actual": "Bug",
+      "clip_top1": "Bug",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Crobat",
+      "actual": "Poison",
+      "clip_top1": "Dark",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Chinchou",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Lanturn",
+      "actual": "Water",
+      "clip_top1": "Normal",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Pichu",
+      "actual": "Electric",
+      "clip_top1": "Electric",
+      "vlm_selected": "Electric",
+      "correct": true
+    },
+    {
+      "name": "Cleffa",
+      "actual": "Fairy",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Igglybuff",
+      "actual": "Normal",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Fairy",
+      "correct": false
+    },
+    {
+      "name": "Togepi",
+      "actual": "Fairy",
+      "clip_top1": "Psychic",
+      "vlm_selected": "Psychic",
+      "correct": false
+    },
+    {
+      "name": "Togetic",
+      "actual": "Fairy",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Ice",
+      "correct": false
+    },
+    {
+      "name": "Natu",
+      "actual": "Psychic",
+      "clip_top1": "Psychic",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Xatu",
+      "actual": "Psychic",
+      "clip_top1": "Psychic",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Mareep",
+      "actual": "Electric",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Flaaffy",
+      "actual": "Electric",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Bellossom",
+      "actual": "Grass",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Marill",
+      "actual": "Water",
+      "clip_top1": "Electric",
+      "vlm_selected": "Electric",
+      "correct": false
+    },
+    {
+      "name": "Azumarill",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Sudowoodo",
+      "actual": "Rock",
+      "clip_top1": "Ground",
+      "vlm_selected": "Grass",
+      "correct": false
+    },
+    {
+      "name": "Politoed",
+      "actual": "Water",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Hoppip",
+      "actual": "Grass",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Electric",
+      "correct": false
+    },
+    {
+      "name": "Skiploom",
+      "actual": "Grass",
+      "clip_top1": "Normal",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Jumpluff",
+      "actual": "Grass",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Aipom",
+      "actual": "Normal",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Sunkern",
+      "actual": "Grass",
+      "clip_top1": "Electric",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Sunflora",
+      "actual": "Grass",
+      "clip_top1": "Psychic",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Yanma",
+      "actual": "Bug",
+      "clip_top1": "Bug",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Quagsire",
+      "actual": "Water",
+      "clip_top1": "Normal",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Espeon",
+      "actual": "Psychic",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Psychic",
+      "correct": true
+    },
+    {
+      "name": "Umbreon",
+      "actual": "Dark",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": true
+    },
+    {
+      "name": "Murkrow",
+      "actual": "Dark",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": true
+    },
+    {
+      "name": "Misdreavus",
+      "actual": "Ghost",
+      "clip_top1": "Dark",
+      "vlm_selected": "Ghost",
+      "correct": true
+    },
+    {
+      "name": "Unown",
+      "actual": "Psychic",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Wobbuffet",
+      "actual": "Psychic",
+      "clip_top1": "Ghost",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Girafarig",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Pineco",
+      "actual": "Bug",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Forretress",
+      "actual": "Bug",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Dunsparce",
+      "actual": "Normal",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Gligar",
+      "actual": "Ground",
+      "clip_top1": "Dark",
+      "vlm_selected": "Bug",
+      "correct": false
+    },
+    {
+      "name": "Snubbull",
+      "actual": "Fairy",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Granbull",
+      "actual": "Fairy",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Fighting",
+      "correct": false
+    },
+    {
+      "name": "Shuckle",
+      "actual": "Bug",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Teddiursa",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Ursaring",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Ground",
+      "correct": false
+    },
+    {
+      "name": "Slugma",
+      "actual": "Fire",
+      "clip_top1": "Fire",
+      "vlm_selected": "Fire",
+      "correct": true
+    },
+    {
+      "name": "Magcargo",
+      "actual": "Fire",
+      "clip_top1": "Fire",
+      "vlm_selected": "Fire",
+      "correct": true
+    },
+    {
+      "name": "Swinub",
+      "actual": "Ice",
+      "clip_top1": "Rock",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Piloswine",
+      "actual": "Ice",
+      "clip_top1": "Normal",
+      "vlm_selected": "Ground",
+      "correct": false
+    },
+    {
+      "name": "Remoraid",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Octillery",
+      "actual": "Water",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Delibird",
+      "actual": "Ice",
+      "clip_top1": "Ice",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Mantine",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Skarmory",
+      "actual": "Steel",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Dragon",
+      "correct": false
+    },
+    {
+      "name": "Houndour",
+      "actual": "Dark",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": true
+    },
+    {
+      "name": "Kingdra",
+      "actual": "Water",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Phanpy",
+      "actual": "Ground",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Donphan",
+      "actual": "Ground",
+      "clip_top1": "Steel",
+      "vlm_selected": "Steel",
+      "correct": false
+    },
+    {
+      "name": "Porygon2",
+      "actual": "Normal",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Stantler",
+      "actual": "Normal",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Smeargle",
+      "actual": "Normal",
+      "clip_top1": "Psychic",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Tyrogue",
+      "actual": "Fighting",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Ground",
+      "correct": false
+    },
+    {
+      "name": "Hitmontop",
+      "actual": "Fighting",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Smoochum",
+      "actual": "Ice",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Elekid",
+      "actual": "Electric",
+      "clip_top1": "Electric",
+      "vlm_selected": "Electric",
+      "correct": true
+    },
+    {
+      "name": "Magby",
+      "actual": "Fire",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Fighting",
+      "correct": false
+    },
+    {
+      "name": "Miltank",
+      "actual": "Normal",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Blissey",
+      "actual": "Normal",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Fairy",
+      "correct": false
+    },
+    {
+      "name": "Raikou",
+      "actual": "Electric",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Electric",
+      "correct": true
+    },
+    {
+      "name": "Entei",
+      "actual": "Fire",
+      "clip_top1": "Steel",
+      "vlm_selected": "Steel",
+      "correct": false
+    },
+    {
+      "name": "Suicune",
+      "actual": "Water",
+      "clip_top1": "Psychic",
+      "vlm_selected": "Psychic",
+      "correct": false
+    },
+    {
+      "name": "Larvitar",
+      "actual": "Rock",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": true
+    },
+    {
+      "name": "Pupitar",
+      "actual": "Rock",
+      "clip_top1": "Dark",
+      "vlm_selected": "Ice",
+      "correct": false
+    },
+    {
+      "name": "Lugia",
+      "actual": "Psychic",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Ho-oh",
+      "actual": "Fire",
+      "clip_top1": "Flying",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Celebi",
+      "actual": "Psychic",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Fairy",
+      "correct": false
+    },
+    {
+      "name": "Treecko",
+      "actual": "Grass",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Grovyle",
+      "actual": "Grass",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Torchic",
+      "actual": "Fire",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Combusken",
+      "actual": "Fire",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Fire",
+      "correct": true
+    },
+    {
+      "name": "Mudkip",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Marshtomp",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Poochyena",
+      "actual": "Dark",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": true
+    },
+    {
+      "name": "Mightyena",
+      "actual": "Dark",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": true
+    },
+    {
+      "name": "Wurmple",
+      "actual": "Bug",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Silcoon",
+      "actual": "Bug",
+      "clip_top1": "Normal",
+      "vlm_selected": "Ice",
+      "correct": false
+    },
+    {
+      "name": "Beautifly",
+      "actual": "Bug",
+      "clip_top1": "Dark",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Cascoon",
+      "actual": "Bug",
+      "clip_top1": "Poison",
+      "vlm_selected": "Poison",
+      "correct": false
+    },
+    {
+      "name": "Dustox",
+      "actual": "Bug",
+      "clip_top1": "Bug",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Lotad",
+      "actual": "Water",
+      "clip_top1": "Grass",
+      "vlm_selected": "Grass",
+      "correct": false
+    },
+    {
+      "name": "Lombre",
+      "actual": "Water",
+      "clip_top1": "Normal",
+      "vlm_selected": "Grass",
+      "correct": false
+    },
+    {
+      "name": "Ludicolo",
+      "actual": "Water",
+      "clip_top1": "Normal",
+      "vlm_selected": "Grass",
+      "correct": false
+    },
+    {
+      "name": "Seedot",
+      "actual": "Grass",
+      "clip_top1": "Steel",
+      "vlm_selected": "Steel",
+      "correct": false
+    },
+    {
+      "name": "Nuzleaf",
+      "actual": "Grass",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Shiftry",
+      "actual": "Grass",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Taillow",
+      "actual": "Normal",
+      "clip_top1": "Normal",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Swellow",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Wingull",
+      "actual": "Water",
+      "clip_top1": "Flying",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Pelipper",
+      "actual": "Water",
+      "clip_top1": "Normal",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Ralts",
+      "actual": "Psychic",
+      "clip_top1": "Poison",
+      "vlm_selected": "Fairy",
+      "correct": false
+    },
+    {
+      "name": "Kirlia",
+      "actual": "Psychic",
+      "clip_top1": "Normal",
+      "vlm_selected": "Grass",
+      "correct": false
+    },
+    {
+      "name": "Surskit",
+      "actual": "Bug",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Masquerain",
+      "actual": "Bug",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Shroomish",
+      "actual": "Grass",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Breloom",
+      "actual": "Grass",
+      "clip_top1": "Poison",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Slakoth",
+      "actual": "Normal",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Vigoroth",
+      "actual": "Normal",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Ice",
+      "correct": false
+    },
+    {
+      "name": "Slaking",
+      "actual": "Normal",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Nincada",
+      "actual": "Bug",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Ninjask",
+      "actual": "Bug",
+      "clip_top1": "Bug",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Shedinja",
+      "actual": "Bug",
+      "clip_top1": "Bug",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Whismur",
+      "actual": "Normal",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Loudred",
+      "actual": "Normal",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Exploud",
+      "actual": "Normal",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Makuhita",
+      "actual": "Fighting",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Hariyama",
+      "actual": "Fighting",
+      "clip_top1": "Psychic",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Azurill",
+      "actual": "Normal",
+      "clip_top1": "Ice",
+      "vlm_selected": "Ice",
+      "correct": false
+    },
+    {
+      "name": "Nosepass",
+      "actual": "Rock",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": true
+    },
+    {
+      "name": "Skitty",
+      "actual": "Normal",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Fairy",
+      "correct": false
+    },
+    {
+      "name": "Delcatty",
+      "actual": "Normal",
+      "clip_top1": "Electric",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Aron",
+      "actual": "Steel",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Lairon",
+      "actual": "Steel",
+      "clip_top1": "Rock",
+      "vlm_selected": "Steel",
+      "correct": true
+    },
+    {
+      "name": "Meditite",
+      "actual": "Fighting",
+      "clip_top1": "Psychic",
+      "vlm_selected": "Psychic",
+      "correct": false
+    },
+    {
+      "name": "Electrike",
+      "actual": "Electric",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Dragon",
+      "correct": false
+    },
+    {
+      "name": "Plusle",
+      "actual": "Electric",
+      "clip_top1": "Electric",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Minun",
+      "actual": "Electric",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Electric",
+      "correct": true
+    },
+    {
+      "name": "Volbeat",
+      "actual": "Bug",
+      "clip_top1": "Bug",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Illumise",
+      "actual": "Bug",
+      "clip_top1": "Bug",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Roselia",
+      "actual": "Grass",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Fairy",
+      "correct": false
+    },
+    {
+      "name": "Gulpin",
+      "actual": "Poison",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Swalot",
+      "actual": "Poison",
+      "clip_top1": "Poison",
+      "vlm_selected": "Poison",
+      "correct": true
+    },
+    {
+      "name": "Carvanha",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Wailmer",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Wailord",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Numel",
+      "actual": "Fire",
+      "clip_top1": "Rock",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Torkoal",
+      "actual": "Fire",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Spoink",
+      "actual": "Psychic",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Grumpig",
+      "actual": "Psychic",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Spinda",
+      "actual": "Normal",
+      "clip_top1": "Psychic",
+      "vlm_selected": "Psychic",
+      "correct": false
+    },
+    {
+      "name": "Trapinch",
+      "actual": "Ground",
+      "clip_top1": "Rock",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Vibrava",
+      "actual": "Ground",
+      "clip_top1": "Bug",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Flygon",
+      "actual": "Ground",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Cacnea",
+      "actual": "Grass",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Cacturne",
+      "actual": "Grass",
+      "clip_top1": "Rock",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Swablu",
+      "actual": "Normal",
+      "clip_top1": "Flying",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Zangoose",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Seviper",
+      "actual": "Poison",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Lunatone",
+      "actual": "Rock",
+      "clip_top1": "Dark",
+      "vlm_selected": "Psychic",
+      "correct": false
+    },
+    {
+      "name": "Solrock",
+      "actual": "Rock",
+      "clip_top1": "Dark",
+      "vlm_selected": "Rock",
+      "correct": true
+    },
+    {
+      "name": "Barboach",
+      "actual": "Water",
+      "clip_top1": "Steel",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Whiscash",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Electric",
+      "correct": false
+    },
+    {
+      "name": "Corphish",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Crawdaunt",
+      "actual": "Water",
+      "clip_top1": "Normal",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Baltoy",
+      "actual": "Ground",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Claydol",
+      "actual": "Ground",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Lileep",
+      "actual": "Rock",
+      "clip_top1": "Poison",
+      "vlm_selected": "Poison",
+      "correct": false
+    },
+    {
+      "name": "Cradily",
+      "actual": "Rock",
+      "clip_top1": "Poison",
+      "vlm_selected": "Poison",
+      "correct": false
+    },
+    {
+      "name": "Anorith",
+      "actual": "Rock",
+      "clip_top1": "Bug",
+      "vlm_selected": "Bug",
+      "correct": false
+    },
+    {
+      "name": "Armaldo",
+      "actual": "Rock",
+      "clip_top1": "Steel",
+      "vlm_selected": "Steel",
+      "correct": false
+    },
+    {
+      "name": "Feebas",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Milotic",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Kecleon",
+      "actual": "Normal",
+      "clip_top1": "Normal",
+      "vlm_selected": "Grass",
+      "correct": false
+    },
+    {
+      "name": "Shuppet",
+      "actual": "Ghost",
+      "clip_top1": "Dark",
+      "vlm_selected": "Ghost",
+      "correct": true
+    },
+    {
+      "name": "Duskull",
+      "actual": "Ghost",
+      "clip_top1": "Dark",
+      "vlm_selected": "Ghost",
+      "correct": true
+    },
+    {
+      "name": "Dusclops",
+      "actual": "Ghost",
+      "clip_top1": "Steel",
+      "vlm_selected": "Steel",
+      "correct": false
+    },
+    {
+      "name": "Tropius",
+      "actual": "Grass",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Chimecho",
+      "actual": "Psychic",
+      "clip_top1": "Water",
+      "vlm_selected": "Ghost",
+      "correct": false
+    },
+    {
+      "name": "Wynaut",
+      "actual": "Psychic",
+      "clip_top1": "Normal",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Snorunt",
+      "actual": "Ice",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Spheal",
+      "actual": "Ice",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Sealeo",
+      "actual": "Ice",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Walrein",
+      "actual": "Ice",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Clamperl",
+      "actual": "Water",
+      "clip_top1": "Psychic",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Huntail",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Gorebyss",
+      "actual": "Water",
+      "clip_top1": "Normal",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Relicanth",
+      "actual": "Water",
+      "clip_top1": "Dark",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Luvdisc",
+      "actual": "Water",
+      "clip_top1": "Rock",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Bagon",
+      "actual": "Dragon",
+      "clip_top1": "Ice",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Shelgon",
+      "actual": "Dragon",
+      "clip_top1": "Dark",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Beldum",
+      "actual": "Steel",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Metang",
+      "actual": "Steel",
+      "clip_top1": "Steel",
+      "vlm_selected": "Steel",
+      "correct": true
+    },
+    {
+      "name": "Regirock",
+      "actual": "Rock",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": true
+    },
+    {
+      "name": "Regice",
+      "actual": "Ice",
+      "clip_top1": "Ice",
+      "vlm_selected": "Ice",
+      "correct": true
+    },
+    {
+      "name": "Registeel",
+      "actual": "Steel",
+      "clip_top1": "Steel",
+      "vlm_selected": "Steel",
+      "correct": true
+    },
+    {
+      "name": "Jirachi",
+      "actual": "Steel",
+      "clip_top1": "Psychic",
+      "vlm_selected": "Psychic",
+      "correct": false
+    },
+    {
+      "name": "Turtwig",
+      "actual": "Grass",
+      "clip_top1": "Normal",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Grotle",
+      "actual": "Grass",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Torterra",
+      "actual": "Grass",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Chimchar",
+      "actual": "Fire",
+      "clip_top1": "Fire",
+      "vlm_selected": "Fire",
+      "correct": true
+    },
+    {
+      "name": "Monferno",
+      "actual": "Fire",
+      "clip_top1": "Fire",
+      "vlm_selected": "Fire",
+      "correct": true
+    },
+    {
+      "name": "Infernape",
+      "actual": "Fire",
+      "clip_top1": "Fire",
+      "vlm_selected": "Fire",
+      "correct": true
+    },
+    {
+      "name": "Piplup",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Prinplup",
+      "actual": "Water",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Empoleon",
+      "actual": "Water",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Starly",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Staravia",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Staraptor",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Bidoof",
+      "actual": "Normal",
+      "clip_top1": "Normal",
+      "vlm_selected": "Ground",
+      "correct": false
+    },
+    {
+      "name": "Bibarel",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Kricketot",
+      "actual": "Bug",
+      "clip_top1": "Bug",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Kricketune",
+      "actual": "Bug",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Fighting",
+      "correct": false
+    },
+    {
+      "name": "Shinx",
+      "actual": "Electric",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Luxio",
+      "actual": "Electric",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Luxray",
+      "actual": "Electric",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Budew",
+      "actual": "Grass",
+      "clip_top1": "Normal",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Roserade",
+      "actual": "Grass",
+      "clip_top1": "Poison",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Cranidos",
+      "actual": "Rock",
+      "clip_top1": "Dark",
+      "vlm_selected": "Steel",
+      "correct": false
+    },
+    {
+      "name": "Rampardos",
+      "actual": "Rock",
+      "clip_top1": "Steel",
+      "vlm_selected": "Steel",
+      "correct": false
+    },
+    {
+      "name": "Shieldon",
+      "actual": "Rock",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": true
+    },
+    {
+      "name": "Bastiodon",
+      "actual": "Rock",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": true
+    },
+    {
+      "name": "Mothim",
+      "actual": "Bug",
+      "clip_top1": "Bug",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Combee",
+      "actual": "Bug",
+      "clip_top1": "Bug",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Vespiquen",
+      "actual": "Bug",
+      "clip_top1": "Bug",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Pachirisu",
+      "actual": "Electric",
+      "clip_top1": "Ice",
+      "vlm_selected": "Ice",
+      "correct": false
+    },
+    {
+      "name": "Buizel",
+      "actual": "Water",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Floatzel",
+      "actual": "Water",
+      "clip_top1": "Fire",
+      "vlm_selected": "Fire",
+      "correct": false
+    },
+    {
+      "name": "Cherubi",
+      "actual": "Grass",
+      "clip_top1": "Poison",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Cherrim",
+      "actual": "Grass",
+      "clip_top1": "Poison",
+      "vlm_selected": "Poison",
+      "correct": false
+    },
+    {
+      "name": "Shellos",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Gastrodon",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Ambipom",
+      "actual": "Normal",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Drifloon",
+      "actual": "Ghost",
+      "clip_top1": "Dark",
+      "vlm_selected": "Psychic",
+      "correct": false
+    },
+    {
+      "name": "Drifblim",
+      "actual": "Ghost",
+      "clip_top1": "Bug",
+      "vlm_selected": "Bug",
+      "correct": false
+    },
+    {
+      "name": "Buneary",
+      "actual": "Normal",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Mismagius",
+      "actual": "Ghost",
+      "clip_top1": "Dark",
+      "vlm_selected": "Ghost",
+      "correct": true
+    },
+    {
+      "name": "Honchkrow",
+      "actual": "Dark",
+      "clip_top1": "Dark",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Glameow",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Purugly",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Chingling",
+      "actual": "Psychic",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Stunky",
+      "actual": "Poison",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Skuntank",
+      "actual": "Poison",
+      "clip_top1": "Dark",
+      "vlm_selected": "Ground",
+      "correct": false
+    },
+    {
+      "name": "Bronzor",
+      "actual": "Steel",
+      "clip_top1": "Water",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Bronzong",
+      "actual": "Steel",
+      "clip_top1": "Steel",
+      "vlm_selected": "Steel",
+      "correct": true
+    },
+    {
+      "name": "Bonsly",
+      "actual": "Rock",
+      "clip_top1": "Grass",
+      "vlm_selected": "Grass",
+      "correct": false
+    },
+    {
+      "name": "Happiny",
+      "actual": "Normal",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Fairy",
+      "correct": false
+    },
+    {
+      "name": "Chatot",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Spiritomb",
+      "actual": "Ghost",
+      "clip_top1": "Ghost",
+      "vlm_selected": "Ghost",
+      "correct": true
+    },
+    {
+      "name": "Gible",
+      "actual": "Dragon",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Gabite",
+      "actual": "Dragon",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Dragon",
+      "correct": true
+    },
+    {
+      "name": "Munchlax",
+      "actual": "Normal",
+      "clip_top1": "Water",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Riolu",
+      "actual": "Fighting",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Fighting",
+      "correct": true
+    },
+    {
+      "name": "Hippopotas",
+      "actual": "Ground",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Hippowdon",
+      "actual": "Ground",
+      "clip_top1": "Ground",
+      "vlm_selected": "Ground",
+      "correct": true
+    },
+    {
+      "name": "Skorupi",
+      "actual": "Poison",
+      "clip_top1": "Poison",
+      "vlm_selected": "Poison",
+      "correct": true
+    },
+    {
+      "name": "Drapion",
+      "actual": "Poison",
+      "clip_top1": "Poison",
+      "vlm_selected": "Poison",
+      "correct": true
+    },
+    {
+      "name": "Croagunk",
+      "actual": "Poison",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Toxicroak",
+      "actual": "Poison",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Carnivine",
+      "actual": "Grass",
+      "clip_top1": "Dark",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Finneon",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Lumineon",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Mantyke",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Snover",
+      "actual": "Grass",
+      "clip_top1": "Normal",
+      "vlm_selected": "Ice",
+      "correct": false
+    },
+    {
+      "name": "Weavile",
+      "actual": "Dark",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": true
+    },
+    {
+      "name": "Magnezone",
+      "actual": "Electric",
+      "clip_top1": "Steel",
+      "vlm_selected": "Steel",
+      "correct": false
+    },
+    {
+      "name": "Lickilicky",
+      "actual": "Normal",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Rhyperior",
+      "actual": "Ground",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Tangrowth",
+      "actual": "Grass",
+      "clip_top1": "Dark",
+      "vlm_selected": "Ghost",
+      "correct": false
+    },
+    {
+      "name": "Electivire",
+      "actual": "Electric",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Magmortar",
+      "actual": "Fire",
+      "clip_top1": "Fire",
+      "vlm_selected": "Fire",
+      "correct": true
+    },
+    {
+      "name": "Togekiss",
+      "actual": "Fairy",
+      "clip_top1": "Flying",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Yanmega",
+      "actual": "Bug",
+      "clip_top1": "Bug",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Leafeon",
+      "actual": "Grass",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Glaceon",
+      "actual": "Ice",
+      "clip_top1": "Ice",
+      "vlm_selected": "Ice",
+      "correct": true
+    },
+    {
+      "name": "Gliscor",
+      "actual": "Ground",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Mamoswine",
+      "actual": "Ice",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Porygon-Z",
+      "actual": "Normal",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Probopass",
+      "actual": "Rock",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": true
+    },
+    {
+      "name": "Dusknoir",
+      "actual": "Ghost",
+      "clip_top1": "Steel",
+      "vlm_selected": "Steel",
+      "correct": false
+    },
+    {
+      "name": "Froslass",
+      "actual": "Ice",
+      "clip_top1": "Ice",
+      "vlm_selected": "Ice",
+      "correct": true
+    },
+    {
+      "name": "Uxie",
+      "actual": "Psychic",
+      "clip_top1": "Psychic",
+      "vlm_selected": "Psychic",
+      "correct": true
+    },
+    {
+      "name": "Mesprit",
+      "actual": "Psychic",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Fairy",
+      "correct": false
+    },
+    {
+      "name": "Azelf",
+      "actual": "Psychic",
+      "clip_top1": "Water",
+      "vlm_selected": "Psychic",
+      "correct": true
+    },
+    {
+      "name": "Heatran",
+      "actual": "Fire",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Regigigas",
+      "actual": "Normal",
+      "clip_top1": "Steel",
+      "vlm_selected": "Steel",
+      "correct": false
+    },
+    {
+      "name": "Cresselia",
+      "actual": "Psychic",
+      "clip_top1": "Psychic",
+      "vlm_selected": "Fairy",
+      "correct": false
+    },
+    {
+      "name": "Phione",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Manaphy",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Darkrai",
+      "actual": "Dark",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": true
+    },
+    {
+      "name": "Arceus",
+      "actual": "Normal",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Psychic",
+      "correct": false
+    },
+    {
+      "name": "Victini",
+      "actual": "Psychic",
+      "clip_top1": "Electric",
+      "vlm_selected": "Electric",
+      "correct": false
+    },
+    {
+      "name": "Snivy",
+      "actual": "Grass",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Servine",
+      "actual": "Grass",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Serperior",
+      "actual": "Grass",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Tepig",
+      "actual": "Fire",
+      "clip_top1": "Dark",
+      "vlm_selected": "Fire",
+      "correct": true
+    },
+    {
+      "name": "Pignite",
+      "actual": "Fire",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Emboar",
+      "actual": "Fire",
+      "clip_top1": "Fire",
+      "vlm_selected": "Fire",
+      "correct": true
+    },
+    {
+      "name": "Oshawott",
+      "actual": "Water",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Dewott",
+      "actual": "Water",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Patrat",
+      "actual": "Normal",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Ground",
+      "correct": false
+    },
+    {
+      "name": "Watchog",
+      "actual": "Normal",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Lillipup",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Herdier",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Stoutland",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Purrloin",
+      "actual": "Dark",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": true
+    },
+    {
+      "name": "Liepard",
+      "actual": "Dark",
+      "clip_top1": "Psychic",
+      "vlm_selected": "Psychic",
+      "correct": false
+    },
+    {
+      "name": "Pansage",
+      "actual": "Grass",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Simisage",
+      "actual": "Grass",
+      "clip_top1": "Grass",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Pansear",
+      "actual": "Fire",
+      "clip_top1": "Fire",
+      "vlm_selected": "Fire",
+      "correct": true
+    },
+    {
+      "name": "Simisear",
+      "actual": "Fire",
+      "clip_top1": "Fire",
+      "vlm_selected": "Fire",
+      "correct": true
+    },
+    {
+      "name": "Panpour",
+      "actual": "Water",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Simipour",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Munna",
+      "actual": "Psychic",
+      "clip_top1": "Poison",
+      "vlm_selected": "Fairy",
+      "correct": false
+    },
+    {
+      "name": "Musharna",
+      "actual": "Psychic",
+      "clip_top1": "Poison",
+      "vlm_selected": "Fairy",
+      "correct": false
+    },
+    {
+      "name": "Pidove",
+      "actual": "Normal",
+      "clip_top1": "Normal",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Tranquill",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Unfezant",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Blitzle",
+      "actual": "Electric",
+      "clip_top1": "Dark",
+      "vlm_selected": "Electric",
+      "correct": true
+    },
+    {
+      "name": "Zebstrika",
+      "actual": "Electric",
+      "clip_top1": "Dark",
+      "vlm_selected": "Electric",
+      "correct": true
+    },
+    {
+      "name": "Roggenrola",
+      "actual": "Rock",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": true
+    },
+    {
+      "name": "Boldore",
+      "actual": "Rock",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": true
+    },
+    {
+      "name": "Gigalith",
+      "actual": "Rock",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": true
+    },
+    {
+      "name": "Woobat",
+      "actual": "Psychic",
+      "clip_top1": "Normal",
+      "vlm_selected": "Ice",
+      "correct": false
+    },
+    {
+      "name": "Swoobat",
+      "actual": "Psychic",
+      "clip_top1": "Dark",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Drilbur",
+      "actual": "Ground",
+      "clip_top1": "Steel",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Excadrill",
+      "actual": "Ground",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Timburr",
+      "actual": "Fighting",
+      "clip_top1": "Rock",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Gurdurr",
+      "actual": "Fighting",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Conkeldurr",
+      "actual": "Fighting",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Tympole",
+      "actual": "Water",
+      "clip_top1": "Steel",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Palpitoad",
+      "actual": "Water",
+      "clip_top1": "Steel",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Seismitoad",
+      "actual": "Water",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Throh",
+      "actual": "Fighting",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Fighting",
+      "correct": true
+    },
+    {
+      "name": "Sawk",
+      "actual": "Fighting",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Ice",
+      "correct": false
+    },
+    {
+      "name": "Sewaddle",
+      "actual": "Bug",
+      "clip_top1": "Normal",
+      "vlm_selected": "Grass",
+      "correct": false
+    },
+    {
+      "name": "Swadloon",
+      "actual": "Bug",
+      "clip_top1": "Grass",
+      "vlm_selected": "Grass",
+      "correct": false
+    },
+    {
+      "name": "Leavanny",
+      "actual": "Bug",
+      "clip_top1": "Grass",
+      "vlm_selected": "Grass",
+      "correct": false
+    },
+    {
+      "name": "Venipede",
+      "actual": "Bug",
+      "clip_top1": "Bug",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Whirlipede",
+      "actual": "Bug",
+      "clip_top1": "Dark",
+      "vlm_selected": "Steel",
+      "correct": false
+    },
+    {
+      "name": "Scolipede",
+      "actual": "Bug",
+      "clip_top1": "Dark",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Cottonee",
+      "actual": "Grass",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Whimsicott",
+      "actual": "Grass",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Petilil",
+      "actual": "Grass",
+      "clip_top1": "Normal",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Sandile",
+      "actual": "Ground",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Krokorok",
+      "actual": "Ground",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Krookodile",
+      "actual": "Ground",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Maractus",
+      "actual": "Grass",
+      "clip_top1": "Normal",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Dwebble",
+      "actual": "Bug",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Crustle",
+      "actual": "Bug",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Scraggy",
+      "actual": "Dark",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Scrafty",
+      "actual": "Dark",
+      "clip_top1": "Rock",
+      "vlm_selected": "Ground",
+      "correct": false
+    },
+    {
+      "name": "Sigilyph",
+      "actual": "Psychic",
+      "clip_top1": "Psychic",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Cofagrigus",
+      "actual": "Ghost",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Tirtouga",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Carracosta",
+      "actual": "Water",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Archen",
+      "actual": "Rock",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Archeops",
+      "actual": "Rock",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Trubbish",
+      "actual": "Poison",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Garbodor",
+      "actual": "Poison",
+      "clip_top1": "Rock",
+      "vlm_selected": "Ground",
+      "correct": false
+    },
+    {
+      "name": "Minccino",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Cinccino",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Fairy",
+      "correct": false
+    },
+    {
+      "name": "Gothita",
+      "actual": "Psychic",
+      "clip_top1": "Dark",
+      "vlm_selected": "Fairy",
+      "correct": false
+    },
+    {
+      "name": "Gothorita",
+      "actual": "Psychic",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Gothitelle",
+      "actual": "Psychic",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Solosis",
+      "actual": "Psychic",
+      "clip_top1": "Grass",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Duosion",
+      "actual": "Psychic",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Reuniclus",
+      "actual": "Psychic",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Fairy",
+      "correct": false
+    },
+    {
+      "name": "Ducklett",
+      "actual": "Water",
+      "clip_top1": "Normal",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Swanna",
+      "actual": "Water",
+      "clip_top1": "Psychic",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Vanillite",
+      "actual": "Ice",
+      "clip_top1": "Ice",
+      "vlm_selected": "Ice",
+      "correct": true
+    },
+    {
+      "name": "Vanillish",
+      "actual": "Ice",
+      "clip_top1": "Ice",
+      "vlm_selected": "Ice",
+      "correct": true
+    },
+    {
+      "name": "Vanilluxe",
+      "actual": "Ice",
+      "clip_top1": "Ice",
+      "vlm_selected": "Ice",
+      "correct": true
+    },
+    {
+      "name": "Deerling",
+      "actual": "Normal",
+      "clip_top1": "Fire",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Sawsbuck",
+      "actual": "Normal",
+      "clip_top1": "Fire",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Emolga",
+      "actual": "Electric",
+      "clip_top1": "Dark",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Karrablast",
+      "actual": "Bug",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Escavalier",
+      "actual": "Bug",
+      "clip_top1": "Steel",
+      "vlm_selected": "Steel",
+      "correct": false
+    },
+    {
+      "name": "Foongus",
+      "actual": "Grass",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Amoonguss",
+      "actual": "Grass",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Frillish",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Fairy",
+      "correct": false
+    },
+    {
+      "name": "Jellicent",
+      "actual": "Water",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Fairy",
+      "correct": false
+    },
+    {
+      "name": "Alomomola",
+      "actual": "Water",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Fairy",
+      "correct": false
+    },
+    {
+      "name": "Joltik",
+      "actual": "Bug",
+      "clip_top1": "Electric",
+      "vlm_selected": "Electric",
+      "correct": false
+    },
+    {
+      "name": "Galvantula",
+      "actual": "Bug",
+      "clip_top1": "Bug",
+      "vlm_selected": "Electric",
+      "correct": false
+    },
+    {
+      "name": "Ferroseed",
+      "actual": "Grass",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Ferrothorn",
+      "actual": "Grass",
+      "clip_top1": "Poison",
+      "vlm_selected": "Steel",
+      "correct": false
+    },
+    {
+      "name": "Klink",
+      "actual": "Steel",
+      "clip_top1": "Steel",
+      "vlm_selected": "Steel",
+      "correct": true
+    },
+    {
+      "name": "Klang",
+      "actual": "Steel",
+      "clip_top1": "Steel",
+      "vlm_selected": "Steel",
+      "correct": true
+    },
+    {
+      "name": "Klinklang",
+      "actual": "Steel",
+      "clip_top1": "Steel",
+      "vlm_selected": "Steel",
+      "correct": true
+    },
+    {
+      "name": "Tynamo",
+      "actual": "Electric",
+      "clip_top1": "Ghost",
+      "vlm_selected": "Ghost",
+      "correct": false
+    },
+    {
+      "name": "Eelektrik",
+      "actual": "Electric",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Eelektross",
+      "actual": "Electric",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Elgyem",
+      "actual": "Psychic",
+      "clip_top1": "Steel",
+      "vlm_selected": "Psychic",
+      "correct": true
+    },
+    {
+      "name": "Beheeyem",
+      "actual": "Psychic",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Litwick",
+      "actual": "Ghost",
+      "clip_top1": "Dark",
+      "vlm_selected": "Ice",
+      "correct": false
+    },
+    {
+      "name": "Lampent",
+      "actual": "Ghost",
+      "clip_top1": "Dark",
+      "vlm_selected": "Ghost",
+      "correct": true
+    },
+    {
+      "name": "Chandelure",
+      "actual": "Ghost",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Axew",
+      "actual": "Dragon",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dragon",
+      "correct": true
+    },
+    {
+      "name": "Fraxure",
+      "actual": "Dragon",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Haxorus",
+      "actual": "Dragon",
+      "clip_top1": "Bug",
+      "vlm_selected": "Dragon",
+      "correct": true
+    },
+    {
+      "name": "Cubchoo",
+      "actual": "Ice",
+      "clip_top1": "Ice",
+      "vlm_selected": "Ice",
+      "correct": true
+    },
+    {
+      "name": "Beartic",
+      "actual": "Ice",
+      "clip_top1": "Ice",
+      "vlm_selected": "Ice",
+      "correct": true
+    },
+    {
+      "name": "Cryogonal",
+      "actual": "Ice",
+      "clip_top1": "Ice",
+      "vlm_selected": "Ice",
+      "correct": true
+    },
+    {
+      "name": "Shelmet",
+      "actual": "Bug",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Accelgor",
+      "actual": "Bug",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Psychic",
+      "correct": false
+    },
+    {
+      "name": "Mienfoo",
+      "actual": "Fighting",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Fighting",
+      "correct": true
+    },
+    {
+      "name": "Mienshao",
+      "actual": "Fighting",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Psychic",
+      "correct": false
+    },
+    {
+      "name": "Druddigon",
+      "actual": "Dragon",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Dragon",
+      "correct": true
+    },
+    {
+      "name": "Golett",
+      "actual": "Ground",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Golurk",
+      "actual": "Ground",
+      "clip_top1": "Steel",
+      "vlm_selected": "Steel",
+      "correct": false
+    },
+    {
+      "name": "Pawniard",
+      "actual": "Dark",
+      "clip_top1": "Steel",
+      "vlm_selected": "Steel",
+      "correct": false
+    },
+    {
+      "name": "Bisharp",
+      "actual": "Dark",
+      "clip_top1": "Steel",
+      "vlm_selected": "Steel",
+      "correct": false
+    },
+    {
+      "name": "Bouffalant",
+      "actual": "Normal",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Rufflet",
+      "actual": "Normal",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Vullaby",
+      "actual": "Dark",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Mandibuzz",
+      "actual": "Dark",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": true
+    },
+    {
+      "name": "Heatmor",
+      "actual": "Fire",
+      "clip_top1": "Steel",
+      "vlm_selected": "Fire",
+      "correct": true
+    },
+    {
+      "name": "Durant",
+      "actual": "Bug",
+      "clip_top1": "Bug",
+      "vlm_selected": "Steel",
+      "correct": false
+    },
+    {
+      "name": "Deino",
+      "actual": "Dark",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Zweilous",
+      "actual": "Dark",
+      "clip_top1": "Rock",
+      "vlm_selected": "Dark",
+      "correct": true
+    },
+    {
+      "name": "Hydreigon",
+      "actual": "Dark",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": true
+    },
+    {
+      "name": "Larvesta",
+      "actual": "Bug",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Volcarona",
+      "actual": "Bug",
+      "clip_top1": "Bug",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Cobalion",
+      "actual": "Steel",
+      "clip_top1": "Ice",
+      "vlm_selected": "Ice",
+      "correct": false
+    },
+    {
+      "name": "Terrakion",
+      "actual": "Rock",
+      "clip_top1": "Steel",
+      "vlm_selected": "Rock",
+      "correct": true
+    },
+    {
+      "name": "Virizion",
+      "actual": "Grass",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Reshiram",
+      "actual": "Dragon",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Ice",
+      "correct": false
+    },
+    {
+      "name": "Zekrom",
+      "actual": "Dragon",
+      "clip_top1": "Steel",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Genesect",
+      "actual": "Bug",
+      "clip_top1": "Steel",
+      "vlm_selected": "Steel",
+      "correct": false
+    },
+    {
+      "name": "Chespin",
+      "actual": "Grass",
+      "clip_top1": "Normal",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Quilladin",
+      "actual": "Grass",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Chesnaught",
+      "actual": "Grass",
+      "clip_top1": "Normal",
+      "vlm_selected": "Steel",
+      "correct": false
+    },
+    {
+      "name": "Fennekin",
+      "actual": "Fire",
+      "clip_top1": "Fire",
+      "vlm_selected": "Fire",
+      "correct": true
+    },
+    {
+      "name": "Braixen",
+      "actual": "Fire",
+      "clip_top1": "Fire",
+      "vlm_selected": "Fire",
+      "correct": true
+    },
+    {
+      "name": "Delphox",
+      "actual": "Fire",
+      "clip_top1": "Fire",
+      "vlm_selected": "Fire",
+      "correct": true
+    },
+    {
+      "name": "Froakie",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Frogadier",
+      "actual": "Water",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Psychic",
+      "correct": false
+    },
+    {
+      "name": "Bunnelby",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Diggersby",
+      "actual": "Normal",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Fletchling",
+      "actual": "Normal",
+      "clip_top1": "Normal",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Fletchinder",
+      "actual": "Fire",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Talonflame",
+      "actual": "Fire",
+      "clip_top1": "Fire",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Scatterbug",
+      "actual": "Bug",
+      "clip_top1": "Dark",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Spewpa",
+      "actual": "Bug",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Vivillon",
+      "actual": "Bug",
+      "clip_top1": "Bug",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Litleo",
+      "actual": "Fire",
+      "clip_top1": "Fire",
+      "vlm_selected": "Fire",
+      "correct": true
+    },
+    {
+      "name": "Pyroar",
+      "actual": "Fire",
+      "clip_top1": "Fire",
+      "vlm_selected": "Fire",
+      "correct": true
+    },
+    {
+      "name": "Flab\u00e9b\u00e9",
+      "actual": "Fairy",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Fairy",
+      "correct": true
+    },
+    {
+      "name": "Floette",
+      "actual": "Fairy",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Fairy",
+      "correct": true
+    },
+    {
+      "name": "Florges",
+      "actual": "Fairy",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Fairy",
+      "correct": true
+    },
+    {
+      "name": "Skiddo",
+      "actual": "Grass",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Gogoat",
+      "actual": "Grass",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Pancham",
+      "actual": "Fighting",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Pangoro",
+      "actual": "Fighting",
+      "clip_top1": "Dark",
+      "vlm_selected": "Fighting",
+      "correct": true
+    },
+    {
+      "name": "Furfrou",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Ice",
+      "correct": false
+    },
+    {
+      "name": "Espurr",
+      "actual": "Psychic",
+      "clip_top1": "Dark",
+      "vlm_selected": "Ghost",
+      "correct": false
+    },
+    {
+      "name": "Honedge",
+      "actual": "Steel",
+      "clip_top1": "Dark",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Doublade",
+      "actual": "Steel",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Spritzee",
+      "actual": "Fairy",
+      "clip_top1": "Dark",
+      "vlm_selected": "Fairy",
+      "correct": true
+    },
+    {
+      "name": "Aromatisse",
+      "actual": "Fairy",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Fairy",
+      "correct": true
+    },
+    {
+      "name": "Swirlix",
+      "actual": "Fairy",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Fairy",
+      "correct": true
+    },
+    {
+      "name": "Slurpuff",
+      "actual": "Fairy",
+      "clip_top1": "Normal",
+      "vlm_selected": "Fairy",
+      "correct": true
+    },
+    {
+      "name": "Inkay",
+      "actual": "Dark",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Fairy",
+      "correct": false
+    },
+    {
+      "name": "Malamar",
+      "actual": "Dark",
+      "clip_top1": "Dark",
+      "vlm_selected": "Psychic",
+      "correct": false
+    },
+    {
+      "name": "Binacle",
+      "actual": "Rock",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": true
+    },
+    {
+      "name": "Barbaracle",
+      "actual": "Rock",
+      "clip_top1": "Steel",
+      "vlm_selected": "Rock",
+      "correct": true
+    },
+    {
+      "name": "Skrelp",
+      "actual": "Poison",
+      "clip_top1": "Poison",
+      "vlm_selected": "Poison",
+      "correct": true
+    },
+    {
+      "name": "Dragalge",
+      "actual": "Poison",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dragon",
+      "correct": false
+    },
+    {
+      "name": "Clauncher",
+      "actual": "Water",
+      "clip_top1": "Bug",
+      "vlm_selected": "Bug",
+      "correct": false
+    },
+    {
+      "name": "Clawitzer",
+      "actual": "Water",
+      "clip_top1": "Steel",
+      "vlm_selected": "Steel",
+      "correct": false
+    },
+    {
+      "name": "Helioptile",
+      "actual": "Electric",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Heliolisk",
+      "actual": "Electric",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Tyrunt",
+      "actual": "Rock",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Dragon",
+      "correct": false
+    },
+    {
+      "name": "Tyrantrum",
+      "actual": "Rock",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Dragon",
+      "correct": false
+    },
+    {
+      "name": "Amaura",
+      "actual": "Rock",
+      "clip_top1": "Ice",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Aurorus",
+      "actual": "Rock",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Sylveon",
+      "actual": "Fairy",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Fairy",
+      "correct": true
+    },
+    {
+      "name": "Hawlucha",
+      "actual": "Fighting",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Dedenne",
+      "actual": "Electric",
+      "clip_top1": "Electric",
+      "vlm_selected": "Electric",
+      "correct": true
+    },
+    {
+      "name": "Carbink",
+      "actual": "Rock",
+      "clip_top1": "Rock",
+      "vlm_selected": "Ice",
+      "correct": false
+    },
+    {
+      "name": "Goomy",
+      "actual": "Dragon",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Klefki",
+      "actual": "Steel",
+      "clip_top1": "Steel",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Phantump",
+      "actual": "Ghost",
+      "clip_top1": "Dark",
+      "vlm_selected": "Ghost",
+      "correct": true
+    },
+    {
+      "name": "Trevenant",
+      "actual": "Ghost",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Bergmite",
+      "actual": "Ice",
+      "clip_top1": "Ice",
+      "vlm_selected": "Ice",
+      "correct": true
+    },
+    {
+      "name": "Noibat",
+      "actual": "Flying",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Noivern",
+      "actual": "Flying",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Xerneas",
+      "actual": "Fairy",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Yveltal",
+      "actual": "Dark",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": true
+    },
+    {
+      "name": "Volcanion",
+      "actual": "Fire",
+      "clip_top1": "Steel",
+      "vlm_selected": "Steel",
+      "correct": false
+    },
+    {
+      "name": "Zygarde",
+      "actual": "Dragon",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Rowlet",
+      "actual": "Grass",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Dartrix",
+      "actual": "Grass",
+      "clip_top1": "Normal",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Litten",
+      "actual": "Fire",
+      "clip_top1": "Dark",
+      "vlm_selected": "Fire",
+      "correct": true
+    },
+    {
+      "name": "Torracat",
+      "actual": "Fire",
+      "clip_top1": "Fire",
+      "vlm_selected": "Fire",
+      "correct": true
+    },
+    {
+      "name": "Incineroar",
+      "actual": "Fire",
+      "clip_top1": "Fire",
+      "vlm_selected": "Fire",
+      "correct": true
+    },
+    {
+      "name": "Popplio",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Brionne",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Primarina",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Pikipek",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Trumbeak",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Toucannon",
+      "actual": "Normal",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Yungoos",
+      "actual": "Normal",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Gumshoos",
+      "actual": "Normal",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Grubbin",
+      "actual": "Bug",
+      "clip_top1": "Bug",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Charjabug",
+      "actual": "Bug",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Vikavolt",
+      "actual": "Bug",
+      "clip_top1": "Bug",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Crabrawler",
+      "actual": "Fighting",
+      "clip_top1": "Normal",
+      "vlm_selected": "Bug",
+      "correct": false
+    },
+    {
+      "name": "Crabominable",
+      "actual": "Fighting",
+      "clip_top1": "Normal",
+      "vlm_selected": "Ice",
+      "correct": false
+    },
+    {
+      "name": "Cutiefly",
+      "actual": "Bug",
+      "clip_top1": "Bug",
+      "vlm_selected": "Flying",
+      "correct": false
+    },
+    {
+      "name": "Ribombee",
+      "actual": "Bug",
+      "clip_top1": "Bug",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Mareanie",
+      "actual": "Poison",
+      "clip_top1": "Dark",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Toxapex",
+      "actual": "Poison",
+      "clip_top1": "Poison",
+      "vlm_selected": "Poison",
+      "correct": true
+    },
+    {
+      "name": "Mudbray",
+      "actual": "Ground",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Mudsdale",
+      "actual": "Ground",
+      "clip_top1": "Fire",
+      "vlm_selected": "Fire",
+      "correct": false
+    },
+    {
+      "name": "Dewpider",
+      "actual": "Water",
+      "clip_top1": "Bug",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Araquanid",
+      "actual": "Water",
+      "clip_top1": "Bug",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Fomantis",
+      "actual": "Grass",
+      "clip_top1": "Poison",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Lurantis",
+      "actual": "Grass",
+      "clip_top1": "Bug",
+      "vlm_selected": "Fairy",
+      "correct": false
+    },
+    {
+      "name": "Morelull",
+      "actual": "Grass",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Fairy",
+      "correct": false
+    },
+    {
+      "name": "Shiinotic",
+      "actual": "Grass",
+      "clip_top1": "Normal",
+      "vlm_selected": "Fairy",
+      "correct": false
+    },
+    {
+      "name": "Salandit",
+      "actual": "Poison",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Salazzle",
+      "actual": "Poison",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Stufful",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Bewear",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Bounsweet",
+      "actual": "Grass",
+      "clip_top1": "Normal",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Steenee",
+      "actual": "Grass",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Tsareena",
+      "actual": "Grass",
+      "clip_top1": "Poison",
+      "vlm_selected": "Poison",
+      "correct": false
+    },
+    {
+      "name": "Comfey",
+      "actual": "Fairy",
+      "clip_top1": "Psychic",
+      "vlm_selected": "Grass",
+      "correct": false
+    },
+    {
+      "name": "Oranguru",
+      "actual": "Normal",
+      "clip_top1": "Psychic",
+      "vlm_selected": "Psychic",
+      "correct": false
+    },
+    {
+      "name": "Passimian",
+      "actual": "Fighting",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Wimpod",
+      "actual": "Bug",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Golisopod",
+      "actual": "Bug",
+      "clip_top1": "Bug",
+      "vlm_selected": "Steel",
+      "correct": false
+    },
+    {
+      "name": "Sandygast",
+      "actual": "Ghost",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Palossand",
+      "actual": "Ghost",
+      "clip_top1": "Ground",
+      "vlm_selected": "Ground",
+      "correct": false
+    },
+    {
+      "name": "Pyukumuku",
+      "actual": "Water",
+      "clip_top1": "Rock",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Silvally",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Komala",
+      "actual": "Normal",
+      "clip_top1": "Rock",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Turtonator",
+      "actual": "Fire",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Togedemaru",
+      "actual": "Electric",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Mimikyu",
+      "actual": "Ghost",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Bruxish",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Drampa",
+      "actual": "Normal",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Dhelmise",
+      "actual": "Ghost",
+      "clip_top1": "Steel",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Jangmo-o",
+      "actual": "Dragon",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Hakamo-o",
+      "actual": "Dragon",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Steel",
+      "correct": false
+    },
+    {
+      "name": "Kommo-o",
+      "actual": "Dragon",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Dragon",
+      "correct": true
+    },
+    {
+      "name": "Tapu Koko",
+      "actual": "Electric",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Dragon",
+      "correct": false
+    },
+    {
+      "name": "Tapu Lele",
+      "actual": "Psychic",
+      "clip_top1": "Poison",
+      "vlm_selected": "Fairy",
+      "correct": false
+    },
+    {
+      "name": "Tapu Bulu",
+      "actual": "Grass",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Tapu Fini",
+      "actual": "Water",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Cosmog",
+      "actual": "Psychic",
+      "clip_top1": "Dark",
+      "vlm_selected": "Psychic",
+      "correct": true
+    },
+    {
+      "name": "Cosmoem",
+      "actual": "Psychic",
+      "clip_top1": "Dark",
+      "vlm_selected": "Psychic",
+      "correct": true
+    },
+    {
+      "name": "Solgaleo",
+      "actual": "Psychic",
+      "clip_top1": "Fire",
+      "vlm_selected": "Fire",
+      "correct": false
+    },
+    {
+      "name": "Lunala",
+      "actual": "Psychic",
+      "clip_top1": "Dark",
+      "vlm_selected": "Psychic",
+      "correct": true
+    },
+    {
+      "name": "Nihilego",
+      "actual": "Rock",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Buzzwole",
+      "actual": "Bug",
+      "clip_top1": "Bug",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Pheromosa",
+      "actual": "Bug",
+      "clip_top1": "Psychic",
+      "vlm_selected": "Fairy",
+      "correct": false
+    },
+    {
+      "name": "Xurkitree",
+      "actual": "Electric",
+      "clip_top1": "Dark",
+      "vlm_selected": "Ice",
+      "correct": false
+    },
+    {
+      "name": "Celesteela",
+      "actual": "Steel",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Dragon",
+      "correct": false
+    },
+    {
+      "name": "Kartana",
+      "actual": "Grass",
+      "clip_top1": "Steel",
+      "vlm_selected": "Steel",
+      "correct": false
+    },
+    {
+      "name": "Guzzlord",
+      "actual": "Dark",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": true
+    },
+    {
+      "name": "Magearna",
+      "actual": "Steel",
+      "clip_top1": "Steel",
+      "vlm_selected": "Steel",
+      "correct": true
+    },
+    {
+      "name": "Marshadow",
+      "actual": "Fighting",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Poipole",
+      "actual": "Poison",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Naganadel",
+      "actual": "Poison",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Stakataka",
+      "actual": "Rock",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": true
+    },
+    {
+      "name": "Blacephalon",
+      "actual": "Fire",
+      "clip_top1": "Psychic",
+      "vlm_selected": "Psychic",
+      "correct": false
+    },
+    {
+      "name": "Zeraora",
+      "actual": "Electric",
+      "clip_top1": "Electric",
+      "vlm_selected": "Electric",
+      "correct": true
+    },
+    {
+      "name": "Meltan",
+      "actual": "Steel",
+      "clip_top1": "Steel",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Melmetal",
+      "actual": "Steel",
+      "clip_top1": "Steel",
+      "vlm_selected": "Steel",
+      "correct": true
+    },
+    {
+      "name": "Grookey",
+      "actual": "Grass",
+      "clip_top1": "Normal",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Thwackey",
+      "actual": "Grass",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Rillaboom",
+      "actual": "Grass",
+      "clip_top1": "Dark",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Scorbunny",
+      "actual": "Fire",
+      "clip_top1": "Normal",
+      "vlm_selected": "Fire",
+      "correct": true
+    },
+    {
+      "name": "Raboot",
+      "actual": "Fire",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Cinderace",
+      "actual": "Fire",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Fire",
+      "correct": true
+    },
+    {
+      "name": "Sobble",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Drizzile",
+      "actual": "Water",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Inteleon",
+      "actual": "Water",
+      "clip_top1": "Psychic",
+      "vlm_selected": "Psychic",
+      "correct": false
+    },
+    {
+      "name": "Skwovet",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Greedent",
+      "actual": "Normal",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Rookidee",
+      "actual": "Flying",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Corvisquire",
+      "actual": "Flying",
+      "clip_top1": "Dark",
+      "vlm_selected": "Flying",
+      "correct": true
+    },
+    {
+      "name": "Corviknight",
+      "actual": "Flying",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Blipbug",
+      "actual": "Bug",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Dottler",
+      "actual": "Bug",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Orbeetle",
+      "actual": "Bug",
+      "clip_top1": "Bug",
+      "vlm_selected": "Bug",
+      "correct": true
+    },
+    {
+      "name": "Nickit",
+      "actual": "Dark",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": true
+    },
+    {
+      "name": "Thievul",
+      "actual": "Dark",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": true
+    },
+    {
+      "name": "Gossifleur",
+      "actual": "Grass",
+      "clip_top1": "Grass",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Eldegoss",
+      "actual": "Grass",
+      "clip_top1": "Grass",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Wooloo",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Dubwool",
+      "actual": "Normal",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": true
+    },
+    {
+      "name": "Chewtle",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Drednaw",
+      "actual": "Water",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Yamper",
+      "actual": "Electric",
+      "clip_top1": "Normal",
+      "vlm_selected": "Electric",
+      "correct": true
+    },
+    {
+      "name": "Boltund",
+      "actual": "Electric",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Fighting",
+      "correct": false
+    },
+    {
+      "name": "Rolycoly",
+      "actual": "Rock",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": true
+    },
+    {
+      "name": "Carkol",
+      "actual": "Rock",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": true
+    },
+    {
+      "name": "Coalossal",
+      "actual": "Rock",
+      "clip_top1": "Rock",
+      "vlm_selected": "Fire",
+      "correct": false
+    },
+    {
+      "name": "Applin",
+      "actual": "Grass",
+      "clip_top1": "Poison",
+      "vlm_selected": "Grass",
+      "correct": true
+    },
+    {
+      "name": "Flapple",
+      "actual": "Grass",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Dragon",
+      "correct": false
+    },
+    {
+      "name": "Appletun",
+      "actual": "Grass",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Silicobra",
+      "actual": "Ground",
+      "clip_top1": "Normal",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Sandaconda",
+      "actual": "Ground",
+      "clip_top1": "Normal",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Cramorant",
+      "actual": "Flying",
+      "clip_top1": "Normal",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Arrokuda",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Barraskewda",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Toxel",
+      "actual": "Electric",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Sizzlipede",
+      "actual": "Fire",
+      "clip_top1": "Ground",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Centiskorch",
+      "actual": "Fire",
+      "clip_top1": "Fire",
+      "vlm_selected": "Fire",
+      "correct": true
+    },
+    {
+      "name": "Clobbopus",
+      "actual": "Fighting",
+      "clip_top1": "Psychic",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Grapploct",
+      "actual": "Fighting",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Sinistea",
+      "actual": "Ghost",
+      "clip_top1": "Psychic",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Polteageist",
+      "actual": "Ghost",
+      "clip_top1": "Dark",
+      "vlm_selected": "Psychic",
+      "correct": false
+    },
+    {
+      "name": "Hatenna",
+      "actual": "Psychic",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Fairy",
+      "correct": false
+    },
+    {
+      "name": "Hattrem",
+      "actual": "Psychic",
+      "clip_top1": "Normal",
+      "vlm_selected": "Fairy",
+      "correct": false
+    },
+    {
+      "name": "Hatterene",
+      "actual": "Psychic",
+      "clip_top1": "Poison",
+      "vlm_selected": "Fairy",
+      "correct": false
+    },
+    {
+      "name": "Impidimp",
+      "actual": "Dark",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": true
+    },
+    {
+      "name": "Morgrem",
+      "actual": "Dark",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": true
+    },
+    {
+      "name": "Grimmsnarl",
+      "actual": "Dark",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": true
+    },
+    {
+      "name": "Obstagoon",
+      "actual": "Dark",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": true
+    },
+    {
+      "name": "Perrserker",
+      "actual": "Steel",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Cursola",
+      "actual": "Ghost",
+      "clip_top1": "Psychic",
+      "vlm_selected": "Ghost",
+      "correct": true
+    },
+    {
+      "name": "Sirfetch'd",
+      "actual": "Fighting",
+      "clip_top1": "Normal",
+      "vlm_selected": "Grass",
+      "correct": false
+    },
+    {
+      "name": "Mr. Rime",
+      "actual": "Ice",
+      "clip_top1": "Normal",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Runerigus",
+      "actual": "Ground",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Milcery",
+      "actual": "Fairy",
+      "clip_top1": "Normal",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Alcremie",
+      "actual": "Fairy",
+      "clip_top1": "Fairy",
+      "vlm_selected": "Fairy",
+      "correct": true
+    },
+    {
+      "name": "Falinks",
+      "actual": "Fighting",
+      "clip_top1": "Bug",
+      "vlm_selected": "Bug",
+      "correct": false
+    },
+    {
+      "name": "Pincurchin",
+      "actual": "Electric",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Snom",
+      "actual": "Ice",
+      "clip_top1": "Ice",
+      "vlm_selected": "Ice",
+      "correct": true
+    },
+    {
+      "name": "Frosmoth",
+      "actual": "Ice",
+      "clip_top1": "Ice",
+      "vlm_selected": "Ice",
+      "correct": true
+    },
+    {
+      "name": "Stonjourner",
+      "actual": "Rock",
+      "clip_top1": "Rock",
+      "vlm_selected": "Rock",
+      "correct": true
+    },
+    {
+      "name": "Cufant",
+      "actual": "Steel",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Copperajah",
+      "actual": "Steel",
+      "clip_top1": "Fighting",
+      "vlm_selected": "Rock",
+      "correct": false
+    },
+    {
+      "name": "Dracozolt",
+      "actual": "Electric",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Dragon",
+      "correct": false
+    },
+    {
+      "name": "Arctozolt",
+      "actual": "Electric",
+      "clip_top1": "Ice",
+      "vlm_selected": "Ice",
+      "correct": false
+    },
+    {
+      "name": "Dracovish",
+      "actual": "Water",
+      "clip_top1": "Dragon",
+      "vlm_selected": "Dragon",
+      "correct": false
+    },
+    {
+      "name": "Arctovish",
+      "actual": "Water",
+      "clip_top1": "Water",
+      "vlm_selected": "Water",
+      "correct": true
+    },
+    {
+      "name": "Duraludon",
+      "actual": "Steel",
+      "clip_top1": "Steel",
+      "vlm_selected": "Steel",
+      "correct": true
+    },
+    {
+      "name": "Dreepy",
+      "actual": "Dragon",
+      "clip_top1": "Dark",
+      "vlm_selected": "Water",
+      "correct": false
+    },
+    {
+      "name": "Drakloak",
+      "actual": "Dragon",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Dragapult",
+      "actual": "Dragon",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Kubfu",
+      "actual": "Fighting",
+      "clip_top1": "Dark",
+      "vlm_selected": "Normal",
+      "correct": false
+    },
+    {
+      "name": "Zarude",
+      "actual": "Dark",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": true
+    },
+    {
+      "name": "Regieleki",
+      "actual": "Electric",
+      "clip_top1": "Electric",
+      "vlm_selected": "Electric",
+      "correct": true
+    },
+    {
+      "name": "Regidrago",
+      "actual": "Dragon",
+      "clip_top1": "Dark",
+      "vlm_selected": "Dark",
+      "correct": false
+    },
+    {
+      "name": "Glastrier",
+      "actual": "Ice",
+      "clip_top1": "Ice",
+      "vlm_selected": "Ice",
+      "correct": true
+    },
+    {
+      "name": "Spectrier",
+      "actual": "Ghost",
+      "clip_top1": "Dark",
+      "vlm_selected": "Ghost",
+      "correct": true
+    }
+  ]
+}
