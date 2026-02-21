@@ -1590,8 +1590,8 @@ Label:"""
         hdb_labels, _ = run_clustering_pipeline(X_reduced, "hdbscan")
         noise_count = int((hdb_labels == -1).sum())
 
-        # Use K-Means for analysis
-        labels = kmeans_labels
+        # Use Agglomerative for analysis (best performer in Task 1)
+        labels = agg_labels
 
         cluster_analysis = []
         for cluster_id in range(5):
