@@ -1059,7 +1059,7 @@ Output a 3-6 word label describing what these reviews have in common.
           <tr>
             <td>Autoencoder (50-d)</td>
             <td>Agglomerative</td>
-            <td>0.2920</td>
+            <td>0.2344</td>
           </tr>
         </tbody>
       </table>
@@ -1150,29 +1150,30 @@ Output a 3-6 word label describing what these reviews have in common.
           <tr>
             <td>Original VGG16</td>
             <td>4,096</td>
-            <td>91.96%</td>
+            <td>91.01%</td>
           </tr>
           <tr>
             <td>SVD</td>
             <td>50</td>
-            <td>91.28%</td>
+            <td>91.14%</td>
           </tr>
           <tr>
             <td>UMAP</td>
             <td>50</td>
-            <td>82.15%</td>
+            <td>80.79%</td>
           </tr>
           <tr>
             <td>Autoencoder</td>
             <td>50</td>
-            <td>89.37%</td>
+            <td>88.56%</td>
           </tr>
         </tbody>
       </table>
 
       <p>
-        All reduced methods drop below 91.96%. SVD holds up best—only 0.68
-        points lost despite 98.8% dimension reduction. UMAP drops 9.8 points.
+        Surprisingly, SVD slightly outperforms the original features—91.14% vs
+        91.01%, a 0.13% gain despite 98.8% dimension reduction. UMAP drops 10.2
+        points. Autoencoder lands in between at 88.56%.
       </p>
 
       <p>Comparing with clustering:</p>
@@ -1188,12 +1189,12 @@ Output a 3-6 word label describing what these reviews have in common.
           <tr>
             <td>SVD</td>
             <td>0.195 (3rd)</td>
-            <td>91.28% (1st)</td>
+            <td>91.14% (1st)</td>
           </tr>
           <tr>
             <td>UMAP</td>
             <td>0.564 (1st)</td>
-            <td>82.15% (3rd)</td>
+            <td>80.79% (4th)</td>
           </tr>
         </tbody>
       </table>

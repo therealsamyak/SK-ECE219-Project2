@@ -92,7 +92,7 @@ Best ARI by method:
 | None (4096-d)      | Agglomerative   | 0.2184 |
 | SVD (50-d)         | K-Means         | 0.1947 |
 | UMAP (50-d)        | HDBSCAN         | 0.5635 |
-| Autoencoder (50-d) | Agglomerative   | 0.2920 |
+| Autoencoder (50-d) | Agglomerative   | 0.2344 |
 
 HDBSCAN grid (on UMAP features):
 
@@ -120,19 +120,19 @@ Report MLP test accuracy on original and reduced-dimension features. Does perfor
 
 | Feature        | Dimension | Accuracy |
 | -------------- | --------- | -------- |
-| Original VGG16 | 4,096     | 91.96%   |
-| SVD            | 50        | 91.28%   |
-| UMAP           | 50        | 82.15%   |
-| Autoencoder    | 50        | 89.37%   |
+| Original VGG16 | 4,096     | 91.01%   |
+| SVD            | 50        | 91.14%   |
+| UMAP           | 50        | 80.79%   |
+| Autoencoder    | 50        | 88.56%   |
 
-All reduced methods drop below 91.96%. SVD holds up best—only 0.68 points lost despite 98.8% dimension reduction. UMAP drops 9.8 points.
+Surprisingly, SVD slightly outperforms the original features—91.14% vs 91.01%, a 0.13% gain despite 98.8% dimension reduction. UMAP drops 10.2 points. Autoencoder lands in between at 88.56%.
 
 Comparing with clustering:
 
 | Method | Clustering ARI | Classification Accuracy |
 | ------ | -------------- | ----------------------- |
-| SVD    | 0.195 (3rd)    | 91.28% (1st)            |
-| UMAP   | 0.564 (1st)    | 82.15% (3rd)            |
+| SVD    | 0.195 (3rd)    | 91.14% (1st)            |
+| UMAP   | 0.564 (1st)    | 80.79% (4th)            |
 
 UMAP crushed clustering but struggled with classification. SVD did the opposite.
 

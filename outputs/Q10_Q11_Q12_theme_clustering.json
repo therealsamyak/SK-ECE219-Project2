@@ -1,0 +1,671 @@
+{
+  "positive": {
+    "n_reviews": 100,
+    "clusters": [
+      {
+        "cluster_id": 0,
+        "size": 49,
+        "top_terms": [
+          {
+            "term": "game",
+            "score": 0.13157378787396515
+          },
+          {
+            "term": "like",
+            "score": 0.05555006253593551
+          },
+          {
+            "term": "just",
+            "score": 0.040231457987496604
+          },
+          {
+            "term": "good",
+            "score": 0.03977783955027013
+          },
+          {
+            "term": "games",
+            "score": 0.037454201174528017
+          },
+          {
+            "term": "really",
+            "score": 0.03725151867291964
+          },
+          {
+            "term": "graphics",
+            "score": 0.03440447762011428
+          },
+          {
+            "term": "combat",
+            "score": 0.0342185174948008
+          },
+          {
+            "term": "10",
+            "score": 0.03311217459707596
+          },
+          {
+            "term": "play",
+            "score": 0.03275165999150492
+          }
+        ],
+        "exemplars": [
+          {
+            "review": "This game has the big awesome set pieces and aesthetic from the old school God of War games, the core gameplay of a Soul-like (albeit a tad more forgiving), really sick and fast paced Sekiro / Bloodborne combat, and every cool Kung Fu thing you can think of ever all mixed into one.Only a short bit in but this may be my GOTY. It also looks fantastic and runs surprisingly well (7800x3d + 3080 ti, getting 70-90 fps with RT off and everything on Very High).Very strong recommend out the gate. I have ...",
+            "distance": 0.5825421810150146
+          },
+          {
+            "review": "(Review in progress, 8h so far, 2 chapters completed)This game surprised me more than I expected. The level of polish and care put into it is quite impressive and I absolutely loved my time with it so far. Graphics and art-design are top notch, sound design is great, music has its highs and lows, but what it doesn't lack is identity, it's pretty original. If you're familiar with the original story or Chinese mythology, you'll probably love the interpretations of characters from there, if you hav...",
+            "distance": 0.5982197523117065
+          }
+        ],
+        "llm_label": "Positive gameplay experience",
+        "short_label": "Positive gameplay experience"
+      },
+      {
+        "cluster_id": 1,
+        "size": 15,
+        "top_terms": [
+          {
+            "term": "game",
+            "score": 0.27426094952304125
+          },
+          {
+            "term": "wukong",
+            "score": 0.08366938259902462
+          },
+          {
+            "term": "chinese",
+            "score": 0.07276560227545852
+          },
+          {
+            "term": "myth",
+            "score": 0.06569200449717309
+          },
+          {
+            "term": "good",
+            "score": 0.0645269701375058
+          },
+          {
+            "term": "black",
+            "score": 0.05998324105176618
+          },
+          {
+            "term": "black myth",
+            "score": 0.059517252365728024
+          },
+          {
+            "term": "games",
+            "score": 0.054485054014846865
+          },
+          {
+            "term": "myth wukong",
+            "score": 0.05307985968826247
+          },
+          {
+            "term": "like",
+            "score": 0.050969657165265844
+          }
+        ],
+        "exemplars": [
+          {
+            "review": "Black Myth: Wukong was released under a lot of anticipation after gameplay showcases had been shown over the past few years, leading people to even question if the game would really come out like that. Thankfully, it really did \u2013 and overcame all expectations. The game is engaging, well made, fluid, has a fair dose of difficulty, is downright beautiful and is worth every penny and time you put into it.I honestly find it hard to catch up with the story \u2013 at least without any knowledge on the clas...",
+            "distance": 0.4542792737483978
+          },
+          {
+            "review": "Black Myth Wukong is an absolute masterclass of a game. All the hype, all the praise, all the positive buzz surrounding this game...they're absolutely deserved and this is hands down, one of THE best games of this generation, not just this year. The combat, fluidity of animations, the level and boss design, the intricate level and environmental design, all the different characters and enemies, they're all very unique, varied and superbly crafted. When you take control of the Monkey King (Sun Wuk...",
+            "distance": 0.4946405291557312
+          }
+        ],
+        "llm_label": "Mythical Chinese Game Excellence",
+        "short_label": "Mythical Chinese Game Excellence"
+      },
+      {
+        "cluster_id": 2,
+        "size": 16,
+        "top_terms": [
+          {
+            "term": "10",
+            "score": 0.08043927863510769
+          },
+          {
+            "term": "sweet baby",
+            "score": 0.06278834202909403
+          },
+          {
+            "term": "baby",
+            "score": 0.06278834202909403
+          },
+          {
+            "term": "sweet",
+            "score": 0.06278834202909403
+          },
+          {
+            "term": "ign",
+            "score": 0.0625
+          },
+          {
+            "term": "game",
+            "score": 0.0525416817544522
+          },
+          {
+            "term": "add",
+            "score": 0.046679881913822045
+          },
+          {
+            "term": "monke",
+            "score": 0.04266488318375569
+          },
+          {
+            "term": "ape",
+            "score": 0.03763134502804677
+          },
+          {
+            "term": "game ape",
+            "score": 0.03763134502804677
+          }
+        ],
+        "exemplars": [
+          {
+            "review": "\u203bThis game does not include Sweet Baby",
+            "distance": 0.8053056597709656
+          },
+          {
+            "review": "Story: 10/10Gameplay: 10/10Graphic & Sound: 10/10Animation: 10/10Game's World: 10/10Character: 10/10Combat: 10/10Enemy's AI: 10/10Soundtrack: 10/10Game Optimize: 10/10It's Wukong: 10/10OVERALL: 10+/10",
+            "distance": 0.8505539894104004
+          }
+        ],
+        "llm_label": "Perfect 10s and Sweet Baby praise",
+        "short_label": "Perfect 10s and Sweet Baby praise"
+      },
+      {
+        "cluster_id": 3,
+        "size": 15,
+        "top_terms": [
+          {
+            "term": "good",
+            "score": 0.20192295683152756
+          },
+          {
+            "term": "grind",
+            "score": 0.1352897669280408
+          },
+          {
+            "term": "just",
+            "score": 0.13450716454333353
+          },
+          {
+            "term": "bad",
+            "score": 0.11794776344706767
+          },
+          {
+            "term": "10",
+            "score": 0.10776160849132001
+          },
+          {
+            "term": "long",
+            "score": 0.10517300253144315
+          },
+          {
+            "term": "average",
+            "score": 0.1033257390310301
+          },
+          {
+            "term": "bugs",
+            "score": 0.09626234039176491
+          },
+          {
+            "term": "game",
+            "score": 0.09440419114224255
+          },
+          {
+            "term": "hard",
+            "score": 0.08657281757401886
+          }
+        ],
+        "exemplars": [
+          {
+            "review": "---{ Graphics }---\u2611 You forget what reality is\u2610 Beautiful\u2610 Good\u2610 Decent\u2610 Bad\u2610 Don\u2018t look too long at it\u2610 MS-DOS---{ Gameplay }---\u2611 Very good\u2610 Good\u2610 It's just gameplay\u2610 Mehh\u2610 Watch paint dry instead\u2610 Just don't---{ Audio }---\u2611 Eargasm\u2610 Very good\u2610 Good\u2610 Not too bad\u2610 Bad\u2610 I'm now deaf---{ Audience }---\u2611 Kids\u2611 Teens\u2611 Adults\u2610 Grandma---{ PC Requirements }---\u2610 Check if you can run paint\u2610 Potato\u2610 Decent\u2610 Fast\u2611 Rich boi\u2610 Ask NASA if they have a spare computer---{ Game Size }---\u2610 Floppy Disk\u2610 Old Fashion...",
+            "distance": 0.1670578122138977
+          },
+          {
+            "review": "---{ Graphics }---\u2611 You forget what reality is\u2610 Beautiful\u2610 Good\u2610 Decent\u2610 Bad\u2610 Don\u2018t look too long at it\u2610 MS-DOS---{ Gameplay }---\u2611 Very good\u2610 Good\u2610 It's just gameplay\u2610 Mehh\u2610 Watch paint dry instead\u2610 Just don't---{ Audio }---\u2611 Eargasm\u2610 Very good\u2610 Good\u2610 Not too bad\u2610 Bad\u2610 I'm now deaf---{ Audience }---\u2610 Kids\u2611 Teens\u2611 Adults\u2610 Grandma---{ PC Requirements }---\u2610 Check if you can run paint\u2610 Potato\u2610 Decent\u2611 Fast\u2610 Rich boi\u2610 Ask NASA if they have a spare computer---{ Game Size }---\u2610 Floppy Disk\u2610 Old Fashion...",
+            "distance": 0.1670578122138977
+          }
+        ],
+        "llm_label": "Grind and repetitive gameplay",
+        "short_label": "Grind and repetitive gameplay"
+      },
+      {
+        "cluster_id": 4,
+        "size": 5,
+        "top_terms": [
+          {
+            "term": "monke",
+            "score": 0.25593815087474003
+          },
+          {
+            "term": "reject",
+            "score": 0.16093448764096963
+          },
+          {
+            "term": "approves",
+            "score": 0.13401835860860958
+          },
+          {
+            "term": "monke approves",
+            "score": 0.13401835860860958
+          },
+          {
+            "term": "embrace",
+            "score": 0.10971115216146024
+          },
+          {
+            "term": "embrace monke",
+            "score": 0.10971115216146024
+          },
+          {
+            "term": "modernityreturn monke",
+            "score": 0.10432000138884455
+          },
+          {
+            "term": "modernityreturn",
+            "score": 0.10432000138884455
+          },
+          {
+            "term": "reject modernityreturn",
+            "score": 0.10432000138884455
+          },
+          {
+            "term": "dei",
+            "score": 0.08964551852794408
+          }
+        ],
+        "exemplars": [
+          {
+            "review": "MONKE APPROVES\u2592\u2592\u2592\u2592\u2592\u2584\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2584\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2584\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2584\u2592\u2592\u2592\u2592\u2592\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2592\u2592\u2592\u2590\u2588\u2588\u2588\u2580\u2580\u2580\u2580\u2580\u2588\u2588\u2580\u2580\u2580\u2580\u2580\u2588\u2588\u2588\u258c\u2592\u2592\u2588\u2588\u2588\u2592\u2592\u258c\u25a0\u2590\u2592\u2592\u2592\u2592\u258c\u25a0\u2590\u2592\u2592\u2588\u2588\u2588\u2592\u2592\u2590\u2588\u2588\u2584\u2592\u2580\u2580\u2580\u2592\u2592\u2592\u2592\u2580\u2580\u2580\u2592\u2584\u2588\u2588\u258c\u2592\u2592\u2592\u2580\u2588\u2588\u2588\u2588\u2592\u2584\u2584\u2592\u2592\u2584\u2584\u2592\u2588\u2588\u2588\u2588\u2580\u2592\u2592\u2592\u2592\u2590\u2588\u2588\u2588\u2592\u2592\u2592\u2580\u2592\u2592\u2580\u2592\u2592\u2592\u2588\u2588\u2588\u258c\u2592\u2592\u2592\u2592\u2588\u2588\u2588\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2588\u2588\u2588\u2592\u2592\u2592\u2592\u2592\u2588\u2588\u2592\u2592\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2592\u2592\u2588\u2588\u2592\u2592\u2592\u2592\u2592\u2592\u2590\u2588\u2588\u2584\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2584\u2588\u2588\u258c\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2580\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2580\u2592\u2592\u2592\u2592",
+            "distance": 0.5384169220924377
+          },
+          {
+            "review": "REJECT MODERNITYRETURN TO MONKE",
+            "distance": 0.5679466724395752
+          }
+        ],
+        "llm_label": "Monke Embrace Approved",
+        "short_label": "Monke Embrace Approved"
+      }
+    ],
+    "kmeans_labels": [
+      3, 3, 3, 3, 2, 3, 2, 3, 2, 2, 2, 3, 1, 3, 0, 4, 2, 2, 3, 1, 1, 2, 1, 3, 1,
+      3, 3, 3, 3, 1, 0, 1, 3, 3, 3, 1, 3, 1, 1, 1, 3, 1, 0, 3, 2, 3, 1, 4, 3, 3,
+      1, 1, 0, 2, 4, 2, 1, 1, 4, 1, 3, 1, 3, 1, 3, 3, 4, 3, 4, 4, 4, 0, 1, 3, 3,
+      4, 3, 1, 2, 3, 3, 3, 2, 4, 2, 1, 3, 1, 0, 4, 3, 4, 1, 1, 3, 2, 3, 3, 3, 3
+    ],
+    "agg_labels": [
+      0, 0, 0, 0, 3, 0, 3, 0, 3, 3, 3, 0, 1, 0, 4, 2, 3, 3, 0, 1, 0, 3, 0, 0, 1,
+      0, 0, 0, 0, 1, 4, 1, 0, 0, 0, 2, 0, 0, 1, 1, 0, 1, 4, 0, 3, 0, 1, 2, 0, 0,
+      1, 0, 4, 3, 2, 3, 1, 0, 2, 1, 0, 0, 0, 0, 2, 0, 2, 0, 2, 2, 2, 2, 1, 0, 0,
+      2, 0, 0, 3, 0, 0, 0, 3, 2, 3, 2, 0, 1, 4, 2, 0, 2, 1, 0, 0, 3, 0, 0, 0, 0
+    ],
+    "hdb_labels": [
+      0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, -1, 1, 1, 0, 0, 0, 1, 0, 0,
+      0, -1, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, 0, 0, 0, 0, 0, 0, -1, 0, 1, 0, 0,
+      -1, 0, 0, 0, 0, 0, 1, -1, 1, 0, 0, -1, 0, -1, 0, 0, 0, -1, 0, -1, 0, -1,
+      -1, -1, -1, 0, 0, 0, -1, -1, 0, 1, 0, 0, 0, 1, -1, 1, 0, 0, 0, 0, -1, 0,
+      -1, 0, 0, -1, 1, 0, 0, 0, 0
+    ],
+    "hdbscan_noise": 21
+  },
+  "negative": {
+    "n_reviews": 100,
+    "clusters": [
+      {
+        "cluster_id": 0,
+        "size": 48,
+        "top_terms": [
+          {
+            "term": "game",
+            "score": 0.10609568471630017
+          },
+          {
+            "term": "like",
+            "score": 0.06828841099160082
+          },
+          {
+            "term": "just",
+            "score": 0.058752184131173474
+          },
+          {
+            "term": "boss",
+            "score": 0.05842180081540828
+          },
+          {
+            "term": "fun",
+            "score": 0.04336564038247971
+          },
+          {
+            "term": "games",
+            "score": 0.04160608486807536
+          },
+          {
+            "term": "combat",
+            "score": 0.03916086266587135
+          },
+          {
+            "term": "boring",
+            "score": 0.03530164456119246
+          },
+          {
+            "term": "good",
+            "score": 0.0337720418822369
+          },
+          {
+            "term": "don",
+            "score": 0.03192146519120853
+          }
+        ],
+        "exemplars": [
+          {
+            "review": "First of all it's a beautiful game. The visuals are great, It also has some unique combat that when you get used to it, it's enjoyable. But beyond that...this game is a boss simulator. I'm sure a lot of people will enjoy that aspect. I was hoping for more exploration. The game is linear, which isn't bad in itself, but it's boss fight after boss fight after boss fight. For gamers like me, the game becomes a constantly stressful and continuous boss fight. Sometimes, there's very little between one...",
+            "distance": 0.5904277563095093
+          },
+          {
+            "review": "Is a fun game but with a lot of problems. First of all performance is not great and not consistent at all through the chapters. There's a beautiful world to look at but full of invisible walls that takes me out of the immersion. The world is overall pretty empty, you basically go from boss to boss and there not so much other to do. Wait till it goes on sale, i regret paying full price for this.",
+            "distance": 0.5960008502006531
+          }
+        ],
+        "llm_label": "Boss-focused gameplay issues",
+        "short_label": "Boss-focused gameplay issues"
+      },
+      {
+        "cluster_id": 1,
+        "size": 21,
+        "top_terms": [
+          {
+            "term": "game",
+            "score": 0.14020694339281917
+          },
+          {
+            "term": "boss",
+            "score": 0.08365643894173319
+          },
+          {
+            "term": "like",
+            "score": 0.06755088930580648
+          },
+          {
+            "term": "just",
+            "score": 0.06414907229430988
+          },
+          {
+            "term": "bosses",
+            "score": 0.05891938496606022
+          },
+          {
+            "term": "combat",
+            "score": 0.050144256167542096
+          },
+          {
+            "term": "design",
+            "score": 0.04763425848204843
+          },
+          {
+            "term": "really",
+            "score": 0.04225516790706165
+          },
+          {
+            "term": "attacks",
+            "score": 0.0408549853654223
+          },
+          {
+            "term": "feel",
+            "score": 0.0390664909459892
+          }
+        ],
+        "exemplars": [
+          {
+            "review": "The other negative reviews have already covered most of it. I can just add that I too find the game very frustrating. I want to love it, but the poor combat design, getting locked into animations far too often, which punishes you constantly, bonks my monke brain far too often.The movement and dodging also feels very poorly implemented. It feels like you have constant input lag. When you land a heavy attack it doesn't feel rewarding because of the randomness (sometimes you get interrupted, someti...",
+            "distance": 0.6231594085693359
+          },
+          {
+            "review": "I really wanted to like this game, but it falls victim to many poor design decisions and I found the game far more tedious and frustrating than it should be.First off, the game is gorgeous, the cutscenes are fun, and I'm sure the story is great, though I struggled to follow along since I'm not familiar with JTTW. The game ran almost flawlessly on my machine as well.But I found the combat too simple, the customization and skill trees are shallow, and overall the whole game was pretty repetitive. ...",
+            "distance": 0.6422103643417358
+          }
+        ],
+        "llm_label": "Frustrating Combat and Boss Design",
+        "short_label": "Frustrating Combat and Boss Design"
+      },
+      {
+        "cluster_id": 2,
+        "size": 6,
+        "top_terms": [
+          {
+            "term": "developers misogynists",
+            "score": 0.09622504486493762
+          },
+          {
+            "term": "developers",
+            "score": 0.09622504486493762
+          },
+          {
+            "term": "country",
+            "score": 0.09622504486493762
+          },
+          {
+            "term": "misogynists",
+            "score": 0.09622504486493762
+          },
+          {
+            "term": "taiwan",
+            "score": 0.09622504486493762
+          },
+          {
+            "term": "taiwan country",
+            "score": 0.09622504486493762
+          },
+          {
+            "term": "game",
+            "score": 0.06920124378898104
+          },
+          {
+            "term": "want",
+            "score": 0.06032790507290972
+          },
+          {
+            "term": "talking",
+            "score": 0.05543178749914793
+          },
+          {
+            "term": "feets",
+            "score": 0.05504386738669579
+          }
+        ],
+        "exemplars": [
+          {
+            "review": "If you want to support a super misogynistic games company then this is the game for you",
+            "distance": 0.7506259679794312
+          },
+          {
+            "review": "The developers are misogynists",
+            "distance": 0.7783878445625305
+          }
+        ],
+        "llm_label": "Misogynistic Developers Criticism",
+        "short_label": "Misogynistic Developers Criticism"
+      },
+      {
+        "cluster_id": 3,
+        "size": 8,
+        "top_terms": [
+          {
+            "term": "game",
+            "score": 0.25872234749734363
+          },
+          {
+            "term": "boss",
+            "score": 0.10379216783252064
+          },
+          {
+            "term": "just",
+            "score": 0.08665481369502892
+          },
+          {
+            "term": "like",
+            "score": 0.06959109766553333
+          },
+          {
+            "term": "wukong",
+            "score": 0.0671026036772077
+          },
+          {
+            "term": "story",
+            "score": 0.06042970462217331
+          },
+          {
+            "term": "design",
+            "score": 0.05578605114966826
+          },
+          {
+            "term": "level",
+            "score": 0.05340154663685141
+          },
+          {
+            "term": "black",
+            "score": 0.05028368948595415
+          },
+          {
+            "term": "black myth",
+            "score": 0.05028368948595415
+          }
+        ],
+        "exemplars": [
+          {
+            "review": "Do be aware that the majority of the reviews for Wukong are from China, even those in English, and as such this review will probably trigger some. We live in a time where singleplayer games without any kind of bs such as pandering to the far left, microtransactions, and similar trash are rare, so rare that whenever a pure singleplayer game with a pretty hefty budget focuses on the right things releases, gamers will instantly love it and ignore all its faults. Black Myth Wukong is one of those ga...",
+            "distance": 0.47072702646255493
+          },
+          {
+            "review": "Is Black Myth: Wukong the best game ever made and ever will be made? ...... .A sudden uproar of positive feedback for this game brings me here.People claiming insane quality with immense praise, and already bursting out with GOTY trophies left and right.\"The most beautiful-looking game ever\", \"A technological wonderland\" and other absurd claims alike. Hyping it up as if it's 1993 and DOOM just released.So, I was intrigued -- if not a little enticed. I've read the gameplay described as not too di...",
+            "distance": 0.4916718900203705
+          }
+        ],
+        "llm_label": "Wukong game criticism",
+        "short_label": "Wukong game criticism"
+      },
+      {
+        "cluster_id": 4,
+        "size": 17,
+        "top_terms": [
+          {
+            "term": "game",
+            "score": 0.0966836063269927
+          },
+          {
+            "term": "fps",
+            "score": 0.05266384393903142
+          },
+          {
+            "term": "low",
+            "score": 0.047960283006972915
+          },
+          {
+            "term": "crashes",
+            "score": 0.04572459943641575
+          },
+          {
+            "term": "settings",
+            "score": 0.04366989303212091
+          },
+          {
+            "term": "issues",
+            "score": 0.04177808079856336
+          },
+          {
+            "term": "like",
+            "score": 0.040000730005227636
+          },
+          {
+            "term": "amd",
+            "score": 0.036531309405955247
+          },
+          {
+            "term": "7900xtx",
+            "score": 0.034852908068183856
+          },
+          {
+            "term": "low fps",
+            "score": 0.03372248202742858
+          }
+        ],
+        "exemplars": [
+          {
+            "review": "I wanted to share my recent experience with this where I have seen that\u2019s been getting positive reviews. I'm running this on an i7 13th gen, RTX 4080, and 32 gigs RAM, which should be more than capable. However, the game crashes consistently, even before I can get past the intro. Adjusting the graphic settings doesn't help, and it crashes or freezes when starting a new journey.From what I've seen, many reviews suggest under-clocking the CPU/GPU, which seems absurd. Developers should test their g...",
+            "distance": 0.6258134245872498
+          },
+          {
+            "review": "Not really sure what these purchased reviews are all about. Game runs terribly.1440p, Cinematic, 4090, 32GB Ram, 13900kConstant stutters.",
+            "distance": 0.6296865940093994
+          }
+        ],
+        "llm_label": "Performance Issues",
+        "short_label": "Performance Issues"
+      }
+    ],
+    "kmeans_labels": [
+      0, 4, 0, 4, 1, 0, 3, 0, 0, 4, 2, 3, 0, 4, 2, 1, 0, 2, 0, 2, 0, 0, 0, 1, 0,
+      0, 4, 4, 3, 3, 4, 1, 2, 0, 4, 4, 2, 2, 0, 4, 0, 0, 4, 3, 4, 1, 0, 0, 4, 0,
+      2, 3, 3, 4, 3, 1, 2, 3, 4, 3, 0, 0, 0, 0, 3, 0, 0, 2, 4, 2, 2, 0, 0, 0, 4,
+      1, 4, 4, 1, 1, 4, 4, 4, 1, 0, 3, 4, 3, 3, 2, 1, 4, 2, 0, 2, 2, 2, 0, 1, 2
+    ],
+    "agg_labels": [
+      0, 3, 0, 3, 2, 0, 4, 0, 1, 0, 4, 3, 1, 0, 4, 2, 0, 4, 1, 4, 0, 1, 1, 2, 0,
+      1, 1, 0, 1, 3, 1, 1, 0, 0, 3, 0, 4, 4, 1, 0, 1, 1, 0, 0, 3, 2, 0, 0, 3, 1,
+      1, 0, 0, 1, 0, 0, 4, 0, 1, 3, 0, 1, 1, 1, 0, 0, 0, 4, 0, 4, 4, 1, 0, 0, 0,
+      0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 4, 0, 0, 4, 0, 4, 4, 4, 0, 0, 4
+    ],
+    "hdb_labels": [
+      0, 1, 0, 1, -1, -1, -1, -1, -1, 0, -1, -1, 0, -1, -1, -1, 0, -1, 0, -1, 0,
+      0, -1, -1, -1, -1, -1, -1, -1, -1, 0, -1, -1, 0, 1, 0, -1, -1, -1, -1, 0,
+      0, -1, -1, 1, -1, -1, 0, 1, -1, -1, -1, 0, -1, -1, -1, -1, -1, -1, 1, -1,
+      -1, -1, -1, -1, -1, 0, -1, -1, -1, -1, 0, 0, 0, 0, -1, -1, -1, -1, -1, -1,
+      -1, -1, -1, 0, 0, -1, 0, -1, -1, -1, -1, -1, 0, -1, -1, -1, -1, -1, -1
+    ],
+    "hdbscan_noise": 70
+  },
+  "llm_prompt_template": "I have a cluster of {review_type} reviews from a video game.\nTop terms: {top_terms}\nExample reviews:\n{exemplars}\n\nGenerate a short 3-6 word label describing this cluster's theme.\nLabel:",
+  "llm_examples": [
+    {
+      "review_type": "positive",
+      "cluster_id": 0,
+      "prompt": "I have a cluster of positive reviews from a video game.\nTop terms: game, like, just, good, games\nExample reviews:\n\"This game has the big awesome set pieces and aesthetic from the old school God of War games, the core gameplay of a Soul-like (albeit a tad more forgiving), really sick and fast paced Sekiro / Bloodbo...\"\n\"(Review in progress, 8h so far, 2 chapters completed)This game surprised me more than I expected. The level of polish and care put into it is quite impressive and I absolutely loved my time with it so...\"\n\nGenerate a short 3-6 word label describing this cluster's theme.\nLabel:",
+      "response": "Positive gameplay experience"
+    },
+    {
+      "review_type": "positive",
+      "cluster_id": 1,
+      "prompt": "I have a cluster of positive reviews from a video game.\nTop terms: game, wukong, chinese, myth, good\nExample reviews:\n\"Black Myth: Wukong was released under a lot of anticipation after gameplay showcases had been shown over the past few years, leading people to even question if the game would really come out like that...\"\n\"Black Myth Wukong is an absolute masterclass of a game. All the hype, all the praise, all the positive buzz surrounding this game...they're absolutely deserved and this is hands down, one of THE best ...\"\n\nGenerate a short 3-6 word label describing this cluster's theme.\nLabel:",
+      "response": "Mythical Chinese Game Excellence"
+    },
+    {
+      "review_type": "positive",
+      "cluster_id": 2,
+      "prompt": "I have a cluster of positive reviews from a video game.\nTop terms: 10, sweet baby, baby, sweet, ign\nExample reviews:\n\"\u203bThis game does not include Sweet Baby...\"\n\"Story: 10/10Gameplay: 10/10Graphic & Sound: 10/10Animation: 10/10Game's World: 10/10Character: 10/10Combat: 10/10Enemy's AI: 10/10Soundtrack: 10/10Game Optimize: 10/10It's Wukong: 10/10OVERALL: 10+/10...\"\n\nGenerate a short 3-6 word label describing this cluster's theme.\nLabel:",
+      "response": "Perfect 10s and Sweet Baby praise"
+    },
+    {
+      "review_type": "positive",
+      "cluster_id": 3,
+      "prompt": "I have a cluster of positive reviews from a video game.\nTop terms: good, grind, just, bad, 10\nExample reviews:\n\"---{ Graphics }---\u2611 You forget what reality is\u2610 Beautiful\u2610 Good\u2610 Decent\u2610 Bad\u2610 Don\u2018t look too long at it\u2610 MS-DOS---{ Gameplay }---\u2611 Very good\u2610 Good\u2610 It's just gameplay\u2610 Mehh\u2610 Watch paint dry instead\u2610 J...\"\n\"---{ Graphics }---\u2611 You forget what reality is\u2610 Beautiful\u2610 Good\u2610 Decent\u2610 Bad\u2610 Don\u2018t look too long at it\u2610 MS-DOS---{ Gameplay }---\u2611 Very good\u2610 Good\u2610 It's just gameplay\u2610 Mehh\u2610 Watch paint dry instead\u2610 J...\"\n\nGenerate a short 3-6 word label describing this cluster's theme.\nLabel:",
+      "response": "Grind and repetitive gameplay"
+    },
+    {
+      "review_type": "positive",
+      "cluster_id": 4,
+      "prompt": "I have a cluster of positive reviews from a video game.\nTop terms: monke, reject, approves, monke approves, embrace\nExample reviews:\n\"MONKE APPROVES\u2592\u2592\u2592\u2592\u2592\u2584\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2584\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2584\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2584\u2592\u2592\u2592\u2592\u2592\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2592\u2592\u2592\u2590\u2588\u2588\u2588\u2580\u2580\u2580\u2580\u2580\u2588\u2588\u2580\u2580\u2580\u2580\u2580\u2588\u2588\u2588\u258c\u2592\u2592\u2588\u2588\u2588\u2592\u2592\u258c\u25a0\u2590\u2592\u2592\u2592\u2592\u258c\u25a0\u2590\u2592\u2592\u2588\u2588\u2588\u2592\u2592\u2590\u2588\u2588\u2584\u2592\u2580\u2580\u2580\u2592\u2592\u2592\u2592\u2580\u2580\u2580\u2592\u2584\u2588\u2588\u258c\u2592\u2592\u2592\u2580\u2588\u2588\u2588\u2588\u2592\u2584\u2584\u2592\u2592\u2584\u2584\u2592\u2588\u2588\u2588\u2588\u2580\u2592\u2592\u2592\u2592\u2590\u2588\u2588\u2588\u2592\u2592\u2592\u2580\u2592\u2592\u2580\u2592\u2592\u2592\u2588\u2588\u2588\u258c\u2592\u2592\u2592\u2592\u2588\u2588\u2588\u2592\u2592\u2592\u2592\u2592...\"\n\"REJECT MODERNITYRETURN TO MONKE...\"\n\nGenerate a short 3-6 word label describing this cluster's theme.\nLabel:",
+      "response": "Monke Embrace Approved"
+    },
+    {
+      "review_type": "negative",
+      "cluster_id": 0,
+      "prompt": "I have a cluster of negative reviews from a video game.\nTop terms: game, like, just, boss, fun\nExample reviews:\n\"First of all it's a beautiful game. The visuals are great, It also has some unique combat that when you get used to it, it's enjoyable. But beyond that...this game is a boss simulator. I'm sure a lot ...\"\n\"Is a fun game but with a lot of problems. First of all performance is not great and not consistent at all through the chapters. There's a beautiful world to look at but full of invisible walls that ta...\"\n\nGenerate a short 3-6 word label describing this cluster's theme.\nLabel:",
+      "response": "Boss-focused gameplay issues"
+    }
+  ]
+}
