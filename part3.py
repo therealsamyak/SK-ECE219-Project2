@@ -12,6 +12,7 @@ import open_clip
 from tqdm import tqdm
 from scipy.special import softmax
 import os
+import json
 import matplotlib
 
 matplotlib.use("Agg")
@@ -422,8 +423,6 @@ def run_q21():
     type_embeddings = clip_inference_text(model, tokenizer, type_texts, device)
     logger.info(f"[Q21] Type embeddings shape: {type_embeddings.shape}")
 
-    import json
-
     results = []
 
     for idx, row in selected_pokemon.iterrows():
@@ -633,8 +632,6 @@ def run_q22():
     output_dir.mkdir(exist_ok=True)
     detailed_output = output_dir / "Q22_detailed.json"
     with open(detailed_output, "w") as f:
-        import json
-
         json.dump({"per_pokemon": detailed_results}, f, indent=2)
     logger.info(f"Saved detailed results to {detailed_output}")
 
@@ -648,8 +645,6 @@ def run_q22():
         },
     }
     with open(metrics_output, "w") as f:
-        import json
-
         json.dump(metrics, f, indent=2)
     logger.info(f"Saved metrics to {metrics_output}")
 
@@ -672,8 +667,6 @@ def run_q23():
     logger.info("=" * 50)
     logger.info("Q23: VLM Reranking with Qwen3-VL-2B")
     logger.info("=" * 50)
-
-    import json
 
     model, processor = load_qwen3_vl()
 
