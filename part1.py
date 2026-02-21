@@ -25,7 +25,6 @@ import matplotlib
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from scipy.stats import entropy
 
 
 def setup_logging():
@@ -242,6 +241,16 @@ def run_task1_1():
 
     short_count = (df["length_label"] == "Short").sum()
     long_count = (df["length_label"] == "Long").sum()
+    short_avg = (
+        df.loc[df["length_label"] == "Short", "word_count"].mean()
+        if short_count > 0
+        else None
+    )
+    long_avg = (
+        df.loc[df["length_label"] == "Long", "word_count"].mean()
+        if long_count > 0
+        else None
+    )
     logger.info(f"Short reviews: {short_count}, Long reviews: {long_count}")
 
     reviews_text = df["review_text"].astype(str).tolist()
@@ -288,29 +297,18 @@ def run_task1_1():
 
     logger.info(f"MiniLM embeddings shape: {minilm_embeddings.shape}")
 
-    # Build results dictionary
-    results = {
-        "tfidf": {
-            "matrix_shape": tuple(int(x) for x in tfidf_matrix.shape),
-            "vocabulary_size": len(tfidf_vectorizer.vocabulary_),
-        },
-        "minilm": {
-            "matrix_shape": tuple(int(x) for x in minilm_embeddings.shape),
-            "embedding_dim": int(minilm_embeddings.shape[1]),
-            "normalized": True,
-        },
-        "dataset": {
-            "size": int(len(df)),
-            "num_short": int(short_count),
-            "num_long": int(long_count),
-        },
+    # Save Q1 dataset statistics
+    q1_results = {
+        "dataset_size": int(len(df)),
+        "num_short": int(short_count),
+        "num_long": int(long_count),
+        "short_avg_length": float(short_avg) if short_count > 0 else None,
+        "long_avg_length": float(long_avg) if long_count > 0 else None,
     }
-
-    # Save JSON files
-    results_path = output_dir / "Q1_Q2_results.json"
-    with open(results_path, "w") as f:
-        json.dump(results, f, indent=2)
-    logger.info(f"Saved results to {results_path}")
+    q1_path = output_dir / "Q1_dataset_stats.json"
+    with open(q1_path, "w") as f:
+        json.dump(q1_results, f, indent=2)
+    logger.info(f"Saved Q1 results to {q1_path}")
 
     tfidf_path = output_dir / "Q2_tfidf.json"
     with open(tfidf_path, "w") as f:
@@ -340,7 +338,12 @@ def run_task1_1():
 
     logger.info("Finished run_task1_1 - Representations")
 
-    return results
+    return {
+        "tfidf_matrix": tfidf_matrix,
+        "tfidf_vectorizer": tfidf_vectorizer,
+        "minilm_embeddings": minilm_embeddings,
+        "df": df,
+    }
 
 
 def apply_dimensionality_reduction(X, method, n_components=50, random_state=42):
@@ -546,6 +549,7 @@ def run_task1_2(data=None):
         {"dim_reduction": "svd", "clustering": "agglomerative"},
     ]
 
+    # Note: HDBSCAN is optional for Task 1.3, removed per assignment spec
     minilm_configs = [
         {"dim_reduction": "none", "clustering": "kmeans"},
         {"dim_reduction": "none", "clustering": "agglomerative"},
@@ -553,9 +557,6 @@ def run_task1_2(data=None):
         {"dim_reduction": "svd", "clustering": "agglomerative"},
         {"dim_reduction": "umap", "clustering": "kmeans"},
         {"dim_reduction": "umap", "clustering": "agglomerative"},
-        {"dim_reduction": "none", "clustering": "hdbscan"},
-        {"dim_reduction": "svd", "clustering": "hdbscan"},
-        {"dim_reduction": "umap", "clustering": "hdbscan"},
     ]
 
     results = {
@@ -1246,34 +1247,6 @@ def compute_genre_purity(game_df, labels, cluster_id):
     return games_with_common / len(all_genres)
 
 
-def compute_genre_entropy(game_df, labels, cluster_id):
-    """Compute genre entropy using Shannon entropy formula (natural log)."""
-    cluster_games = game_df[labels == cluster_id]
-    if len(cluster_games) == 0:
-        return 0.0
-
-    all_genres = []
-    for genres_str in cluster_games["genres"]:
-        if pd.notna(genres_str):
-            all_genres.append(set([g.strip() for g in str(genres_str).split(",")]))
-
-    if not all_genres:
-        return 0.0
-
-    genre_counter = Counter()
-    for genre_set in all_genres:
-        genre_counter.update(genre_set)
-
-    if not genre_counter:
-        return 0.0
-
-    genre_counts = list(genre_counter.values())
-    total = sum(genre_counts)
-    probabilities = [count / total for count in genre_counts]
-
-    return entropy(probabilities)
-
-
 def run_task2_2(game_data=None):
     """
     Task 2.2: Cluster games with default pipelines.
@@ -1294,21 +1267,26 @@ def run_task2_2(game_data=None):
     minilm_matrix = game_data["minilm_matrix"]
     game_df = game_data["game_df"]
 
+    # MiniLM: 12 pipelines (4 dim reduction × 3 clustering)
+    # TF-IDF: 3 pipelines (SVD only × 3 clustering)
     pipelines = [
+        # MiniLM pipelines
         {"rep": "minilm", "dim": "none", "cluster": "kmeans"},
         {"rep": "minilm", "dim": "none", "cluster": "agglomerative"},
         {"rep": "minilm", "dim": "svd", "cluster": "kmeans"},
         {"rep": "minilm", "dim": "svd", "cluster": "agglomerative"},
         {"rep": "minilm", "dim": "umap", "cluster": "kmeans"},
         {"rep": "minilm", "dim": "umap", "cluster": "agglomerative"},
-        {"rep": "minilm", "dim": "none", "cluster": "hdbscan"},
-        {"rep": "tfidf", "dim": "svd", "cluster": "kmeans"},
-        {"rep": "tfidf", "dim": "svd", "cluster": "agglomerative"},
         {"rep": "minilm", "dim": "autoencoder", "cluster": "kmeans"},
         {"rep": "minilm", "dim": "autoencoder", "cluster": "agglomerative"},
+        {"rep": "minilm", "dim": "none", "cluster": "hdbscan"},
         {"rep": "minilm", "dim": "svd", "cluster": "hdbscan"},
         {"rep": "minilm", "dim": "umap", "cluster": "hdbscan"},
         {"rep": "minilm", "dim": "autoencoder", "cluster": "hdbscan"},
+        # TF-IDF pipelines (only SVD per FAQ)
+        {"rep": "tfidf", "dim": "svd", "cluster": "kmeans"},
+        {"rep": "tfidf", "dim": "svd", "cluster": "agglomerative"},
+        {"rep": "tfidf", "dim": "svd", "cluster": "hdbscan"},
     ]
 
     results = []
@@ -1346,14 +1324,12 @@ def run_task2_2(game_data=None):
                 continue
             top_genres, _ = get_top_genres_for_cluster(game_df, labels, label)
             purity = compute_genre_purity(game_df, labels, label)
-            entropy_value = compute_genre_entropy(game_df, labels, label)
             cluster_details.append(
                 {
                     "cluster_id": int(label),
                     "size": int((labels == label).sum()),
                     "top_genres": top_genres,
                     "purity": float(purity),
-                    "entropy": float(entropy_value),
                 }
             )
 
@@ -1712,8 +1688,9 @@ def main():
     logger.info("ALL TASKS COMPLETE")
     logger.info("=" * 60)
     logger.info("\nOutput files generated in outputs/:")
-    logger.info("  - Q1_Q2_results.json (Q1-Q2)")
-    logger.info("  - Q3_Q4_clustering_results.json (Q3)")
+    logger.info("  - Q1_dataset_stats.json (Q1)")
+    logger.info("  - Q2_tfidf.json, Q2_minilm.json (Q2)")
+    logger.info("  - Q3_Q4_clustering_results.json (Q3-Q4)")
     logger.info("  - Q5_pca_visualizations.png (Q5)")
     logger.info("  - Q6_game_vectors.json (Q6)")
     logger.info("  - Q7_Q8_game_clustering.json (Q7-Q8)")
