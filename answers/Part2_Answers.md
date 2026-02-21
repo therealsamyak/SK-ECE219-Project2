@@ -6,7 +6,7 @@ If the VGG network is trained on a dataset with totally different classes as tar
 
 **Answer:**
 
-VGG16 learns a hierarchy of visual patterns, not ImageNet-specific categories. Early layers pick up edges, textures, and colors. Middle layers learn shapes. Deep layers capture abstract concepts. Since ImageNet spans 1000 diverse classes, the network learns general visual primitives that transfer to domains it never saw during training.
+VGG16 learns visual patterns, not ImageNet-specific categories. Early layers detect edges, textures, and colors. Middle layers learn shapes. Deep layers capture abstract concepts. Because ImageNet has 1000 diverse classes, the network learns general visual primitives that transfer to new domains.
 
 The 4096-d first FC layer encodes high-level content that distinguishes flower types even though no flowers appeared in training. VGG16 learns how to see, not what to see.
 
@@ -51,9 +51,9 @@ Are extracted features dense or sparse? Compare with TF-IDF.
 
 VGG16 features are dense.
 
-TF-IDF vectors are mostly zeros. A 50-word review might touch 30 terms out of 25,000—everything else is 0, giving 99%+ sparsity.
+TF-IDF vectors are mostly zeros. A 50-word review might touch 30 terms out of 25,000, everything else is 0, giving 99%+ sparsity.
 
-VGG16 works differently. Each of the 4096 neurons receives weighted input from all 25,088 pooled features, so every dimension is non-zero. The dense representation spreads information about the entire image across all dimensions.
+VGG16 works differently. Each of the 4096 neurons receives weighted input from all 25,088 pooled features, so every dimension is non-zero. All dimensions capture information about the entire image.
 
 ---
 
@@ -67,9 +67,9 @@ File: [t-SNE plot](outputs/Q17_tsne.png)
 
 Settings: 2 components, perplexity=30, 3,670 points
 
-Some flower classes form distinct blobs—tulips and sunflowers cluster pretty cleanly. Others overlap, like roses and dandelions, which makes sense given their similar petal structures. A few classes split into multiple small clusters, probably reflecting intra-class variation (different colors, angles, or developmental stages).
+Some flower classes form distinct blobs—tulips and sunflowers cluster pretty cleanly. Others overlap, like roses and dandelions, which makes sense since they have similar petal structures. A few classes split into multiple small clusters, probably because of variation within each class (different colors, angles, or developmental stages).
 
-The five classes don't separate perfectly, which matches what we'll see later with clustering: the features are discriminative enough to capture class structure, but not so cleanly separable that any clustering method will nail it. Still, for a network trained on ImageNet having never seen flowers, the class structure that emerges is pretty good.
+The five classes don't separate perfectly, which matches what we'll see later with clustering: the features capture class structure well enough, but aren't cleanly separable enough for any clustering method to nail it. Still, for a network trained on ImageNet that's never seen flowers, the class structure that emerges is pretty good.
 
 ---
 
@@ -105,10 +105,10 @@ HDBSCAN grid (on UMAP features):
 
 What stands out:
 
-- UMAP + HDBSCAN wins by a lot—2.6x better ARI than anything else. UMAP's non-linear embedding plays well with density-based clustering.
+- UMAP + HDBSCAN performs best, with 2.6x better ARI than anything else. UMAP's non-linear embedding works well with density-based clustering.
 - Linear methods (SVD, no reduction) struggle, suggesting the flower feature manifold has non-linear structure.
 - Conservative HDBSCAN settings help: larger min_cluster_size and min_samples prevent the algorithm from finding 108 tiny clusters and instead settle on 10 meaningful ones.
-- The autoencoder lands close to raw features, so it's not adding much beyond what's already there.
+- The autoencoder performs similar to raw features, so it's not adding much beyond what's already there.
 
 ---
 
@@ -125,7 +125,7 @@ Report MLP test accuracy on original and reduced-dimension features. Does perfor
 | UMAP           | 50        | 80.79%   |
 | Autoencoder    | 50        | 88.56%   |
 
-Surprisingly, SVD slightly outperforms the original features—91.14% vs 91.01%, a 0.13% gain despite 98.8% dimension reduction. UMAP drops 10.2 points. Autoencoder lands in between at 88.56%.
+SVD actually beats the original features—91.14% vs 91.01%, a 0.13% gain while cutting dimensions by 98.8%. UMAP loses 10.2 points. Autoencoder sits in the middle at 88.56%.
 
 Comparing with clustering:
 
@@ -134,8 +134,8 @@ Comparing with clustering:
 | SVD    | 0.195 (3rd)    | 91.14% (1st)            |
 | UMAP   | 0.564 (1st)    | 80.79% (4th)            |
 
-UMAP crushed clustering but struggled with classification. SVD did the opposite.
+UMAP excels at clustering but struggles with classification. SVD shows the opposite trend.
 
-Why: UMAP preserves local neighborhoods (good for density-based clustering) but warps global structure (bad for linear classifiers). SVD preserves global variance (good for classification) but doesn't create cluster-friendly manifold structure.
+UMAP preserves local neighborhoods (good for density-based clustering) but distorts global structure (bad for linear classifiers). SVD preserves global variance (good for classification) but doesn't build a cluster-friendly manifold.
 
-Pick your method based on goal: SVD for classification, UMAP for clustering.
+Use SVD for classification accuracy, UMAP for clustering.

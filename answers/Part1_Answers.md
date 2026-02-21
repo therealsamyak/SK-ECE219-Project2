@@ -23,9 +23,7 @@ Report the dimensions of the TF-IDF matrix and the MiniLM embedding matrix. Brie
 - TF-IDF: (20,497 × 25,085), 99.68% sparse
 - MiniLM: (20,497 × 384), dense
 
-TF-IDF scores each vocabulary term independently. A 50-word review might touch 30 unique terms out of 25,085—everything else is zero.
-
-MiniLM runs the entire sentence through a neural network that outputs a 384-d vector. All dimensions get non-zero values because the model encodes meaning holistically, not by counting words.
+TF-IDF scores each vocabulary term independently. However, MiniLM runs the entire sentence through a neural network that outputs a 384-d vector. All dimensions get non-zero values because the model captures meaning from the whole sentence, not by counting words.
 
 ---
 
@@ -41,8 +39,6 @@ For each pipeline, report clustering agreement metrics with respect to ground-tr
 | ------------------- | ----------- | ------------ | --------- | ------ | ------ |
 | SVD + K-Means       | 0.0301      | 0.161        | 0.0507    | 0.0057 | 0.0507 |
 | SVD + Agglomerative | 0.0276      | 0.157        | 0.0470    | 0.0050 | 0.0470 |
-
-TF-IDF clustering barely separates Short vs Long. UMAP and no-reduction options were skipped—infeasible on sparse, high-dimensional data.
 
 **MiniLM (6 pipelines)**
 
@@ -71,15 +67,9 @@ Compare TF-IDF and MiniLM performance. Which separates Short vs Long more cleanl
 | ARI         | 0.005  | 0.742  | 148x  |
 | Homogeneity | 0.028  | 0.646  | 23x   |
 
-MiniLM wins by a lot. Three reasons:
+MiniLM outperforms TF-IDF on all metrics. The neural network is able to capture sentence structure and semantic meaning, whereas TF-IDF only counts word frequencies. Transformers also treat longer sequences differently, creating distinct representations for different-length inputs.
 
-1. **Semantic understanding:** MiniLM captures sentence structure and semantic meaning. Long reviews differ from short ones in topic depth, discourse structure, and complexity—neural embeddings pick up on these differences naturally.
-
-2. **Document length as latent signal:** Transformers attend to longer sequences differently, creating distinct representations for different-length inputs.
-
-3. **TF-IDF limitations:** TF-IDF only counts word frequencies. Long and short reviews both contain "game", "play", "good", so they look similar in TF-IDF space even when structurally different.
-
-UMAP actually hurts here. It preserves local neighborhoods, but Short vs Long is a global, linear signal. Document length affects all dimensions similarly. UMAP's focus on local structure blurs this global pattern. SVD (linear) works better for capturing this simple length-based separation.
+SVD works better than UMAP here. Document length affects all dimensions similarly, so UMAP's focus on local neighborhoods doesn't differentiate the clusters effectively.
 
 ---
 
@@ -89,14 +79,14 @@ Plots and Visualization: Reduce embeddings to 2D using PCA and create split visu
 
 **Answer:**
 
-File: [PCA visualizations](outputs/task1_4_pca_visualizations.png)
+File: [PCA visualizations](docs/images/Q5_pca_visualizations.png)
 
 PCA explained variance:
 
 - TF-IDF: 4.02% total
 - MiniLM: 11.83% total
 
-The MiniLM plot shows clear separation between Short and Long clusters. TF-IDF is scattered. The higher variance explained by MiniLM's first two PCs (11.83% vs 4.02%) tells us the structure is more amenable to low-dimensional projection.
+MiniLM clearly separates Short and Long clusters. TF-IDF is scattered. MiniLM projects better in low dimensions, as its two PCs show 11.83% variance (vs 4.02% for TF-IDF).
 
 ---
 
@@ -121,27 +111,20 @@ For each pipeline, report cluster count, sizes, and top 3 genres per cluster.
 
 **MiniLM (12 pipelines)**
 
-**Non-HDBSCAN (8 pipelines)**
-
-| Pipeline             | K   | Sizes              | Top Genre Purity |
-| -------------------- | --- | ------------------ | ---------------- |
-| None + K-Means       | 5   | 9, 86, 23, 58, 24  | 67-81%           |
-| None + Agglomerative | 5   | 41, 33, 62, 20, 44 | 54-93%           |
-| SVD + K-Means        | 5   | 25, 30, 50, 55, 40 | 62-82%           |
-| SVD + Agglomerative  | 5   | 37, 62, 32, 13, 56 | 59-100%          |
-| UMAP + K-Means       | 5   | 39, 61, 26, 42, 32 | 62-85%           |
-| UMAP + Agglomerative | 5   | 85, 40, 30, 22, 23 | 61-87%           |
-| AE + K-Means         | 5   | 36, 43, 34, 58, 29 | 62-84%           |
-| AE + Agglomerative   | 5   | 50, 40, 27, 43, 40 | 58-85%           |
-
-**HDBSCAN (4 pipelines)**
-
-| Pipeline       | K   | Noise       | Sizes | Top Genre Purity |
-| -------------- | --- | ----------- | ----- | ---------------- |
-| None + HDBSCAN | 2   | 175 (87.5%) | 18, 7 | 83-100%          |
-| SVD + HDBSCAN  | 2   | 168 (84%)   | 25, 7 | 72-100%          |
-| UMAP + HDBSCAN | 10  | 64 (32%)    | 5-35  | 60-100%          |
-| AE + HDBSCAN   | 2   | 161 (80.5%) | 33, 6 | 76-100%          |
+| Pipeline             | K   | Noise       | Sizes              | Top Genre Purity |
+| -------------------- | --- | ----------- | ------------------ | ---------------- |
+| None + K-Means       | 5   |             | 9, 86, 23, 58, 24  | 67-81%           |
+| None + Agglomerative | 5   |             | 41, 33, 62, 20, 44 | 54-93%           |
+| SVD + K-Means        | 5   |             | 25, 30, 50, 55, 40 | 62-82%           |
+| SVD + Agglomerative  | 5   |             | 37, 62, 32, 13, 56 | 59-100%          |
+| UMAP + K-Means       | 5   |             | 39, 61, 26, 42, 32 | 62-85%           |
+| UMAP + Agglomerative | 5   |             | 85, 40, 30, 22, 23 | 61-87%           |
+| AE + K-Means         | 5   |             | 36, 43, 34, 58, 29 | 62-84%           |
+| AE + Agglomerative   | 5   |             | 50, 40, 27, 43, 40 | 58-85%           |
+| None + HDBSCAN       | 2   | 175 (87.5%) | 18, 7              | 83-100%          |
+| SVD + HDBSCAN        | 2   | 168 (84%)   | 25, 7              | 72-100%          |
+| UMAP + HDBSCAN       | 10  | 64 (32%)    | 5-35               | 60-100%          |
+| AE + HDBSCAN         | 2   | 161 (80.5%) | 33, 6              | 76-100%          |
 
 **TF-IDF (3 pipelines)**
 
@@ -169,9 +152,7 @@ Pick the best pipeline and report two high-purity clusters with genres, purity, 
 
 **Answer:**
 
-**Selected:** MiniLM + SVD(50) + Agglomerative
-
-This pipeline performed best in Task 1 and shows strong genre purity here.
+I selected MiniLM + SVD(50) + Agglomerative because it performed the best in Task 1 and shows strong genre purity.
 
 **Cluster 3 (13 games, 100% pure)**
 
@@ -207,7 +188,9 @@ Report assigned cluster ID, top 3 genres, and 3 representative games.
 
 **Answer:**
 
-**Cluster ID:** 4 (MiniLM + SVD + Agglomerative)
+We used MiniLM + SVD + Agglomerative.
+
+**Cluster ID:** 4
 
 Top genres: Action (80%), Adventure (55%), RPG (35%)
 
@@ -227,9 +210,7 @@ For negative reviews: report 3-5 clusters with top terms, exemplar reviews, and 
 
 **Answer:**
 
-**Pipeline:** MiniLM + SVD(50) + Agglomerative
-
-**Justification:** This pipeline achieved best performance in Task 1 (V-Measure 0.648, ARI 0.742) and Task 2 (up to 100% genre purity). Consistent with Q8 and Q9.
+I selected MiniLM + SVD(50) + Agglomerative because it achieved the best performance in Task 1 (V-Measure 0.648, ARI 0.742) and Task 2 (up to 100% genre purity).
 
 **Cluster 0 - Boss-Focused Gameplay Issues (48 reviews)**
 
@@ -297,9 +278,7 @@ For positive reviews: repeat with praise clusters.
 
 **Answer:**
 
-**Pipeline:** MiniLM + SVD(50) + Agglomerative
-
-**Justification:** Same as Q10 - best performer in Task 1 and Task 2.
+I selected MiniLM + SVD(50) + Agglomerative because it achieved the best performance in Task 1 (V-Measure 0.648, ARI 0.742) and Task 2 (up to 100% genre purity).
 
 **Cluster 0 - Positive Gameplay Experience (49 reviews)**
 
