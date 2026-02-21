@@ -157,11 +157,6 @@
           </tr>
         </tbody>
       </table>
-      <p>
-        TF-IDF clustering barely separates Short vs Long. UMAP and no-reduction
-        options were skipped—infeasible on sparse, high-dimensional data.
-      </p>
-
       <p><strong>MiniLM (6 pipelines)</strong></p>
       <table>
         <thead>
@@ -273,19 +268,17 @@
       </table>
 
       <p>
-        MiniLM outperforms TF-IDF on all metrics. The neural model captures
-        sentence structure and semantic meaning, while TF-IDF only counts word
-        frequencies. Long reviews differ from short ones in topic depth,
-        discourse structure, and complexity—neural embeddings pick up on these
-        differences naturally. Transformers also attend to longer sequences
+        MiniLM outperforms TF-IDF on all metrics. The neural network is able to
+        capture sentence structure and semantic meaning, whereas TF-IDF only
+        counts word frequencies. Transformers also treat longer sequences
         differently, creating distinct representations for different-length
         inputs.
       </p>
 
       <p>
-        SVD works better than UMAP here. Document length is a linear signal that
-        affects all dimensions similarly. UMAP's focus on local neighborhoods
-        blurs this global pattern.
+        SVD works better than UMAP here. Document length affects all dimensions
+        similarly, so UMAP's focus on local neighborhoods doesn't differentiate
+        the clusters effectively.
       </p>
     </div>
 
@@ -352,6 +345,7 @@
             <th>Noise</th>
             <th>Sizes</th>
             <th>Top Genre Purity</th>
+            <th>Top 3 Genres per Cluster</th>
           </tr>
         </thead>
         <tbody>
@@ -359,85 +353,166 @@
             <td>None + K-Means</td>
             <td>5</td>
             <td></td>
-            <td>9, 86, 23, 58, 24</td>
+            <td>9, 23, 24, 58, 86</td>
             <td>67-81%</td>
+            <td>
+              0. Simulation (67%), Sports (67%), Action (33%)<br />
+              1. Action (69%), Indie (55%), Adventure (50%)<br />
+              2. Action (74%), Adventure (52%), RPG (48%)<br />
+              3. Action (81%), Adventure (48%), RPG (33%)<br />
+              4. Adventure (71%), Simulation (54%), Indie (50%)
+            </td>
           </tr>
           <tr>
             <td>None + Agglomerative</td>
             <td>5</td>
             <td></td>
-            <td>41, 33, 62, 20, 44</td>
-            <td>54-93%</td>
+            <td>20, 33, 41, 44, 62</td>
+            <td>55-93%</td>
+            <td>
+              0. Action (63%), Adventure (49%), Indie (49%)<br />
+              1. Action (82%), Adventure (45%), RPG (27%)<br />
+              2. Action (55%), Indie (53%), Adventure (50%)<br />
+              3. Simulation (70%), Indie (60%), Adventure (55%)<br />
+              4. Action (93%), Adventure (52%), RPG (48%)
+            </td>
           </tr>
           <tr>
             <td>SVD + K-Means</td>
             <td>5</td>
             <td></td>
-            <td>25, 30, 50, 55, 40</td>
+            <td>25, 30, 40, 50, 55</td>
             <td>62-82%</td>
+            <td>
+              0. Action (76%), Adventure (52%), RPG (44%)<br />
+              1. Adventure (67%), Simulation (57%), Indie (53%)<br />
+              2. Indie (62%), Action (58%), Adventure (54%)<br />
+              3. Action (82%), Indie (38%), Adventure (33%)<br />
+              4. Action (80%), Adventure (55%), RPG (35%)
+            </td>
           </tr>
           <tr>
             <td>SVD + Agglomerative</td>
             <td>5</td>
             <td></td>
-            <td>37, 62, 32, 13, 56</td>
+            <td>13, 32, 37, 56, 62</td>
             <td>59-100%</td>
+            <td>
+              0. Indie (59%), Action (59%), Adventure (43%)<br />
+              1. Action (85%), Adventure (56%), RPG (44%)<br />
+              2. Adventure (66%), Simulation (62%), Indie (56%)<br />
+              3. Action (100%), Massively Multiplayer (38%), Indie (23%)<br />
+              4. Action (64%), Adventure (46%), Indie (38%)
+            </td>
           </tr>
           <tr>
             <td>UMAP + K-Means</td>
             <td>5</td>
             <td></td>
-            <td>39, 61, 26, 42, 32</td>
+            <td>26, 32, 39, 42, 61</td>
             <td>62-85%</td>
+            <td>
+              0. Action (85%), Adventure (49%), RPG (36%)<br />
+              1. Action (64%), Adventure (46%), Indie (39%)<br />
+              2. Simulation (62%), Adventure (54%), Indie (54%)<br />
+              3. Indie (62%), Action (60%), Adventure (50%)<br />
+              4. Action (84%), Adventure (56%), RPG (34%)
+            </td>
           </tr>
           <tr>
             <td>UMAP + Agglomerative</td>
             <td>5</td>
             <td></td>
-            <td>85, 40, 30, 22, 23</td>
-            <td>61-87%</td>
+            <td>22, 23, 30, 40, 85</td>
+            <td>63-87%</td>
+            <td>
+              0. Action (66%), Adventure (52%), Indie (41%)<br />
+              1. Action (85%), Adventure (45%), RPG (38%)<br />
+              2. Indie (63%), Action (53%), Adventure (47%)<br />
+              3. Simulation (64%), Adventure (55%), Indie (50%)<br />
+              4. Action (87%), Adventure (52%), RPG (35%)
+            </td>
           </tr>
           <tr>
             <td>AE + K-Means</td>
             <td>5</td>
             <td></td>
-            <td>36, 43, 34, 58, 29</td>
+            <td>29, 34, 36, 43, 58</td>
             <td>62-84%</td>
+            <td>
+              0. Indie (67%), Adventure (56%), Action (53%)<br />
+              1. Action (84%), Adventure (51%), RPG (30%)<br />
+              2. Action (74%), Adventure (59%), RPG (41%)<br />
+              3. Action (79%), Indie (40%), Adventure (38%)<br />
+              4. Indie (62%), Adventure (55%), Simulation (55%)
+            </td>
           </tr>
           <tr>
             <td>AE + Agglomerative</td>
             <td>5</td>
             <td></td>
-            <td>50, 40, 27, 43, 40</td>
-            <td>58-85%</td>
+            <td>27, 40, 40, 43, 50</td>
+            <td>57-85%</td>
+            <td>
+              0. Indie (68%), Action (58%), Adventure (54%)<br />
+              1. Action (85%), Adventure (50%), RPG (28%)<br />
+              2. Action (70%), Adventure (59%), RPG (37%)<br />
+              3. Action (77%), Indie (35%), Adventure (35%)<br />
+              4. Indie (57%), Adventure (55%), Action (52%)
+            </td>
           </tr>
           <tr>
             <td>None + HDBSCAN</td>
             <td>2</td>
             <td>175 (87.5%)</td>
-            <td>18, 7</td>
+            <td>7-18</td>
             <td>83-100%</td>
+            <td>
+              0. Action (83%), Adventure (56%), Indie (50%)<br />
+              1. Action (100%), Massively Multiplayer (43%), Early Access (29%)
+            </td>
           </tr>
           <tr>
             <td>SVD + HDBSCAN</td>
             <td>2</td>
-            <td>168 (84%)</td>
-            <td>25, 7</td>
+            <td>168 (84.0%)</td>
+            <td>7-25</td>
             <td>72-100%</td>
+            <td>
+              0. Action (72%), Adventure (64%), Indie (52%)<br />
+              1. Action (100%), Massively Multiplayer (43%), Early Access (29%)
+            </td>
           </tr>
           <tr>
             <td>UMAP + HDBSCAN</td>
             <td>10</td>
-            <td>64 (32%)</td>
+            <td>64 (32.0%)</td>
             <td>5-35</td>
             <td>60-100%</td>
+            <td>
+              0. Action (80%), Racing (80%), Adventure (60%)<br />
+              1. Adventure (86%), Simulation (57%), Indie (43%)<br />
+              2. Action (83%), RPG (50%), Adventure (50%)<br />
+              3. Simulation (65%), Adventure (60%), Indie (55%)<br />
+              4. Casual (80%), Indie (60%), Action (60%)<br />
+              5. Action (91%), Adventure (60%), RPG (40%)<br />
+              6. Action (100%), Free To Play (30%), Massively Multiplayer
+              (20%)<br />
+              7. Action (60%), Indie (53%), Adventure (47%)<br />
+              8. Indie (85%), Adventure (60%), Action (60%)<br />
+              9. Simulation (86%), Sports (86%), Action (14%)
+            </td>
           </tr>
           <tr>
             <td>AE + HDBSCAN</td>
             <td>2</td>
             <td>161 (80.5%)</td>
-            <td>33, 6</td>
+            <td>6-33</td>
             <td>76-100%</td>
+            <td>
+              0. Action (76%), Indie (55%), Adventure (52%)<br />
+              1. Action (100%), Early Access (33%), Massively Multiplayer (33%)
+            </td>
           </tr>
         </tbody>
       </table>
@@ -450,70 +525,45 @@
             <th>K</th>
             <th>Sizes</th>
             <th>Top Genre Purity</th>
+            <th>Top 3 Genres per Cluster</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>SVD + K-Means</td>
             <td>5</td>
-            <td>5, 94, 35, 62, 4</td>
+            <td>4, 5, 35, 62, 94</td>
             <td>60-100%</td>
+            <td>
+              0. Action (80%), Massively Multiplayer (60%), Strategy (40%)<br />
+              1. Action (71%), Adventure (57%), RPG (46%)<br />
+              2. Action (60%), Adventure (60%), Indie (43%)<br />
+              3. Action (71%), Indie (40%), Adventure (39%)<br />
+              4. Simulation (100%), Sports (100%)
+            </td>
           </tr>
           <tr>
             <td>SVD + Agglomerative</td>
             <td>5</td>
-            <td>49, 12, 130, 5, 4</td>
+            <td>4, 5, 12, 49, 130</td>
             <td>65-100%</td>
+            <td>
+              0. Action (80%), Indie (45%), Adventure (43%)<br />
+              1. Action (67%), Adventure (58%), Indie (58%)<br />
+              2. Action (65%), Adventure (55%), RPG (41%)<br />
+              3. Action (80%), Massively Multiplayer (60%), Strategy (40%)<br />
+              4. Simulation (100%), Sports (100%)
+            </td>
           </tr>
           <tr>
             <td>SVD + HDBSCAN</td>
             <td>2</td>
-            <td>188, 5 (3.5% noise)</td>
+            <td>5-188 (3.5%)</td>
             <td>69-80%</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <p>Sample genre breakdown (MiniLM + SVD + Agglomerative):</p>
-      <table>
-        <thead>
-          <tr>
-            <th>Cluster</th>
-            <th>Size</th>
-            <th>Top Genres</th>
-            <th>Purity</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>0</td>
-            <td>37</td>
-            <td>Indie (59%), Action (59%), Adventure (43%)</td>
-            <td>59%</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>62</td>
-            <td>Action (85%), Adventure (56%), RPG (44%)</td>
-            <td>85%</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>32</td>
-            <td>Adventure (66%), Simulation (63%), Indie (56%)</td>
-            <td>66%</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>13</td>
-            <td>Action (100%), Massively Multiplayer (38%), Indie (23%)</td>
-            <td>100%</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>56</td>
-            <td>Action (64%), Adventure (46%), Indie (38%)</td>
-            <td>64%</td>
+            <td>
+              0. Action (69%), Adventure (52%), Indie (41%)<br />
+              1. Action (80%), Massively Multiplayer (60%), Strategy (40%)
+            </td>
           </tr>
         </tbody>
       </table>

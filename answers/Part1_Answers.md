@@ -133,16 +133,6 @@ For each pipeline, report cluster count, sizes, and top 3 genres per cluster.
 | SVD + Agglomerative | 5   | 4, 5, 12, 49, 130  | 65-100%          | 0. Action (80%), Indie (45%), Adventure (43%)<br>1. Action (67%), Adventure (58%), Indie (58%)<br>2. Action (65%), Adventure (55%), RPG (41%)<br>3. Action (80%), Massively Multiplayer (60%), Strategy (40%)<br>4. Simulation (100%), Sports (100%) |
 | SVD + Hdbscan       | 2   | 5-188 (3.5% noise) | 69-80%           | 0. Action (69%), Adventure (52%), Indie (41%)<br>1. Action (80%), Massively Multiplayer (60%), Strategy (40%)                                                                                                                                        |
 
-Sample genre breakdown (MiniLM + SVD + Agglomerative):
-
-| Cluster | Size | Top Genres                                              | Purity |
-| ------- | ---- | ------------------------------------------------------- | ------ |
-| 0       | 37   | Indie (59%), Action (59%), Adventure (43%)              | 59%    |
-| 1       | 62   | Action (85%), Adventure (56%), RPG (44%)                | 85%    |
-| 2       | 32   | Adventure (66%), Simulation (63%), Indie (56%)          | 66%    |
-| 3       | 13   | Action (100%), Massively Multiplayer (38%), Indie (23%) | 100%   |
-| 4       | 56   | Action (64%), Adventure (46%), Indie (38%)              | 64%    |
-
 ---
 
 ### Question 8
