@@ -225,8 +225,6 @@
         <strong>Best:</strong> MiniLM + SVD(50) + Agglomerative. V-Measure
         0.648, ARI 0.742.
       </p>
-
-
     </div>
 
     <h2 id="q4">Question 4</h2>
@@ -925,7 +923,8 @@
         </tbody>
       </table>
       <p>
-        These are competitive online multiplayer first-person-shooter games. All have the Action tag.
+        These are competitive online multiplayer first-person-shooter games. All
+        have the Action tag.
       </p>
 
       <p><strong>Cluster 1 (62 games, 85% pure)</strong></p>
@@ -952,9 +951,7 @@
           </tr>
         </tbody>
       </table>
-      <p>
-        These are mostly narrative-driven action games with RPG elements.
-      </p>
+      <p>These are mostly narrative-driven action games with RPG elements.</p>
     </div>
 
     <h2 id="q9">Question 9</h2>
@@ -992,11 +989,11 @@
         </tbody>
       </table>
       <p>
-        Why this works as genre estimation: Games are multi-label. Rather than
-        predicting one genre, we assign the held-out game to its nearest cluster
-        and inherit that cluster's genre distribution. The held-out game shares
-        Action-Adventure-RPG characteristics because it clusters semantically
-        with games having those tags.
+        This is genre-estimation, because the games themselves are multi-label.
+        Rather than predicting one genre, we assign the held-out game to its
+        nearest cluster and inherit that cluster's genre distribution. The
+        held-out game shares Action / Adventure / RPG characteristics because it
+        clusters semantically with games having those tags.
       </p>
     </div>
 
@@ -1010,9 +1007,9 @@
     <div class="answer">
       <h3>Answer</h3>
       <p>
-        We selected MiniLM + SVD(50) + Agglomerative because it achieved the best
-        performance in Task 1 (V-Measure 0.648, ARI 0.742) and Task 2 (up to
-        100% genre purity).
+        We selected MiniLM + SVD(50) + Agglomerative because it achieved the
+        best performance in Task 1 (V-Measure 0.648, ARI 0.742) and Task 2 (up
+        to 100% genre purity).
       </p>
 
       <p>
@@ -1093,7 +1090,10 @@
         low fps
       </p>
       <blockquote>
-        "I wanted to share my recent experience with this where I have seen that's been getting positive reviews. I'm running this on an i7 13th gen, RTX 4080, and 32 gigs RAM, which should be more than capable. However, the game crashes consistently..."
+        "I wanted to share my recent experience with this where I have seen
+        that's been getting positive reviews. I'm running this on an i7 13th
+        gen, RTX 4080, and 32 gigs RAM, which should be more than capable.
+        However, the game crashes consistently..."
       </blockquote>
       <blockquote>
         "Not really sure what these purchased reviews are all about. Game runs
@@ -1109,9 +1109,9 @@
     <div class="answer">
       <h3>Answer</h3>
       <p>
-        We selected MiniLM + SVD(50) + Agglomerative because it achieved the best
-        performance in Task 1 (V-Measure 0.648, ARI 0.742) and Task 2 (up to
-        100% genre purity).
+        We selected MiniLM + SVD(50) + Agglomerative because it achieved the
+        best performance in Task 1 (V-Measure 0.648, ARI 0.742) and Task 2 (up
+        to 100% genre purity).
       </p>
 
       <p>
@@ -1127,7 +1127,9 @@
         combat..."
       </blockquote>
       <blockquote>
-        "(Review in progress, 8h so far, 2 chapters completed)This game surprised me more than I expected. The level of polish and care put into it is quite impressive and I absolutely loved my time with it so far..."
+        "(Review in progress, 8h so far, 2 chapters completed)This game
+        surprised me more than I expected. The level of polish and care put into
+        it is quite impressive and I absolutely loved my time with it so far..."
       </blockquote>
       <p>Label: Positive gameplay experience</p>
 
@@ -1141,7 +1143,10 @@
         wukong, like
       </p>
       <blockquote>
-        "Black Myth: Wukong was released under a lot of anticipation after gameplay showcases had been shown over the past few years, leading people to even question if the game would really come out like that. Thankfully, it really did – and overcame all expectations..."
+        "Black Myth: Wukong was released under a lot of anticipation after
+        gameplay showcases had been shown over the past few years, leading
+        people to even question if the game would really come out like that.
+        Thankfully, it really did - and overcame all expectations..."
       </blockquote>
       <blockquote>
         "Black Myth Wukong is an absolute masterclass of a game. All the hype,
@@ -1210,7 +1215,11 @@ Output a 3-6 word label describing what these reviews have in common.</pre
       <p>
         Terms: game, like, just, boss, fun, games, combat, boring, good, don
       </p>
-      <p>Exemplar: "First of all it's a beautiful game. The visuals are great, It also has some unique combat that when you get used to it, it's enjoyable. But beyond that...this game is a boss simulator..."</p>
+      <p>
+        Exemplar: "First of all it's a beautiful game. The visuals are great, It
+        also has some unique combat that when you get used to it, it's
+        enjoyable. But beyond that...this game is a boss simulator..."
+      </p>
       <p>LLM output: "Boss-focused gameplay issues"</p>
 
       <p><strong>Example 2 (Negative Cluster 4)</strong></p>
@@ -1218,7 +1227,11 @@ Output a 3-6 word label describing what these reviews have in common.</pre
         Terms: game, fps, low, crashes, settings, issues, like, amd, 7900xtx,
         low fps
       </p>
-      <p>Exemplar: "I'm running this on an i7 13th gen, RTX 4080, and 32 gigs RAM, which should be more than capable. However, the game crashes consistently..."</p>
+      <p>
+        Exemplar: "I'm running this on an i7 13th gen, RTX 4080, and 32 gigs
+        RAM, which should be more than capable. However, the game crashes
+        consistently..."
+      </p>
       <p>LLM output: "Performance Issues"</p>
 
       <p><strong>Example 3 (Positive Cluster 1)</strong></p>
@@ -1226,7 +1239,10 @@ Output a 3-6 word label describing what these reviews have in common.</pre
         Terms: game, wukong, chinese, myth, good, black, black myth, games, myth
         wukong, like
       </p>
-      <p>Exemplar: "Black Myth: Wukong was released under a lot of anticipation..."</p>
+      <p>
+        Exemplar: "Black Myth: Wukong was released under a lot of
+        anticipation..."
+      </p>
       <p>LLM output: "Mythical Chinese Game Excellence"</p>
     </div>
 
@@ -1360,7 +1376,9 @@ Output a 3-6 word label describing what these reviews have in common.</pre
       </table>
 
       <p>
-        Roses and tulips cluster together due to similar petal arrangements, while dandelions form a distinct cluster due to their unique spherical shape.
+        Roses and tulips cluster together due to similar petal arrangements,
+        while dandelions form a distinct cluster due to their unique spherical
+        shape.
       </p>
     </div>
 
