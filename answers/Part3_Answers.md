@@ -27,7 +27,11 @@ Construct text queries to find Pokemon images by type. Report top 5 for Bug, Fir
 | Dark   | Umbreon, Darkrai, Pincurchin, Gastly, Salandit  |
 | Dragon | Dragonite, Rhydon, Druddigon, Nidorino, Kingdra |
 
-Files: [Bug](outputs/Q20_bug.png), [Fire](outputs/Q20_fire.png), [Grass](outputs/Q20_grass.png), [Dark](outputs/Q20_dark.png), [Dragon](outputs/Q20_dragon.png)
+![Bug type](outputs/Q20_bug.png)
+![Fire type](outputs/Q20_fire.png)
+![Grass type](outputs/Q20_grass.png)
+![Dark type](outputs/Q20_dark.png)
+![Dragon type](outputs/Q20_dragon.png)
 
 Bug, Fire, and Grass types retrieved pretty coherent results. Fire Pokemon tend to have warm colors (red, orange, yellow) and flame-like features. Grass types are mostly green with plant-like body parts. Bug types have insectoid body structures that CLIP picks up on easily. However, Dark and Dragon were trickier. Dark-type visual identity isn't very consistent. Dragon types are visually all over the place, from serpentine (Kingdra) to dinosaur-like (Dragonite). The fact that Rhydon (Ground/Rock) and Nidorino (Poison) showed up for Dragon queries suggests CLIP associates "dragon-like features" (horns, bulky bodies) with the Dragon type.
 
@@ -45,7 +49,7 @@ Seed: 42
 
 Pokemon: Cosmog, Ledyba, Zubat, Wynaut, Spoink, Makuhita, Quagsire, Meganium, Thievul, Espurr
 
-File: [predictions](outputs/Q21_predictions.png)
+![Predictions](outputs/Q21_predictions.png)
 
 | Pokemon  | Actual        | Top-1             | Top-5                                     | Correct? |
 | -------- | ------------- | ----------------- | ----------------------------------------- | -------- |
