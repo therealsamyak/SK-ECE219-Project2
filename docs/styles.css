@@ -109,6 +109,10 @@ h2 {
   padding-top: 20px;
 }
 
+h2[id] {
+  scroll-margin-top: 100px;
+}
+
 h2 + hr {
   border: none;
   border-top: 2px solid #2c5aa0;
@@ -231,11 +235,22 @@ strong {
   nav {
     display: block !important;
     page-break-after: avoid;
-    border-bottom: 2px solid #2c5aa0;
   }
 
   nav ul {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+  nav a {
+    text-decoration: underline;
+    color: #2c5aa0;
+  }
+
+  .answer a[href]:not([href^="#"])::after {
+    content: " (" attr(href) ")";
+    font-size: 0.85em;
+    color: #666;
+    word-break: break-all;
   }
 }
