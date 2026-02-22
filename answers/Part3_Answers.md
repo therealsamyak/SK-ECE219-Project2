@@ -4,7 +4,12 @@
 
 ## Question 20
 
-Construct text queries to find Pokemon images by type. Report top 5 for Bug, Fire, Grass, Dark, and Dragon.
+Try to construct various text queries regarding types of Pokemon (such as "type: Bug", "electric type Pokémon" or "Pokémon with fire abilities") to find the relevant images from the dataset. Once you have found the most suitable template for queries, please find the top five most relevant Pokemon for type Bug, Fire and Grass. For each of the constructed query, please plot the five most relevant Pokemon horizontally in one figure with following specifications:
+
+- the title of the figure should be the query you used;
+- the title of each Pokemon should be the name of the Pokemon and its first and second type.
+
+Repeat this process for Pokemon of Dark and Dragon types. Assess the effectiveness of your queries in these cases as well and try to explain any differences.
 
 **Answer:**
 
@@ -41,7 +46,10 @@ The performance difference matches the uniformity of appearances within the clas
 
 ## Question 21
 
-Randomly select 10 Pokemon. For each, plot and show predicted types.
+Randomly select 10 Pokemon images from the dataset and use CLIP to find the most relevant types (use your preferred template, e.g "type: Bug"). For each selected Pokemon, please plot it and indicate:
+
+- its name and first and second type;
+- the five most relevant types predicted by CLIP and their predicted similarities.
 
 **Answer:**
 
@@ -72,7 +80,12 @@ The results line up with what we found in Q20. For example, Zubat (Poison) gets 
 
 ## Question 22
 
-Report Accuracy@1 and Hit@5 for all Pokemon using Type1 ground truth.
+In this question, reuse the exact same CLIP setup from the previous question on all the Pokemon images (same model, same type prompt template, and the same set of candidate types), but instead of returning only the most relevant type, return the top-5 most relevant types for each Pokemon image. Using the ground-truth primary type label Type1, report:
+
+- **Accuracy@1 (Acc@1):** the fraction of images whose top-1 predicted type matches the ground-truth primary type (Type1).
+- **Hit@5 (a.k.a. Recall@5):** the fraction of images whose ground-truth primary type appears anywhere in the top-5 predicted types.
+
+In practice, you will likely observe that CLIP's Acc@1 for predicting the primary type (Type1) is relatively low, while Hit@5 is often reasonably good. This gap suggests that CLIP frequently retrieves the correct type somewhere in a short candidate list, but does not reliably rank it as the top-1 prediction. A key reason is that CLIP is a dual-encoder model trained with a contrastive objective: it independently embeds images and text prompts into a shared vector space, and predictions are made purely by embedding similarity (e.g., dot-product/cosine similarity). This is powerful for coarse semantic alignment, but it lacks an explicit reasoning step and can be sensitive to prompt wording and visually similar concepts.
 
 **Answer:**
 
@@ -106,7 +119,15 @@ Worst: Flying (0%), Ground (4%), Ghost (4%), Grass (8%)
 
 ## Question 23
 
-VLM Reranking of CLIP Top-5. Report Reranked Acc@1.
+VLM Reranking of CLIP Top-5 Candidates. Reuse the exact same CLIP setup and evaluation protocol from the previous question. For each Pokemon image, first use CLIP to obtain the top-5 predicted types (and their probabilities/similarities). Then, use a modern vision-language model (VLM), e.g., Qwen/Qwen3-VL-2B-Instruct, to select the single most likely primary type from only these five candidates. You can check the helper code for how to use Qwen vision language models (please use Google-colab or if you have your local pc with GPU)
+
+Concretely, for each image $i$, let CLIP return a candidate set $C_i$ containing the top-5 types. Prompt the VLM with the image and the candidate list $C_i$, and force the VLM to output exactly one type from $C_i$ (e.g., as a JSON field `{"type1": "..."}`). If the VLM output is invalid (not in $C_i$), fall back to CLIP's top-1 type.
+
+Report:
+
+- **Reranked Accuracy@1:** the fraction of images whose final predicted type (after VLM selection) matches the ground-truth Type1.
+- A comparison table of CLIP Acc@1, CLIP Hit@5, and VLM-reranked Acc@1.
+- Briefly discuss: Does VLM reranking help?
 
 **Answer:**
 

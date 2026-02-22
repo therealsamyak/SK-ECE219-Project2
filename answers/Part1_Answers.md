@@ -29,7 +29,7 @@ TF-IDF scores each vocabulary term independently. However, MiniLM runs the entir
 
 ### Question 3
 
-For each pipeline, report clustering agreement metrics with respect to ground-truth length labels: homogeneity, completeness, v-measure, ARI, AMI.
+For each pipeline, report the following clustering agreement metrics with respect to the ground-truth length labels: homogeneity, completeness, v-measure, ARI, AMI. Summarize results in a table and identify the best-performing pipeline.
 
 **Answer:**
 
@@ -57,7 +57,7 @@ For each pipeline, report clustering agreement metrics with respect to ground-tr
 
 ### Question 4
 
-Compare TF-IDF and MiniLM performance. Which separates Short vs Long more cleanly, and why?
+Compare TF-IDF and MiniLM performance on this task. Which representation separates Short vs Long reviews more cleanly, and why?
 
 **Answer:**
 
@@ -75,7 +75,13 @@ SVD works better than UMAP here. Document length affects all dimensions similarl
 
 ### Question 5
 
-Plots and Visualization: Reduce embeddings to 2D using PCA and create split visualizations.
+Plots and Visualization: Select the best-performing configuration for TF–IDF and MiniLM based on clustering performance. For each representation:
+
+- Reduce the embeddings to two dimensions using PCA (sklearn.decomposition.PCA).
+- Create a split visualization with:
+  – One plot colored by the ground-truth length label.
+  – One plot colored by the cluster assignments obtained using your best clustering method.
+  The resulting plots should enable a direct visual comparison between the true labels and the discovered clusters for both TF–IDF and MiniLM representations, highlighting how well each representation supports unsupervised separation.
 
 **Answer:**
 
@@ -105,7 +111,11 @@ Report the dimensions of the TF-IDF game matrix and the MiniLM game embedding ma
 
 ### Question 7
 
-For each pipeline, report cluster count, sizes, and top 3 genres per cluster.
+For each pipeline, report a summary table that includes:
+
+- number of clusters found (for HDBSCAN, also report the fraction of games labeled as noise -1),
+- cluster sizes,
+- for each cluster: top 3 most common genres (by frequency across games in that cluster).
 
 **Answer:**
 
@@ -288,7 +298,12 @@ For each pipeline, report cluster count, sizes, and top 3 genres per cluster.
 
 ### Question 8
 
-Pick the best pipeline and report two high-purity clusters with genres, purity, and representative games.
+Pick one best pipeline (justify your choice), then report two cluster with high purity:
+
+- top 3 genres with percentages,
+- cluster genre purity (as defined above),
+- Representative games in the cluster (game name + genres).
+  Provide a short interpretation: what type of games does these clusters represent?
 
 **Answer:**
 
@@ -324,7 +339,7 @@ These are mostly narrative-driven action games with RPG elements.
 
 ### Question 9
 
-Report assigned cluster ID, top 3 genres, and 3 representative games.
+Report: (i) the assigned cluster ID, (ii) the top 3 genres of that cluster, and (iii) 3 representative games from that cluster. Briefly justify why this constitutes a genre estimate in a multi-genre world.
 
 **Answer:**
 
@@ -346,7 +361,7 @@ This is genre-estimation, because the games themselves are multi-label. Rather t
 
 ### Question 10
 
-For negative reviews: report 3-5 clusters with top terms, exemplar reviews, and labels.
+For negative reviews: report 3–5 clusters with (i) top terms and (ii) exemplar reviews, and assign a short label to each complaint cluster.
 
 **Answer:**
 
@@ -414,7 +429,7 @@ Label: Performance Issues
 
 ### Question 11
 
-For positive reviews: repeat with praise clusters.
+For positive reviews: repeat the same analysis and label 3–5 praise clusters.
 
 **Answer:**
 
@@ -480,7 +495,7 @@ Label: Monke Embrace Approved
 
 ### Question 12
 
-Include prompting strategy and 3 LLM-generated label examples.
+Include your prompting strategy and 3 example of LLM-generated labels for clusters. You can use the same helper code from Project 1 for Qwen model (Qwen/Qwen3-4B-Instruct-2507).
 
 **Answer:**
 

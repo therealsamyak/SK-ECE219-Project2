@@ -2,7 +2,7 @@
 
 ## Question 13
 
-If the VGG network is trained on a dataset with totally different classes as targets, why would one expect its features to have discriminative power for a custom dataset?
+In a brief paragraph discuss: If the VGG network is trained on a dataset with perhaps totally different classes as targets, why would one expect the features derived from such a network to have discriminative power for a custom dataset?
 
 **Answer:**
 
@@ -12,7 +12,7 @@ VGG16 learns visual patterns directly, and is not constrained to the specific cl
 
 ## Question 14
 
-Explain how the helper code performs feature extraction.
+In a brief paragraph explain how the helper code base is performing feature extraction.
 
 **Answer:**
 
@@ -29,7 +29,7 @@ The code discards fc[1] and fc[2], keeping only fc[0] output.
 
 ## Question 15
 
-How many pixels in original images? How many features does VGG extract per image?
+How many pixels are there in the original images? How many features does the VGG network extract per image; i.e what is the dimension of each feature vector for an image sample?
 
 **Answer:**
 
@@ -43,7 +43,7 @@ Compression: 150,528 → 4,096, which is ~36.8x reduction.
 
 ## Question 16
 
-Are extracted features dense or sparse? Compare with TF-IDF.
+Are the extracted features dense or sparse? (Compare with sparse TF-IDF features in text.)
 
 **Answer:**
 
@@ -57,7 +57,7 @@ VGG16 works differently. Each of the 4096 neurons receives weighted input from a
 
 ## Question 17
 
-Map features to 2D with t-SNE and plot. Color by ground-truth labels.
+In order to inspect the high-dimensional features, t-SNE is a popular off-the-shelf choice for visualizing Vision features. Map the features you have extracted onto 2 dimensions with t-SNE. Then plot the mapped feature vectors along x and y axes. Color-code the data points with ground-truth labels. Describe your observation.
 
 **Answer:**
 
@@ -80,7 +80,7 @@ Roses and tulips cluster together due to similar petal arrangements, while dande
 
 ## Question 18
 
-Report best ARI result. For HDBSCAN, use parameter grid over min_cluster_size and min_samples.
+Report the best result (in terms of adjusted rand index) within the table below. For HDBSCAN, introduce a conservative parameter grid over min_cluster_size and min_samples.
 
 **Answer:**
 
@@ -112,7 +112,7 @@ HDBSCAN grid (on UMAP features):
 
 ## Question 19
 
-Report MLP test accuracy on original and reduced-dimension features. Does performance suffer? Does this align with clustering results?
+Report the test accuracy of the MLP classifier on the original VGG features. Report the same when using the reduced-dimension features (you have freedom in choosing the dimensionality reduction algorithm and its parameters). Does the performance of the model suffer with the reduced-dimension representations? Is it significant? Does the success in classification make sense in the context of the clustering results obtained for the same features in Question 18.
 
 **Answer:**
 
