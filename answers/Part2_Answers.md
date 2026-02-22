@@ -65,7 +65,16 @@ File: [t-SNE plot](outputs/Q17_tsne.png)
 
 _Settings: 2 components, perplexity=30, 3,670 points_
 
-Some flower classes (ex. tulips, sunflowers) form distinct blobs. Others overlap, like roses and dandelions, which makes sense since they have similar petal structures. A few classes split into multiple small clusters, probably because of variation within each class (different colors, angles, developmental stages, etc.).
+**Spatial Distribution by Quadrant:**
+
+| Quadrant         | Dominant Class            | Count | Key Characteristics                       |
+| ---------------- | ------------------------- | ----- | ----------------------------------------- |
+| Upper-Right (Q1) | Dandelions (80.5%)        | 815   | Forms tightest, most cohesive cluster     |
+| Upper-Left (Q2)  | Daisies (56.3%)           | 996   | Most dispersed, overlaps multiple classes |
+| Lower-Left (Q3)  | Sunflowers (56.9%)        | 724   | Overlaps with daisies                     |
+| Lower-Right (Q4) | Roses (49%), Tulips (44%) | 1,135 | Heavy overlap - 77% bounding box overlap  |
+
+Roses and tulips cluster together due to similar petal arrangements, while dandelions form a distinct cluster due to their unique spherical shape.
 
 ---
 
