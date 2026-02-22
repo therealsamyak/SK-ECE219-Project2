@@ -2010,11 +2010,10 @@ Output a 3-6 word label describing what these reviews have in common.</pre
         or if you have your local pc with GPU)
       </p>
       <p>
-        Concretely, for each image \(i\), let CLIP return a
-        candidate set \(C_i\) containing the top-5 types. Prompt
-        the VLM with the image and the candidate list \(C_i\), and
-        force the VLM to output exactly one type from
-        \(C_i\) (e.g., as a JSON field
+        Concretely, for each image \(i\), let CLIP return a candidate set
+        \(C_i\) containing the top-5 types. Prompt the VLM with the image and
+        the candidate list \(C_i\), and force the VLM to output exactly one type
+        from \(C_i\) (e.g., as a JSON field
         <code>{"type1": "..."}</code>). If the VLM output is invalid (not in
         \(C_i\)), fall back to CLIP's top-1 type.
       </p>
