@@ -106,13 +106,10 @@
         <li>MiniLM: (20,497 × 384), dense</li>
       </ul>
       <p>
-        TF-IDF scores each vocabulary term independently. A 50-word review might
-        touch 30 unique terms out of 25,085, everything else is zero.
-      </p>
-      <p>
-        MiniLM runs the entire sentence through a neural network that outputs a
-        384-d vector. All dimensions get non-zero values because the model
-        captures meaning from the whole sentence, not by counting words.
+        TF-IDF scores each vocabulary term independently. However, MiniLM runs
+        the entire sentence through a neural network that outputs a 384-d
+        vector. All dimensions get non-zero values because the model captures
+        meaning from the whole sentence, not by counting words.
       </p>
     </div>
 
@@ -305,8 +302,8 @@
 
       <p>
         MiniLM clearly separates Short and Long clusters. TF-IDF is scattered.
-        With its first two PCs explaining 11.83% variance (vs 4.02% for TF-IDF),
-        MiniLM projects better in low dimensions.
+        MiniLM projects better in low dimensions, as its two PCs show 11.83%
+        variance (vs 4.02% for TF-IDF).
       </p>
     </div>
 
