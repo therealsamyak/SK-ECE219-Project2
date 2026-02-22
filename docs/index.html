@@ -116,9 +116,10 @@
     <h2 id="q3">Question 3</h2>
     <div class="question-text">
       <p>
-        For each pipeline, report clustering agreement metrics with respect to
-        ground-truth length labels: homogeneity, completeness, v-measure, ARI,
-        AMI.
+        For each pipeline, report the following clustering agreement metrics
+        with respect to the ground-truth length labels: homogeneity,
+        completeness, v-measure, ARI, AMI. Summarize results in a table and
+        identify the best-performing pipeline.
       </p>
     </div>
     <div class="answer">
@@ -227,8 +228,8 @@
     <h2 id="q4">Question 4</h2>
     <div class="question-text">
       <p>
-        Compare TF-IDF and MiniLM performance. Which separates Short vs Long
-        more cleanly, and why?
+        Compare TF-IDF and MiniLM performance on this task. Which representation
+        separates Short vs Long reviews more cleanly, and why?
       </p>
     </div>
     <div class="answer">
@@ -326,10 +327,18 @@
 
     <h2 id="q7">Question 7</h2>
     <div class="question-text">
-      <p>
-        For each pipeline, report cluster count, sizes, and top 3 genres per
-        cluster.
-      </p>
+      <p>For each pipeline, report a summary table that includes:</p>
+      <ul>
+        <li>
+          number of clusters found (for HDBSCAN, also report the fraction of
+          games labeled as noise -1),
+        </li>
+        <li>cluster sizes,</li>
+        <li>
+          for each cluster: the top 3 most common genres (by frequency across
+          games in that cluster).
+        </li>
+      </ul>
     </div>
     <div class="answer">
       <h3>Answer</h3>
@@ -884,8 +893,17 @@
     <h2 id="q8">Question 8</h2>
     <div class="question-text">
       <p>
-        Pick the best pipeline and report two high-purity clusters with genres,
-        purity, and representative games.
+        Pick one best pipeline (justify your choice), then report two cluster
+        with high purity:
+      </p>
+      <ul>
+        <li>top 3 genres with percentages,</li>
+        <li>cluster genre purity (as defined above),</li>
+        <li>Representative games in the cluster (game name + genres).</li>
+      </ul>
+      <p>
+        Provide a short interpretation: what type of games does these clusters
+        represent?
       </p>
     </div>
     <div class="answer">
@@ -954,7 +972,9 @@
     <h2 id="q9">Question 9</h2>
     <div class="question-text">
       <p>
-        Report assigned cluster ID, top 3 genres, and 3 representative games.
+        Report: (i) the assigned cluster ID, (ii) the top 3 genres of that
+        cluster, and (iii) 3 representative games from that cluster. Briefly
+        justify why this constitutes a genre estimate in a multi-genre world.
       </p>
     </div>
     <div class="answer">
@@ -997,8 +1017,8 @@
     <h2 id="q10">Question 10</h2>
     <div class="question-text">
       <p>
-        For negative reviews: report 3-5 clusters with top terms, exemplar
-        reviews, and labels.
+        For negative reviews: report 3–5 clusters with (i) top terms and (ii)
+        exemplar reviews, and assign a short label to each complaint cluster.
       </p>
     </div>
     <div class="answer">
@@ -1101,7 +1121,10 @@
 
     <h2 id="q11">Question 11</h2>
     <div class="question-text">
-      <p>For positive reviews: repeat with praise clusters.</p>
+      <p>
+        For positive reviews: repeat the same analysis and label 3–5 praise
+        clusters.
+      </p>
     </div>
     <div class="answer">
       <h3>Answer</h3>
@@ -1191,7 +1214,11 @@
 
     <h2 id="q12">Question 12</h2>
     <div class="question-text">
-      <p>Include prompting strategy and 3 LLM-generated label examples.</p>
+      <p>
+        Include your prompting strategy and 3 example of LLM-generated labels
+        for clusters. You can use the same helper code from Project 1 for the
+        Qwen model (Qwen/Qwen3-4B-Instruct-2507).
+      </p>
     </div>
     <div class="answer">
       <h3>Answer</h3>
@@ -1251,9 +1278,10 @@ Output a 3-6 word label describing what these reviews have in common.</pre
     <h2 id="q13">Question 13</h2>
     <div class="question-text">
       <p>
-        If the VGG network is trained on a dataset with totally different
-        classes as targets, why would one expect its features to have
-        discriminative power for a custom dataset?
+        In a brief paragraph discuss: If the VGG network is trained on a dataset
+        with perhaps totally different classes as targets, why would one expect
+        the features derived from such a network to have discriminative power
+        for a custom dataset?
       </p>
     </div>
     <div class="answer">
@@ -1271,7 +1299,10 @@ Output a 3-6 word label describing what these reviews have in common.</pre
 
     <h2 id="q14">Question 14</h2>
     <div class="question-text">
-      <p>Explain how the helper code performs feature extraction.</p>
+      <p>
+        In a brief paragraph explain how the helper code base is performing
+        feature extraction.
+      </p>
     </div>
     <div class="answer">
       <h3>Answer</h3>
@@ -1292,8 +1323,9 @@ Output a 3-6 word label describing what these reviews have in common.</pre
     <h2 id="q15">Question 15</h2>
     <div class="question-text">
       <p>
-        How many pixels in original images? How many features does VGG extract
-        per image?
+        How many pixels are there in the original images? How many features does
+        the VGG network extract per image; i.e., what is the dimension of each
+        feature vector for an image sample?
       </p>
     </div>
     <div class="answer">
@@ -1308,7 +1340,10 @@ Output a 3-6 word label describing what these reviews have in common.</pre
 
     <h2 id="q16">Question 16</h2>
     <div class="question-text">
-      <p>Are extracted features dense or sparse? Compare with TF-IDF.</p>
+      <p>
+        Are the extracted features dense or sparse? (Compare with the sparse
+        TF-IDF features in text.)
+      </p>
     </div>
     <div class="answer">
       <h3>Answer</h3>
@@ -1327,7 +1362,11 @@ Output a 3-6 word label describing what these reviews have in common.</pre
     <h2 id="q17">Question 17</h2>
     <div class="question-text">
       <p>
-        Map features to 2D with t-SNE and plot. Color by ground-truth labels.
+        In order to inspect the high-dimensional features, t-SNE is a popular
+        off-the-shelf choice for visualizing Vision features. Map the features
+        you have extracted onto two dimensions with t-SNE. Then plot the mapped
+        feature vectors along the x and y axes. Color-code the data points with
+        the ground-truth labels. Describe your observation.
       </p>
     </div>
     <div class="answer">
@@ -1384,7 +1423,8 @@ Output a 3-6 word label describing what these reviews have in common.</pre
     <h2 id="q18">Question 18</h2>
     <div class="question-text">
       <p>
-        Report best ARI result. For HDBSCAN, use parameter grid over
+        Report the best result (in terms of the adjusted rand index) within the
+        table below. For HDBSCAN, introduce a conservative parameter grid over
         min_cluster_size and min_samples.
       </p>
     </div>
@@ -1495,8 +1535,13 @@ Output a 3-6 word label describing what these reviews have in common.</pre
     <h2 id="q19">Question 19</h2>
     <div class="question-text">
       <p>
-        Report MLP test accuracy on original and reduced-dimension features.
-        Does performance suffer? Does this align with clustering results?
+        Report the test accuracy of the MLP classifier on the original VGG
+        features. Report the same when using the reduced-dimension features (you
+        have freedom in choosing the dimensionality reduction algorithm and its
+        parameters). Does the performance of the model suffer with the
+        reduced-dimension representations? Is it significant? Does the success
+        in classification make sense in the context of the clustering results
+        obtained for the same features in Question 18?
       </p>
     </div>
     <div class="answer">
@@ -1589,8 +1634,25 @@ Output a 3-6 word label describing what these reviews have in common.</pre
     <h2 id="q20">Question 20</h2>
     <div class="question-text">
       <p>
-        Construct text queries to find Pokemon images by type. Report top 5 for
-        Bug, Fire, Grass, Dark, and Dragon.
+        Try to construct various text queries regarding the types of Pokémon
+        (such as "type: Bug", "electric type Pokémon" or "Pokémon with fire
+        abilities") to find the relevant images from the dataset. Once you have
+        found the most suitable template for the queries, please find the top
+        five most relevant Pokémon for the type Bug, Fire, and Grass. For each
+        of the constructed query, please plot the five most relevant Pokémon
+        horizontally in one figure with the following specifications:
+      </p>
+      <ul>
+        <li>the title of the figure should be the query you used;</li>
+        <li>
+          the title of each Pokémon should be the name of the Pokémon and its
+          first and second type.
+        </li>
+      </ul>
+      <p>
+        Repeat this process for the Pokémon of the Dark and Dragon types. Assess
+        the effectiveness of your queries in these cases as well and try to
+        explain any differences.
       </p>
     </div>
     <div class="answer">
@@ -1678,8 +1740,17 @@ Output a 3-6 word label describing what these reviews have in common.</pre
     <h2 id="q21">Question 21</h2>
     <div class="question-text">
       <p>
-        Randomly select 10 Pokemon. For each, plot and show predicted types.
+        Randomly select 10 Pokémon images from the dataset and use CLIP to find
+        the most relevant types (use your preferred template, e.g., "type:
+        Bug"). For each selected Pokémon, please plot it and indicate:
       </p>
+      <ul>
+        <li>its name and first and second type;</li>
+        <li>
+          the five most relevant types predicted by CLIP and their predicted
+          similarities.
+        </li>
+      </ul>
     </div>
     <div class="answer">
       <h3>Answer</h3>
@@ -1787,7 +1858,36 @@ Output a 3-6 word label describing what these reviews have in common.</pre
     <h2 id="q22">Question 22</h2>
     <div class="question-text">
       <p>
-        Report Accuracy@1 and Hit@5 for all Pokemon using Type1 ground truth.
+        In this question, reuse the exact same CLIP setup from the previous
+        question on all the Pokemon images (same model, same type prompt
+        template, and the same set of candidate types), but instead of returning
+        only the most relevant type, return the top-5 most relevant types for
+        each Pokemon image. Using the ground-truth primary type label Type1,
+        report:
+      </p>
+      <ul>
+        <li>
+          <strong>Accuracy@1 (Acc@1):</strong> the fraction of images whose
+          top-1 predicted type matches the ground-truth primary type (Type1).
+        </li>
+        <li>
+          <strong>Hit@5 (a.k.a. Recall@5):</strong> the fraction of images whose
+          ground-truth primary type appears anywhere in the top-5 predicted
+          types.
+        </li>
+      </ul>
+      <p>
+        In practice, you will likely observe that CLIP's Acc@1 for predicting
+        the primary type (Type1) is relatively low, while Hit@5 is often
+        reasonably good. This gap suggests that CLIP frequently retrieves the
+        correct type somewhere in a short candidate list, but does not reliably
+        rank it as the top-1 prediction. A key reason is that CLIP is a
+        dual-encoder model trained with a contrastive objective: it
+        independently embeds images and text prompts into a shared vector space,
+        and predictions are made purely by embedding similarity (e.g.,
+        dot-product/cosine similarity). This is powerful for coarse semantic
+        alignment, but it lacks an explicit reasoning step and can be sensitive
+        to prompt wording and visually similar concepts.
       </p>
     </div>
     <div class="answer">
@@ -1899,7 +1999,37 @@ Output a 3-6 word label describing what these reviews have in common.</pre
 
     <h2 id="q23">Question 23</h2>
     <div class="question-text">
-      <p>VLM Reranking of CLIP Top-5. Report Reranked Acc@1.</p>
+      <p>
+        VLM Reranking of CLIP Top-5 Candidates. Reuse the exact same CLIP setup
+        and evaluation protocol from the previous question. For each Pokemon
+        image, first use CLIP to obtain the top-5 predicted types (and their
+        probabilities/similarities). Then, use a modern vision-language model
+        (VLM), e.g., Qwen/Qwen3-VL-2B-Instruct, to select the single most likely
+        primary type from only these five candidates. You can check the helper
+        code for how to use Qwen vision language models (please use Google-colab
+        or if you have your local pc with GPU)
+      </p>
+      <p>
+        Concretely, for each image \(i\), let CLIP return a
+        candidate set \(C_i\) containing the top-5 types. Prompt
+        the VLM with the image and the candidate list \(C_i\), and
+        force the VLM to output exactly one type from
+        \(C_i\) (e.g., as a JSON field
+        <code>{"type1": "..."}</code>). If the VLM output is invalid (not in
+        \(C_i\)), fall back to CLIP's top-1 type.
+      </p>
+      <p>Report:</p>
+      <ul>
+        <li>
+          <strong>Reranked Accuracy@1:</strong> the fraction of images whose
+          final predicted type (after VLM selection) matches the ground-truth
+          Type1.
+        </li>
+        <li>
+          A comparison table of CLIP Acc@1, CLIP Hit@5, and VLM-reranked Acc@1.
+        </li>
+        <li>Briefly discuss: Does VLM reranking help?</li>
+      </ul>
     </div>
     <div class="answer">
       <h3>Answer</h3>
